@@ -1,0 +1,31 @@
+---
+description: PlayerPickupArrowEvent
+---
+
+# PlayerPickupArrowEvent
+
+### 继承关系
+
+    =>  org.bukkit.event.Event
+
+        =>  org.bukkit.event.player.PlayerEvent
+
+            =>  org.bukkit.event.player.PlayerPickupItemEvent
+
+                =>  org.bukkit.event.player.PlayerPickupArrowEvent
+
+### 类描述
+
+> Thrown when a player picks up an arrow from the ground.
+
+### 方法列表
+
+#### getArrow
+
+方法声明: public AbstractArrow getArrow()
+
+方法签名: ()Lorg/bukkit/entity/AbstractArrow;
+
+> Get the arrow being picked up by the player
+>
+> @return The arrow being picked up

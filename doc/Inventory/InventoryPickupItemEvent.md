@@ -1,0 +1,61 @@
+---
+description: InventoryPickupItemEvent
+---
+
+# InventoryPickupItemEvent
+
+### 继承关系
+
+    =>  org.bukkit.event.Event
+
+        =>  org.bukkit.event.inventory.InventoryPickupItemEvent
+
+### 类描述
+
+> Called when a hopper or hopper minecart picks up a dropped item.
+
+### 方法列表
+
+#### getInventory
+
+方法声明: public Inventory getInventory()
+
+方法签名: ()Lorg/bukkit/inventory/Inventory;
+
+> Gets the Inventory that picked up the item
+>
+> @return Inventory
+
+#### getItem
+
+方法声明: public Item getItem()
+
+方法签名: ()Lorg/bukkit/entity/Item;
+
+> Gets the Item entity that was picked up
+>
+> @return Item
+
+#### isCancelled
+
+方法声明: public boolean isCancelled()
+
+方法签名: ()Z
+
+#### setCancelled
+
+方法声明: public void setCancelled(boolean cancel)
+
+方法签名: (Z)V
+
+#### getHandlers
+
+方法声明: public HandlerList getHandlers()
+
+方法签名: ()Lorg/bukkit/event/HandlerList;
+
+#### getHandlerList
+
+方法声明: public static HandlerList getHandlerList()
+
+方法签名: ()Lorg/bukkit/event/HandlerList;
