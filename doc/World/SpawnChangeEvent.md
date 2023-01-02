@@ -17,6 +17,10 @@ description: SpawnChangeEvent
 > An event that is called when a world's spawn changes. The world's previous
 >
 > spawn location is included.
+>
+> 当世界出生点被更改时触发。世界原出生点位置会被包括在事件的字段中。
+>
+> 译注：所谓“包括”，指本事件记录了原出生点位置，用户可以调用 `getPreviousLocation` 方法获取。
 
 ### 方法列表
 
@@ -29,6 +33,10 @@ description: SpawnChangeEvent
 > Gets the previous spawn location
 >
 > @return Location that used to be spawn
+>
+> 该方法用于获取世界原出生点的位置。
+>
+> @return 世界原出生点的位置。
 
 #### getHandlers
 
