@@ -15,6 +15,8 @@ description: WorldSaveEvent
 ### 类描述
 
 > Called when a World is saved.
+>
+> 当一个世界被保存时触发。
 
 ### 方法列表
 
