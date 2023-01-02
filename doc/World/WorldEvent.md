@@ -13,6 +13,10 @@ description: WorldEvent
 ### 类描述
 
 > Represents events within a world
+>
+> 代表与世界有关的事件。
+>
+> 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
 ### 方法列表
 
@@ -25,3 +29,7 @@ description: WorldEvent
 > Gets the world primarily involved with this event
 >
 > @return World which caused this event
+> 
+> 获取事件中所涉的世界。
+>
+> @return 触发事件的世界。
