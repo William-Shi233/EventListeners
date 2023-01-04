@@ -15,6 +15,8 @@ description: VehicleEnterEvent
 ### 类描述
 
 > Raised when an entity enters a vehicle.
+>
+> 当实体乘上载具时触发。
 
 ### 方法列表
 
@@ -27,6 +29,10 @@ description: VehicleEnterEvent
 > Gets the Entity that entered the vehicle.
 >
 > @return the Entity that entered the vehicle
+>
+> 该方法用于获取乘上载具的实体。
+>
+> @return 乘上载具的实体。
 
 #### isCancelled
 
