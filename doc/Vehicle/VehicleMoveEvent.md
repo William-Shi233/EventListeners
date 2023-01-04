@@ -15,6 +15,8 @@ description: VehicleMoveEvent
 ### 类描述
 
 > Raised when a vehicle moves.
+>
+> 当载具移动时触发。
 
 ### 方法列表
 
@@ -27,6 +29,10 @@ description: VehicleMoveEvent
 > Get the previous position.
 >
 > @return Old position.
+>
+> 该方法用于获取载具移动前的位置。
+>
+> @return 移动前的旧位置。
 
 #### getTo
 
@@ -37,6 +43,10 @@ description: VehicleMoveEvent
 > Get the next position.
 >
 > @return New position.
+>
+> 该方法用于获取载具移动后的位置。
+>
+> @return 移动后的新位置。
 
 #### getHandlers
 
