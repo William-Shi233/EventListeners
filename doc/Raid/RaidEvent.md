@@ -15,6 +15,10 @@ description: RaidEvent
 ### 类描述
 
 > Represents events related to raids.
+>
+> 代表与袭击有关的事件。
+>
+> 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
 ### 方法列表
 
@@ -27,3 +31,7 @@ description: RaidEvent
 > Returns the raid involved with this event.
 >
 > @return Raid
+>
+> 获取事件中的袭击。
+>
+> @return 触发事件的袭击。
