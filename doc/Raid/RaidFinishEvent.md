@@ -20,7 +20,7 @@ description: RaidFinishEvent
 >
 > 当一次袭击以明确结果结束时触发。
 >
-> 译注：当一次袭击中止（比如游戏难度切换为和平）时，会触发 `RaidStopEvent` ，然后结束袭击，不会触发 `RaidFinishEvent` 。
+> 译注：当一次袭击终止（比如游戏难度切换为和平）时，会触发 `RaidStopEvent` ，然后结束袭击，不会触发 `RaidFinishEvent` 。详见 `RaidStopEvent` 译注。
 > 
 > 当一次袭击失败（袭击中心不在村庄范围内且已生成过至少一波袭击者）时，会触发 `RaidFinishEvent` ，此时 `getWinners()` 方法返回空列表，不会触发 `RaidStopEvent` 。
 > 
