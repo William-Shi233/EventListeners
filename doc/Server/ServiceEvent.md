@@ -40,4 +40,4 @@ description: ServiceEvent
 
 方法签名: ()Lorg/bukkit/plugin/RegisteredServiceProvider;
 
-> 无文档。该方法用于获取事件中的 `ServiceProvider` 。
+> 译注：无文档。该方法用于获取事件中的 `ServiceProvider` 。
