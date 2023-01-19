@@ -28,7 +28,7 @@ description: VehicleEntityCollisionEvent
 
 方法签名: ()Lorg/bukkit/entity/Entity;
 
-> 本方法无文档。从 `VehicleBlockCollisionEvent` 相关方法推测，该方法用于获取事件中的载具撞上的实体。
+> 译注：无文档。从 `VehicleBlockCollisionEvent` 相关方法推测，该方法用于获取事件中的载具撞上的实体。
 
 #### isCancelled
 
@@ -48,7 +48,7 @@ description: VehicleEntityCollisionEvent
 
 方法签名: ()Z
 
-> 本方法无文档。在服务端底层也没有对此方法的调用。窃猜测本方法没有任何实际意义和效果。
+> 译注：无文档。在服务端底层也没有对此方法的调用。窃猜测本方法没有任何实际意义和效果。
 
 #### setPickupCancelled
 
@@ -56,7 +56,7 @@ description: VehicleEntityCollisionEvent
 
 方法签名: (Z)V
 
-> 本方法无文档。在服务端底层也没有对此方法的调用。窃猜测本方法没有任何实际意义和效果。
+> 译注：无文档。在服务端底层也没有对 `isPickupCancelled` 方法的调用。窃猜测本方法没有任何实际意义和效果。
 
 #### isCollisionCancelled
 
@@ -64,7 +64,7 @@ description: VehicleEntityCollisionEvent
 
 方法签名: ()Z
 
-> 本方法无文档。在服务端底层也没有对此方法的调用。窃猜测本方法没有任何实际意义和效果。
+> 译注：无文档。在服务端底层也没有对此方法的调用。窃猜测本方法没有任何实际意义和效果。
 
 #### setCollisionCancelled
 
@@ -72,7 +72,7 @@ description: VehicleEntityCollisionEvent
 
 方法签名: (Z)V
 
-> 本方法无文档。在服务端底层也没有对此方法的调用。窃猜测本方法没有任何实际意义和效果。
+> 译注：无文档。在服务端底层也没有对 `isCollisionCancelled` 方法的调用。窃猜测本方法没有任何实际意义和效果。
 
 #### getHandlers
 
