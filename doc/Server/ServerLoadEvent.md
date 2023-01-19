@@ -62,8 +62,8 @@ description: ServerLoadEvent
 
 #### STARTUP
 
-> 无文档。表示因为服务器开启而触发。
+> 译注：无文档。表示因为服务器开启而触发。
 
 #### RELOAD
 
-> 无文档。表示因为执行了 `/reload` 指令而触发。
+> 译注：无文档。表示因为执行了 `/reload` 指令而触发。
