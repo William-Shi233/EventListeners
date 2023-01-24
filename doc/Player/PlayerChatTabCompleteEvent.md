@@ -17,6 +17,10 @@ description: PlayerChatTabCompleteEvent
 > Called when a player attempts to tab-complete a chat message.
 >
 > @deprecated This event is no longer fired due to client changes
+>
+> 当玩家在聊天消息中使用 `Tab` 补全时触发。
+>
+> @deprecated 由于客户端行为改变，该事件目前已经不会被触发了。
 
 ### 方法列表
 
@@ -29,6 +33,8 @@ description: PlayerChatTabCompleteEvent
 > Gets the chat message being tab-completed.
 >
 > @return the chat message
+>
+> 译注：请不要使用本事件。本事件已经过时。
 
 #### getLastToken
 
@@ -45,6 +51,8 @@ description: PlayerChatTabCompleteEvent
 > space in the message.
 >
 > @return The last token for the chat message
+>
+> 译注：请不要使用本事件。本事件已经过时。
 
 #### getTabCompletions
 
@@ -55,6 +63,8 @@ description: PlayerChatTabCompleteEvent
 > This is the collection of completions for this event.
 >
 > @return the current completions
+>
+> 译注：请不要使用本事件。本事件已经过时。
 
 #### getHandlers
 
