@@ -188,6 +188,8 @@ description: AsyncPlayerPreLoginEvent
 > 
 > @param 将展示给玩家的拒绝登录原因字符串。
 > 
+> @see 参见本事件的 `disallow(Result, String)` 方法文档。
+> 
 > @deprecated 本方法所使用的 `PlayerPreLoginEvent.Result` 枚举已过时，请不要使用本方法，而是使用本事件的 `disallow(@NotNull final Result result, @NotNull final String message)` 方法。
 
 #### getName
