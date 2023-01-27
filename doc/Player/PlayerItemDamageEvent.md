@@ -58,7 +58,7 @@ description: PlayerItemDamageEvent
 
 方法签名: (I)V
 
-译注：无文档。该方法用于设置耐久度的减少量。
+> 译注：无文档。该方法用于设置耐久度的减少量。
 
 #### isCancelled
 
