@@ -36,7 +36,7 @@ description: PlayerJoinEvent
 >
 > @return 将要广播给全体玩家的欢迎消息。可能为 `null` 。
 >
-> 译注：比如“某某加入了服务器”。
+> 译注：比如“William_Shi joined the game”。
 
 #### setJoinMessage
 
