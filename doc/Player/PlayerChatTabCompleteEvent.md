@@ -20,7 +20,7 @@ description: PlayerChatTabCompleteEvent
 >
 > 当玩家在聊天消息中使用 `Tab` 补全时触发。
 >
-> @deprecated 由于客户端行为改变，该事件目前已经不会被触发了。
+> @deprecated 本事件已过时。由于客户端行为改变，该事件目前已经不会被触发了。
 
 ### 方法列表
 
