@@ -18,7 +18,7 @@ description: PlayerJoinEvent
 >
 > 玩家加入服务器时触发。
 >
-> 译注：在 `AsyncPlayerPreLoginEvent` 、`PlayerPreLoginEvent` 、`PlayerLoginEvent` 事件触发时，服务器里还不存在玩家实体。这几个事件是在客户端尝试与服务端建立联系时触发的，插件可以通过事件所提供的 `disallow()` 等方法拒绝客户端登录。这样拒绝时，服务端内不会出现玩家实体。玩家登录过程将会尽早被切断。而本事件触发时，玩家已经成功加入了服务器，服务器内已经生成了玩家实体。只能通过 `Player#kickPlayer(String)` 方法将玩家踢出服务器。
+> 在 `AsyncPlayerPreLoginEvent` 、`PlayerPreLoginEvent` 、`PlayerLoginEvent` 事件触发时，服务器里还不存在玩家实体。这几个事件是在客户端尝试与服务端建立联系时触发的，插件可以通过事件所提供的 `disallow()` 等方法拒绝客户端登录。这样拒绝时，服务端内不会出现玩家实体。玩家登录过程将会尽早被切断。而 `PlayerSpawnLocationEvent` 触发时玩家已经成功加入了服务器，即将生成玩家实体。该事件不可取消，也无法将玩家踢出服务器。`PlayerJoinEvent` 事件触发时，服务器内已经生成了玩家实体。可通过 `Player#kickPlayer(String)` 方法将玩家踢出服务器。
 
 ### 方法列表
 
