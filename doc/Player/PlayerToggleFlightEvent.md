@@ -15,6 +15,10 @@ description: PlayerToggleFlightEvent
 ### 类描述
 
 > Called when a player toggles their flying state
+>
+> 当玩家切换飞行状态时触发。
+>
+> 译注：所谓“切换飞行状态”，指玩家连续按下两次空格键，进入或退出飞行状态。
 
 ### 方法列表
 
@@ -27,6 +31,12 @@ description: PlayerToggleFlightEvent
 > Returns whether the player is trying to start or stop flying.
 >
 > @return flying state
+>
+> 该方法用于获取玩家将要开始飞行还是取消飞行。
+>
+> @return 飞行状态。
+>
+> 译注：如果玩家即将开始飞行，则返回 `true` 。
 
 #### isCancelled
 
