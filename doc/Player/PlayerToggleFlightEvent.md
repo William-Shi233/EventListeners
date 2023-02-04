@@ -37,6 +37,8 @@ description: PlayerToggleFlightEvent
 > @return 飞行状态。
 >
 > 译注：如果玩家即将开始飞行，则返回 `true` 。
+> 
+> 该方法的文档是准确的。`PlayerToggleFlightEvent` 、`PlayerToggleSneakEvent` 、`PlayerToggleSprintEvent` 三者的文档，仅有第一个事件（ `PlayerToggleFlightEvent` ）是准确的。
 
 #### isCancelled
 
