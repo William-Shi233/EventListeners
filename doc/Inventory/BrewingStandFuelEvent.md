@@ -17,6 +17,10 @@ description: BrewingStandFuelEvent
 > Called when an ItemStack is about to increase the fuel level of a brewing
 >
 > stand.
+>
+> 当酿造台的燃料值由于消耗了某物品堆而增加时触发。
+>
+> 译注：酿造台消耗烈焰粉获得燃料值。
 
 ### 方法列表
 
@@ -29,6 +33,10 @@ description: BrewingStandFuelEvent
 > Gets the ItemStack of the fuel before the amount was subtracted.
 >
 > @return the fuel ItemStack
+>
+> 该方法用于获取数量减少前的燃料物品堆。
+>
+> @return 燃料物品堆。
 
 #### getFuelPower
 
@@ -41,6 +49,12 @@ description: BrewingStandFuelEvent
 > brewing operation.
 >
 > @return the fuel power for this fuel
+>
+> 该方法用于获取燃料物品堆本次提供的燃料值。每一次酿造消耗一单位燃料值。
+>
+> @return 燃料物品堆本次提供的燃料值。
+>
+> 译注：在原版游戏中仅有烈焰粉一种物品可作燃料，因此本方法的返回值默认为 `20` 。返回值可能被其他插件以 `setFuelPower(int fuelPower)` 方法修改。
 
 #### setFuelPower
 
@@ -53,6 +67,12 @@ description: BrewingStandFuelEvent
 > brewing operation.
 >
 > @param fuelPower the fuel power for this fuel
+>
+> 该方法用于设置燃料物品堆本次提供的燃料值。每一次酿造消耗一单位燃料值。
+>
+> @param 燃料物品堆本次提供的燃料值。
+>
+> 译注：在原版游戏中仅有烈焰粉一种物品可作燃料，因此 `getFuelPower()` 方法的返回值默认为 `20` 。
 
 #### isConsuming
 
@@ -63,6 +83,12 @@ description: BrewingStandFuelEvent
 > Gets whether the brewing stand's fuel will be reduced / consumed or not.
 >
 > @return whether the fuel will be reduced or not
+>
+> 该方法用于获取燃料物品堆是否将被消耗。
+>
+> @return 燃料物品堆是否将被消耗。
+>
+> 译注：如果本方法返回 `false` 且事件未被取消，则酿造台燃料值仍会增加，但燃料物品堆数量不会减少。
 
 #### setConsuming
 
@@ -73,6 +99,12 @@ description: BrewingStandFuelEvent
 > Sets whether the brewing stand's fuel will be reduced / consumed or not.
 >
 > @param consuming whether the fuel will be reduced or not
+>
+> 该方法用于设置燃料物品堆是否将被消耗。
+>
+> @param 燃料物品堆是否将被消耗。
+>
+> 译注：如果本方法参数传入 `false` 且事件未被取消，则酿造台燃料值仍会增加，但燃料物品堆数量不会减少。
 
 #### isCancelled
 
