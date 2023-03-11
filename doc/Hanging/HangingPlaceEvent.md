@@ -15,6 +15,8 @@ description: HangingPlaceEvent
 ### 类描述
 
 > Triggered when a hanging entity is created in the world
+>
+> 当悬挂物实体生成时触发。
 
 ### 方法列表
 
@@ -27,6 +29,10 @@ description: HangingPlaceEvent
 > Returns the player placing the hanging entity
 >
 > @return the player placing the hanging entity
+>
+> 该方法用于获取放置悬挂物的玩家。
+>
+> @return 放置悬挂物的玩家。
 
 #### getBlock
 
@@ -37,6 +43,10 @@ description: HangingPlaceEvent
 > Returns the block that the hanging entity was placed on
 >
 > @return the block that the hanging entity was placed on
+>
+> 该方法用于获取悬挂物所依附的方块。
+>
+> @return 悬挂物所依附的方块。
 
 #### getBlockFace
 
@@ -47,6 +57,10 @@ description: HangingPlaceEvent
 > Returns the face of the block that the hanging entity was placed on
 >
 > @return the face of the block that the hanging entity was placed on
+>
+> 该方法用于获取悬挂物所依附的方块面。
+>
+> @return 悬挂物所依附的方块面。
 
 #### getItemStack
 
@@ -57,6 +71,12 @@ description: HangingPlaceEvent
 > Gets the item from which the hanging entity originated
 >
 > @return the item from which the hanging entity originated
+>
+> 该方法用于获取放置悬挂物实体时所用到的物品堆对象。
+>
+> @return 放置悬挂物实体时所用到的物品堆对象。
+>
+> 译注：比如在方块侧面放置物品展示框时，本方法返回玩家手持的展示框物品堆。
 
 #### isCancelled
 
