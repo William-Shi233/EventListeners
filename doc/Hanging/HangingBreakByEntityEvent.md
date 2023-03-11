@@ -17,6 +17,8 @@ description: HangingBreakByEntityEvent
 ### 类描述
 
 > Triggered when a hanging entity is removed by an entity
+>
+> 当某个悬挂物实体被其他实体所移除时触发。
 
 ### 方法列表
 
@@ -31,3 +33,9 @@ description: HangingBreakByEntityEvent
 > May be null, for example when broken by an explosion.
 >
 > @return the entity that removed the hanging entity
+>
+> 该方法用于获取将悬挂物移除的实体。
+>
+> 本方法可能返回 `null` ，如悬挂物被爆炸摧毁时。
+>
+> @return 将悬挂物移除的实体。
