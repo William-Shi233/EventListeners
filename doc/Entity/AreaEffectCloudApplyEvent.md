@@ -17,6 +17,8 @@ description: AreaEffectCloudApplyEvent
 > Called when a lingering potion applies it's effects. Happens
 >
 > once every 5 ticks
+>
+> 当一瓶掷出的滞留型药水所留下的药水云向跻身其间的实体施加药水效果时触发。药水云每隔五个 `tick` 都会对厕身其中的实体施加药水效果。
 
 ### 方法列表
 
@@ -38,6 +40,8 @@ description: AreaEffectCloudApplyEvent
 
 方法签名: ()Lorg/bukkit/entity/AreaEffectCloud;
 
+> 译注：无文档。该方法用于获取事件中的药水云实体。
+
 #### getAffectedEntities
 
 方法声明: public List<LivingEntity> getAffectedEntities()
@@ -57,6 +61,12 @@ description: AreaEffectCloudApplyEvent
 > or {@link AreaEffectCloud#getRadiusOnUse()}
 >
 > @return the affected entity list
+>
+> 该方法用于获取一个可修改的列表，其间存储将要受到药水效果影响的实体。
+>
+> 无法保证这个列表中的所有实体都会被施加药水效果。由于 `AreaEffectCloud#getDurationOnUse()` 和 `AreaEffectCloud#getRadiusOnUse()` 等方法的存在，药水云在给其他实体施加药水效果的过程中，可能会消失，导致其未能对影响范围内的全部实体都施加药水效果。
+>
+> @return 将要受到药水效果影响的实体列表。
 
 #### getHandlers
 
