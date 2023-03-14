@@ -21,6 +21,10 @@ description: EntityBreakDoorEvent
 > <p>
 >
 > Cancelling the event will cause the event to be delayed
+>
+> 当实体击破一扇门时触发。
+>
+> 如果本事件被取消，实体破门而入的进程将会被延缓。
 
 ### 方法列表
 
@@ -29,3 +33,5 @@ description: EntityBreakDoorEvent
 方法声明: public LivingEntity getEntity()
 
 方法签名: ()Lorg/bukkit/entity/LivingEntity;
+
+> 译注：无文档。该方法用于获取事件中破门而入的实体。
