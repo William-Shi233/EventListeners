@@ -17,6 +17,10 @@ description: EntityCreatePortalEvent
 > Thrown when a Living Entity creates a portal in a world.
 >
 > @deprecated Use {@link PortalCreateEvent}
+>
+> 当某生物创建传送门时触发。
+>
+> @deprecated 本事件已过时，请监听 `PortalCreateEvent` 。
 
 ### 方法列表
 
@@ -25,6 +29,8 @@ description: EntityCreatePortalEvent
 方法声明: public LivingEntity getEntity()
 
 方法签名: ()Lorg/bukkit/entity/LivingEntity;
+
+> 译注：请不要使用本事件。本事件已经过时。
 
 #### getBlocks
 
@@ -35,6 +41,8 @@ description: EntityCreatePortalEvent
 > Gets a list of all blocks associated with the portal.
 >
 > @return List of blocks that will be changed.
+>
+> 译注：请不要使用本事件。本事件已经过时。
 
 #### isCancelled
 
@@ -57,6 +65,8 @@ description: EntityCreatePortalEvent
 > Gets the type of portal that is trying to be created.
 >
 > @return Type of portal.
+>
+> 译注：请不要使用本事件。本事件已经过时。
 
 #### getHandlers
 
