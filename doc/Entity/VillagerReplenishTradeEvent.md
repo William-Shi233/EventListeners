@@ -23,6 +23,14 @@ description: VillagerReplenishTradeEvent
 > {@link MerchantRecipe#getUses() uses} of the affected {@link #getRecipe()
 >
 > MerchantRecipe} to <code>0</code>.
+>
+> 当村民将要为自己的某个交易项补货时触发。
+>
+> 如果本事件没有被取消，则该 `MerchantRecipe` 的 `MerchantRecipe#getUses()` 将会被重置为零。
+>
+> 译注：参见 `MineCraft Wiki` 中关于村民及流浪商人交易机制的相关页面 [https://minecraft.fandom.com/wiki/Trading#Mechanics](https://minecraft.fandom.com/wiki/Trading#Mechanics) 可知，村民的交易项不能无限制地交易。在交易一定次数后，该交易项会进入缺货状态，直至村民前往工作方块补货。
+>
+> 所谓 `MerchantRecipe` ，即“交易项”。所谓 `MerchantRecipe#getUses()` ，即该交易项已经交易过的次数。如果交易次数达到上限则交易项缺货。补货会使得交易项的交易次数变为零。
 
 ### 方法列表
 
@@ -35,6 +43,10 @@ description: VillagerReplenishTradeEvent
 > Get the recipe to replenish.
 >
 > @return the replenished recipe
+>
+> 该方法用于获取将要补货的交易项。
+>
+> @return 将要补货的交易项。
 
 #### setRecipe
 
@@ -45,6 +57,10 @@ description: VillagerReplenishTradeEvent
 > Set the recipe to replenish.
 >
 > @param recipe the replenished recipe
+>
+> 该方法用于设置将要补货的交易项。
+>
+> @param 将要补货的交易项。
 
 #### getBonus
 
@@ -59,6 +75,8 @@ description: VillagerReplenishTradeEvent
 > @deprecated MC 1.14 has changed how villagers restock their trades. Use
 >
 > {@link MerchantRecipe#getUses()}.
+>
+> @deprecated 该方法已过时。自 `1.14` 起，`MineCraft` 修改了村民为交易项补货的机制。请使用 `MerchantRecipe#getUses()` 方法。
 
 #### setBonus
 
@@ -73,6 +91,8 @@ description: VillagerReplenishTradeEvent
 > @deprecated MC 1.14 has changed how villagers restock their trades. This
 >
 > has no effect anymore.
+>
+> @deprecated 该方法已过时。自 `1.14` 起，`MineCraft` 修改了村民为交易项补货的机制。本方法已经不会生效。
 
 #### isCancelled
 
@@ -91,6 +111,8 @@ description: VillagerReplenishTradeEvent
 方法声明: public AbstractVillager getEntity()
 
 方法签名: ()Lorg/bukkit/entity/AbstractVillager;
+
+> 译注：无文档。该方法用于获取将要补货的村民。
 
 #### getHandlers
 
