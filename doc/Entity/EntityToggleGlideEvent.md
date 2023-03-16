@@ -27,6 +27,20 @@ description: EntityToggleGlideEvent
 > </ul>
 >
 > This can be visually estimated by the animation in which a player turns horizontal.
+>
+> 当实体的滑翔状态发生变化时触发。实体借助鞘翅可以进行滑翔。
+>
+> 本事件被触发的情景包括：
+>
+> <ul>
+>
+> <li>穿有鞘翅的玩家在半空按下跳跃键</li>
+>
+> <li>玩家（穿有鞘翅）滑翔时降落到地面上</li>
+>
+> </ul>
+>
+> 自视觉角度而言，玩家开始滑翔时会出现一段自垂直站立状态变为水平俯身状态的动画，因此很容易判断出玩家是将要进入滑翔状态还是终止滑翔。
 
 ### 方法列表
 
@@ -47,6 +61,8 @@ description: EntityToggleGlideEvent
 方法声明: public boolean isGliding()
 
 方法签名: ()Z
+
+> 译注：无文档。该方法用于获取实体是否将要进入滑翔状态。如本方法返回 `true` 则说明实体将开始滑翔。
 
 #### getHandlers
 
