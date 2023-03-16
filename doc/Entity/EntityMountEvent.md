@@ -15,6 +15,8 @@ description: EntityMountEvent
 ### 类描述
 
 > Called when an entity attempts to ride another entity.
+>
+> 当某实体尝试骑乘另一实体时触发。
 
 ### 方法列表
 
@@ -23,6 +25,8 @@ description: EntityMountEvent
 方法声明: public Entity getMount()
 
 方法签名: ()Lorg/bukkit/entity/Entity;
+
+> 译注：无文档。该方法用于获取被骑乘的实体。
 
 #### isCancelled
 
