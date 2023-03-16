@@ -64,7 +64,7 @@ description: PotionSplashEvent
 >
 > 译注：文档中称本方法的返回值类型为“列表”，但方法签名中返回值为 `Collection` 类型。
 > 
-> 在 `Bukkit` 服务端中，本方法返回值是一个 `ArrayList` 。然而本事件不一定是被服务端所触发的。如果由插件实现，则其所提供的集合类型未必是 `ArrayList` 类。因此建议不要随意将本方法的返回值由 `Collection` 转型为 `List` 或 `ArrayList` 。
+> 在 `1.16.5` 版本 `Spigot` 服务端中，本方法返回值是一个 `ArrayList` 。然而本事件不一定是被服务端所触发的。如果由插件实现，则其所提供的集合类型未必是 `ArrayList` 类。因此建议不要随意将本方法的返回值由 `Collection` 转型为 `List` 或 `ArrayList` 。
 
 #### getIntensity
 
