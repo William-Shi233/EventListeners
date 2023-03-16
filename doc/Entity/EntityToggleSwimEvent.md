@@ -15,6 +15,8 @@ description: EntityToggleSwimEvent
 ### 类描述
 
 > Sent when an entity's swimming status is toggled.
+>
+> 当实体游泳状态切换时触发。
 
 ### 方法列表
 
@@ -35,6 +37,8 @@ description: EntityToggleSwimEvent
 方法声明: public boolean isSwimming()
 
 方法签名: ()Z
+
+> 译注：无文档。该方法用于获取实体是否将要进入游泳状态。如本方法返回 `true` 则说明实体将开始游泳。
 
 #### getHandlers
 
