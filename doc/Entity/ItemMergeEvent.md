@@ -14,6 +14,8 @@ description: ItemMergeEvent
 
 ### 类描述
 
+> 译注：无文档。本事件在两个掉落的物品堆实体数量叠加，合并为一个实体时触发。
+
 ### 方法列表
 
 #### isCancelled
@@ -34,6 +36,8 @@ description: ItemMergeEvent
 
 方法签名: ()Lorg/bukkit/entity/Item;
 
+> 译注：无文档。该方法用于获取合并过程中可能会消失的物品堆实体。
+
 #### getTarget
 
 方法声明: public Item getTarget()
@@ -43,6 +47,10 @@ description: ItemMergeEvent
 > Gets the Item entity the main Item is being merged into.
 >
 > @return The Item being merged with
+>
+> 该方法用于获取合并过程中数量将会增加的物品堆实体。
+>
+> @return 合并过程中数量将会增加的物品堆实体。
 
 #### getHandlers
 
