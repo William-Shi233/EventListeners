@@ -36,7 +36,7 @@ description: PigZombieAngerEvent
 >
 > @return triggering entity, or null
 >
-> 该方法用于获取导致猪灵愤怒程度变化的实体（如有）。
+> 该方法用于获取导致猪灵愤怒程度变化的实体（如存在）。
 >
 > @return 导致猪灵愤怒程度变化的实体，如没有则返回 `null` 。
 
