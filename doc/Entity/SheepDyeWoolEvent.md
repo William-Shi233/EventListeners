@@ -15,6 +15,8 @@ description: SheepDyeWoolEvent
 ### 类描述
 
 > Called when a sheep's wool is dyed
+>
+> 当羊身上的羊毛被染色时触发。
 
 ### 方法列表
 
@@ -36,6 +38,8 @@ description: SheepDyeWoolEvent
 
 方法签名: ()Lorg/bukkit/entity/Sheep;
 
+> 译注：无文档。该方法用于获取事件中的羊。
+
 #### getPlayer
 
 方法声明: public Player getPlayer()
@@ -45,6 +49,10 @@ description: SheepDyeWoolEvent
 > Returns the player dyeing the sheep, if available.
 >
 > @return player or null
+>
+> 该方法用于获取给羊染色的玩家（如果能获取到）。
+>
+> @return 可能返回给羊染色的玩家对象，也可能返回 `null` 。
 
 #### getColor
 
@@ -55,6 +63,10 @@ description: SheepDyeWoolEvent
 > Gets the DyeColor the sheep is being dyed
 >
 > @return the DyeColor the sheep is being dyed
+>
+> 该方法用于获取羊将要被染上的颜色。
+>
+> @return 羊将要被染上的颜色。
 
 #### setColor
 
@@ -65,6 +77,10 @@ description: SheepDyeWoolEvent
 > Sets the DyeColor the sheep is being dyed
 >
 > @param color the DyeColor the sheep will be dyed
+>
+> 该方法用于设置羊将要被染上的颜色。
+>
+> @param 羊将要被染上的颜色。
 
 #### getHandlers
 
