@@ -17,6 +17,12 @@ description: LingeringPotionSplashEvent
 ### 类描述
 
 > Called when a splash potion hits an area
+>
+> 当喷溅型药水被泼洒于一片区域之上时触发。
+>
+> 译注：本事件文档与 `PotionSplashEvent` 一致，不够准确。本事件在滞留型药水被泼洒在一片区域之上时触发。
+> 
+> 文档中提到“Splash Potion”，其中“Splash”意为喷溅。滞留型药水与喷溅型药水都可以被抛掷，而后喷溅。从这一角度看来，如将“Splash Potion”译作“可被泼洒的药水”，则本文档无误。但是“Splash Potion”在更多情况下系专有名词，仅指喷溅型药水，一般不用于指代滞留型药水。因此本文档不够准确。应当将“Splash Potion”改为“Lingering Potion”。
 
 ### 方法列表
 
@@ -25,6 +31,8 @@ description: LingeringPotionSplashEvent
 方法声明: public ThrownPotion getEntity()
 
 方法签名: ()Lorg/bukkit/entity/ThrownPotion;
+
+> 译注：无文档。该方法用于获取被掷出的药水瓶实体。
 
 #### getAreaEffectCloud
 
@@ -35,6 +43,10 @@ description: LingeringPotionSplashEvent
 > Gets the AreaEffectCloud spawned
 >
 > @return The spawned AreaEffectCloud
+>
+> 该方法用于获取将要生成的药水云实体。
+>
+> @return 将要生成的药水云实体。
 
 #### isCancelled
 
