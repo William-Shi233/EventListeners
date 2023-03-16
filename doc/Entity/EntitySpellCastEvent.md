@@ -15,6 +15,10 @@ description: EntitySpellCastEvent
 ### 类描述
 
 > Called when a {@link Spellcaster} casts a spell.
+>
+> 当某一具有施咒能力的生物释放咒语时触发。
+>
+> 译注：所谓“具有施咒能力的生物”，目前仅有幻术师和唤魔者两种。
 
 ### 方法列表
 
@@ -23,6 +27,8 @@ description: EntitySpellCastEvent
 方法声明: public Spellcaster getEntity()
 
 方法签名: ()Lorg/bukkit/entity/Spellcaster;
+
+> 译注：无文档。该方法用于获取释放咒语的生物。
 
 #### getSpell
 
@@ -37,6 +43,12 @@ description: EntitySpellCastEvent
 > {@link Spellcaster#getSpell()}.
 >
 > @return the spell to cast
+>
+> 该方法用于获取事件中释放了何种类型的咒语。
+>
+> 本方法是 `Spellcaster#getSpell()` 方法的简写。
+>
+> @return 事件中释放了何种类型的咒语。
 
 #### setCancelled
 
