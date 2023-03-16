@@ -17,6 +17,8 @@ description: ItemSpawnEvent
 ### 类描述
 
 > Called when an item is spawned into a world
+>
+> 当掉落的物品堆实体生成时触发。
 
 ### 方法列表
 
@@ -25,3 +27,5 @@ description: ItemSpawnEvent
 方法声明: public Item getEntity()
 
 方法签名: ()Lorg/bukkit/entity/Item;
+
+> 译注：无文档。该方法用于获取生成的物品堆实体。
