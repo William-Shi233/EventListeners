@@ -15,6 +15,8 @@ description: HorseJumpEvent
 ### 类描述
 
 > Called when a horse jumps.
+>
+> 当一匹马跳跃时触发。
 
 ### 方法列表
 
@@ -31,12 +33,16 @@ description: HorseJumpEvent
 方法签名: (Z)V
 
 > @deprecated horse jumping was moved client side.
+>
+> @deprecated 该方法已过时。马的跳跃动作已经是客户端行为了。
 
 #### getEntity
 
 方法声明: public AbstractHorse getEntity()
 
 方法签名: ()Lorg/bukkit/entity/AbstractHorse;
+
+> 译注：无文档。该方法用于获取事件中跳跃的马。
 
 #### getPower
 
@@ -71,6 +77,14 @@ description: HorseJumpEvent
 > AbstractHorse#setJumpStrength(double)}.
 >
 > @return jump strength
+>
+> 该方法用于获取跳跃的能量。
+>
+> 跳跃的能量决定了马所具备的跳跃能力有几分将要发挥到此次跳跃中去。能量与马的跳跃力量相乘，就决定了此次跳跃所能达到的高度。如果能量为零，则马将无法发挥任何力量。如果能量为一，则马将发挥全部力量。如果有插件将马的能量设为大于一的值，则马将会发挥超乎常规的力量。
+>
+> 能量不会影响一匹马所能跳过的最大高度，能量只能决定马跳跃的能力将会发挥多少。如果要提高马的跳跃能力，请参见 `bstractHorse#setJumpStrength(double)` 方法。
+>
+> @return 跳跃的能量。
 
 #### setPower
 
@@ -97,6 +111,16 @@ description: HorseJumpEvent
 > @param power power of the jump
 >
 > @deprecated horse jumping was moved client side.
+>
+> 该方法设置获取跳跃的能量。
+>
+> 如果将马的能量设为大于一的值，则马将会发挥超乎常规的力量。
+>
+> 如果将马的能量设为零，则跳跃动画仍将被播放，但马不会离地。只有取消本事件才能让跳跃动画取消播放。
+>
+> @param 跳跃的能量。
+>
+> @deprecated 该方法已过时。马的跳跃动作已经是客户端行为了。
 
 #### getHandlers
 
