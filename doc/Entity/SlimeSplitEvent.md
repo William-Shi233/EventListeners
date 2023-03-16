@@ -15,6 +15,8 @@ description: SlimeSplitEvent
 ### 类描述
 
 > Called when a Slime splits into smaller Slimes upon death
+>
+> 当史莱姆死亡，分裂出体型较小的史莱姆时触发。
 
 ### 方法列表
 
@@ -36,6 +38,8 @@ description: SlimeSplitEvent
 
 方法签名: ()Lorg/bukkit/entity/Slime;
 
+> 译注：无文档。该方法用于获取死亡的史莱姆。
+
 #### getCount
 
 方法声明: public int getCount()
@@ -45,6 +49,10 @@ description: SlimeSplitEvent
 > Gets the amount of smaller slimes to spawn
 >
 > @return the amount of slimes to spawn
+>
+> 该方法用于获取将要生成的体型较小的史莱姆的数量。
+>
+> @return 将要生成的体型较小的史莱姆的数量。
 
 #### setCount
 
@@ -55,6 +63,10 @@ description: SlimeSplitEvent
 > Sets how many smaller slimes will spawn on the split
 >
 > @param count the amount of slimes to spawn
+>
+> 该方法用于设置将要生成的体型较小的史莱姆的数量。
+>
+> @param 将要生成的体型较小的史莱姆的数量。
 
 #### getHandlers
 
