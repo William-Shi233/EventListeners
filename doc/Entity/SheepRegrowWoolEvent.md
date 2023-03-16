@@ -15,6 +15,8 @@ description: SheepRegrowWoolEvent
 ### 类描述
 
 > Called when a sheep regrows its wool
+>
+> 当某只已经被剪去毛的羊重新生长出羊毛时触发。
 
 ### 方法列表
 
@@ -35,6 +37,8 @@ description: SheepRegrowWoolEvent
 方法声明: public Sheep getEntity()
 
 方法签名: ()Lorg/bukkit/entity/Sheep;
+
+> 译注：无文档。该方法用于获取事件中的羊。
 
 #### getHandlers
 
