@@ -17,6 +17,8 @@ description: ProjectileLaunchEvent
 ### 类描述
 
 > Called when a projectile is launched.
+>
+> 当抛射物被发射时触发。
 
 ### 方法列表
 
@@ -37,3 +39,5 @@ description: ProjectileLaunchEvent
 方法声明: public Projectile getEntity()
 
 方法签名: ()Lorg/bukkit/entity/Projectile;
+
+> 译注：无文档。该方法用于获取被发射的抛射物。
