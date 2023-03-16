@@ -19,6 +19,8 @@ description: EntityResurrectEvent
 > Will be called in a cancelled state if the entity does not have a totem
 >
 > equipped.
+>
+> 当某实体死亡且有机会复活时触发。如果实体没有手持不死图腾，则本事件在触发时就已然处于被取消状态。
 
 ### 方法列表
 
@@ -27,6 +29,8 @@ description: EntityResurrectEvent
 方法声明: public LivingEntity getEntity()
 
 方法签名: ()Lorg/bukkit/entity/LivingEntity;
+
+> 译注：无文档。该方法用于获取将要复活的实体。
 
 #### isCancelled
 
