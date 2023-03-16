@@ -15,6 +15,8 @@ description: ExplosionPrimeEvent
 ### 类描述
 
 > Called when an entity has made a decision to explode.
+>
+> 当某实体将要爆炸时触发。
 
 ### 方法列表
 
@@ -39,6 +41,10 @@ description: ExplosionPrimeEvent
 > Gets the radius of the explosion
 >
 > @return returns the radius of the explosion
+>
+> 该方法用于获取爆炸波及的半径。
+>
+> @return 爆炸波及的半径。
 
 #### setRadius
 
@@ -49,6 +55,10 @@ description: ExplosionPrimeEvent
 > Sets the radius of the explosion
 >
 > @param radius the radius of the explosion
+>
+> 该方法用于设置爆炸波及的半径。
+>
+> @param 爆炸波及的半径。
 
 #### getFire
 
@@ -59,6 +69,10 @@ description: ExplosionPrimeEvent
 > Gets whether this explosion will create fire or not
 >
 > @return true if this explosion will create fire
+>
+> 该方法用于获取爆炸是否会引起火焰燃烧。
+>
+> @return 如返回 `true` 则本次爆炸会引起火焰燃烧。
 
 #### setFire
 
@@ -69,6 +83,10 @@ description: ExplosionPrimeEvent
 > Sets whether this explosion will create fire or not
 >
 > @param fire true if you want this explosion to create fire
+>
+> 该方法用于设置爆炸是否会引起火焰燃烧。
+>
+> @param 如传入 `true` 则本次爆炸会引起火焰燃烧。
 
 #### getHandlers
 
