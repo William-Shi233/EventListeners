@@ -13,6 +13,10 @@ description: EntityEvent
 ### 类描述
 
 > Represents an Entity-related event
+>
+> 代表与实体有关的事件。
+>
+> 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
 ### 方法列表
 
@@ -25,6 +29,10 @@ description: EntityEvent
 > Returns the Entity involved in this event
 >
 > @return Entity who is involved in this event
+>
+> 获取事件中的实体。
+>
+> @return 触发事件的实体。
 
 #### getEntityType
 
@@ -35,3 +43,7 @@ description: EntityEvent
 > Gets the EntityType of the Entity involved in this event.
 >
 > @return EntityType of the Entity involved in this event
+>
+> 获取事件中实体的类型。
+>
+> @return 事件中实体的类型。
