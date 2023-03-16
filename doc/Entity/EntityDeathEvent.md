@@ -15,6 +15,8 @@ description: EntityDeathEvent
 ### 类描述
 
 > Thrown whenever a LivingEntity dies
+>
+> 当生物死亡时触发。
 
 ### 方法列表
 
@@ -23,6 +25,8 @@ description: EntityDeathEvent
 方法声明: public LivingEntity getEntity()
 
 方法签名: ()Lorg/bukkit/entity/LivingEntity;
+
+> 译注：无文档。该方法用于获取死亡的实体。
 
 #### getDroppedExp
 
@@ -39,6 +43,12 @@ description: EntityDeathEvent
 > question, merely how much should be created after its death.
 >
 > @return Amount of EXP to drop.
+>
+> 该方法用于获取实体死亡时所掉落的经验值。
+>
+> 本方法的返回值与实体死亡时失去的经验值无关，仅仅是指以经验球形态掉落的经验值总量。
+>
+> @return 实体死亡时所掉落的经验值。
 
 #### setDroppedExp
 
@@ -55,6 +65,12 @@ description: EntityDeathEvent
 > question, merely how much should be created after its death.
 >
 > @param exp Amount of EXP to drop.
+>
+> 该方法用于设置实体死亡时所掉落的经验值。
+>
+> 本方法不会影响实体死亡时失去的经验值，仅仅改变以经验球形态掉落的经验值总量。
+>
+> @param 实体死亡时所掉落的经验值。
 
 #### getDrops
 
@@ -65,6 +81,10 @@ description: EntityDeathEvent
 > Gets all the items which will drop when the entity dies
 >
 > @return Items to drop when the entity dies
+>
+> 该方法用于获取一个列表，其间存储有实体死亡时产生的全部掉落物。
+>
+> @return 实体死亡时产生的全部掉落物列表。
 
 #### getHandlers
 
