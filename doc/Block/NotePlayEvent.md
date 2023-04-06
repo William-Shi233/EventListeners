@@ -17,6 +17,8 @@ description: NotePlayEvent
 > Called when a note block is being played through player interaction or a
 >
 > redstone current.
+>
+> 当音符盒方块由于玩家交互或收到红石信号而被奏响时触发。
 
 ### 方法列表
 
@@ -41,6 +43,12 @@ description: NotePlayEvent
 > Gets the {@link Instrument} to be used.
 >
 > @return the Instrument
+>
+> 该方法用于获取将要发出何种乐器的声音。
+>
+> @return 将要发出何种乐器的声音。
+>
+> 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Note_Block#Instruments](https://minecraft.fandom.com/wiki/Note_Block#Instruments) 可知，音符盒所发出的声音音色随其下方方块的材质而变化，比如当音符盒下方为羊毛时，与之交互会发出吉他声。
 
 #### getNote
 
@@ -51,6 +59,10 @@ description: NotePlayEvent
 > Gets the {@link Note} to be played.
 >
 > @return the Note
+>
+> 该方法用于获取将要演奏的音符。
+>
+> @return 将要演奏的音符。
 
 #### setInstrument
 
@@ -63,6 +75,8 @@ description: NotePlayEvent
 > @param instrument the Instrument. Has no effect if null.
 >
 > @deprecated no effect on newer Minecraft versions
+>
+> @deprecated 该方法已过时。在较新版本的 `MineCraft` 中此方法无效。
 
 #### setNote
 
@@ -75,6 +89,8 @@ description: NotePlayEvent
 > @param note the Note. Has no effect if null.
 >
 > @deprecated no effect on newer Minecraft versions
+>
+> @deprecated 该方法已过时。在较新版本的 `MineCraft` 中此方法无效。
 
 #### getHandlers
 
