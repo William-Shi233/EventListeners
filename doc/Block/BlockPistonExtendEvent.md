@@ -17,6 +17,8 @@ description: BlockPistonExtendEvent
 ### 类描述
 
 > Called when a piston extends
+>
+> 当活塞臂伸出时触发。
 
 ### 方法列表
 
@@ -33,6 +35,12 @@ description: BlockPistonExtendEvent
 > @deprecated slime blocks make the value of this method
 >
 > inaccurate due to blocks being pushed at the side
+>
+> 该方法用于获取活塞伸出时将会推动的方块数量。
+>
+> @return 活塞伸出时将会推动的方块数量。
+>
+> @deprecated 该方法已过时。由于粘液块可以粘住四周的方块，使其一起被活塞推动，而本方法未能作相应计算，因而其所返回的数值已经不准确。
 
 #### getBlocks
 
@@ -45,6 +53,10 @@ description: BlockPistonExtendEvent
 > extending.
 >
 > @return Immutable list of the moved blocks.
+>
+> 该方法用于获取一个不可修改的列表，其间存储有全部因活塞臂伸出而将发生移动的方块。
+>
+> @return 将要发生移动的方块列表。
 
 #### getHandlers
 
