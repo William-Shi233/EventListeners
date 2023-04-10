@@ -45,6 +45,28 @@ description: BlockFormEvent
 > If a Block Form event is cancelled, the block will not be formed.
 >
 > @see BlockSpreadEvent
+>
+> 当一应条件合适，某方块随机生成或开始向四周蔓延时触发。
+>
+> 如欲监听某些方块蔓延的事件，请参见 `BlockSpreadEvent` 。本事件在方块“随机”生成时触发。
+>
+> 本事件触发的情景包括：
+>
+> <ul>
+>
+> <li>在暴风雪天气下，地面生成雪方块。
+>
+> <li>在针叶林、雪原等温度较低的生物群系里，水结冰。
+>
+> <li>岩浆与水接触，生成圆石或黑曜石。
+>
+> <li>混凝土粉末与水接触，生成混凝土方块。
+>
+> </ul>
+>
+> 如果本事件被取消，则不会生成新方块。
+>
+> @see 参见 `BlockSpreadEvent` 。
 
 ### 方法列表
 
