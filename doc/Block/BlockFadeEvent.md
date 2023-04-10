@@ -39,6 +39,26 @@ description: BlockFadeEvent
 > If a Block Fade event is cancelled, the block will not fade, melt or
 >
 > disappear.
+>
+> 当一应条件合适，某方块枯萎、融化或消失时触发。
+>
+> 本事件触发的情景包括：
+>
+> <ul>
+>
+> <li>雪方块离光源过近，因而融化。
+>
+> <li>冰方块离光源过近，因而融化。
+>
+> <li>火焰在燃烧一段时间后自然熄灭，并且没有摧毁其下的燃料方块。
+>
+> <li>由于缺少水源，珊瑚枯萎。
+>
+> <li>由于小海龟破壳而出，海龟蛋方块破碎。
+>
+> </ul>
+>
+> 如果本事件被取消，则方块不会枯萎、融化或消失。
 
 ### 方法列表
 
@@ -55,6 +75,10 @@ description: BlockFadeEvent
 > @return The block state of the block that will be fading, melting or
 >
 > disappearing
+>
+> 该方法用于获取即将枯萎、融化或消失的方块的新块状态。
+>
+> @return 即将枯萎、融化或消失的方块的新块状态。
 
 #### isCancelled
 
