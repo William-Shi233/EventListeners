@@ -15,6 +15,8 @@ description: BlockExplodeEvent
 ### 类描述
 
 > Called when a block explodes
+>
+> 当方块爆炸时触发。
 
 ### 方法列表
 
@@ -41,6 +43,10 @@ description: BlockExplodeEvent
 > from the explosion event.
 >
 > @return All blown-up blocks
+>
+> 该方法用于获取一个列表，其间存储有全部受爆炸破坏的方块。
+>
+> @return 全部受爆炸破坏的方块列表。
 
 #### getYield
 
@@ -51,6 +57,10 @@ description: BlockExplodeEvent
 > Returns the percentage of blocks to drop from this explosion
 >
 > @return The yield.
+>
+> 该方法用于获取爆炸中被炸毁方块的掉落概率。
+>
+> @return 被炸毁方块的掉落概率。
 
 #### setYield
 
@@ -61,6 +71,10 @@ description: BlockExplodeEvent
 > Sets the percentage of blocks to drop from this explosion
 >
 > @param yield The new yield percentage
+>
+> 该方法用于设置爆炸中被炸毁方块的掉落概率。
+>
+> @param 被炸毁方块的掉落概率。
 
 #### getHandlers
 
