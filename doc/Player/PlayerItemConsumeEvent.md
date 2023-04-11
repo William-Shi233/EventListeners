@@ -18,13 +18,9 @@ description: PlayerItemConsumeEvent
 >
 > potion, milk bucket).
 >
-> <br>
->
 > If the ItemStack is modified the server will use the effects of the new
 >
 > item and not remove the original one from the player's inventory.
->
-> <br>
 >
 > If the event is cancelled the effect will not be applied and the item will
 >

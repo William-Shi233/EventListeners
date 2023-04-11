@@ -46,13 +46,9 @@ description: PlayerBedLeaveEvent
 >
 > {@link Player}.
 >
-> <br>
->
 > This does not remove any existing spawn location, only prevent it from
 >
 > being changed (if true).
->
-> <br>
 >
 > To change a {@link Player}'s spawn location, use
 >
@@ -80,13 +76,9 @@ description: PlayerBedLeaveEvent
 >
 > {@link Player}.
 >
-> <br>
->
 > This will not remove any existing spawn location, only prevent it from
 >
 > being changed (if true).
->
-> <br>
 >
 > To change a {@link Player}'s spawn location, use
 >

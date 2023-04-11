@@ -20,8 +20,6 @@ description: PlayerInteractAtEntityEvent
 >
 > also contains the location where the entity was clicked.
 >
-> <br>
->
 > Note that the client may sometimes spuriously send this packet in addition to {@link PlayerInteractEntityEvent}.
 >
 > Users are advised to listen to this (parent) class unless specifically required.

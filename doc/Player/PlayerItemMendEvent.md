@@ -16,8 +16,6 @@ description: PlayerItemMendEvent
 
 > Represents when a player has an item repaired via the Mending enchantment.
 >
-> <br>
->
 > This event is fired directly before the {@link PlayerExpChangeEvent}, and the
 >
 > results of this event directly affect the {@link PlayerExpChangeEvent}.

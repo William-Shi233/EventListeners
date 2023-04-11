@@ -90,13 +90,9 @@ description: ProjectileHitEvent
 >
 > then use {@link FireworkExplodeEvent}).
 >
-> <br>
->
 > In the case of a block, some blocks (eg target block, bell) will not
 >
 > perform the action associated.
->
-> <br>
 >
 > This does NOT prevent block collisions, and explosions will still occur
 >

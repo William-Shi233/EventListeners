@@ -114,8 +114,6 @@ description: BlockCanBuildEvent
 
 > Gets the player who placed the block involved in this event.
 >
-> <br>
->
 > May be null for legacy calls of the event.
 >
 > @return The Player who placed the block involved in this event

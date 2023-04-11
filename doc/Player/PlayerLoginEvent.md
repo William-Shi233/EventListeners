@@ -16,8 +16,6 @@ description: PlayerLoginEvent
 
 > Stores details for players attempting to log in.
 >
-> <br>
->
 > Note that this event is called <i>early</i> in the player initialization
 >
 > process. It is recommended that most options involving the Player

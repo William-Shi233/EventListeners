@@ -16,13 +16,9 @@ description: PlayerHarvestBlockEvent
 
 > This event is called whenever a player harvests a block.
 >
-> <br>
->
 > A 'harvest' is when a block drops an item (usually some sort of crop) and
 >
 > changes state, but is not broken in order to drop the item.
->
-> <br>
 >
 > This event is not called for when a block is broken, to handle that, listen
 >

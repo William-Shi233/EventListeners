@@ -86,13 +86,9 @@ description: PlayerBedEnterEvent
 >
 > the default outcome described by {@link #getBedEnterResult()}.
 >
-> <br>
->
 > {@link org.bukkit.event.Event.Result#DENY} will prevent the player from sleeping. This has the
 >
 > same effect as canceling the event via {@link #setCancelled(boolean)}.
->
-> <br>
 >
 > {@link org.bukkit.event.Event.Result#DEFAULT} will result in the outcome described by
 >

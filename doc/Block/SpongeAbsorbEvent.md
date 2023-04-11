@@ -16,13 +16,9 @@ description: SpongeAbsorbEvent
 
 > Called when a sponge absorbs water from the world.
 >
-> <br>
->
 > The world will be in its previous state, and {@link #getBlocks()} will
 >
 > represent the changes to be made to the world, if the event is not cancelled.
->
-> <br>
 >
 > As this is a physics based event it may be called multiple times for "the
 >
@@ -45,8 +41,6 @@ description: SpongeAbsorbEvent
 方法签名: ()Ljava/util/List;
 
 > Get a list of all blocks to be removed by the sponge.
->
-> <br>
 >
 > This list is mutable and contains the blocks in their removed state, i.e.
 >

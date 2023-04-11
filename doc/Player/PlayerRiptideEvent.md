@@ -18,8 +18,6 @@ description: PlayerRiptideEvent
 >
 > their trident to propel them through the air.
 >
-> <br>
->
 > N.B. the riptide action is currently performed client side, so manipulating
 >
 > the player in this event may have undesired effects.

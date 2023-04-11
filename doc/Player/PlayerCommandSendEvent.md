@@ -18,8 +18,6 @@ description: PlayerCommandSendEvent
 >
 > the player.
 >
-> <br>
->
 > Commands may be removed from display using this event, but implementations
 >
 > are not required to securely remove all traces of the command. If secure
@@ -43,8 +41,6 @@ description: PlayerCommandSendEvent
 方法签名: ()Ljava/util/Collection;
 
 > Returns a mutable collection of all top level commands to be sent.
->
-> <br>
 >
 > It is not legal to add entries to this collection, only remove them.
 >

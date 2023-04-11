@@ -18,8 +18,6 @@ description: EntityEnterBlockEvent
 >
 > This event is called for bees entering a bee hive.
 >
-> <br>
->
 > It is not called when a silverfish "enters" a stone block. For that listen to
 >
 > the {@link EntityChangeBlockEvent}.

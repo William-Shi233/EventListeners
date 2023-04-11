@@ -16,15 +16,11 @@ description: BlockPhysicsEvent
 
 > Thrown when a block physics check is called.
 >
-> <br>
->
 > This event is a high frequency event, it may be called thousands of times per
 >
 > a second on a busy server. Plugins are advised to listen to the event with
 >
 > caution and only perform lightweight checks when using it.
->
-> <br>
 >
 > In addition to this, cancelling the event is liable to leave the world in an
 >
@@ -35,8 +31,6 @@ description: BlockPhysicsEvent
 > something, there is no guarantee that the floating block will persist across
 >
 > server restarts or map upgrades.
->
-> <br>
 >
 > Plugins should also note that where possible this event may only called for
 >

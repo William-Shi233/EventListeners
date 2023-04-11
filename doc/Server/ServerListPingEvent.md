@@ -18,8 +18,6 @@ description: ServerListPingEvent
 >
 > checked and removed by {@link #iterator() iterating} over this event.
 >
-> <br>
->
 > <b>Note:</b> The players in {@link #iterator()} will not be shown in the
 >
 > server info if {@link Bukkit#getHideOnlinePlayers()} is true.
@@ -183,8 +181,6 @@ description: ServerListPingEvent
 > returned by {@link #getNumPlayers()}, and will not be returned again by
 >
 > any new iterator.
->
-> <br>
 >
 > <b>Note:</b> The players here will not be shown in the server info if
 >

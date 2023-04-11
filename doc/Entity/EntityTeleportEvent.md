@@ -16,8 +16,6 @@ description: EntityTeleportEvent
 
 > Thrown when a non-player entity is teleported from one location to another.
 >
-> <br>
->
 > This may be as a result of natural causes (Enderman, Shulker), pathfinding
 >
 > (Wolf), or commands (/teleport).

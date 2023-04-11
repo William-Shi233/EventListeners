@@ -16,8 +16,6 @@ description: TabCompleteEvent
 >
 > console) attempts to tab complete.
 >
-> <br>
->
 > Note that due to client changes, if the sender is a Player, this event will
 >
 > only begin to fire once command arguments are specified, not commands

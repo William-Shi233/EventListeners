@@ -36,8 +36,6 @@ description: RaidFinishEvent
 
 > Returns an immutable list contains all winners.
 >
-> <br>
->
 > <b>Note: Players who are considered as heroes but were not online at the
 >
 > end would not be included in this list.</b>

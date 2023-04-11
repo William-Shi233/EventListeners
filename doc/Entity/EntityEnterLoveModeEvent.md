@@ -16,8 +16,6 @@ description: EntityEnterLoveModeEvent
 
 > Called when an entity enters love mode.
 >
-> <br>
->
 > This can be cancelled but the item will still be consumed that was used to
 >
 > make the entity enter into love mode.

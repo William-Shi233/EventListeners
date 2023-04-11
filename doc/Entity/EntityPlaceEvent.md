@@ -18,8 +18,6 @@ description: EntityPlaceEvent
 >
 > on a block.
 >
-> <br>
->
 > Note that this event is currently only fired for four specific placements:
 >
 > armor stands, boats, minecarts, and end crystals.
