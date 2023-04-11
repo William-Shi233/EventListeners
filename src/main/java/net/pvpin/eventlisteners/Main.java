@@ -19,8 +19,8 @@ import java.util.*;
  * @author William_Shi
  */
 public class Main {
-    private static final String OUTPUT_DIR = "C:\\Users/williamshi/Documents/Code/EventListeners/doc";
-    private static final String SUMMARY_MKD = "C:\\Users/williamshi/Documents/Code/EventListeners/doc/SUMMARY.md";
+    private static final String OUTPUT_DIR = "C:\\Users/williamshi/Documents/Code/EventListeners/docs";
+    private static final String SUMMARY_MKD = "C:\\Users/williamshi/Documents/Code/EventListeners/SUMMARY.md";
 
     public static void main(String[] args) {
         new File(OUTPUT_DIR).mkdirs();
@@ -63,7 +63,7 @@ public class Main {
                 var list = new ArrayList<>(entry.getValue());
                 Collections.sort(list);
                 for (String simpleName : list) {
-                    summaryJoiner.add("* [" + simpleName + "](" + entry.getKey() + "/" + simpleName + ".md)");
+                    summaryJoiner.add("* [" + simpleName + "](docs/" + entry.getKey() + "/" + simpleName + ".md)");
                 }
             }
             var summaryFile = new File(SUMMARY_MKD);
