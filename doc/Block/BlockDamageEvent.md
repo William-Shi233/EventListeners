@@ -24,7 +24,7 @@ description: BlockDamageEvent
 >
 > 如果本事件被取消，则方块将不会再处于被挖掘中的状态。
 >
-> 译注：本事件是在玩家开始挖掘时触发，只要左键点击了一瞬，就可以触发此事件。而 `BlockBreakEvent` 是在方块被完全破坏以后触发的。
+> 译注：本事件是在玩家开始挖掘时触发，只要左键点击了一瞬，就可以触发此事件。而 `BlockBreakEvent` 是在方块被完全破坏以后触发的。如果对该 `BlockBreakEvent` 对象调用 `isDropItems()` 方法，返回值不为 `false` ，且该 `BlockBreakEvent` 未被取消，则会在 `BlockBreakEvent` 触发后再触发 `BlockDropItemEvent` 。
 > 
 > 客户端显示可能存在延迟，有时取消事件后，挖掘方块的玩家仍然可以观察到挖掘过程中方块上的裂纹，即使停止挖掘，这个裂纹仍然不会消失。此时可以从其他玩家的视角来观察，以确定挖掘是否停止。
 
