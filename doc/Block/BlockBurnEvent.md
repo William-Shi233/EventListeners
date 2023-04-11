@@ -21,6 +21,12 @@ description: BlockBurnEvent
 > If a Block Burn event is cancelled, the block will not be destroyed as a
 >
 > result of being burnt by fire.
+>
+> 当某方块被火焰所烧毁时触发。
+>
+> 如果本事件被取消，则方块不会被火焰所烧毁。
+>
+> 译注：有时，火焰在燃烧一段时间后自然熄灭，不会烧毁被点燃的方块。此时可以监听 `BlockFadeEvent` 。
 
 ### 方法列表
 
@@ -35,6 +41,10 @@ description: BlockBurnEvent
 > @return The Block that ignited and burned this block, or null if no
 >
 > source block exists
+>
+> 该方法用于获取点燃涉事方块的火源方块。
+> 
+> @return 点燃涉事方块的火源方块。如果火源方块不存在，则返回 `null` 。
 
 #### isCancelled
 
