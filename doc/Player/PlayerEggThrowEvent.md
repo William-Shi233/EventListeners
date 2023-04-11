@@ -142,8 +142,6 @@ description: PlayerEggThrowEvent
 
 > Change the number of mobs coming out of the hatched egg
 >
-> <p>
->
 > The boolean hatching will override this number. Ie. If hatching =
 >
 > false, this number will not matter

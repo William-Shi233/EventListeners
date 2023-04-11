@@ -22,8 +22,6 @@ description: PlayerPortalEvent
 >
 > portal which will generate an exit portal.
 >
-> <p>
->
 > For other entities see {@link org.bukkit.event.entity.EntityPortalEvent}
 >
 > 当玩家步入传送门准备传送，且该传送门的出口处将要生成一个出口时触发。

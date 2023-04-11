@@ -24,19 +24,13 @@ description: InventoryDragEvent
 >
 > DragType returned by {@link #getType()}.
 >
-> <p>
->
 > Canceling this event will result in none of the changes described in
 >
 > {@link #getNewItems()} being applied to the Inventory.
 >
-> <p>
->
 > Because InventoryDragEvent occurs within a modification of the Inventory,
 >
 > not all Inventory related methods are safe to use.
->
-> <p>
 >
 > The following should never be invoked by an EventHandler for
 >
@@ -66,15 +60,11 @@ description: InventoryDragEvent
 >
 > other methods could potentially create issues as well.
 >
-> <p>
->
 > Assuming the EntityHuman associated with this event is an instance of a
 >
 > Player, manipulating the MaxStackSize or contents of an Inventory will
 >
 > require an Invocation of {@link Player#updateInventory()}.
->
-> <p>
 >
 > Any modifications to slots that are modified by the results of this
 >
@@ -192,8 +182,6 @@ description: InventoryDragEvent
 
 > Sets the result cursor after the drag is done.
 >
-> <p>
->
 > Changing this item stack changes the cursor item. Note that changing
 >
 > the affected "dragged" slots does not change this ItemStack, nor does
@@ -235,8 +223,6 @@ description: InventoryDragEvent
 > Gets the DragType that describes the behavior of ItemStacks placed
 >
 > after this InventoryDragEvent.
->
-> <p>
 >
 > The ItemStacks and the raw slots that they're being applied to can be
 >

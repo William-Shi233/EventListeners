@@ -14,8 +14,6 @@ description: AsyncPlayerPreLoginEvent
 
 > Stores details for players attempting to log in.
 >
-> <p>
->
 > This event is asynchronous, and not run using main thread.
 >
 > 本事件存储了试图登录服务器的玩家的有关数据。

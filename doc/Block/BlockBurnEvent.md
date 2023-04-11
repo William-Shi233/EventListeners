@@ -16,8 +16,6 @@ description: BlockBurnEvent
 
 > Called when a block is destroyed as a result of being burnt by fire.
 >
-> <p>
->
 > If a Block Burn event is cancelled, the block will not be destroyed as a
 >
 > result of being burnt by fire.

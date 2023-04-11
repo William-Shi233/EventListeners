@@ -18,13 +18,9 @@ description: InventoryClickEvent
 
 > This event is called when a player clicks in an inventory.
 >
-> <p>
->
 > Because InventoryClickEvent occurs within a modification of the Inventory,
 >
 > not all Inventory related methods are safe to use.
->
-> <p>
 >
 > The following should never be invoked by an EventHandler for
 >
@@ -54,15 +50,11 @@ description: InventoryClickEvent
 >
 > other methods could potentially create issues as well.
 >
-> <p>
->
 > Assuming the EntityHuman associated with this event is an instance of a
 >
 > Player, manipulating the MaxStackSize or contents of an Inventory will
 >
 > require an Invocation of {@link Player#updateInventory()}.
->
-> <p>
 >
 > Modifications to slots that are modified by the results of this
 >
@@ -322,8 +314,6 @@ description: InventoryClickEvent
 
 > Gets the InventoryAction that triggered this event.
 >
-> <p>
->
 > This action cannot be changed, and represents what the normal outcome
 >
 > of the event will be. To change the behavior of this
@@ -345,8 +335,6 @@ description: InventoryClickEvent
 方法签名: ()Lorg/bukkit/event/inventory/ClickType;
 
 > Gets the ClickType for this event.
->
-> <p>
 >
 > This is insulated against changes to the inventory by other plugins.
 >

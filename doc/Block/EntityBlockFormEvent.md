@@ -20,8 +20,6 @@ description: EntityBlockFormEvent
 
 > Called when a block is formed by entities.
 >
-> <p>
->
 > Examples:
 >
 > <ul>

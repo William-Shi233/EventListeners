@@ -48,8 +48,6 @@ description: InventoryOpenEvent
 >
 > be executed in the server, but will still pass to other plugins.
 >
-> <p>
->
 > If an inventory open event is cancelled, the inventory screen will not
 >
 > show.
@@ -71,8 +69,6 @@ description: InventoryOpenEvent
 > Sets the cancellation state of this event. A cancelled event will not
 >
 > be executed in the server, but will still pass to other plugins.
->
-> <p>
 >
 > If an inventory open event is cancelled, the inventory screen will not
 >

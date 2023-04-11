@@ -16,8 +16,6 @@ description: VillagerReplenishTradeEvent
 
 > Called when a {@link Villager} is about to restock one of its trades.
 >
-> <p>
->
 > If this event passes, the villager will reset the
 >
 > {@link MerchantRecipe#getUses() uses} of the affected {@link #getRecipe()

@@ -18,8 +18,6 @@ description: BlockBreakEvent
 
 > Called when a block is broken by a player.
 >
-> <p>
->
 > If you wish to have the block drop experience, you must set the experience
 >
 > value above 0. By default, experience will be set in the event if:
@@ -38,8 +36,6 @@ description: BlockBreakEvent
 >
 > </ol>
 >
-> <p>
->
 > Note:
 >
 > Plugins wanting to simulate a traditional block drop should set the block
@@ -47,8 +43,6 @@ description: BlockBreakEvent
 > to air and utilize their own methods for determining what the default drop
 >
 > for the block being broken is and what to do about it, if anything.
->
-> <p>
 >
 > If a Block Break event is cancelled, the block will not break and
 >

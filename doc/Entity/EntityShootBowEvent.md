@@ -134,8 +134,6 @@ description: EntityShootBowEvent
 >
 > the server's decision to not consume a consumable item.
 >
-> <p>
->
 > This value is ignored for entities where items are not required
 >
 > (skeletons, pillagers, etc.) or with crossbows (as no item is being

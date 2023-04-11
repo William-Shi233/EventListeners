@@ -50,8 +50,6 @@ description: AreaEffectCloudApplyEvent
 
 > Retrieves a mutable list of the effected entities
 >
-> <p>
->
 > It is important to note that not every entity in this list
 >
 > is guaranteed to be effected.  The cloud may die during the

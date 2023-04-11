@@ -56,8 +56,6 @@ description: PlayerBedEnterEvent
 
 > This controls the action to take with the bed that was clicked on.
 >
-> <p>
->
 > In case of {@link org.bukkit.event.Event.Result#DEFAULT}, the default outcome is described by
 >
 > {@link #getBedEnterResult()}.
@@ -83,8 +81,6 @@ description: PlayerBedEnterEvent
 方法签名: (Lorg/bukkit/event/Event/Result;)V
 
 > Sets the action to take with the interacted bed.
->
-> <p>
 >
 > {@link org.bukkit.event.Event.Result#ALLOW} will result in the player sleeping, regardless of
 >
@@ -130,13 +126,9 @@ description: PlayerBedEnterEvent
 >
 > prevent the player from sleeping.
 >
-> <p>
->
 > Canceling the event has the same effect as setting {@link #useBed()} to
 >
 > {@link org.bukkit.event.Event.Result#DENY}.
->
-> <p>
 >
 > For backwards compatibility reasons this also returns true if
 >
@@ -165,8 +157,6 @@ description: PlayerBedEnterEvent
 > Sets the cancellation state of this event. A canceled event will not be
 >
 > executed in the server, but will still pass to other plugins.
->
-> <p>
 >
 > Canceling this event will prevent use of the bed.
 >
@@ -239,8 +229,6 @@ description: PlayerBedEnterEvent
 > Entering the bed is prevented due to it not being night nor
 >
 > thundering currently.
->
-> <p>
 >
 > If the event is forcefully allowed during daytime, the player will
 >

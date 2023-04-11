@@ -52,8 +52,6 @@ description: HorseJumpEvent
 
 > Gets the power of the jump.
 >
-> <p>
->
 > Power is a value that defines how much of the horse's jump strength
 >
 > should be used for the jump. Power is effectively multiplied times
@@ -65,8 +63,6 @@ description: HorseJumpEvent
 > Setting power to a value above 1 will use additional jump strength
 >
 > that the horse does not usually have.
->
-> <p>
 >
 > Power does not affect how high the horse is capable of jumping, only
 >
@@ -94,13 +90,9 @@ description: HorseJumpEvent
 
 > Sets the power of the jump.
 >
-> <p>
->
 > Jump power can be set to a value above 1.0 which will increase the
 >
 > strength of this jump above the horse's actual jump strength.
->
-> <p>
 >
 > Setting the jump power to 0 will result in the jump animation still
 >

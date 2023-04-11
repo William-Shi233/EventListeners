@@ -88,8 +88,6 @@ description: InventoryInteractEvent
 >
 > Result.DENY will result in a returned value of true.
 >
-> <p>
->
 > {@inheritDoc}
 >
 > @return whether the event is cancelled
@@ -107,8 +105,6 @@ description: InventoryInteractEvent
 > interface. {@link #setResult(org.bukkit.event.Event.Result)} is preferred, as it allows
 >
 > you to specify the Result beyond Result.DENY and Result.ALLOW.
->
-> <p>
 >
 > {@inheritDoc}
 >

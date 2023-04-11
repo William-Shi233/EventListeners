@@ -70,8 +70,6 @@ description: PlayerDeathEvent
 
 > Gets how much EXP the Player should have at respawn.
 >
-> <p>
->
 > This does not indicate how much EXP should be dropped, please see
 >
 > {@link #getDroppedExp()} for that.
@@ -91,8 +89,6 @@ description: PlayerDeathEvent
 方法签名: (I)V
 
 > Sets how much EXP the Player should have at respawn.
->
-> <p>
 >
 > This does not indicate how much EXP should be dropped, please see
 >
@@ -170,8 +166,6 @@ description: PlayerDeathEvent
 
 > Gets if the Player should keep all EXP at respawn.
 >
-> <p>
->
 > This flag overrides other EXP settings
 >
 > @return True if Player should keep all pre-death exp
@@ -190,11 +184,7 @@ description: PlayerDeathEvent
 
 > Sets if the Player should keep all EXP at respawn.
 >
-> <p>
->
 > This overrides all other EXP settings
->
-> <p>
 >
 > <b>This doesn't prevent the EXP from dropping.
 >
@@ -219,8 +209,6 @@ description: PlayerDeathEvent
 方法签名: (Z)V
 
 > Sets if the Player keeps inventory on death.
->
-> <p>
 >
 > <b>This doesn't prevent the items from dropping.
 >

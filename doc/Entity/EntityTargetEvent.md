@@ -56,8 +56,6 @@ description: EntityTargetEvent
 
 > Get the entity that this is targeting.
 >
-> <p>
->
 > This will be null in the case that the event is called when the mob
 >
 > forgets its target.
@@ -78,13 +76,9 @@ description: EntityTargetEvent
 
 > Set the entity that you want the mob to target instead.
 >
-> <p>
->
 > It is possible to be null, null will cause the entity to be
 >
 > target-less.
->
-> <p>
 >
 > This is different from cancelling the event. Cancelling the event will
 >

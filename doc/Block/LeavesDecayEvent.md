@@ -16,8 +16,6 @@ description: LeavesDecayEvent
 
 > Called when leaves are decaying naturally.
 >
-> <p>
->
 > If a Leaves Decay event is cancelled, the leaves will not decay.
 >
 > 当树叶自然枯萎时触发。

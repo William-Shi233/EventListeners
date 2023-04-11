@@ -52,8 +52,6 @@ description: ExpBottleEvent
 
 > This method sets if the particle effect will be shown.
 >
-> <p>
->
 > This does not change the experience created.
 >
 > @param showEffect true indicates the effect will be shown, false
@@ -74,8 +72,6 @@ description: ExpBottleEvent
 
 > This method retrieves the amount of experience to be created.
 >
-> <p>
->
 > The number indicates a total amount to be divided into orbs.
 >
 > @return the total amount of experience to be created
@@ -93,8 +89,6 @@ description: ExpBottleEvent
 方法签名: (I)V
 
 > This method sets the amount of experience to be created.
->
-> <p>
 >
 > The number indicates a total amount to be divided into orbs.
 >

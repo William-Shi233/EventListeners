@@ -16,8 +16,6 @@ description: PigZombieAngerEvent
 
 > Called when a Pig Zombie is angered by another entity.
 >
-> <p>
->
 > If the event is cancelled, the pig zombie will not be angered.
 >
 > 当某只僵尸猪灵被其他实体激怒时触发。

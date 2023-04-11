@@ -16,8 +16,6 @@ description: BatToggleSleepEvent
 
 > Called when a bat attempts to sleep or wake up from its slumber.
 >
-> <p>
->
 > If a Bat Toggle Sleep event is cancelled, the Bat will not toggle its sleep
 >
 > state.

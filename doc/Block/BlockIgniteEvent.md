@@ -18,8 +18,6 @@ description: BlockIgniteEvent
 >
 > fire, you need to use {@link BlockPlaceEvent}.
 >
-> <p>
->
 > If a Block Ignite event is cancelled, the block will not be ignited.
 >
 > 当方块被点燃时触发。如果需要监听玩家放置一个火焰方块，请参见 `BlockPlaceEvent` 。

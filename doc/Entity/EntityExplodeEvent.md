@@ -56,8 +56,6 @@ description: EntityExplodeEvent
 
 > Returns the location where the explosion happened.
 >
-> <p>
->
 > It is not possible to get this value from the Entity as the Entity no
 >
 > longer exists in the world.

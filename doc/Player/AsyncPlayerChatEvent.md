@@ -18,8 +18,6 @@ description: AsyncPlayerChatEvent
 >
 > triggered.
 >
-> <p>
->
 > The constructor provides a boolean to indicate if the event was fired
 >
 > synchronously or asynchronously. When asynchronous, this event can be
@@ -28,15 +26,11 @@ description: AsyncPlayerChatEvent
 >
 > API.
 >
-> <p>
->
 > If a player is the direct cause of this event by an incoming packet, this
 >
 > event will be asynchronous. If a plugin triggers this event by compelling a
 >
 > player to chat, this event will be synchronous.
->
-> <p>
 >
 > Care should be taken to check {@link #isAsynchronous()} and treat the event
 >
@@ -98,8 +92,6 @@ description: AsyncPlayerChatEvent
 
 > Gets the format to use to display this chat message.
 >
-> <p>
->
 > When this event finishes execution, the first format parameter is the
 >
 > {@link Player#getDisplayName()} and the second parameter is {@link
@@ -129,8 +121,6 @@ description: AsyncPlayerChatEvent
 方法签名: (Ljava/lang/String;)V
 
 > Sets the format to use to display this chat message.
->
-> <p>
 >
 > When this event finishes execution, the first format parameter is the
 >
@@ -174,15 +164,11 @@ description: AsyncPlayerChatEvent
 
 > Gets a set of recipients that this chat message will be displayed to.
 >
-> <p>
->
 > The set returned is not guaranteed to be mutable and may auto-populate
 >
 > on access. Any listener accessing the returned set should be aware that
 >
 > it may reduce performance for a lazy set implementation.
->
-> <p>
 >
 > Listeners should be aware that modifying the list may throw {@link
 >

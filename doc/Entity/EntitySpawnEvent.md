@@ -16,8 +16,6 @@ description: EntitySpawnEvent
 
 > Called when an entity is spawned into a world.
 >
-> <p>
->
 > If an Entity Spawn event is cancelled, the entity will not spawn.
 >
 > 当某个实体生成时触发。

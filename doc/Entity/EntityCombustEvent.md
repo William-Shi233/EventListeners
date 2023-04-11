@@ -16,8 +16,6 @@ description: EntityCombustEvent
 
 > Called when an entity combusts.
 >
-> <p>
->
 > If an Entity Combust event is cancelled, the entity will not combust.
 >
 > 当实体燃烧时触发。
@@ -59,8 +57,6 @@ description: EntityCombustEvent
 方法签名: (I)V
 
 > The number of seconds the combustee should be alight for.
->
-> <p>
 >
 > This value will only ever increase the combustion time, not decrease
 >

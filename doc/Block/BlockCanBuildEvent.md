@@ -16,8 +16,6 @@ description: BlockCanBuildEvent
 
 > Called when we try to place a block, to see if we can build it here or not.
 >
-> <p>
->
 > Note:
 >
 > <ul>
@@ -51,8 +49,6 @@ description: BlockCanBuildEvent
 方法签名: ()Z
 
 > Gets whether or not the block can be built here.
->
-> <p>
 >
 > By default, returns Minecraft's answer on whether the block can be
 >

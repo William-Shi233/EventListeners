@@ -16,8 +16,6 @@ description: SignChangeEvent
 
 > Called when a sign is changed by a player.
 >
-> <p>
->
 > If a Sign Change event is cancelled, the sign will not be changed.
 >
 > 当玩家修改告示牌上的文字时触发。

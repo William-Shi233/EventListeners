@@ -52,8 +52,6 @@ description: FoodLevelChangeEvent
 >
 > should be set to.
 >
-> <p>
->
 > Where 20 is a full food bar and 0 is an empty one.
 >
 > @return The resultant food level

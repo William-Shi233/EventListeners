@@ -16,8 +16,6 @@ description: BlockGrowEvent
 
 > Called when a block grows naturally in the world.
 >
-> <p>
->
 > Examples:
 >
 > <ul>
@@ -35,8 +33,6 @@ description: BlockGrowEvent
 > <li>Turtle Egg
 >
 > </ul>
->
-> <p>
 >
 > If a Block Grow event is cancelled, the block will not grow.
 >

@@ -20,13 +20,9 @@ description: BlockSpreadEvent
 
 > Called when a block spreads based on world conditions.
 >
-> <p>
->
 > Use {@link BlockFormEvent} to catch blocks that "randomly" form instead of
 >
 > actually spread.
->
-> <p>
 >
 > Examples:
 >
@@ -37,8 +33,6 @@ description: BlockSpreadEvent
 > <li>Fire spreading.
 >
 > </ul>
->
-> <p>
 >
 > If a Block Spread event is cancelled, the block will not spread.
 >

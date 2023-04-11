@@ -18,8 +18,6 @@ description: CreatureSpawnEvent
 
 > Called when a creature is spawned into a world.
 >
-> <p>
->
 > If a Creature Spawn event is cancelled, the creature will not spawn.
 >
 > 当某个生物生成时触发。

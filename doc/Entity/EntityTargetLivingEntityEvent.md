@@ -42,13 +42,9 @@ description: EntityTargetLivingEntityEvent
 
 > Set the Entity that you want the mob to target.
 >
-> <p>
->
 > It is possible to be null, null will cause the entity to be
 >
 > target-less.
->
-> <p>
 >
 > Must be a LivingEntity, or null.
 >

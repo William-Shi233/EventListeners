@@ -16,8 +16,6 @@ description: TimeSkipEvent
 
 > Called when the time skips in a world.
 >
-> <p>
->
 > If the event is cancelled the time will not change.
 >
 > 当世界时间因为种种原因快进时触发。

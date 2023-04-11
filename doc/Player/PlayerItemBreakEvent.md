@@ -16,8 +16,6 @@ description: PlayerItemBreakEvent
 
 > Fired when a player's item breaks (such as a shovel or flint and steel).
 >
-> <p>
->
 > After this event, the item's amount will be set to {@code item amount - 1}
 >
 > and its durability will be reset to 0.

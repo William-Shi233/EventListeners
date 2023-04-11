@@ -16,8 +16,6 @@ description: PlayerStatisticIncrementEvent
 
 > Called when a player statistic is incremented.
 >
-> <p>
->
 > This event is not called for some high frequency statistics, e.g. movement
 >
 > based statistics.

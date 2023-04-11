@@ -20,8 +20,6 @@ description: PlayerInteractEvent
 >
 > {@link #getHand()}.
 >
-> <p>
->
 > This event will fire as cancelled if the vanilla behavior is to do nothing
 >
 > (e.g interacting with air). For the purpose of avoiding doubt, this means
@@ -91,8 +89,6 @@ description: PlayerInteractEvent
 > Sets the cancellation state of this event. A canceled event will not be
 >
 > executed in the server, but will still pass to other plugins
->
-> <p>
 >
 > Canceling this event will prevent use of food (player won't lose the
 >

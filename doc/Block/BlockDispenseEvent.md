@@ -16,8 +16,6 @@ description: BlockDispenseEvent
 
 > Called when an item is dispensed from a block.
 >
-> <p>
->
 > If a Block Dispense event is cancelled, the block will not dispense the
 >
 > item.
@@ -71,8 +69,6 @@ description: BlockDispenseEvent
 方法签名: ()Lorg/bukkit/util/Vector;
 
 > Gets the velocity in meters per tick.
->
-> <p>
 >
 > Note: Modifying the returned Vector will not change the velocity, you
 >

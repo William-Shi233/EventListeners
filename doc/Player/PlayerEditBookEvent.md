@@ -32,8 +32,6 @@ description: PlayerEditBookEvent
 
 > Gets the book meta currently on the book.
 >
-> <p>
->
 > Note: this is a copy of the book meta. You cannot use this object to
 >
 > change the existing book meta.
@@ -53,8 +51,6 @@ description: PlayerEditBookEvent
 方法签名: ()Lorg/bukkit/inventory/meta/BookMeta;
 
 > Gets the book meta that the player is attempting to add to the book.
->
-> <p>
 >
 > Note: this is a copy of the proposed new book meta. Use {@link
 >
@@ -79,8 +75,6 @@ description: PlayerEditBookEvent
 > Gets the inventory slot number for the book item that triggered this
 >
 > event.
->
-> <p>
 >
 > This is a slot number on the player's hotbar in the range 0-8, or -1 for
 >

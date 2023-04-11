@@ -16,8 +16,6 @@ description: EntityEnterBlockEvent
 
 > Called when an {@link Entity} enters a block and is stored in that block.
 >
-> <p>
->
 > This event is called for bees entering a bee hive.
 >
 > <br>

@@ -20,8 +20,6 @@ description: BlockDispenseArmorEvent
 >
 > nearby entity.
 >
-> <p>
->
 > If a Block Dispense Armor event is cancelled, the equipment will not be
 >
 > equipped on the target entity.

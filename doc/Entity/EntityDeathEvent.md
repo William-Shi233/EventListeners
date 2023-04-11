@@ -36,8 +36,6 @@ description: EntityDeathEvent
 
 > Gets how much EXP should be dropped from this death.
 >
-> <p>
->
 > This does not indicate how much EXP should be taken from the entity in
 >
 > question, merely how much should be created after its death.
@@ -57,8 +55,6 @@ description: EntityDeathEvent
 方法签名: (I)V
 
 > Sets how much EXP should be dropped from this death.
->
-> <p>
 >
 > This does not indicate how much EXP should be taken from the entity in
 >

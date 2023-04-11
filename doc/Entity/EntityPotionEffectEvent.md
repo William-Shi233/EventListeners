@@ -16,8 +16,6 @@ description: EntityPotionEffectEvent
 
 > Called when a potion effect is modified on an entity.
 >
-> <p>
->
 > If the event is cancelled, no change will be made on the entity.
 >
 > 当实体所携带的药水效果变化时触发。

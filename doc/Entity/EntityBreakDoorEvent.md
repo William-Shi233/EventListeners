@@ -18,8 +18,6 @@ description: EntityBreakDoorEvent
 
 > Called when an {@link Entity} breaks a door
 >
-> <p>
->
 > Cancelling the event will cause the event to be delayed
 >
 > 当实体击破一扇门时触发。

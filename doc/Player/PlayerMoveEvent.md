@@ -32,8 +32,6 @@ description: PlayerMoveEvent
 >
 > be executed in the server, but will still pass to other plugins
 >
-> <p>
->
 > If a move or teleport event is cancelled, the player will be moved or
 >
 > teleported back to the Location as defined by getFrom(). This will not
@@ -55,8 +53,6 @@ description: PlayerMoveEvent
 > Sets the cancellation state of this event. A cancelled event will not
 >
 > be executed in the server, but will still pass to other plugins
->
-> <p>
 >
 > If a move or teleport event is cancelled, the player will be moved or
 >

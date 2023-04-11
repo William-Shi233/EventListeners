@@ -20,13 +20,9 @@ description: ServerCommandEvent
 >
 > event (via {@link #setCommand(String)}) will be shown in the behavior.
 >
-> <p>
->
 > Many plugins will have <b>no use for this event</b>, and you should
 >
 > attempt to avoid using it if it is not necessary.
->
-> <p>
 >
 > Some examples of valid uses for this event are:
 >
@@ -56,8 +52,6 @@ description: ServerCommandEvent
 >
 > </ul>
 >
-> <p>
->
 > Examples of incorrect uses are:
 >
 > <ul>
@@ -66,11 +60,7 @@ description: ServerCommandEvent
 >
 > </ul>
 >
-> <p>
->
 > If the event is cancelled, processing of the command will halt.
->
-> <p>
 >
 > The state of whether or not there is a slash (<code>/</code>) at the
 >

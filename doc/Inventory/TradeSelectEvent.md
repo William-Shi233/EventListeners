@@ -20,8 +20,6 @@ description: TradeSelectEvent
 >
 > sidebar.
 >
-> <p>
->
 > This event allows the user to get the index of the trade, letting them get
 >
 > the MerchantRecipe via the Merchant.

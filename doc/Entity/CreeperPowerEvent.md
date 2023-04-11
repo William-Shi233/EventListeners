@@ -16,8 +16,6 @@ description: CreeperPowerEvent
 
 > Called when a Creeper is struck by lightning.
 >
-> <p>
->
 > If a Creeper Power event is cancelled, the Creeper will not be powered.
 >
 > 当苦力怕被闪电击中，生成闪电苦力怕时触发。
@@ -102,8 +100,6 @@ description: CreeperPowerEvent
 
 > Power change caused by a lightning bolt
 >
-> <p>
->
 > Powered state: true
 >
 > 由于被闪电击中，能量发生变化。
@@ -114,8 +110,6 @@ description: CreeperPowerEvent
 
 > Power change caused by something else (probably a plugin)
 >
-> <p>
->
 > Powered state: true
 >
 > 由于受到某些其他因素影响（很可能是插件），能量发生变化。
@@ -125,8 +119,6 @@ description: CreeperPowerEvent
 #### SET_OFF
 
 > Power change caused by something else (probably a plugin)
->
-> <p>
 >
 > Powered state: false
 >

@@ -22,13 +22,9 @@ description: PlayerCommandPreprocessEvent
 >
 > will be shown in the behavior.
 >
-> <p>
->
 > Many plugins will have <b>no use for this event</b>, and you should
 >
 > attempt to avoid using it if it is not necessary.
->
-> <p>
 >
 > Some examples of valid uses for this event are:
 >
@@ -62,8 +58,6 @@ description: PlayerCommandPreprocessEvent
 >
 > </ul>
 >
-> <p>
->
 > Examples of incorrect uses are:
 >
 > <ul>
@@ -72,11 +66,7 @@ description: PlayerCommandPreprocessEvent
 >
 > </ul>
 >
-> <p>
->
 > If the event is cancelled, processing of the command will halt.
->
-> <p>
 >
 > The state of whether or not there is a slash (<code>/</code>) at the
 >
@@ -136,8 +126,6 @@ description: PlayerCommandPreprocessEvent
 
 > Gets the command that the player is attempting to send.
 >
-> <p>
->
 > All commands begin with a special character; implementations do not
 >
 > consider the first character when executing the content.
@@ -157,8 +145,6 @@ description: PlayerCommandPreprocessEvent
 方法签名: (Ljava/lang/String;)V
 
 > Sets the command that the player will send.
->
-> <p>
 >
 > All commands begin with a special character; implementations do not
 >
@@ -201,8 +187,6 @@ description: PlayerCommandPreprocessEvent
 方法签名: ()Ljava/util/Set;
 
 > Gets a set of recipients that this chat message will be displayed to.
->
-> <p>
 >
 > The set returned is not guaranteed to be mutable and may auto-populate
 >

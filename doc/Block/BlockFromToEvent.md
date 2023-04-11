@@ -18,8 +18,6 @@ description: BlockFromToEvent
 >
 > only applies to liquid (lava and water) and teleporting dragon eggs.
 >
-> <p>
->
 > If a Block From To event is cancelled, the block will not move (the liquid
 >
 > will not flow).

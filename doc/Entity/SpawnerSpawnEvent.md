@@ -18,8 +18,6 @@ description: SpawnerSpawnEvent
 
 > Called when an entity is spawned into a world by a spawner.
 >
-> <p>
->
 > If a Spawner Spawn event is cancelled, the entity will not spawn.
 >
 > 当刷怪笼生成实体时触发。

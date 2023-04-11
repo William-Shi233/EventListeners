@@ -16,8 +16,6 @@ description: BlockPlaceEvent
 
 > Called when a block is placed by a player.
 >
-> <p>
->
 > If a Block Place event is cancelled, the block will not be placed.
 >
 > 当玩家放置方块时触发。

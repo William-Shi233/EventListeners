@@ -18,8 +18,6 @@ description: ItemDespawnEvent
 >
 > the world because it has existed for 5 minutes.
 >
-> <p>
->
 > Cancelling the event results in the item being allowed to exist for 5 more
 >
 > minutes. This behavior is not guaranteed and may change in future versions.

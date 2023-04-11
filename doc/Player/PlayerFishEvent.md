@@ -52,8 +52,6 @@ description: PlayerFishEvent
 
 > Gets the entity caught by the player.
 >
-> <p>
->
 > If player has fished successfully, the result may be cast to {@link
 >
 > org.bukkit.entity.Item}.
@@ -102,8 +100,6 @@ description: PlayerFishEvent
 
 > Gets the amount of experience received when fishing.
 >
-> <p>
->
 > Note: This value has no default effect unless the event state is {@link
 >
 > State#CAUGHT_FISH}.
@@ -123,8 +119,6 @@ description: PlayerFishEvent
 方法签名: (I)V
 
 > Sets the amount of experience received when fishing.
->
-> <p>
 >
 > Note: This value has no default effect unless the event state is {@link
 >

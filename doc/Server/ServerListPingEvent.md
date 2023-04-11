@@ -176,8 +176,6 @@ description: ServerListPingEvent
 
 > {@inheritDoc}
 >
-> <p>
->
 > Calling the {@link Iterator#remove()} method will force that particular
 >
 > player to not be displayed on the player list, decrease the size

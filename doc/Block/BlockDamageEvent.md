@@ -16,8 +16,6 @@ description: BlockDamageEvent
 
 > Called when a block is damaged by a player.
 >
-> <p>
->
 > If a Block Damage event is cancelled, the block will not be damaged.
 >
 > 当玩家尝试挖掘方块时触发。

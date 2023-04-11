@@ -106,8 +106,6 @@ description: EntityDamageEvent
 >
 > throw an {@link UnsupportedOperationException}.
 >
-> <p>
->
 > {@link DamageModifier#BASE} is always applicable.
 >
 > @param type the modifier
@@ -159,8 +157,6 @@ description: EntityDamageEvent
 方法签名: (D)V
 
 > Sets the raw amount of damage caused by the event.
->
-> <p>
 >
 > For compatibility this also recalculates the modifiers and scales
 >
@@ -291,8 +287,6 @@ description: EntityDamageEvent
 >
 > Dripstone (Stalagmite) or Berry Bush.
 >
-> <p>
->
 > Damage: variable
 >
 > 由于实体接触了方块（如仙人掌、浆果丛等）而受伤。
@@ -302,8 +296,6 @@ description: EntityDamageEvent
 #### ENTITY_ATTACK
 
 > Damage caused when an entity attacks another entity.
->
-> <p>
 >
 > Damage: variable
 >
@@ -315,8 +307,6 @@ description: EntityDamageEvent
 
 > Damage caused when an entity attacks another entity in a sweep attack.
 >
-> <p>
->
 > Damage: variable
 >
 > 由于实体遭到横扫攻击而受伤。
@@ -326,8 +316,6 @@ description: EntityDamageEvent
 #### PROJECTILE
 
 > Damage caused when attacked by a projectile.
->
-> <p>
 >
 > Damage: variable
 >
@@ -339,8 +327,6 @@ description: EntityDamageEvent
 
 > Damage caused by being put in a block
 >
-> <p>
->
 > Damage: 1
 >
 > 由于实体卡在方块内部，窒息而受伤。
@@ -350,8 +336,6 @@ description: EntityDamageEvent
 #### FALL
 
 > Damage caused when an entity falls a distance greater than 3 blocks
->
-> <p>
 >
 > Damage: fall height - 3.0
 >
@@ -363,8 +347,6 @@ description: EntityDamageEvent
 
 > Damage caused by direct exposure to fire
 >
-> <p>
->
 > Damage: 1
 >
 > 由于实体处于火焰方块中而受伤。
@@ -374,8 +356,6 @@ description: EntityDamageEvent
 #### FIRE_TICK
 
 > Damage caused due to burns caused by fire
->
-> <p>
 >
 > Damage: 1
 >
@@ -387,8 +367,6 @@ description: EntityDamageEvent
 
 > Damage caused due to a snowman melting
 >
-> <p>
->
 > Damage: 1
 >
 > 雪傀儡由于正在融化而受伤。
@@ -398,8 +376,6 @@ description: EntityDamageEvent
 #### LAVA
 
 > Damage caused by direct exposure to lava
->
-> <p>
 >
 > Damage: 4
 >
@@ -411,8 +387,6 @@ description: EntityDamageEvent
 
 > Damage caused by running out of air while in water
 >
-> <p>
->
 > Damage: 2
 >
 > 由于实体处于水中且没有氧气值而受伤。
@@ -422,8 +396,6 @@ description: EntityDamageEvent
 #### BLOCK_EXPLOSION
 
 > Damage caused by being in the area when a block explodes.
->
-> <p>
 >
 > Damage: variable
 >
@@ -437,8 +409,6 @@ description: EntityDamageEvent
 >
 > Creeper, explodes.
 >
-> <p>
->
 > Damage: variable
 >
 > 由于实体被另一实体爆炸波及而受伤（如苦力怕爆炸）。
@@ -448,8 +418,6 @@ description: EntityDamageEvent
 #### VOID
 
 > Damage caused by falling into the void
->
-> <p>
 >
 > Damage: 4 for players
 >
@@ -461,8 +429,6 @@ description: EntityDamageEvent
 
 > Damage caused by being struck by lightning
 >
-> <p>
->
 > Damage: 5
 >
 > 由于实体被闪电劈中而受伤。
@@ -473,13 +439,9 @@ description: EntityDamageEvent
 
 > Damage caused by committing suicide.
 >
-> <p>
->
 > <b>Note:</b> This is currently only used by plugins, default commands
 >
 > like /minecraft:kill use {@link #VOID} to damage players.
->
-> <p>
 >
 > Damage: variable
 >
@@ -493,8 +455,6 @@ description: EntityDamageEvent
 
 > Damage caused by starving due to having an empty hunger bar
 >
-> <p>
->
 > Damage: 1
 >
 > 由于实体饥饿值为零，过度饥饿而受伤。
@@ -505,8 +465,6 @@ description: EntityDamageEvent
 
 > Damage caused due to an ongoing poison effect
 >
-> <p>
->
 > Damage: 1
 >
 > 由于实体携带中毒药水效果而受伤。
@@ -516,8 +474,6 @@ description: EntityDamageEvent
 #### MAGIC
 
 > Damage caused by being hit by a damage potion or spell
->
-> <p>
 >
 > Damage: variable
 >
@@ -535,11 +491,7 @@ description: EntityDamageEvent
 
 > Damage caused by being hit by a falling block which deals damage
 >
-> <p>
->
 > <b>Note:</b> Not every block deals damage
->
-> <p>
 >
 > Damage: variable
 >
@@ -555,8 +507,6 @@ description: EntityDamageEvent
 >
 > enchantment.
 >
-> <p>
->
 > Damage: 1-4 (Thorns)
 >
 > 由于实体攻击了某个盔甲含有荆棘附魔的实体，被荆棘附魔造成反伤。
@@ -566,8 +516,6 @@ description: EntityDamageEvent
 #### DRAGON_BREATH
 
 > Damage caused by a dragon breathing fire.
->
-> <p>
 >
 > Damage: variable
 >
@@ -579,8 +527,6 @@ description: EntityDamageEvent
 
 > Custom damage.
 >
-> <p>
->
 > Damage: variable
 >
 > 插件造成的自定义伤害。
@@ -591,8 +537,6 @@ description: EntityDamageEvent
 
 > Damage caused when an entity runs into a wall.
 >
-> <p>
->
 > Damage: variable
 >
 > 由于实体在使用鞘翅滑翔时撞上墙壁而受伤。
@@ -602,8 +546,6 @@ description: EntityDamageEvent
 #### HOT_FLOOR
 
 > Damage caused when an entity steps on {@link Material#MAGMA_BLOCK}.
->
-> <p>
 >
 > Damage: 1
 >
@@ -617,8 +559,6 @@ description: EntityDamageEvent
 >
 > to the maxEntityCramming game rule.
 >
-> <p>
->
 > Damage: 6
 >
 > 由于实体与过多其他实体相碰撞而挤压受伤，该情况与 `maxEntityCramming` 游戏规则有关。
@@ -628,8 +568,6 @@ description: EntityDamageEvent
 #### DRYOUT
 
 > Damage caused when an entity that should be in water is not.
->
-> <p>
 >
 > Damage: 1
 >

@@ -20,8 +20,6 @@ description: PlayerChatEvent
 >
 > all of the Bukkit API, unlike the {@link AsyncPlayerChatEvent}.
 >
-> <p>
->
 > Listening to this event forces chat to wait for the main thread which
 >
 > causes delays for chat. {@link AsyncPlayerChatEvent} is the encouraged

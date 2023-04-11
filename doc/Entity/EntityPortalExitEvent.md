@@ -18,8 +18,6 @@ description: EntityPortalExitEvent
 
 > Called before an entity exits a portal.
 >
-> <p>
->
 > This event allows you to modify the velocity of the entity after they have
 >
 > successfully exited the portal.

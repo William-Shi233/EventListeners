@@ -20,8 +20,6 @@ description: EntityPortalEvent
 >
 > contact with a portal.
 >
-> <p>
->
 > For players see {@link org.bukkit.event.player.PlayerPortalEvent}
 >
 > 当某个非玩家实体步入传送门准备传送时触发。
