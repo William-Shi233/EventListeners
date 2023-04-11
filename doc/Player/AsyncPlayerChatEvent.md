@@ -88,7 +88,7 @@ description: AsyncPlayerChatEvent
 >
 > 该方法用于设置玩家尝试发送的消息字符串。这一字符串将会在 `getFormat()` 方法中被用到。
 >
-> @param 玩家尝试发送的消息字符串。
+> @param message 玩家尝试发送的消息字符串。
 
 #### getFormat
 
@@ -154,7 +154,7 @@ description: AsyncPlayerChatEvent
 >
 > 当本事件触发以后，格式中的第一个参数将会被替换为 `Player#getDisplayName()` ，第二个参数则替换为本事件 `getMessage()` 方法的返回值。
 >
-> @param 兼容 `String#format(String, Object...)` 方法的格式字符串。
+> @param format 兼容 `String#format(String, Object...)` 方法的格式字符串。
 > 
 > @throws 如果本方法底层的方法抛出了 `IllegalFormatException` ，则本方法继续向上抛出之。
 > 

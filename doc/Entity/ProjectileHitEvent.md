@@ -112,7 +112,7 @@ description: ProjectileHitEvent
 >
 > 即使取消了本事件，也不能防止抛射物与方块相撞。如果抛射物击中时将要引起爆炸，则爆炸会照常产生，除非与爆炸相应的事件也被取消。
 >
-> @param 如欲取消本事件，则传入 `true` 。
+> @param cancel 如欲取消本事件，则传入 `true` 。
 
 #### getHandlers
 

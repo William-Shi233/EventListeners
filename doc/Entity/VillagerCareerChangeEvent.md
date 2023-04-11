@@ -52,7 +52,7 @@ description: VillagerCareerChangeEvent
 >
 > 该方法用于设置村民将要从事的职业。
 >
-> @param 村民将要从事的职业。
+> @param profession 村民将要从事的职业。
 
 #### getReason
 

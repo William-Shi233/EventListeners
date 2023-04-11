@@ -138,7 +138,7 @@ description: ServerCommandEvent
 >
 > 该方法用于设置后台将要运行的指令字符串。
 >
-> @param 用户将要通过后台运行的新指令。
+> @param message 用户将要通过后台运行的新指令。
 
 #### getSender
 

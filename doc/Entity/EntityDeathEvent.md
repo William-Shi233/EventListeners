@@ -70,7 +70,7 @@ description: EntityDeathEvent
 >
 > 本方法不会影响实体死亡时失去的经验值，仅仅改变以经验球形态掉落的经验值总量。
 >
-> @param 实体死亡时所掉落的经验值。
+> @param exp 实体死亡时所掉落的经验值。
 
 #### getDrops
 

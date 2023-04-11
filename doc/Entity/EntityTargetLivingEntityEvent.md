@@ -60,4 +60,4 @@ description: EntityTargetLivingEntityEvent
 >
 > 本方法只接受 `null` 或 `LivingEntity` 类型的对象作为参数。
 >
-> @param 涉事实体的新目标。
+> @param target 涉事实体的新目标。

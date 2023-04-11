@@ -174,7 +174,7 @@ description: EntityDamageEvent
 >
 > （译注：与 `DamageModifier` 相关的过时内容不译）。
 >
-> @param 攻击者造成的原始伤害。
+> @param damage 攻击者造成的原始伤害。
 
 #### getCause
 

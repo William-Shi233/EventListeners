@@ -74,7 +74,7 @@ description: EnderDragonChangePhaseEvent
 >
 > 该方法用于设置末影龙将要切换入的行为状态。
 >
-> @param 末影龙将要切换入的行为状态。
+> @param newPhase 末影龙将要切换入的行为状态。
 
 #### isCancelled
 

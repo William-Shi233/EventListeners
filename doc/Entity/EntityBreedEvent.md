@@ -118,7 +118,7 @@ description: EntityBreedEvent
 >
 > 该方法用于设置繁衍所产生的经验值。
 >
-> @param 繁衍所产生的经验值。
+> @param experience 繁衍所产生的经验值。
 
 #### isCancelled
 

@@ -112,7 +112,7 @@ description: BlockBreakEvent
 >
 > 当且仅当 `isDropItems()` 方法返回 `false` 时，`BlockDropItemEvent` 不会在此事件之后触发。
 >
-> @param 涉事方块是否会产生掉落物。
+> @param dropItems 涉事方块是否会产生掉落物。
 
 #### isDropItems
 

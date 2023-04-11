@@ -114,7 +114,7 @@ description: PlayerEditBookEvent
 >
 > 该方法用于设置书与笔物品堆的新 `BookMeta` 。此方法参数中的 `BookMeta` 将会在游戏内被实际体现。
 >
-> @param 新 `BookMeta` 。
+> @param newBookMeta 新 `BookMeta` 。
 >
 > @deprecated 如果传入的参数为 `null` ，则抛出 `IllegalArgumentException` 。
 
@@ -148,7 +148,7 @@ description: PlayerEditBookEvent
 >
 > 该方法用于设置该书本是否要被签名。如果一本书被签名了，那么其材质将由 `BOOK_AND_QUILL` 变为 `WRITTEN_BOOK` 。
 >
-> @param 该书本是否要被签名。
+> @param signing 该书本是否要被签名。
 
 #### getHandlers
 

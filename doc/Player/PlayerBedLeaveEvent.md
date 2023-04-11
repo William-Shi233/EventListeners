@@ -100,7 +100,7 @@ description: PlayerBedLeaveEvent
 >
 > 如欲重设一个玩家的出生点，可以使用 `Player#setBedSpawnLocation(Location)` 方法。
 >
-> @param 如欲重设出生点，则传入 `true` 。
+> @param setBedSpawn 如欲重设出生点，则传入 `true` 。
 >
 > 译注：见上。
 

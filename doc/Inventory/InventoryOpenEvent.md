@@ -82,7 +82,7 @@ description: InventoryOpenEvent
 >
 > 如果本事件被取消，则玩家客户端将不会显示物品栏界面。
 >
-> @param 如欲取消此事件，则传入 `true` 。
+> @param cancel 如欲取消此事件，则传入 `true` 。
 >
 > 译注：原文第一段为所有 `setCancelled` 方法共用的文档，不赘。
 

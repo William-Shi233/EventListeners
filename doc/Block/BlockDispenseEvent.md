@@ -62,7 +62,7 @@ description: BlockDispenseEvent
 >
 > 该方法用于设置被发射的物品堆。
 >
-> @param 被发射的物品堆。
+> @param item 被发射的物品堆。
 
 #### getVelocity
 
@@ -98,7 +98,7 @@ description: BlockDispenseEvent
 >
 > 该方法用于设置被发射的物品的速度向量，单位为米每刻。
 >
-> @param 被发射的物品的速度向量。
+> @param vel 被发射的物品的速度向量。
 
 #### isCancelled
 

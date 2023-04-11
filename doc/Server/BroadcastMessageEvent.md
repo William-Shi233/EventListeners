@@ -58,7 +58,7 @@ description: BroadcastMessageEvent
 >
 > 该方法用于设置将要被广播的消息。
 >
-> @param 将要被广播的消息。
+> @param message 将要被广播的消息。
 
 #### getRecipients
 

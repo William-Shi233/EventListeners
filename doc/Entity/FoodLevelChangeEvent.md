@@ -80,7 +80,7 @@ description: FoodLevelChangeEvent
 >
 > 该方法用于设置玩家饱食度的新值。
 >
-> @param 玩家饱食度的新值。
+> @param level 玩家饱食度的新值。
 
 #### isCancelled
 

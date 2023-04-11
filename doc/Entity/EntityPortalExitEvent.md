@@ -74,7 +74,7 @@ description: EntityPortalExitEvent
 >
 > 该方法用于设置实体进入传送门后的速度向量。
 >
-> @param 实体进入传送门后的速度向量。
+> @param after 实体进入传送门后的速度向量。
 
 
 #### getHandlers

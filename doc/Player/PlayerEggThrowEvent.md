@@ -66,7 +66,7 @@ description: PlayerEggThrowEvent
 >
 > 该方法用于设置是否将生成小鸡。
 >
-> @param 如欲生成小鸡，则传入 `true` ，否则传入 `false` 。
+> @param hatching 如欲生成小鸡，则传入 `true` ，否则传入 `false` 。
 
 #### getHatchingType
 
@@ -94,7 +94,7 @@ description: PlayerEggThrowEvent
 >
 > 该方法用于设置将要生成的生物的种类。
 >
-> @param 将要生成的生物的种类。
+> @param hatchType 将要生成的生物的种类。
 
 #### getNumHatches
 
@@ -154,7 +154,7 @@ description: PlayerEggThrowEvent
 >
 > `hatching` 字段会覆盖该数字。比如当 `isHatching` 方法返回 `false` 时，无论如何调用本方法，都不会生成任何生物。
 >
-> @param 将要生成的生物的数量。
+> @param numHatches 将要生成的生物的数量。
 
 #### getHandlers
 

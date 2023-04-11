@@ -134,7 +134,7 @@ description: EntityPotionEffectEvent
 >
 > （只有 `getAction()` 方法返回 `Action#CHANGED` 字段时，本方法才有意义）。
 >
-> @param 新药水效果是否会覆盖旧药水效果。
+> @param override 新药水效果是否会覆盖旧药水效果。
 
 #### isCancelled
 

@@ -56,7 +56,7 @@ description: PlayerSpawnLocationEvent
 >
 > 该方法用于设置将要生成玩家实体的位置。
 > 
-> @param 将要生成玩家实体的位置。
+> @param location 将要生成玩家实体的位置。
 
 #### getHandlers
 

@@ -50,7 +50,7 @@ description: PlayerJoinEvent
 >
 > 该方法用于设置将要广播给全体玩家的欢迎消息。
 >
-> @param 将要广播给全体玩家的欢迎消息。如果传入 `null` 则不会发送任何消息。
+> @param joinMessage 将要广播给全体玩家的欢迎消息。如果传入 `null` 则不会发送任何消息。
 
 #### getHandlers
 

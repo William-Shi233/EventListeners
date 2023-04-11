@@ -62,7 +62,7 @@ description: VehicleDamageEvent
 >
 > 该方法用于设置载具受到的伤害量。
 >
-> @param 载具受到的伤害量。
+> @param damage 载具受到的伤害量。
 
 #### isCancelled
 

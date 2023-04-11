@@ -88,7 +88,7 @@ description: EntityShootBowEvent
 >
 > 该方法用于设置将要被射出的抛射物实体。
 >
-> @param 将要被射出的抛射物实体。
+> @param projectile 将要被射出的抛射物实体。
 
 #### getHand
 
@@ -150,7 +150,7 @@ description: EntityShootBowEvent
 >
 > 对于一些射箭或装填弩时不消耗箭矢的生物（如骷髅、如掠夺者等），本方法传入的参数会被忽略。
 >
-> @param 事件中是否要消耗物品堆。
+> @param consumeItem 事件中是否要消耗物品堆。
 
 #### shouldConsumeItem
 

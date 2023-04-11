@@ -48,7 +48,7 @@ description: EntityRegainHealthEvent
 >
 > 该方法用于设置实体回复生命值的量。
 >
-> @param 实体回复生命值的量。
+> @param amount 实体回复生命值的量。
 
 #### isCancelled
 

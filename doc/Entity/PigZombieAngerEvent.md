@@ -72,7 +72,7 @@ description: PigZombieAngerEvent
 >
 > 该方法用于设置僵尸猪灵将要拥有的愤怒等级。
 >
-> @param 僵尸猪灵将要拥有的愤怒等级。
+> @param newAnger 僵尸猪灵将要拥有的愤怒等级。
 >
 > @see 参见 `PigZombie#setAnger(int)` 方法。
 

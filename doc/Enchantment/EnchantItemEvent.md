@@ -102,7 +102,7 @@ description: EnchantItemEvent
 >
 > 该方法用于设置界面右侧所显示的附魔需求的最低经验等级。
 >
-> @param 附魔需求的最低经验等级。
+> @param level 附魔需求的最低经验等级。
 
 #### getEnchantsToAdd
 

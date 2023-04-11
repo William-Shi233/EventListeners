@@ -80,7 +80,7 @@ description: ArrowBodyCountChangeEvent
 >
 > 该方法用于设置事件发生后实体体内将会存在的箭矢数量。
 >
-> @param 事件发生后实体体内将会存在的箭矢数量。
+> @param newAmount 事件发生后实体体内将会存在的箭矢数量。
 
 #### getEntity
 

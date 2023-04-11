@@ -72,7 +72,7 @@ description: EntityCombustEvent
 >
 > 只能通过本方法来增加实体燃烧的时间，无法使燃烧时间减少。
 >
-> @param 实体将持续燃烧的时长，以秒为单位。
+> @param duration 实体将持续燃烧的时长，以秒为单位。
 
 #### getHandlers
 

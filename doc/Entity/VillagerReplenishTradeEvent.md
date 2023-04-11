@@ -60,7 +60,7 @@ description: VillagerReplenishTradeEvent
 >
 > 该方法用于设置将要补货的交易项。
 >
-> @param 将要补货的交易项。
+> @param recipe 将要补货的交易项。
 
 #### getBonus
 

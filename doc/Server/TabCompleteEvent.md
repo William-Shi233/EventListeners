@@ -98,7 +98,7 @@ description: TabCompleteEvent
 >
 > 该方法用于设置将要提供给发送者的补全建议列表，覆盖已有的列表。
 >
-> @param 新的补全建议列表。
+> @param completions 新的补全建议列表。
 
 #### isCancelled
 

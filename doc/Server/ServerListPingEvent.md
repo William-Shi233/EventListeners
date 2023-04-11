@@ -76,7 +76,7 @@ description: ServerListPingEvent
 >
 > 该方法用于设置将要发送的 `MOTD` 消息字符串。
 >
-> @param `MOTD` 字符串
+> @param motd `MOTD` 字符串
 
 #### getNumPlayers
 
@@ -122,7 +122,7 @@ description: ServerListPingEvent
 >
 > 该方法用于设置服务器在线玩家人数上限。
 >
-> @param 在线玩家人数上限。
+> @param maxPlayers 在线玩家人数上限。
 
 #### setServerIcon
 
@@ -146,7 +146,7 @@ description: ServerListPingEvent
 > 
 > 该方法用于设置将要发送给客户端的服务器图标。
 >
-> @param 将要发送给客户端的服务器图标。
+> @param icon 将要发送给客户端的服务器图标。
 >
 > @throws 如果 `CachedServerIcon` 不是被触发本事件的开发者所创建的，则抛出 `IllegalArgumentException` 。部分实现类允许传入 `null` 作为参数。
 >

@@ -140,7 +140,7 @@ description: LootGenerateEvent
 >
 > 注意：该方法的参数不可以是 `getLoot` 方法的返回值。
 > 
-> @param 将要被填充进宝箱的物品堆列表。如果传入 `null` 将清空所有物品堆，不会有任何战利品生成。
+> @param loot 将要被填充进宝箱的物品堆列表。如果传入 `null` 将清空所有物品堆，不会有任何战利品生成。
 >
 > 译注：`getLoot` 和 `setLoot` 两个方法维护的是同一个集合，名为 `loot` ，类型为 `List<ItemStack>` 。此处的 `loot` 不是方法参数里的 `loot` ，尽管二者名字相同。为了作出区别，按照 `Java` 写法，以下所有 `this.loot` 表示事件类中的集合，而 `loot` 表示用户传入的参数。
 >

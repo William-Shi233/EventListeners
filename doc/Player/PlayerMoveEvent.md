@@ -96,7 +96,7 @@ description: PlayerMoveEvent
 >
 > 该方法用于设置玩家移动的起点位置。
 >
-> @param 玩家移动的起点位置。
+> @param from 玩家移动的起点位置。
 
 #### getTo
 
@@ -124,7 +124,7 @@ description: PlayerMoveEvent
 >
 > 该方法用于设置玩家移动的终点位置。
 >
-> @param 玩家移动的终点位置。
+> @param to 玩家移动的终点位置。
 
 #### validateLocation
 

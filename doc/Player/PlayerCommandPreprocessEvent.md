@@ -172,7 +172,7 @@ description: PlayerCommandPreprocessEvent
 >
 > 所有指令都以一个特别的字符串（斜杠 `/` ）起首。当执行指令时，第一个字符是不纳入考量的。
 >
-> @param 玩家将要发送的指令字符串。 
+> @param command 玩家将要发送的指令字符串。 
 >
 > @throws 如果参数为 `null` 或为空字符串，则抛出 `IllegalArgumentException` 。
 
@@ -190,7 +190,7 @@ description: PlayerCommandPreprocessEvent
 >
 > 该方法用于设置指令将以何玩家的身份执行。
 >
-> @param 将执行指令的玩家。
+> @param player 将执行指令的玩家。
 >
 > @throws 如果参数为 `null` ，则抛出 `IllegalArgumentException` 。
 

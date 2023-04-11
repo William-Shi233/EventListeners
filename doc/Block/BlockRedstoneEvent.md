@@ -60,7 +60,7 @@ description: BlockRedstoneEvent
 >
 > 该方法用于设置将要传导到该方块上的新红石信号强度。
 >
-> @param 新的红石信号强度。
+> @param newCurrent 新的红石信号强度。
 
 #### getHandlers
 

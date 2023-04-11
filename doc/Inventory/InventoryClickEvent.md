@@ -240,7 +240,7 @@ description: InventoryClickEvent
 >
 > 该方法用于设置被点击的槽位内的物品堆。
 >
-> @param 将要置于被点击的槽位内的物品堆。
+> @param stack 将要置于被点击的槽位内的物品堆。
 
 #### getClickedInventory
 

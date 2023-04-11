@@ -58,7 +58,7 @@ description: ExplosionPrimeEvent
 >
 > 该方法用于设置爆炸波及的半径。
 >
-> @param 爆炸波及的半径。
+> @param radius 爆炸波及的半径。
 
 #### getFire
 
@@ -86,7 +86,7 @@ description: ExplosionPrimeEvent
 >
 > 该方法用于设置爆炸是否会引起火焰燃烧。
 >
-> @param 如传入 `true` 则本次爆炸会引起火焰燃烧。
+> @param fire 如传入 `true` 则本次爆炸会引起火焰燃烧。
 
 #### getHandlers
 

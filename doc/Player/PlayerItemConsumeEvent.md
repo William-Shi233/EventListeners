@@ -68,7 +68,7 @@ description: PlayerItemConsumeEvent
 >
 > 该方法用于设置玩家将要食用的物品堆。
 > 
-> @param 玩家将要食用的物品堆。
+> @param item 玩家将要食用的物品堆。
 
 #### isCancelled
 

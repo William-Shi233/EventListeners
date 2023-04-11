@@ -48,7 +48,7 @@ description: EntityAirChangeEvent
 >
 > 该方法用于设置实体剩余的氧气量（以 `tick` 为单位）。
 >
-> @return 实体剩余的氧气量。
+> @param amount 实体剩余的氧气量。
 
 #### isCancelled
 

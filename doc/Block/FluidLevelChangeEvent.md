@@ -50,7 +50,7 @@ description: FluidLevelChangeEvent
 >
 > 该方法用于设置事件中发生改变的方块的新方块数据。方块材质必须与原先保持一致。
 >
-> @param 新的方块数据。
+> @param newData 新的方块数据。
 
 #### isCancelled
 

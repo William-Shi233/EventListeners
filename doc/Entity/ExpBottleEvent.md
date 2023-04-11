@@ -64,7 +64,7 @@ description: ExpBottleEvent
 >
 > 显示粒子效果与否不会影响经验球的生成量。
 >
-> @param 如果将要显示粒子效果，可传入 `true` 。反之则传入 `false` 。
+> @param showEffect 如果将要显示粒子效果，可传入 `true` 。反之则传入 `false` 。
 
 #### getExperience
 
@@ -104,7 +104,7 @@ description: ExpBottleEvent
 >
 > 本方法所传入的经验值总量将会被划分到多个经验球实体中。
 >
-> @param 将要释放出的经验值总量。
+> @param exp 将要释放出的经验值总量。
 
 #### getHandlers
 

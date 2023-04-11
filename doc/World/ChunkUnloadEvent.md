@@ -50,7 +50,7 @@ description: ChunkUnloadEvent
 >
 > 该方法用于设置事件中的区块是否会被保存到硬盘中。
 > 
-> @param 区块保存状态。
+> @param saveChunk 区块保存状态。
 >
 > 译注见上。
 

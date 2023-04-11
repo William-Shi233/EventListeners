@@ -42,7 +42,7 @@ description: FireworkExplodeEvent
 >
 > 该方法用于设置本事件取消与否。如果本事件被取消，则烟花火箭实体仍然会消失，但烟花相关的粒子效果将不会出现。
 >
-> @param 是否要取消事件。
+> @param cancel 是否要取消事件。
 
 #### getEntity
 

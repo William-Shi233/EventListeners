@@ -66,7 +66,7 @@ description: SlimeSplitEvent
 >
 > 该方法用于设置将要生成的体型较小的史莱姆的数量。
 >
-> @param 将要生成的体型较小的史莱姆的数量。
+> @param count 将要生成的体型较小的史莱姆的数量。
 
 #### getHandlers
 

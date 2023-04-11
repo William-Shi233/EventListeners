@@ -50,7 +50,7 @@ description: PlayerSwapHandItemsEvent
 >
 > 该方法用于设置将要被换至主手中的物品堆。
 >
-> @param 将要被换至主手中的物品堆。
+> @param mainHandItem 将要被换至主手中的物品堆。
 
 #### getOffHandItem
 
@@ -78,7 +78,7 @@ description: PlayerSwapHandItemsEvent
 >
 > 该方法用于设置将要被换至副手中的物品堆。
 >
-> @param 将要被换至副手中的物品堆。
+> @param offHandItem 将要被换至副手中的物品堆。
 
 #### isCancelled
 

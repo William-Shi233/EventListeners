@@ -48,7 +48,7 @@ description: PlayerQuitEvent
 >
 > 该方法用于设置将要广播给全体玩家的退出消息。
 >
-> @param 将要广播给全体玩家的退出消息。
+> @param quitMessage 将要广播给全体玩家的退出消息。
 
 #### getHandlers
 

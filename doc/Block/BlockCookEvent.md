@@ -60,7 +60,7 @@ description: BlockCookEvent
 >
 > 该方法用于设置烹饪后的物品堆。
 >
-> @param 烹饪后的物品堆。
+> @param result 烹饪后的物品堆。
 
 #### isCancelled
 

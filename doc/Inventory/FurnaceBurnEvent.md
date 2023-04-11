@@ -60,7 +60,7 @@ description: FurnaceBurnEvent
 >
 > 该方法用于设置该燃料物品堆可以维持燃烧的时间。
 >
-> @param 该燃料物品堆可以维持燃烧的时间。
+> @param burnTime 该燃料物品堆可以维持燃烧的时间。
 
 #### isBurning
 
@@ -88,7 +88,7 @@ description: FurnaceBurnEvent
 >
 > 该方法用于获取熔炉是否会消耗燃料以保持燃烧。
 >
-> @param 熔炉是否会消耗燃料以保持燃烧。
+> @param burning 熔炉是否会消耗燃料以保持燃烧。
 
 #### isCancelled
 

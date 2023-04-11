@@ -48,7 +48,7 @@ description: PlayerRespawnEvent
 >
 > 该方法用于设置新的玩家重生点。
 >
-> @param 新的玩家重生点。
+> @param respawnLocation 新的玩家重生点。
 
 #### isBedSpawn
 

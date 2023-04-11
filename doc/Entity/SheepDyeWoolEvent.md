@@ -80,7 +80,7 @@ description: SheepDyeWoolEvent
 >
 > 该方法用于设置羊将要被染上的颜色。
 >
-> @param 羊将要被染上的颜色。
+> @param color 羊将要被染上的颜色。
 
 #### getHandlers
 

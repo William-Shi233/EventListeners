@@ -136,7 +136,7 @@ description: PlayerFishEvent
 >
 > 除非本事件的 `getState` 方法返回 `State#CAUGHT_FISH` ，否则这个值没有意义。
 >
-> @param 钓上鱼所奖励的经验值。
+> @param amount 钓上鱼所奖励的经验值。
 
 #### getState
 

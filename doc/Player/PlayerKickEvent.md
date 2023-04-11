@@ -74,7 +74,7 @@ description: PlayerKickEvent
 >
 > 该方法用于设置玩家被踢出的理由，理由以字符串形式表示。
 > 
-> @param 玩家被踢出的理由。
+> @param kickReason 玩家被踢出的理由。
 
 #### setLeaveMessage
 
@@ -88,7 +88,7 @@ description: PlayerKickEvent
 >
 > 该方法用于设置将要广播给全体玩家的退出消息。
 >
-> @param 将要广播给全体玩家的退出消息。
+> @param leaveMessage 将要广播给全体玩家的退出消息。
 
 #### getHandlers
 

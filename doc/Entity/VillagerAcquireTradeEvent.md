@@ -48,7 +48,7 @@ description: VillagerAcquireTradeEvent
 >
 > 该方法用于设置新解锁的交易项。
 >
-> @param 新解锁的交易项。
+> @param recipe 新解锁的交易项。
 
 #### isCancelled
 

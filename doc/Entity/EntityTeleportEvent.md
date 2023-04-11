@@ -66,7 +66,7 @@ description: EntityTeleportEvent
 >
 > 该方法用于设置传送前实体所处的位置。
 >
-> @param 传送前实体所处的位置。
+> @param from 传送前实体所处的位置。
 
 #### getTo
 
@@ -94,7 +94,7 @@ description: EntityTeleportEvent
 >
 > 该方法用于设置传送后实体将到达的位置。
 >
-> @param 传送后实体将到达的位置。
+> @param to 传送后实体将到达的位置。
 
 #### getHandlers
 

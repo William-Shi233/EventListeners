@@ -60,7 +60,7 @@ description: PlayerVelocityEvent
 >
 > 该方法用于设置玩家即将拥有的加速度向量。该向量的单位是“米每刻”。
 >
-> @param 玩家即将拥有的加速度向量。
+> @param velocity 玩家即将拥有的加速度向量。
 
 #### getHandlers
 

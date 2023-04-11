@@ -42,7 +42,7 @@ description: PlayerDeathEvent
 >
 > 该方法用于设置将要广播给全服玩家的死亡信息。
 >
-> @param 将要广播给全服玩家的死亡信息。
+> @param deathMessage 将要广播给全服玩家的死亡信息。
 >
 > 译注：比如“William_Shi experienced kinetic energy”。
 
@@ -104,7 +104,7 @@ description: PlayerDeathEvent
 >
 > 本方法不能用于改变玩家将掉落的经验值数量。可以通过 `setDroppedExp(int)` 方法改变玩家将掉落的经验值数量。
 >
-> @param 玩家重生后将拥有的经验值。
+> @param exp 玩家重生后将拥有的经验值。
 
 #### getNewLevel
 
@@ -132,7 +132,7 @@ description: PlayerDeathEvent
 >
 > 该方法用于设置玩家重生后将拥有的经验等级。
 >
-> @param 玩家重生后将拥有的经验等级。
+> @param level 玩家重生后将拥有的经验等级。
 
 #### getNewTotalExp
 
@@ -160,7 +160,7 @@ description: PlayerDeathEvent
 >
 > 该方法用于设置玩家重生后将拥有的经验值总量。
 >
-> @param 玩家重生后将拥有的经验值总量。
+> @param totalExp 玩家重生后将拥有的经验值总量。
 
 #### getKeepLevel
 
@@ -210,7 +210,7 @@ description: PlayerDeathEvent
 >
 > 使用本方法能保证玩家重生时的经验值与死亡前相等，并不能阻止死亡时掉落经验。要阻止掉落，请使用 `setDroppedExp(int)` 方法。
 >
-> @param 如果要令玩家葆有全部经验值，则传入 `true` 。
+> @param keepLevel 如果要令玩家葆有全部经验值，则传入 `true` 。
 
 #### setKeepInventory
 
@@ -234,7 +234,7 @@ description: PlayerDeathEvent
 >
 > 使用本方法能保证玩家重生时的物品栏内容与死亡前相同，并不能阻止死亡时掉落物品。要阻止掉落，请使用 `getDrops().clear()` 方法。
 >
-> @param 如果要令玩家葆有物品栏内的物品，则传入 `true` 。
+> @param keepInventory 如果要令玩家葆有物品栏内的物品，则传入 `true` 。
 
 #### getKeepInventory
 

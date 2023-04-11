@@ -66,7 +66,7 @@ description: TimeSkipEvent
 > 
 > 该方法用于设置时间快进的量。
 > 
-> @param 时间快进的量。
+> @param skipAmount 时间快进的量。
 
 #### isCancelled
 

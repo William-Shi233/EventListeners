@@ -70,7 +70,7 @@ description: BrewingStandFuelEvent
 >
 > 该方法用于设置燃料物品堆本次提供的燃料值。每一次酿造消耗一单位燃料值。
 >
-> @param 燃料物品堆本次提供的燃料值。
+> @param fuelPower 燃料物品堆本次提供的燃料值。
 >
 > 译注：在原版游戏中仅有烈焰粉一种物品可作燃料，因此 `getFuelPower()` 方法的返回值默认为 `20` 。
 
@@ -102,7 +102,7 @@ description: BrewingStandFuelEvent
 >
 > 该方法用于设置燃料物品堆是否将被消耗。
 >
-> @param 燃料物品堆是否将被消耗。
+> @param consuming 燃料物品堆是否将被消耗。
 >
 > 译注：如果本方法参数传入 `false` 且事件未被取消，则酿造台燃料值仍会增加，但燃料物品堆数量不会减少。
 

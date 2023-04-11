@@ -74,7 +74,7 @@ description: BlockExplodeEvent
 >
 > 该方法用于设置爆炸中被炸毁方块的掉落概率。
 >
-> @param 被炸毁方块的掉落概率。
+> @param yield 被炸毁方块的掉落概率。
 
 #### getHandlers
 

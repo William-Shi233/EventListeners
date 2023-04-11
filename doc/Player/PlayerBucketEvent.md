@@ -62,7 +62,7 @@ description: PlayerBucketEvent
 > 
 > 该方法用于设置事件发生以后所生成的新物品堆，该物品堆将被放入玩家手中。
 >
-> @param 将要放入玩家手中的物品堆。
+> @param itemStack 将要放入玩家手中的物品堆。
 
 #### getBlock
 

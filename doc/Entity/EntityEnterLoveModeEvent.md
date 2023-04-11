@@ -86,7 +86,7 @@ description: EntityEnterLoveModeEvent
 >
 > 该方法用于设置动物发情的时长。
 >
-> @param 动物发情的时长。
+> @param ticksInLove 动物发情的时长。
 
 #### isCancelled
 

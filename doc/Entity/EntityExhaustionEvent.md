@@ -72,7 +72,7 @@ description: EntityExhaustionEvent
 >
 > 玩家所能拥有的最大饥饿等级是四十。但如果超出了这一上限，也不会抛出错误。饥饿等级可以被设为负值，但这样做后果未知。
 >
-> @param 饥饿等级的增加量。
+> @param exhaustion 饥饿等级的增加量。
 
 #### getEntity
 

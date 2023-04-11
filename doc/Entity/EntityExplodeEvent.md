@@ -96,7 +96,7 @@ description: EntityExplodeEvent
 >
 > 该方法用于设置爆炸中被炸毁方块的掉落概率。
 >
-> @return 被炸毁方块的掉落概率。
+> @param yield 被炸毁方块的掉落概率。
 
 #### getHandlers
 

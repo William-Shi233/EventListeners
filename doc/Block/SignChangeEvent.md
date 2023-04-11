@@ -76,7 +76,7 @@ description: SignChangeEvent
 >
 > 该方法用于获取涉事告示牌上某一行的内容字符串。
 >
-> @param 要获取的行的序号。
+> @param index 要获取的行的序号。
 >
 > @return 该指定行的内容字符串。
 >
@@ -100,9 +100,9 @@ description: SignChangeEvent
 >
 > 该方法用于设置涉事告示牌上某一行的内容字符串。
 >
-> @param 要设置的行的序号。
+> @param index 要设置的行的序号。
 >
-> @return 要设置的内容字符串。
+> @param line 要设置的内容字符串。
 >
 > @throws 如果传入的参数大于三或小于零，则抛出 `IndexOutOfBoundsException` 。
 

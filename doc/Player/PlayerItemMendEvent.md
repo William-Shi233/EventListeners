@@ -100,7 +100,7 @@ description: PlayerItemMendEvent
 >
 > 涉事经验球实体所含经验值将会减去耐久度增量的一半。
 >
-> @param 耐久度的增加量。
+> @param amount 耐久度的增加量。
 
 #### isCancelled
 

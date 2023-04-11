@@ -48,7 +48,7 @@ description: PlayerExpChangeEvent
 >
 > 该方法用于设置玩家经验值的增量。
 >
-> @param 经验值的增量。
+> @param amount 经验值的增量。
 
 #### getHandlers
 

@@ -52,7 +52,7 @@ description: InventoryInteractEvent
 >
 > 该方法用于设置事件的结果。本方法会影响事件取消与否。
 >
-> @param 事件的新结果。
+> @param newResult 事件的新结果。
 >
 > @see 参见本事件 `isCancelled()` 方法。
 
@@ -116,6 +116,6 @@ description: InventoryInteractEvent
 >
 > 本方法是 `Cancellable` 接口 `setResult(org.bukkit.event.Event.Result)` 方法的代理。推荐使用 `setResult(org.bukkit.event.Event.Result)` 替代本方法，因为前者可以用于指定 `Result.DENY` 和 `Result.ALLOW` 以外的结果。
 >
-> @param 如果传入 `true` 则事件结果变为 `Result.DENY` ，传入 `false` 则事件结果变为 `Result.ALLOW` 。
+> @param toCancel 如果传入 `true` 则事件结果变为 `Result.DENY` ，传入 `false` 则事件结果变为 `Result.ALLOW` 。
 >
 > 译注：如果使用 `setResult(org.bukkit.event.Event.Result)` 方法，可以指定 `Result.DEFAULT` 为事件结果，而本方法不能。

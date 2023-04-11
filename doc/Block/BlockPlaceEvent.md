@@ -176,7 +176,7 @@ description: BlockPlaceEvent
 >
 > 该方法用于设置是否允许玩家放置方块。如欲令玩家有权放置方块，则传入 `true` 。
 >
-> @param 如欲令玩家有权放置方块，则传入 `true` 。
+> @param canBuild 如欲令玩家有权放置方块，则传入 `true` 。
 
 #### getHandlers
 

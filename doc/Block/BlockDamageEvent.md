@@ -74,7 +74,7 @@ description: BlockDamageEvent
 >
 > 该方法用于设置玩家是否能瞬间破坏方块。
 >
-> @param 如欲令玩家可以瞬间破坏方块，则传入 `true` 。
+> @param bool 如欲令玩家可以瞬间破坏方块，则传入 `true` 。
 
 #### getItemInHand
 

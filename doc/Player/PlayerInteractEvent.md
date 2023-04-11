@@ -236,7 +236,7 @@ description: PlayerInteractEvent
 
 > @param useInteractedBlock the action to take with the interacted block
 >
-> @param 要对方块采取的行为。
+> @param useInteractedBlock 要对方块采取的行为。
 >
 > 译注：参见 `useInteractedBlock()` 方法。
 
@@ -268,7 +268,7 @@ description: PlayerInteractEvent
 
 > @param useItemInHand the action to take with the item in hand
 >
-> @param 要对手持物品采取的行为。
+> @param useItemInHand 要对手持物品采取的行为。
 >
 > 译注：参见 `useItemInHand()` 方法。
 

@@ -74,7 +74,7 @@ description: PlayerLoginEvent
 >
 > 该方法用于设置登录结果，接收一个 `PlayerLoginEvent.Result` 枚举值作为参数。
 > 
-> @return 新的登录结果。
+> @param result 新的登录结果。
 
 #### getKickMessage
 
@@ -104,7 +104,7 @@ description: PlayerLoginEvent
 >
 > 该方法用于设置将展示给玩家的拒绝登录原因字符串。如果 `getResult() != Result.ALLOWED` 则将会把该字符串显示给玩家。
 >
-> @param 拒绝登录原因字符串。
+> @param message 拒绝登录原因字符串。
 
 #### getHostname
 
@@ -148,9 +148,9 @@ description: PlayerLoginEvent
 > 
 > 该方法用于以给定原因拒绝玩家登录。
 >
-> @param 不允许玩家登录的原因。
+> @param result 玩家登录结果，用于指明拒绝玩家登录的原因。
 > 
-> @param 将展示给玩家的拒绝登录原因字符串。
+> @param message 将展示给玩家的拒绝登录原因字符串。
 
 #### getAddress
 

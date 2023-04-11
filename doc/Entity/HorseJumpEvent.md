@@ -118,7 +118,7 @@ description: HorseJumpEvent
 >
 > 如果将马的能量设为零，则跳跃动画仍将被播放，但马不会离地。只有取消本事件才能让跳跃动画取消播放。
 >
-> @param 跳跃的能量。
+> @param power 跳跃的能量。
 >
 > @deprecated 该方法已过时。马的跳跃动作已经是客户端行为了。
 

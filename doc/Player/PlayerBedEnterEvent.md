@@ -114,7 +114,7 @@ description: PlayerBedEnterEvent
 >
 > 传入 `Event.Result.DEFAULT` 会使玩家采用事件默认结果就寝，即 `getBedEnterResult()` 方法返回值的结果。
 >
-> @param 将要对事件中的床采取何种措施。
+> @param useBed 将要对事件中的床采取何种措施。
 >
 > @see 参见本事件的 `useBed()` 方法。
 >
@@ -174,7 +174,7 @@ description: PlayerBedEnterEvent
 >
 > 取消该事件，则玩家将无法上床就寝。
 > 
-> @param 如欲取消该事件，则传入 `true` 作为参数。
+> @param cancel 如欲取消该事件，则传入 `true` 作为参数。
 >
 > 译注：原文第一段为所有 `setCancelled` 方法共用的文档，不赘。
 
