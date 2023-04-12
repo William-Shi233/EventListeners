@@ -18,7 +18,7 @@ description: AreaEffectCloudApplyEvent
 > 
 > once every 5 ticks
 > 
-> <p>
+> <br>
 > 
 > 当一瓶掷出的滞留型药水所留下的药水云向跻身其间的实体施加药水效果时触发。药水云每隔五个 `tick` 都会对厕身其中的实体施加药水效果。
 
@@ -62,7 +62,7 @@ description: AreaEffectCloudApplyEvent
 > 
 > @return the affected entity list
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取一个可修改的列表，其间存储将要受到药水效果影响的实体。
 > 

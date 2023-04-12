@@ -16,11 +16,11 @@ description: EntityDamageEvent
 
 > Stores data for damage events
 > 
-> <p>
+> <br>
 > 
 > 本事件存储了实体伤害的有关数据。
 > 
-> <p>
+> <br>
 > 
 > 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与事件中所造成的伤害有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
 
@@ -54,7 +54,7 @@ description: EntityDamageEvent
 > 
 > @throws IllegalArgumentException if type is null
 > 
-> <p>
+> <br>
 > 
 > 该方法已过时。请勿使用 `DamageModifier` 枚举。
 
@@ -80,7 +80,7 @@ description: EntityDamageEvent
 > 
 > @see #getFinalDamage()
 > 
-> <p>
+> <br>
 > 
 > 该方法已过时。请勿使用 `DamageModifier` 枚举。
 
@@ -100,7 +100,7 @@ description: EntityDamageEvent
 > 
 > @see DamageModifier#BASE
 > 
-> <p>
+> <br>
 > 
 > 该方法已过时。请勿使用 `DamageModifier` 枚举。
 
@@ -124,7 +124,7 @@ description: EntityDamageEvent
 > 
 > @throws IllegalArgumentException if type is null
 > 
-> <p>
+> <br>
 > 
 > 该方法已过时。请勿使用 `DamageModifier` 枚举。
 
@@ -140,7 +140,7 @@ description: EntityDamageEvent
 > 
 > @see DamageModifier#BASE
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中攻击者造成的原始伤害。
 > 
@@ -160,7 +160,7 @@ description: EntityDamageEvent
 > 
 > @return the amount of damage caused by the event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中受伤的实体将要承受的最终伤害。最终伤害是经过各种减伤机制计算而得的。
 > 
@@ -182,7 +182,7 @@ description: EntityDamageEvent
 > 
 > @param damage The raw amount of damage caused by the event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置事件中攻击者造成的原始伤害。
 > 
@@ -200,7 +200,7 @@ description: EntityDamageEvent
 > 
 > @return A DamageCause value detailing the cause of the damage.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取实体受伤的原因。
 > 
@@ -227,7 +227,7 @@ description: EntityDamageEvent
 > removed very soon in a subsequent release. Please see
 > https://www.spigotmc.org/threads/194446/ for more information.
 > 
-> <p>
+> <br>
 > 
 > 用于确定伤害修改操作的枚举。
 > 
@@ -239,7 +239,7 @@ description: EntityDamageEvent
 > 
 > raw {@link EntityDamageEvent#getDamage()}.
 > 
-> <p>
+> <br>
 > 
 > 本字段已过时。
 
@@ -249,7 +249,7 @@ description: EntityDamageEvent
 > 
 > by a falling block.
 > 
-> <p>
+> <br>
 > 
 > 本字段已过时。
 
@@ -259,7 +259,7 @@ description: EntityDamageEvent
 > 
 > {@link Player Players}.
 > 
-> <p>
+> <br>
 > 
 > 本字段已过时。
 
@@ -267,7 +267,7 @@ description: EntityDamageEvent
 
 > This represents the damage reduction caused by wearing armor.
 > 
-> <p>
+> <br>
 > 
 > 本字段已过时。
 
@@ -275,7 +275,7 @@ description: EntityDamageEvent
 
 > This represents the damage reduction caused by the Resistance potion effect.
 > 
-> <p>
+> <br>
 > 
 > 本字段已过时。
 
@@ -297,7 +297,7 @@ description: EntityDamageEvent
 > 
 > </ul>
 > 
-> <p>
+> <br>
 > 
 > 本字段已过时。
 
@@ -307,7 +307,7 @@ description: EntityDamageEvent
 > 
 > effect.
 > 
-> <p>
+> <br>
 > 
 > 本字段已过时。
 
@@ -315,7 +315,7 @@ description: EntityDamageEvent
 
 > An enum to specify the cause of the damage
 > 
-> <p>
+> <br>
 > 
 > 用于确定伤害原因的枚举。
 
@@ -327,7 +327,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 由于实体接触了方块（如仙人掌、浆果丛等）而受伤。
 > 
@@ -339,7 +339,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 由于实体遭到攻击而受伤。
 > 
@@ -351,7 +351,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 由于实体遭到横扫攻击而受伤。
 > 
@@ -363,7 +363,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 由于实体被抛射物击中而受伤。
 > 
@@ -375,7 +375,7 @@ description: EntityDamageEvent
 > 
 > Damage: 1
 > 
-> <p>
+> <br>
 > 
 > 由于实体卡在方块内部，窒息而受伤。
 > 
@@ -387,7 +387,7 @@ description: EntityDamageEvent
 > 
 > Damage: fall height - 3.0
 > 
-> <p>
+> <br>
 > 
 > 由于实体自三格以上高度坠落而受伤。
 > 
@@ -399,7 +399,7 @@ description: EntityDamageEvent
 > 
 > Damage: 1
 > 
-> <p>
+> <br>
 > 
 > 由于实体处于火焰方块中而受伤。
 > 
@@ -411,7 +411,7 @@ description: EntityDamageEvent
 > 
 > Damage: 1
 > 
-> <p>
+> <br>
 > 
 > 由于实体正在燃烧而受伤。
 > 
@@ -423,7 +423,7 @@ description: EntityDamageEvent
 > 
 > Damage: 1
 > 
-> <p>
+> <br>
 > 
 > 雪傀儡由于正在融化而受伤。
 > 
@@ -435,7 +435,7 @@ description: EntityDamageEvent
 > 
 > Damage: 4
 > 
-> <p>
+> <br>
 > 
 > 由于实体处于岩浆中而受伤。
 > 
@@ -447,7 +447,7 @@ description: EntityDamageEvent
 > 
 > Damage: 2
 > 
-> <p>
+> <br>
 > 
 > 由于实体处于水中且没有氧气值而受伤。
 > 
@@ -459,7 +459,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 由于实体被方块爆炸波及而受伤。
 > 
@@ -473,7 +473,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 由于实体被另一实体爆炸波及而受伤（如苦力怕爆炸）。
 > 
@@ -485,7 +485,7 @@ description: EntityDamageEvent
 > 
 > Damage: 4 for players
 > 
-> <p>
+> <br>
 > 
 > 由于实体坠入虚空而受伤。
 > 
@@ -511,7 +511,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 由于实体自杀而受伤。
 > 
@@ -525,7 +525,7 @@ description: EntityDamageEvent
 > 
 > Damage: 1
 > 
-> <p>
+> <br>
 > 
 > 由于实体饥饿值为零，过度饥饿而受伤。
 > 
@@ -537,7 +537,7 @@ description: EntityDamageEvent
 > 
 > Damage: 1
 > 
-> <p>
+> <br>
 > 
 > 由于实体携带中毒药水效果而受伤。
 > 
@@ -549,7 +549,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 由于实体被伤害药水或咒语所波及而受伤。
 > 
@@ -559,7 +559,7 @@ description: EntityDamageEvent
 
 > Damage caused by Wither potion effect
 > 
-> <p>
+> <br>
 > 
 > 由于实体携带凋零药水效果而受伤。
 
@@ -571,7 +571,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 由于实体被下落的方块砸中而受伤。
 > 
@@ -587,7 +587,7 @@ description: EntityDamageEvent
 > 
 > Damage: 1-4 (Thorns)
 > 
-> <p>
+> <br>
 > 
 > 由于实体攻击了某个盔甲含有荆棘附魔的实体，被荆棘附魔造成反伤。
 > 
@@ -599,7 +599,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 由于实体被龙息波及而受伤。
 > 
@@ -611,7 +611,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 插件造成的自定义伤害。
 > 
@@ -623,7 +623,7 @@ description: EntityDamageEvent
 > 
 > Damage: variable
 > 
-> <p>
+> <br>
 > 
 > 由于实体在使用鞘翅滑翔时撞上墙壁而受伤。
 > 
@@ -635,7 +635,7 @@ description: EntityDamageEvent
 > 
 > Damage: 1
 > 
-> <p>
+> <br>
 > 
 > 由于实体踩在岩浆块上而受伤。
 > 
@@ -649,7 +649,7 @@ description: EntityDamageEvent
 > 
 > Damage: 6
 > 
-> <p>
+> <br>
 > 
 > 由于实体与过多其他实体相碰撞而挤压受伤，该情况与 `maxEntityCramming` 游戏规则有关。
 > 
@@ -661,7 +661,7 @@ description: EntityDamageEvent
 > 
 > Damage: 1
 > 
-> <p>
+> <br>
 > 
 > 水生生物由于离开水体而受伤。
 > 

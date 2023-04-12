@@ -20,13 +20,13 @@ description: BlockDispenseEvent
 > 
 > item.
 > 
-> <p>
+> <br>
 > 
 > 当方块发射物品堆时触发。
 > 
 > 如果本事件被取消，方块将不会发射出该物品。
 > 
-> <p>
+> <br>
 > 
 > 译注：发射器或投掷器均可触发本事件。
 > 
@@ -48,7 +48,7 @@ description: BlockDispenseEvent
 > 
 > @return An ItemStack for the item being dispensed
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取被发射的物品堆。
 > 
@@ -64,7 +64,7 @@ description: BlockDispenseEvent
 > 
 > @param item the item being dispensed
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置被发射的物品堆。
 > 
@@ -84,13 +84,13 @@ description: BlockDispenseEvent
 > 
 > @return A Vector for the dispensed item's velocity
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取被发射的物品的速度向量，单位为米每刻。
 > 
 > 注意，直接修改本方法返回的 `Vector` 对象不会影响被发射的物品的速度。必须使用 `setVelocity(org.bukkit.util.Vector)` 才能修改该物品的速度。（译注：返回的向量是一个副本，修改这个副本不会对物品的速度产生影响。）
 > 
-> <p>
+> <br>
 > 
 > @return 被发射的物品的速度向量。
 
@@ -104,7 +104,7 @@ description: BlockDispenseEvent
 > 
 > @param vel the velocity of the item being dispensed
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置被发射的物品的速度向量，单位为米每刻。
 > 

@@ -14,11 +14,11 @@ description: BlockEvent
 
 > Represents a block related event.
 > 
-> <p>
+> <br>
 > 
 > 代表与方块有关的事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -34,7 +34,7 @@ description: BlockEvent
 > 
 > @return The Block which block is involved in this event
 > 
-> <p>
+> <br>
 > 
 > 获取事件中的方块。
 > 

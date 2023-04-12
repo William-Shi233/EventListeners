@@ -20,11 +20,11 @@ description: RaidTriggerEvent
 > 
 > enters a village).
 > 
-> <p>
+> <br>
 > 
 > 当一场袭击被引动时触发。比如有一个携带不祥之兆效果的玩家进入村庄时，其人会引发一场袭击。
 > 
-> <p>
+> <br>
 > 
 > 译注：目前仅有身怀不祥之兆的玩家进入村庄这一种引动袭击的途径。
 
@@ -40,7 +40,7 @@ description: RaidTriggerEvent
 > 
 > @return triggering player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取引动袭击的玩家。
 > 

@@ -14,7 +14,7 @@ description: InventoryEvent
 
 > Represents a player related inventory event
 > 
-> <p>
+> <br>
 > 
 > 代表与玩家有关的物品栏事件。
 
@@ -30,7 +30,7 @@ description: InventoryEvent
 > 
 > @return The upper inventory.
 > 
-> <p>
+> <br>
 > 
 > 获取事件中的物品栏。
 > 
@@ -48,7 +48,7 @@ description: InventoryEvent
 > 
 > @return A list of people viewing.
 > 
-> <p>
+> <br>
 > 
 > 该方法返回一个列表，其间存储有全部打开着涉事物品栏（居于上方的物品栏）的玩家。
 > 
@@ -64,7 +64,7 @@ description: InventoryEvent
 > 
 > @return InventoryView
 > 
-> <p>
+> <br>
 > 
 > 获取事件中的物品栏视图（由上下两个物品栏组成）。
 > 

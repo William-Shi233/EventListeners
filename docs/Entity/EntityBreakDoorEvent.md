@@ -20,7 +20,7 @@ description: EntityBreakDoorEvent
 > 
 > Cancelling the event will cause the event to be delayed
 > 
-> <p>
+> <br>
 > 
 > 当实体击破一扇门时触发。
 > 

@@ -16,13 +16,13 @@ description: AsyncPlayerPreLoginEvent
 > 
 > This event is asynchronous, and not run using main thread.
 > 
-> <p>
+> <br>
 > 
 > 本事件存储了试图登录服务器的玩家的有关数据。
 > 
 > 本事件是异步的，不会在主线程内触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：`Mojang` 在设计 `MineCraft` 时，几乎没有考虑线程安全问题。整个 `MineCraft` 服务端中的大部分集合、大部分方法，都没有考虑异步操作。在 `MineCraft` 内部，如生成生物、如破坏方块等方法，都运行在主线程上，虽然效率低，但是这样一来也没有线程安全问题。一旦让插件在异步线程中操作 `MineCraft` 中的实体、方块、物品栏等对象，就可能出现并发修改等错误。整个 `MineCraft` 里几乎没有什么方法是线程安全的。除非某方法仅涉及到数据包的发送，否则它就不能运行在异步线程里。比如发送消息给玩家，这个方法仅仅涉及到玩家聊天消息相关数据包的发送，因此它可以异步运行。本事件运行在异步线程里，在异步线程中不可以调用 `Bukkit API` 里那些线程不安全的方法。如必为之，可用 `BukkitScheduler` 调度一个同步任务，使代码在主线程内运行。
 > 
@@ -62,7 +62,7 @@ description: AsyncPlayerPreLoginEvent
 > 
 > PlayerPreLoginEvent}
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取目前的登录结果，返回一个 `PlayerPreLoginEvent.Result` 枚举值。
 > 
@@ -82,7 +82,7 @@ description: AsyncPlayerPreLoginEvent
 > 
 > @param result New result to set
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置登录结果，接收一个 `AsyncPlayerPreLoginEvent.Result` 枚举值作为参数。
 > 
@@ -104,7 +104,7 @@ description: AsyncPlayerPreLoginEvent
 > 
 > PlayerPreLoginEvent}
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置登录结果，接收一个 `PlayerPreLoginEvent.Result` 枚举值作为参数。
 > 
@@ -126,7 +126,7 @@ description: AsyncPlayerPreLoginEvent
 > 
 > @return Current kick message
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将展示给玩家的拒绝登录原因字符串。如果 `getResult() != Result.ALLOWED` 则将会把该字符串显示给玩家。
 > 
@@ -142,7 +142,7 @@ description: AsyncPlayerPreLoginEvent
 > 
 > @param message New kick message
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将展示给玩家的拒绝登录原因字符串。如果 `getResult() != Result.ALLOWED` 则将会把该字符串显示给玩家。
 > 
@@ -156,7 +156,7 @@ description: AsyncPlayerPreLoginEvent
 
 > Allows the player to log in
 > 
-> <p>
+> <br>
 > 
 > 该方法用于允许玩家登录。
 
@@ -172,7 +172,7 @@ description: AsyncPlayerPreLoginEvent
 > 
 > @param message Kick message to display to the user
 > 
-> <p>
+> <br>
 > 
 > 该方法用于以给定原因拒绝玩家登录。
 > 
@@ -198,7 +198,7 @@ description: AsyncPlayerPreLoginEvent
 > 
 > PlayerPreLoginEvent}
 > 
-> <p>
+> <br>
 > 
 > 该方法用于以给定原因拒绝玩家登录。
 > 
@@ -220,7 +220,7 @@ description: AsyncPlayerPreLoginEvent
 > 
 > @return the player's name
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取试图登录的玩家的用户名。
 > 
@@ -236,7 +236,7 @@ description: AsyncPlayerPreLoginEvent
 > 
 > @return The IP address
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取试图登录的玩家的 `IP` 地址。
 > 
@@ -252,7 +252,7 @@ description: AsyncPlayerPreLoginEvent
 > 
 > @return The unique ID
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取试图登录的玩家的 `UUID` 。
 > 
@@ -274,11 +274,11 @@ description: AsyncPlayerPreLoginEvent
 
 > Basic kick reasons for communicating to plugins
 > 
-> <p>
+> <br>
 > 
 > 用于帮助插件确定玩家被踢出原因的枚举。
 > 
-> <p>
+> <br>
 > 
 > 译注：玩家被允许登录也是该枚举的一个枚举项，本枚举并不只适用于玩家被踢出时。
 
@@ -286,7 +286,7 @@ description: AsyncPlayerPreLoginEvent
 
 > The player is allowed to log in
 > 
-> <p>
+> <br>
 > 
 > 玩家被允许登录。
 
@@ -294,7 +294,7 @@ description: AsyncPlayerPreLoginEvent
 
 > The player is not allowed to log in, due to the server being full
 > 
-> <p>
+> <br>
 > 
 > 由于服务器人数已满，因而不允许登录。
 
@@ -302,7 +302,7 @@ description: AsyncPlayerPreLoginEvent
 
 > The player is not allowed to log in, due to them being banned
 > 
-> <p>
+> <br>
 > 
 > 由于玩家被服务器封禁，因而不允许登录。
 
@@ -312,7 +312,7 @@ description: AsyncPlayerPreLoginEvent
 > 
 > white list
 > 
-> <p>
+> <br>
 > 
 > 由于玩家不在服务器白名单内，因而不允许登录。
 
@@ -320,6 +320,6 @@ description: AsyncPlayerPreLoginEvent
 
 > The player is not allowed to log in, for reasons undefined
 > 
-> <p>
+> <br>
 > 
 > 由于未知原因，玩家不被允许登录。

@@ -16,11 +16,11 @@ description: PlayerMoveEvent
 
 > Holds information for player movement events
 > 
-> <p>
+> <br>
 > 
 > 本事件存储了试图移动的玩家的有关数据。
 > 
-> <p>
+> <br>
 > 
 > 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与事件中玩家有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
 
@@ -44,11 +44,11 @@ description: PlayerMoveEvent
 > 
 > @return true if this event is cancelled
 > 
-> <p>
+> <br>
 > 
 > 如果一次移动事件或传送事件（ `PlayerTeleportEvent` 是本事件的子类）被取消了，那么玩家将会被传送回起点位置。起点位置即 `getFrom()` 方法的返回值。被传送回起点时不会触发移动或传送事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：原文第一段为所有 `isCancelled` 方法共用的文档，不赘。
 
@@ -70,11 +70,11 @@ description: PlayerMoveEvent
 > 
 > @param cancel true if you wish to cancel this event
 > 
-> <p>
+> <br>
 > 
 > 如果一次移动事件或传送事件（ `PlayerTeleportEvent` 是本事件的子类）被取消了，那么玩家将会被传送回起点位置。起点位置即 `getFrom()` 方法的返回值。被传送回起点时不会触发移动或传送事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：原文第一段为所有 `setCancelled` 方法共用的文档，不赘。
 
@@ -88,7 +88,7 @@ description: PlayerMoveEvent
 > 
 > @return Location the player moved from
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家移动的起点位置。
 > 
@@ -104,7 +104,7 @@ description: PlayerMoveEvent
 > 
 > @param from New location to mark as the players previous location
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家移动的起点位置。
 > 
@@ -120,7 +120,7 @@ description: PlayerMoveEvent
 > 
 > @return Location the player moved to
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家移动的终点位置。
 > 
@@ -136,7 +136,7 @@ description: PlayerMoveEvent
 > 
 > @param to New Location this player will move to
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家移动的终点位置。
 > 

@@ -32,7 +32,7 @@ description: PrepareItemCraftEvent
 > 
 > @return The recipe being crafted.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取当前的物品堆摆放方式所契合的合成配方。如果本事件是由于玩家尝试将两把工具合二为一，修复耐久度而触发的，则该方法的返回值是一个临时创建的无规则合成配方，用于表示工具修复。
 
@@ -58,7 +58,7 @@ description: PrepareItemCraftEvent
 > 
 > @return True if this is a repair.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取本次合成是否是由于玩家尝试将两把工具合二为一，修复耐久度而触发。
 > 

@@ -20,7 +20,7 @@ description: SmithItemEvent
 
 > Called when the recipe of an Item is completed inside a smithing table.
 > 
-> <p>
+> <br>
 > 
 > 当玩家在锻造台内使用下界合金升级物品堆时触发。
 

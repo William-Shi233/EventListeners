@@ -76,7 +76,7 @@ description: InventoryDragEvent
 > 
 > execute the task on the next tick, would work as well.
 > 
-> <p>
+> <br>
 > 
 > 当玩家在光标上有物品堆的情况下拖拽鼠标，将物品分置于各个格子中时触发。通过本事件的 `getType()` 方法可以获知拖拽动作具体是何类型。
 > 
@@ -116,13 +116,13 @@ description: InventoryDragEvent
 > 
 > @return map from raw slot id to new ItemStack
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取本次拖拽后将要被添加入物品栏的物品堆。
 > 
 > @return 一个 `Map` ，其键为物品堆所在的槽位序号（ `raw slot` ），值为物品堆对象。
 > 
-> <p>
+> <br>
 > 
 > 译注：表示某个序号对应的槽位内将被放置什么物品堆。
 
@@ -136,13 +136,13 @@ description: InventoryDragEvent
 > 
 > @return list of raw slot ids, suitable for getView().getItem(int)
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取本次拖拽后内容物将要发生变化的槽位的序号（ `raw slot` ）。
 > 
 > @return 槽位序号列表，其内元素可以作为 `getView().getItem(int)` 语句的参数。
 > 
-> <p>
+> <br>
 > 
 > 译注：通过 `getView().getItem(int)` 语句，可以获取槽位内原有的物品堆。而 `getNewItems()` 方法可以获取将要被添加入槽位的新物品堆。
 > 
@@ -160,13 +160,13 @@ description: InventoryDragEvent
 > 
 > org.bukkit.inventory.Inventory#getItem(int)}.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取本次拖拽后内容物将要发生变化的槽位的序号（ `slot` ）。
 > 
 > @return 槽位序号列表，其内元素可以作为 `Inventory#getItem(int)` 语句的参数。
 > 
-> <p>
+> <br>
 > 
 > 译注：通过 `Inventory#getItem(int)` 语句，可以获取槽位内原有的物品堆。而 `getNewItems()` 方法可以获取将要被添加入槽位的新物品堆。
 > 
@@ -184,7 +184,7 @@ description: InventoryDragEvent
 > 
 > @return the result cursor
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取拖拽后光标上的物品堆。本方法的返回值是可修改的。
 > 
@@ -206,7 +206,7 @@ description: InventoryDragEvent
 > 
 > @param newCursor the new cursor ItemStack
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置拖拽后光标上的物品堆。
 > 
@@ -214,7 +214,7 @@ description: InventoryDragEvent
 > 
 > @param newCursor 拖拽后光标上的物品堆。
 > 
-> <p>
+> <br>
 > 
 > 译注：比如将数量为 `19` 的钻石物品堆沿着九个空格子拖拽，这样会在每个空格子里放置两颗钻石，并且玩家光标上还会剩余一颗钻石。如果用本方法将光标上的钻石数量改成十，不会让这九个格子里的钻石数量由二变为一。同理，如果让这九个格子里的钻石数量由二变为一，也不会使得光标上的钻石数量变成十。拖拽过程中所有受影响的格子里的内容物和光标上的物品堆，互相独立，各不干扰。
 
@@ -230,7 +230,7 @@ description: InventoryDragEvent
 > 
 > @return the original cursor
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取拖拽以前光标上的物品堆。
 > 
@@ -252,7 +252,7 @@ description: InventoryDragEvent
 > 
 > @return the DragType of this InventoryDragEvent
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取拖拽动作的 `DragType` ，此枚举可用于表示事件中的拖拽行为可能造成的影响。
 > 

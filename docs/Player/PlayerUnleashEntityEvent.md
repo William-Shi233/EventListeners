@@ -18,7 +18,7 @@ description: PlayerUnleashEntityEvent
 
 > Called prior to an entity being unleashed due to a player's action.
 > 
-> <p>
+> <br>
 > 
 > 当一个实体身上的拴绳即将因玩家而被解开时触发。本事件在拴绳被解开以前触发。
 
@@ -34,7 +34,7 @@ description: PlayerUnleashEntityEvent
 > 
 > @return The player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取解开拴绳的玩家。
 > 

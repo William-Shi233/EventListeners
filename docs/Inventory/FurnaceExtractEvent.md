@@ -18,7 +18,7 @@ description: FurnaceExtractEvent
 
 > This event is called when a player takes items out of the furnace
 > 
-> <p>
+> <br>
 > 
 > 当玩家从熔炉中取出产物时触发。
 
@@ -34,7 +34,7 @@ description: FurnaceExtractEvent
 > 
 > @return the relevant player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取触发事件的玩家。
 > 
@@ -50,7 +50,7 @@ description: FurnaceExtractEvent
 > 
 > @return the material of the item
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取产物的材质。
 > 
@@ -66,7 +66,7 @@ description: FurnaceExtractEvent
 > 
 > @return the amount of the item
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取产物的数量。
 > 

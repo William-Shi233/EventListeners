@@ -18,7 +18,7 @@ description: PlayerDeathEvent
 
 > Thrown whenever a {@link Player} dies
 > 
-> <p>
+> <br>
 > 
 > 当玩家死亡时触发。
 
@@ -42,13 +42,13 @@ description: PlayerDeathEvent
 > 
 > @param deathMessage Message to appear to other players on the server.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要广播给全服玩家的死亡信息。
 > 
 > @param deathMessage 将要广播给全服玩家的死亡信息。
 > 
-> <p>
+> <br>
 > 
 > 译注：比如“William_Shi experienced kinetic energy”。
 
@@ -62,13 +62,13 @@ description: PlayerDeathEvent
 > 
 > @return Message to appear to other players on the server.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要广播给全服玩家的死亡信息。
 > 
 > @return 将要广播给全服玩家的死亡信息。
 > 
-> <p>
+> <br>
 > 
 > 译注：比如“William_Shi experienced kinetic energy”。
 
@@ -86,7 +86,7 @@ description: PlayerDeathEvent
 > 
 > @return New EXP of the respawned player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家重生后将拥有的经验值。
 > 
@@ -108,7 +108,7 @@ description: PlayerDeathEvent
 > 
 > @param exp New EXP of the respawned player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家重生后将拥有的经验值。
 > 
@@ -126,7 +126,7 @@ description: PlayerDeathEvent
 > 
 > @return New Level of the respawned player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家重生后将拥有的经验等级。
 > 
@@ -142,7 +142,7 @@ description: PlayerDeathEvent
 > 
 > @param level New Level of the respawned player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家重生后将拥有的经验等级。
 > 
@@ -158,7 +158,7 @@ description: PlayerDeathEvent
 > 
 > @return New Total EXP of the respawned player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家重生后将拥有的经验值总量。
 > 
@@ -174,7 +174,7 @@ description: PlayerDeathEvent
 > 
 > @param totalExp New Total EXP of the respawned player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家重生后将拥有的经验值总量。
 > 
@@ -192,7 +192,7 @@ description: PlayerDeathEvent
 > 
 > @return True if Player should keep all pre-death exp
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家是否会在死亡后葆有全部经验值。
 > 
@@ -218,7 +218,7 @@ description: PlayerDeathEvent
 > 
 > @param keepLevel True to keep all current value levels
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家是否会在死亡后葆有全部经验值。
 > 
@@ -244,7 +244,7 @@ description: PlayerDeathEvent
 > 
 > @param keepInventory True to keep the inventory
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家是否会在死亡后葆有物品栏内的物品。
 > 
@@ -262,7 +262,7 @@ description: PlayerDeathEvent
 > 
 > @return True if the player keeps inventory on death
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家是否会在死亡后葆有物品栏内的物品。
 > 

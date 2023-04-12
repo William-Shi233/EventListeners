@@ -18,11 +18,11 @@ description: PlayerChannelEvent
 > 
 > channel.
 > 
-> <p>
+> <br>
 > 
 > 当玩家注册或注销 `PluginChannel` 时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：`PluginChannel` 是 `Bukkit` 插件与客户端模组之间通信的工具。Izzel_Aliz 在其教程[《1.13+ 中 Forge 与 Bukkit 的通信》](https://www.mcbbs.net/thread-873219-1-1.html)及[《Forge | LiteLoader 与 Bukkit / Sponge 之间的通信 —— PluginMessengeChannel 与 FMLNetworkEvent》](https://www.mcbbs.net/thread-725571-1-1.html)中对此工具作了详尽阐述。
 > 

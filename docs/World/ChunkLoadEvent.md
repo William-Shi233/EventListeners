@@ -18,7 +18,7 @@ description: ChunkLoadEvent
 
 > Called when a chunk is loaded
 > 
-> <p>
+> <br>
 > 
 > 当一个区块被加载时触发。
 
@@ -36,7 +36,7 @@ description: ChunkLoadEvent
 > 
 > @return true if the chunk is new, otherwise false
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中的区块是否为在本次事件中新创建的。
 > 
@@ -44,7 +44,7 @@ description: ChunkLoadEvent
 > 
 > @return 如果是新创建的区块则返回 `true` ，否则返回 `false` 。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“新创建”，其意实为区块首次被加载。在区块第一次被加载时要进行世界生成的一些相关操作。每一个区块会且仅会被这种操作处理一次，就是在首次被加载时。以后再次被加载时，世界生成的代码也不会对其进行操作了。
 > 

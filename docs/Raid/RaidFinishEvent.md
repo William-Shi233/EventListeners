@@ -18,11 +18,11 @@ description: RaidFinishEvent
 
 > This event is called when a {@link Raid} was complete with a clear result.
 > 
-> <p>
+> <br>
 > 
 > 当一次袭击以明确结果结束时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：当一次袭击终止（比如游戏难度切换为和平）时，会触发 `RaidStopEvent` ，然后结束袭击，不会触发 `RaidFinishEvent` 。详见 `RaidStopEvent` 译注。
 > 
@@ -46,7 +46,7 @@ description: RaidFinishEvent
 > 
 > @return winners
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取一个不可修改列表，其间存储所有赢得胜利的玩家。
 > 

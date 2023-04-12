@@ -14,11 +14,11 @@ description: HangingEvent
 
 > Represents a hanging entity-related event.
 > 
-> <p>
+> <br>
 > 
 > 代表与悬挂物有关的事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -34,7 +34,7 @@ description: HangingEvent
 > 
 > @return the hanging entity
 > 
-> <p>
+> <br>
 > 
 > 获取事件中的悬挂物实体。
 > 

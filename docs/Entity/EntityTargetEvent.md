@@ -16,7 +16,7 @@ description: EntityTargetEvent
 
 > Called when a creature targets or untargets another entity
 > 
-> <p>
+> <br>
 > 
 > 当实体将某个生物作为其目标，或失去目标时触发。
 
@@ -44,13 +44,13 @@ description: EntityTargetEvent
 > 
 > @return The reason
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取实体切换其目标的原因。
 > 
 > @return 实体切换其目标的原因。
 > 
-> <p>
+> <br>
 > 
 > 译注：该原因不仅包括实体盯上新目标的情况，也包括实体失去旧有目标，茫然逡巡的情况。原句应当改为“Returns the reason for the targeting or untargeting”。为求简洁，译作“切换目标”。
 
@@ -68,7 +68,7 @@ description: EntityTargetEvent
 > 
 > @return The entity
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取被设为目标的实体。
 > 
@@ -96,7 +96,7 @@ description: EntityTargetEvent
 > 
 > @param target The entity to target
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置涉事实体的新目标。
 > 
@@ -106,7 +106,7 @@ description: EntityTargetEvent
 > 
 > @param target 涉事实体的新目标。
 > 
-> <p>
+> <br>
 > 
 > 译注：比如某实体原先以玩家甲为目标，现在其目标即将切换为玩家乙，并触发了本事件。如果取消事件，则其目标仍然为甲。如果调用本方法并传入 `null` ，则实体将没有目标，停止攻击任何一位玩家。
 
@@ -126,11 +126,11 @@ description: EntityTargetEvent
 
 > An enum to specify the reason for the targeting
 > 
-> <p>
+> <br>
 > 
 > 用于确定实体切换目标原因的枚举。
 > 
-> <p>
+> <br>
 > 
 > 译注：该枚举不仅包括实体盯上新目标的情况，也包括实体失去旧有目标，茫然逡巡的情况。原句应当改为“An enum to specify the reason for the targeting or untargeting”。为求简洁，译作“切换目标”。
 
@@ -138,7 +138,7 @@ description: EntityTargetEvent
 
 > When the entity's target has died, and so it no longer targets it
 > 
-> <p>
+> <br>
 > 
 > 实体原有的目标死亡，因而失去目标。
 
@@ -148,7 +148,7 @@ description: EntityTargetEvent
 > 
 > player
 > 
-> <p>
+> <br>
 > 
 > 实体原先没有目标，转而攻击最近的玩家。
 
@@ -156,7 +156,7 @@ description: EntityTargetEvent
 
 > When the target attacks the entity, so entity targets it
 > 
-> <p>
+> <br>
 > 
 > 实体受到攻击，因此将攻击者设为目标。
 
@@ -168,7 +168,7 @@ description: EntityTargetEvent
 > 
 > @deprecated obsoleted by {@link #TARGET_ATTACKED_NEARBY_ENTITY}
 > 
-> <p>
+> <br>
 > 
 > 某僵尸猪灵附近的其他僵尸猪灵受到攻击，因此一整群僵尸猪灵将攻击者设为目标。
 > 
@@ -178,7 +178,7 @@ description: EntityTargetEvent
 
 > When the target is forgotten for whatever reason.
 > 
-> <p>
+> <br>
 > 
 > 因各种原因，实体忘却了自己的目标。
 
@@ -188,11 +188,11 @@ description: EntityTargetEvent
 > 
 > targets it.
 > 
-> <p>
+> <br>
 > 
 > 实体的主人受到攻击，因此实体将攻击者设为目标。
 > 
-> <p>
+> <br>
 > 
 > 译注：即被驯服的生物护主。
 
@@ -202,11 +202,11 @@ description: EntityTargetEvent
 > 
 > entity targets it.
 > 
-> <p>
+> <br>
 > 
 > 实体的主人攻击了某个生物，因此涉事实体也将该生物作为目标。
 > 
-> <p>
+> <br>
 > 
 > 译注：即被驯服的生物攻击主人所攻击的目标。
 
@@ -214,7 +214,7 @@ description: EntityTargetEvent
 
 > When the entity has no target, so the entity randomly chooses one.
 > 
-> <p>
+> <br>
 > 
 > 实体原先没有目标，转而随机选取周遭实体作为目标。
 
@@ -222,7 +222,7 @@ description: EntityTargetEvent
 
 > When an entity selects a target while defending a village.
 > 
-> <p>
+> <br>
 > 
 > 实体在保卫村庄的过程中选取目标。
 
@@ -230,11 +230,11 @@ description: EntityTargetEvent
 
 > When the target attacks a nearby entity of the same type, so the entity targets it
 > 
-> <p>
+> <br>
 > 
 > 实体发现附近的同类实体遭到攻击，因此将攻击者设为目标。
 > 
-> <p>
+> <br>
 > 
 > 译注：如某一僵尸猪灵遭到攻击后，周遭的一群僵尸猪灵都会愤怒。
 
@@ -242,11 +242,11 @@ description: EntityTargetEvent
 
 > When a zombie targeting an entity summons reinforcements, so the reinforcements target the same entity
 > 
-> <p>
+> <br>
 > 
 > 某一僵尸召唤增援，被召唤出的僵尸使自身的目标与之相同。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `MineCraft Wiki` 中有关僵尸的相关页面 [https://minecraft.fandom.com/wiki/Zombie#Reinforcements](https://minecraft.fandom.com/wiki/Zombie#Reinforcements) 可知，在困难难度下，当僵尸受到伤害时，其有一定概率召唤增援，在其四周生成新的僵尸。
 
@@ -254,7 +254,7 @@ description: EntityTargetEvent
 
 > When an entity targets another entity after colliding with it.
 > 
-> <p>
+> <br>
 > 
 > 涉事实体与另一实体相撞，因而以之作为目标。
 
@@ -262,7 +262,7 @@ description: EntityTargetEvent
 
 > For custom calls to the event.
 > 
-> <p>
+> <br>
 > 
 > 事件并非由服务端触发，而是插件触发。插件自定义某种不属于原版游戏内容的原因。
 
@@ -272,7 +272,7 @@ description: EntityTargetEvent
 > 
 > entity
 > 
-> <p>
+> <br>
 > 
 > 实体原先没有目标，转而攻击最近的实体。
 
@@ -280,7 +280,7 @@ description: EntityTargetEvent
 
 > When a raiding entity selects the same target as one of its compatriots.
 > 
-> <p>
+> <br>
 > 
 > 某一掠夺者将同伴的目标设为自己的目标。
 
@@ -290,11 +290,11 @@ description: EntityTargetEvent
 > 
 > as wheat in it's hand.
 > 
-> <p>
+> <br>
 > 
 > 某一实体手持小麦等物品引诱涉事实体。
 > 
-> <p>
+> <br>
 > 
 > 译注：小麦用于吸引羊、牛等实体。
 
@@ -302,6 +302,6 @@ description: EntityTargetEvent
 
 > A currently unknown reason for the entity changing target.
 > 
-> <p>
+> <br>
 > 
 > 未知原因。

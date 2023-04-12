@@ -16,11 +16,11 @@ description: RaidEvent
 
 > Represents events related to raids.
 > 
-> <p>
+> <br>
 > 
 > 代表与袭击有关的事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -36,7 +36,7 @@ description: RaidEvent
 > 
 > @return Raid
 > 
-> <p>
+> <br>
 > 
 > 获取事件中的袭击。
 > 

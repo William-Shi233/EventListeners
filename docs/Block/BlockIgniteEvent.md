@@ -20,7 +20,7 @@ description: BlockIgniteEvent
 > 
 > If a Block Ignite event is cancelled, the block will not be ignited.
 > 
-> <p>
+> <br>
 > 
 > 当方块被点燃时触发。如果需要监听玩家放置一个火焰方块，请参见 `BlockPlaceEvent` 。
 > 
@@ -50,7 +50,7 @@ description: BlockIgniteEvent
 > 
 > @return An IgniteCause value detailing the cause of block ignition
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取方块被点燃的原因。
 > 
@@ -66,7 +66,7 @@ description: BlockIgniteEvent
 > 
 > @return The Player that placed/ignited the fire block, or null if not ignited by a Player.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取点燃方块的玩家。
 > 
@@ -82,7 +82,7 @@ description: BlockIgniteEvent
 > 
 > @return The Entity that placed/ignited the fire block, or null if not ignited by a Entity.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取点燃方块的实体。
 > 
@@ -98,7 +98,7 @@ description: BlockIgniteEvent
 > 
 > @return The Block that placed/ignited the fire block, or null if not ignited by a Block.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取点燃方块的火源方块。
 > 
@@ -120,7 +120,7 @@ description: BlockIgniteEvent
 
 > An enum to specify the cause of the ignite
 > 
-> <p>
+> <br>
 > 
 > 用于确定方块被点燃原因的枚举。
 
@@ -128,7 +128,7 @@ description: BlockIgniteEvent
 
 > Block ignition caused by lava.
 > 
-> <p>
+> <br>
 > 
 > 方块被岩浆点燃。
 
@@ -136,7 +136,7 @@ description: BlockIgniteEvent
 
 > Block ignition caused by a player or dispenser using flint-and-steel.
 > 
-> <p>
+> <br>
 > 
 > 玩家或发射器使用打火石点燃了方块。
 
@@ -144,7 +144,7 @@ description: BlockIgniteEvent
 
 > Block ignition caused by dynamic spreading of fire.
 > 
-> <p>
+> <br>
 > 
 > 火焰方块蔓延，点燃了其他方块。
 
@@ -152,7 +152,7 @@ description: BlockIgniteEvent
 
 > Block ignition caused by lightning.
 > 
-> <p>
+> <br>
 > 
 > 方块被闪电点燃。
 
@@ -160,7 +160,7 @@ description: BlockIgniteEvent
 
 > Block ignition caused by an entity using a fireball.
 > 
-> <p>
+> <br>
 > 
 > 方块被火焰弹点燃。
 
@@ -168,11 +168,11 @@ description: BlockIgniteEvent
 
 > Block ignition caused by an Ender Crystal.
 > 
-> <p>
+> <br>
 > 
 > 方块被末影水晶点燃。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `MineCraft Wiki` 上的页面 [https://minecraft.fandom.com/wiki/End_Crystal#Respawning_the_ender_dragon](https://minecraft.fandom.com/wiki/End_Crystal#Respawning_the_ender_dragon) 可知，如果在末地放置末影水晶，则其下方会自动生成一格火焰方块。
 
@@ -180,7 +180,7 @@ description: BlockIgniteEvent
 
 > Block ignition caused by explosion.
 > 
-> <p>
+> <br>
 > 
 > 方块被一场爆炸点燃。
 
@@ -188,10 +188,10 @@ description: BlockIgniteEvent
 
 > Block ignition caused by a flaming arrow.
 > 
-> <p>
+> <br>
 > 
 > 方块被一支着火的箭矢点燃。
 > 
-> <p>
+> <br>
 > 
 > 译注：比如参见 `MineCraft Wiki` 上的页面 [https://minecraft.fandom.com/wiki/Campfire#Usage](https://minecraft.fandom.com/wiki/Campfire#Usage) 可知，着火的箭矢能点燃熄灭的营火。

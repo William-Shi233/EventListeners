@@ -18,7 +18,7 @@ description: ProjectileLaunchEvent
 
 > Called when a projectile is launched.
 > 
-> <p>
+> <br>
 > 
 > 当抛射物被发射时触发。
 

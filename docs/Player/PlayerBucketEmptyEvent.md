@@ -18,7 +18,7 @@ description: PlayerBucketEmptyEvent
 
 > Called when a player empties a bucket
 > 
-> <p>
+> <br>
 > 
 > 当玩家倒空桶时触发。
 

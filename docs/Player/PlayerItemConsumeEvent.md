@@ -26,7 +26,7 @@ description: PlayerItemConsumeEvent
 > 
 > not be removed from the player's inventory.
 > 
-> <p>
+> <br>
 > 
 > 当玩家食用完某一物品后触发，比如食物、药水、牛奶等。
 > 
@@ -50,7 +50,7 @@ description: PlayerItemConsumeEvent
 > 
 > @return an ItemStack for the item being consumed
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家将要食用的物品堆。对本方法的返回值作修改是没有意义的。请使用 `setItem(org.bukkit.inventory.ItemStack)` 方法来替换玩家将要食用的物品堆。
 > 
@@ -66,7 +66,7 @@ description: PlayerItemConsumeEvent
 > 
 > @param item the item being consumed
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家将要食用的物品堆。
 > 

@@ -26,7 +26,7 @@ description: LootGenerateEvent
 > 
 > {@link LootTable#fillInventory(org.bukkit.inventory.Inventory, java.util.Random, LootContext)}.
 > 
-> <p>
+> <br>
 > 
 > 当一个 `LootTable` 被用于在某个世界中填充一个 `InventoryHolder` 时触发。
 > 
@@ -34,7 +34,7 @@ description: LootGenerateEvent
 > 
 > 当其他插件调用了 `LootTable#fillInventory(org.bukkit.inventory.Inventory, java.util.Random, LootContext)` 方法时，本事件**会**被触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：`LootTable` 是战利品表。战利品表用于生成宝箱中的物品、用于生成钓鱼时钓上岸的物品堆、用于确定树叶自然腐烂时掉下苹果的概率……总之，许多与概率相关的地方都有战利品表的身影。所谓“填充一个 `InventoryHolder`”，主要指的是填充宝箱。`InventoryHolder` 不等同于 `Inventory` ，前者是物品栏的拥有者，比如玩家是玩家背包的拥有者，箱子方块是箱子物品栏的拥有者。此事件偏重于宝箱被填充时触发，而树叶腐烂等情况是不会触发本事件的。
 
@@ -58,7 +58,7 @@ description: LootGenerateEvent
 > 
 > @return the entity
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取战利品生成上下文中的实体（如有）。
 > 
@@ -68,7 +68,7 @@ description: LootGenerateEvent
 > 
 > @return 相关实体。
 > 
-> <p>
+> <br>
 > 
 > 译注：实体是可以影响战利品生成的。在 `MineCraft Wiki` 中的 `Luck` 页面（ [https://minecraft.fandom.com/wiki/Luck](https://minecraft.fandom.com/wiki/Luck) ），存在关于实体幸运属性的论述。实体获取战利品时，其 `generic.luck` 属性也会参与计算，如果实体的 `generic.luck` 属性值更高，则战利品表中 `quality` 值高的结果更可能出现。因此根据战利品表生成战利品时，实体也是参与计算的一环。
 
@@ -86,7 +86,7 @@ description: LootGenerateEvent
 > 
 > @return the inventory holder
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中将要被填充的 `InventoryHolder` 。
 > 
@@ -94,7 +94,7 @@ description: LootGenerateEvent
 > 
 > @return 物品栏的拥有者。
 > 
-> <p>
+> <br>
 > 
 > 译注：`InventoryHolder` 名词解释见上。
 > 
@@ -110,7 +110,7 @@ description: LootGenerateEvent
 > 
 > @return the loot table
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中所使用的战利品表。
 > 
@@ -128,13 +128,13 @@ description: LootGenerateEvent
 > 
 > @return the loot context
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取战利品表的上下文。在根据战利品表生成战利品的过程中，需要上下文来提供信息。
 > 
 > @return 战利品表上下文。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“上下文”，指的是生成战利品时所需要的所有信息，比如有关实体（钓鱼时读取玩家的 `generic.luck` 属性）、比如生成的位置（宝箱的位置）等等，此处未列全。有了这些信息，就可以完成战利品的生成。`Context` 一词，在程序设计中指的是开发者完成一项任务所需要的全部信息，或者程序运行所需要的一些基本信息的集合。比如线程有 `ContextClassLoader` 等。`Context` 就像是程序运行所需要的环境。
 
@@ -152,7 +152,7 @@ description: LootGenerateEvent
 > 
 > @param loot the loot to generate, null to clear all loot
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要被填充进宝箱的物品堆列表。
 > 
@@ -162,7 +162,7 @@ description: LootGenerateEvent
 > 
 > @param loot 将要被填充进宝箱的物品堆列表。如果传入 `null` 将清空所有物品堆，不会有任何战利品生成。
 > 
-> <p>
+> <br>
 > 
 > 译注：`getLoot` 和 `setLoot` 两个方法维护的是同一个集合，名为 `loot` ，类型为 `List<ItemStack>` 。此处的 `loot` 不是方法参数里的 `loot` ，尽管二者名字相同。为了作出区别，按照 `Java` 写法，以下所有 `this.loot` 表示事件类中的集合，而 `loot` 表示用户传入的参数。
 > 
@@ -202,7 +202,7 @@ description: LootGenerateEvent
 > 
 > @return the loot to generate
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要被填充进宝箱的物品堆列表。
 > 
@@ -212,7 +212,7 @@ description: LootGenerateEvent
 > 
 > @return 将要被填充进宝箱的物品堆列表。
 > 
-> <p>
+> <br>
 > 
 > 译注：见上 `setLoot` 方法。
 
@@ -230,13 +230,13 @@ description: LootGenerateEvent
 > 
 > @return true if plugin caused, false otherwise
 > 
-> <p>
+> <br>
 > 
 > 该方法用于检测本事件是否系由于插件行为而触发。当插件调用 `LootTable#fillInventory(org.bukkit.inventory.Inventory, java.util.Random, LootContext)` 方法时，会触发本事件。
 > 
 > @return 如果是由插件行为触发，返回 `true` ，否则返回 `false` 。
 > 
-> <p>
+> <br>
 > 
 > 译注：插件可以利用上述方法来为任意一个自定义的物品栏生成内容，自制宝箱。
 

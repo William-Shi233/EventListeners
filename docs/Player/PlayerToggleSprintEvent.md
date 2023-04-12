@@ -16,11 +16,11 @@ description: PlayerToggleSprintEvent
 
 > Called when a player toggles their sprinting state
 > 
-> <p>
+> <br>
 > 
 > 当玩家切换疾跑状态时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“切换疾跑状态”，指玩家按下或松开 `W` 键，进入或退出疾跑状态。
 
@@ -36,13 +36,13 @@ description: PlayerToggleSprintEvent
 > 
 > @return sprinting state
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家当前是否正在疾跑。
 > 
 > @return 疾跑状态。
 > 
-> <p>
+> <br>
 > 
 > 译注：文档有误。该方法返回的是玩家是否即将疾跑，不是玩家当前的状态。如果玩家连续按下 `W` 键进入疾跑状态则返回 `true` 。
 > 

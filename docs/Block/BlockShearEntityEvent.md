@@ -16,11 +16,11 @@ description: BlockShearEntityEvent
 
 > Event fired when a dispenser shears a nearby sheep.
 > 
-> <p>
+> <br>
 > 
 > 当发射器为附近的某只羊剪毛时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Dispenser#Usage](https://minecraft.fandom.com/wiki/Dispenser#Usage) 可知，当发射器内装有剪刀时，可以剪下羊的羊毛、哞菇身上的蘑菇。
 > 
@@ -38,13 +38,13 @@ description: BlockShearEntityEvent
 > 
 > @return the entity that was sheared.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中被剪毛的羊。
 > 
 > @return 事件中被剪毛的羊。
 > 
-> <p>
+> <br>
 > 
 > 译注：本事件不仅局限于给羊剪毛时触发，应作“事件中被修剪的实体”。
 
@@ -58,13 +58,13 @@ description: BlockShearEntityEvent
 > 
 > @return the item used to shear this sheep.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取给羊剪毛时所用的物品堆。
 > 
 > @return 给羊剪毛时所用的物品堆。
 > 
-> <p>
+> <br>
 > 
 > 译注：本事件不仅局限于给羊剪毛时触发，应作“修剪时所用的物品堆”。
 

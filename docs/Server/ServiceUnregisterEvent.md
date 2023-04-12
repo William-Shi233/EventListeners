@@ -22,13 +22,13 @@ description: ServiceUnregisterEvent
 > 
 > should not be relied upon.
 > 
-> <p>
+> <br>
 > 
 > 当一个 `Service` 被注销时触发。
 > 
 > 警告：各个 `Service` 的注册和注销事件的发生顺序是不可靠的，不能依赖这些事件的发生顺序来设计程序。
 > 
-> <p>
+> <br>
 > 
 > 译注：在 `Bukkit` 中，`Service` 不需要注销。此处所指的应当是 `ServiceProvider` 。详见 `ServiceEvent` 译注。
 

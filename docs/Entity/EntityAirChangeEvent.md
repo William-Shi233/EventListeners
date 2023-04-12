@@ -16,11 +16,11 @@ description: EntityAirChangeEvent
 
 > Called when the amount of air an entity has remaining changes.
 > 
-> <p>
+> <br>
 > 
 > 当实体剩余的氧气值变化时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Damage#Drowning](https://minecraft.fandom.com/wiki/Damage#Drowning) 可知，大多数实体处于水中会消耗氧气。如果氧气不足，会缺氧淹死。
 
@@ -36,7 +36,7 @@ description: EntityAirChangeEvent
 > 
 > @return amount of air remaining
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取实体剩余的氧气量（以 `tick` 为单位）。
 > 
@@ -52,7 +52,7 @@ description: EntityAirChangeEvent
 > 
 > @param amount amount of air remaining
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置实体剩余的氧气量（以 `tick` 为单位）。
 > 

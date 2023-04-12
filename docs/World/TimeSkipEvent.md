@@ -18,7 +18,7 @@ description: TimeSkipEvent
 > 
 > If the event is cancelled the time will not change.
 > 
-> <p>
+> <br>
 > 
 > 当世界时间因为种种原因快进时触发。
 > 
@@ -36,7 +36,7 @@ description: TimeSkipEvent
 > 
 > @return a SkipReason value detailing why the time has skipped
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取时间快进的原因。
 > 
@@ -52,7 +52,7 @@ description: TimeSkipEvent
 > 
 > @return Amount of time skipped
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取时间快进的量。
 > 
@@ -68,7 +68,7 @@ description: TimeSkipEvent
 > 
 > @param skipAmount Amount of time to skip
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置时间快进的量。
 > 
@@ -102,7 +102,7 @@ description: TimeSkipEvent
 
 > An enum specifying the reason the time skipped.
 > 
-> <p>
+> <br>
 > 
 > 用于确定时间快进原因的枚举。
 
@@ -110,7 +110,7 @@ description: TimeSkipEvent
 
 > When time is changed using the vanilla /time command.
 > 
-> <p>
+> <br>
 > 
 > 使用原版指令 `/time` 导致快进。
 
@@ -118,7 +118,7 @@ description: TimeSkipEvent
 
 > When time is changed by a plugin.
 > 
-> <p>
+> <br>
 > 
 > 插件修改了时间。
 
@@ -128,10 +128,10 @@ description: TimeSkipEvent
 > 
 > night skips.
 > 
-> <p>
+> <br>
 > 
 > 所有玩家都在床上睡觉，加速度过夜晚。
 > 
-> <p>
+> <br>
 > 
 > 译注：由于 `playersSleepingPercentage` 这一 `GameRule` 的存在，加速度过夜晚未必要求所有玩家都睡觉，只需要高于某个百分比的玩家在睡觉即可，原版默认为 `100%` 。

@@ -16,7 +16,7 @@ description: PlayerGameModeChangeEvent
 
 > Called when the GameMode of the player is changed.
 > 
-> <p>
+> <br>
 > 
 > 当玩家游戏模式变化时触发。
 
@@ -44,13 +44,13 @@ description: PlayerGameModeChangeEvent
 > 
 > @return  player's new GameMode
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家的新游戏模式。
 > 
 > @return 玩家的新游戏模式。
 > 
-> <p>
+> <br>
 > 
 > 译注：可以使用 `Player#getGameMode()` 方法获取玩家的旧游戏模式。
 

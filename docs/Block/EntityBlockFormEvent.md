@@ -30,7 +30,7 @@ description: EntityBlockFormEvent
 > 
 > </ul>
 > 
-> <p>
+> <br>
 > 
 > 当实体引起方块生成时触发。
 > 
@@ -56,7 +56,7 @@ description: EntityBlockFormEvent
 > 
 > @return Entity involved in event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取导致方块生成的实体。
 > 

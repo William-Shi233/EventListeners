@@ -18,7 +18,7 @@ description: NotePlayEvent
 > 
 > redstone current.
 > 
-> <p>
+> <br>
 > 
 > 当音符盒方块由于玩家交互或收到红石信号而被奏响时触发。
 
@@ -46,13 +46,13 @@ description: NotePlayEvent
 > 
 > @return the Instrument
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要发出何种乐器的声音。
 > 
 > @return 将要发出何种乐器的声音。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Note_Block#Instruments](https://minecraft.fandom.com/wiki/Note_Block#Instruments) 可知，音符盒所发出的声音音色随其下方方块的材质而变化，比如当音符盒下方为羊毛时，与之交互会发出吉他声。
 
@@ -66,7 +66,7 @@ description: NotePlayEvent
 > 
 > @return the Note
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要演奏的音符。
 > 
@@ -84,7 +84,7 @@ description: NotePlayEvent
 > 
 > @deprecated no effect on newer Minecraft versions
 > 
-> <p>
+> <br>
 > 
 > @deprecated 该方法已过时。在较新版本的 `MineCraft` 中此方法无效。
 
@@ -100,7 +100,7 @@ description: NotePlayEvent
 > 
 > @deprecated no effect on newer Minecraft versions
 > 
-> <p>
+> <br>
 > 
 > @deprecated 该方法已过时。在较新版本的 `MineCraft` 中此方法无效。
 

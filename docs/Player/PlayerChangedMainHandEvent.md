@@ -16,11 +16,11 @@ description: PlayerChangedMainHandEvent
 
 > Called when a player changes their main hand in the client settings.
 > 
-> <p>
+> <br>
 > 
 > 当玩家在客户端设置中修改其主手时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：本事件的触发时机是玩家在客户端设置中的“自定义皮肤”界面设置其主手为左手或右手时。主手默认为右手，副手默认为左手。
 > 
@@ -40,7 +40,7 @@ description: PlayerChangedMainHandEvent
 > 
 > @return the new {@link MainHand} of the player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要成为主手的那一侧手臂。可以使用 `Player#getMainHand()` 方法获取原先的主手。
 > 

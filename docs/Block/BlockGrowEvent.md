@@ -36,7 +36,7 @@ description: BlockGrowEvent
 > 
 > If a Block Grow event is cancelled, the block will not grow.
 > 
-> <p>
+> <br>
 > 
 > 当方块在世界中自然生长时触发。
 > 
@@ -72,7 +72,7 @@ description: BlockGrowEvent
 > 
 > @return The block state for this events block
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取涉事方块生长以后的新块状态。如果涉及到方块蔓延，则返回新生成的方块的块状态。
 > 

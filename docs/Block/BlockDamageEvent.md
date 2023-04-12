@@ -18,13 +18,13 @@ description: BlockDamageEvent
 > 
 > If a Block Damage event is cancelled, the block will not be damaged.
 > 
-> <p>
+> <br>
 > 
 > 当玩家尝试挖掘方块时触发。
 > 
 > 如果本事件被取消，则方块将不会再处于被挖掘中的状态。
 > 
-> <p>
+> <br>
 > 
 > 译注：本事件是在玩家开始挖掘时触发，只要左键点击了一瞬，就可以触发此事件。而 `BlockBreakEvent` 是在方块被完全破坏以后触发的。如果对该 `BlockBreakEvent` 对象调用 `isDropItems()` 方法，返回值不为 `false` ，且该 `BlockBreakEvent` 未被取消，则会在 `BlockBreakEvent` 触发后再触发 `BlockDropItemEvent` 。
 > 
@@ -42,7 +42,7 @@ description: BlockDamageEvent
 > 
 > @return The player damaging the block involved in this event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取挖掘方块的玩家。
 > 
@@ -60,7 +60,7 @@ description: BlockDamageEvent
 > 
 > player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家是否能瞬间破坏方块。
 > 
@@ -78,7 +78,7 @@ description: BlockDamageEvent
 > 
 > by the player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家是否能瞬间破坏方块。
 > 
@@ -94,7 +94,7 @@ description: BlockDamageEvent
 > 
 > @return The ItemStack for the item currently in the player's hand
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家手持的物品堆。
 > 

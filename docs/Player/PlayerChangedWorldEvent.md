@@ -16,11 +16,11 @@ description: PlayerChangedWorldEvent
 
 > Called when a player switches to another world.
 > 
-> <p>
+> <br>
 > 
 > 当玩家由原先所处的世界进入另一世界时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：本事件触发时玩家已经进入了另一个世界，因此本事件是不可取消的。
 > 
@@ -40,13 +40,13 @@ description: PlayerChangedWorldEvent
 > 
 > @return  player's previous world
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家原先所在的世界。
 > 
 > @return 玩家原先所在的世界。
 > 
-> <p>
+> <br>
 > 
 > 译注：没有 `getTo()` 方法，是因为本事件触发时玩家已经进入了另一个世界，直接通过玩家对象所在位置即可获知玩家进入的是何世界。
 

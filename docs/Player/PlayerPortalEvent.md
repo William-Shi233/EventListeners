@@ -24,13 +24,13 @@ description: PlayerPortalEvent
 > 
 > For other entities see {@link org.bukkit.event.entity.EntityPortalEvent}
 > 
-> <p>
+> <br>
 > 
 > 当玩家步入传送门准备传送，且该传送门的出口处将要生成一个出口时触发。
 > 
 > 如有玩家之外的实体处于相同情况下，可使用 `EntityPortalEvent` 监听。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“生成一个出口”，指玩家在主世界进入下界且下界的对应位置没有传送门，反之亦然。但是本事件实际上并非是在生成新传送门时触发的。每次玩家通过下界传送门、末地传送门，都会触发本事件。触发时，不一定在出口生成一座新传送门，也可能使用已有的传送门。
 
@@ -48,13 +48,13 @@ description: PlayerPortalEvent
 > 
 > location
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置搜寻可用传送门时扫描的半径。
 > 
 > @param searchRadius 搜寻可用传送门时扫描的半径。
 > 
-> <p>
+> <br>
 > 
 > 译注：对末地传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要对传送门坐标进行“搜寻”。
 > 
@@ -70,13 +70,13 @@ description: PlayerPortalEvent
 > 
 > @return the currently set search radius
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取搜寻可用传送门时扫描的半径。
 > 
 > @return 搜寻可用传送门时扫描的半径。
 > 
-> <p>
+> <br>
 > 
 > 译注：对末地传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要对传送门坐标进行“搜寻”。
 > 
@@ -94,13 +94,13 @@ description: PlayerPortalEvent
 > 
 > @return whether there should create be a destination portal created
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取服务器是否会尝试在出口处新建一个传送门。
 > 
 > @return 服务器是否会尝试在出口处新建一个传送门。
 > 
-> <p>
+> <br>
 > 
 > 译注：除非有插件开发者调用本事件 `setCanCreatePortal` 方法修改，否则本方法一定会返回 `true` 。即使已经搜寻到了旧有的下界传送门、即使是传送到末地的黑曜石平台，也返回 `true` 。
 
@@ -118,7 +118,7 @@ description: PlayerPortalEvent
 > 
 > created
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置服务器是否会尝试在出口处新建一个传送门。
 > 
@@ -146,7 +146,7 @@ description: PlayerPortalEvent
 > 
 > location
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置尝试创建新传送门时扫描的半径。
 > 
@@ -156,7 +156,7 @@ description: PlayerPortalEvent
 > 
 > @param creationRadius 尝试创建新传送门时扫描的半径。
 > 
-> <p>
+> <br>
 > 
 > 译注：对末地传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要寻找用于创建传送门的空间。
 > 
@@ -182,7 +182,7 @@ description: PlayerPortalEvent
 > 
 > @return the currently set creation radius
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取尝试创建新传送门时扫描的半径。
 > 
@@ -192,7 +192,7 @@ description: PlayerPortalEvent
 > 
 > @return 尝试创建新传送门时扫描的半径。
 > 
-> <p>
+> <br>
 > 
 > 译注：对末地传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要寻找用于创建传送门的空间。
 > 

@@ -16,7 +16,7 @@ description: FireworkExplodeEvent
 
 > Called when a firework explodes.
 > 
-> <p>
+> <br>
 > 
 > 当一枚烟花火箭爆炸时触发。
 
@@ -42,7 +42,7 @@ description: FireworkExplodeEvent
 > 
 > @param cancel whether to cancel or not.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置本事件取消与否。如果本事件被取消，则烟花火箭实体仍然会消失，但烟花相关的粒子效果将不会出现。
 > 

@@ -14,11 +14,11 @@ description: WeatherEvent
 
 > Represents a Weather-related event
 > 
-> <p>
+> <br>
 > 
 > 代表与天气有关的事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -34,7 +34,7 @@ description: WeatherEvent
 > 
 > @return World this event is occurring in
 > 
-> <p>
+> <br>
 > 
 > 获取发生了事件的世界。
 > 

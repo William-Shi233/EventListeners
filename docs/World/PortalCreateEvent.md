@@ -16,7 +16,7 @@ description: PortalCreateEvent
 
 > Called when a portal is created
 > 
-> <p>
+> <br>
 > 
 > 当一个传送门被创建时触发。
 
@@ -32,7 +32,7 @@ description: PortalCreateEvent
 > 
 > @return array list of all the blocks associated with the created portal
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取一个 `ArrayList` ，其间存储有全部与传送门相关的方块。
 > 
@@ -48,7 +48,7 @@ description: PortalCreateEvent
 > 
 > @return Entity involved in this event
 > 
-> <p>
+> <br>
 > 
 > 该方法返回触发了传送门创建的实体（如果能获取到）。
 > 
@@ -76,7 +76,7 @@ description: PortalCreateEvent
 > 
 > @return CreateReason for the portal's creation
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取传送门创建的原因。
 > 
@@ -98,7 +98,7 @@ description: PortalCreateEvent
 
 > An enum to specify the various reasons for a portal's creation
 > 
-> <p>
+> <br>
 > 
 > 用于确定传送门创建原因的枚举。
 
@@ -108,11 +108,11 @@ description: PortalCreateEvent
 > 
 > being set on fire.
 > 
-> <p>
+> <br>
 > 
 > 由于传送门框架被点燃，传送门方块生成在了框架内部。
 > 
-> <p>
+> <br>
 > 
 > 译注：下界传送门（又称地狱门）被点燃。
 
@@ -122,11 +122,11 @@ description: PortalCreateEvent
 > 
 > entered nether portal.
 > 
-> <p>
+> <br>
 > 
 > 当玩家进入某个下界传送门时，在下界传送门的出口处生成一个下界传送门框架以及其内的传送门方块。
 > 
-> <p>
+> <br>
 > 
 > 译注：比如玩家在主世界进入下界传送门时，下界的对应位置会自动产生一个下界传送门。此时主世界的传送门是“入口”，下界的传送门是“出口”。
 
@@ -136,11 +136,11 @@ description: PortalCreateEvent
 > 
 > entering an end portal.
 > 
-> <p>
+> <br>
 > 
 > 目标末地平台由于玩家进入末地传送门而被创建。
 > 
-> <p>
+> <br>
 > 
 > 译注：指末地黑曜石平台因为玩家进入末地而被刷新。参见 `net.minecraft.server.v1_16_R3.WorldServer#a(WorldServer worldserver, Entity entity)` ，在该类第 `1816-1834` 行。
 > 

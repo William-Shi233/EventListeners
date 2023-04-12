@@ -16,7 +16,7 @@ description: VehicleDamageEvent
 
 > Raised when a vehicle receives damage.
 > 
-> <p>
+> <br>
 > 
 > 当载具受到伤害时触发。
 
@@ -32,13 +32,13 @@ description: VehicleDamageEvent
 > 
 > @return the Entity that is attacking the vehicle
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取攻击载具的实体。
 > 
 > @return 攻击载具的实体。
 > 
-> <p>
+> <br>
 > 
 > 译注：可能返回 `null` ，因为载具也可能受到岩浆等形式的伤害。
 
@@ -52,7 +52,7 @@ description: VehicleDamageEvent
 > 
 > @return the damage done to the vehicle
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取载具受到的伤害量。
 > 
@@ -68,7 +68,7 @@ description: VehicleDamageEvent
 > 
 > @param damage The damage
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置载具受到的伤害量。
 > 

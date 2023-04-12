@@ -18,7 +18,7 @@ description: PlayerChatTabCompleteEvent
 > 
 > @deprecated This event is no longer fired due to client changes
 > 
-> <p>
+> <br>
 > 
 > 当玩家在聊天消息中使用 `Tab` 补全时触发。
 > 
@@ -36,7 +36,7 @@ description: PlayerChatTabCompleteEvent
 > 
 > @return the chat message
 > 
-> <p>
+> <br>
 > 
 > 译注：请不要使用本事件。本事件已经过时。
 
@@ -54,7 +54,7 @@ description: PlayerChatTabCompleteEvent
 > 
 > @return The last token for the chat message
 > 
-> <p>
+> <br>
 > 
 > 译注：请不要使用本事件。本事件已经过时。
 
@@ -68,7 +68,7 @@ description: PlayerChatTabCompleteEvent
 > 
 > @return the current completions
 > 
-> <p>
+> <br>
 > 
 > 译注：请不要使用本事件。本事件已经过时。
 

@@ -16,7 +16,7 @@ description: VehicleExitEvent
 
 > Raised when a living entity exits a vehicle.
 > 
-> <p>
+> <br>
 > 
 > 当生物从载具中离开时触发。
 
@@ -32,7 +32,7 @@ description: VehicleExitEvent
 > 
 > @return The entity.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取离开载具的生物。
 > 

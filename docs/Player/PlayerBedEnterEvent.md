@@ -16,11 +16,11 @@ description: PlayerBedEnterEvent
 
 > This event is fired when the player is almost about to enter the bed.
 > 
-> <p>
+> <br>
 > 
 > 当玩家将要在床上就寝时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“将要”，指本事件在玩家躺下以前触发。如果取消本事件，玩家就无法上床就寝。
 > 
@@ -46,13 +46,13 @@ description: PlayerBedEnterEvent
 > 
 > @return the bed enter result representing the default outcome of this event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取本事件的默认结果。
 > 
 > @return 本事件的默认结果。
 > 
-> <p>
+> <br>
 > 
 > 译注：见上。
 
@@ -72,7 +72,7 @@ description: PlayerBedEnterEvent
 > 
 > @see #setUseBed(org.bukkit.event.Event.Result)
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要对事件中的床采取何种措施。
 > 
@@ -82,7 +82,7 @@ description: PlayerBedEnterEvent
 > 
 > @see 参见本事件的 `setUseBed(org.bukkit.event.Event.Result)` 方法。
 > 
-> <p>
+> <br>
 > 
 > 译注：见上。
 
@@ -110,7 +110,7 @@ description: PlayerBedEnterEvent
 > 
 > @see #useBed()
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要对事件中的床采取何种措施。
 > 
@@ -124,7 +124,7 @@ description: PlayerBedEnterEvent
 > 
 > @see 参见本事件的 `useBed()` 方法。
 > 
-> <p>
+> <br>
 > 
 > 译注：见上。
 
@@ -150,7 +150,7 @@ description: PlayerBedEnterEvent
 > 
 > @return boolean cancellation state
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取本事件是否被取消。如欲阻止玩家就寝，请使用 `setCancelled` 方法取消本事件。
 > 
@@ -160,7 +160,7 @@ description: PlayerBedEnterEvent
 > 
 > @return 事件取消状态。
 > 
-> <p>
+> <br>
 > 
 > 译注：见上。
 
@@ -178,13 +178,13 @@ description: PlayerBedEnterEvent
 > 
 > @param cancel true if you wish to cancel this event
 > 
-> <p>
+> <br>
 > 
 > 取消该事件，则玩家将无法上床就寝。
 > 
 > @param cancel 如欲取消该事件，则传入 `true` 作为参数。
 > 
-> <p>
+> <br>
 > 
 > 译注：原文第一段为所有 `setCancelled` 方法共用的文档，不赘。
 
@@ -198,7 +198,7 @@ description: PlayerBedEnterEvent
 > 
 > @return the bed block involved in this event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中的床方块。
 > 
@@ -220,7 +220,7 @@ description: PlayerBedEnterEvent
 
 > Represents the default possible outcomes of this event.
 > 
-> <p>
+> <br>
 > 
 > 用于确定本事件可能结果的枚举。
 
@@ -228,7 +228,7 @@ description: PlayerBedEnterEvent
 
 > The player will enter the bed.
 > 
-> <p>
+> <br>
 > 
 > 玩家可以上床就寝。
 
@@ -244,7 +244,7 @@ description: PlayerBedEnterEvent
 > 
 > false then the bed explodes.
 > 
-> <p>
+> <br>
 > 
 > 玩家所在的世界不允许睡觉或保存出生点，比如下界、末地或某些自定义世界。
 > 
@@ -264,13 +264,13 @@ description: PlayerBedEnterEvent
 > 
 > thrown out again.
 > 
-> <p>
+> <br>
 > 
 > 玩家所在世界的时间并不是夜晚，天气亦非雷暴，因此无法就寝。
 > 
 > 如果玩家尝试日间就寝，并且某个插件在本事件的监听器中改变事件结果，强行允许玩家这样做，那么玩家会上床躺下且其出生点位置会被重设，但此后该玩家有可能立刻被床弹出。
 > 
-> <p>
+> <br>
 > 
 > 译注：勿效仿宰予昼寝。
 
@@ -278,7 +278,7 @@ description: PlayerBedEnterEvent
 
 > Entering the bed is prevented due to the player being too far away.
 > 
-> <p>
+> <br>
 > 
 > 玩家离床太远，无法就寝。
 
@@ -286,7 +286,7 @@ description: PlayerBedEnterEvent
 
 > Entering the bed is prevented due to there being monsters nearby.
 > 
-> <p>
+> <br>
 > 
 > 周围有怪物在游荡，玩家无法就寝。
 
@@ -294,6 +294,6 @@ description: PlayerBedEnterEvent
 
 > Entering the bed is prevented due to there being some other problem.
 > 
-> <p>
+> <br>
 > 
 > 存在其他未知问题，玩家无法就寝。

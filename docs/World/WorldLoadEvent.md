@@ -16,11 +16,11 @@ description: WorldLoadEvent
 
 > Called when a World is loaded
 > 
-> <p>
+> <br>
 > 
 > 当一个世界被加载时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：从 `net.minecraft.server.v1_16_R3.MineCraftServer#loadWorld(String s)` 方法来看，首先对从未加载过的世界进行生成（或对旧版本存档进行升级），然后对每一个世界都触发一次 `WorldLoadEvent` 。因此 `WorldInitEvent` 应该指世界生成事件，每一个世界都只会被世界生成的代码操作一次。在这以后才会对每一个世界触发 `WorldLoadEvent` 。每一次开服时都应该触发 `WorldLoadEvent` ，但不一定触发 `WorldInitEvent` 。
 > 

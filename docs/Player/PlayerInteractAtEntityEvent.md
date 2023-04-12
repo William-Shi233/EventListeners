@@ -24,13 +24,13 @@ description: PlayerInteractAtEntityEvent
 > 
 > Users are advised to listen to this (parent) class unless specifically required.
 > 
-> <p>
+> <br>
 > 
 > 当玩家右键实体时触发。本事件与父类 `PlayerInteractEntityEvent` 的区别在于前者存储了玩家点击时所瞄准的坐标。
 > 
 > 有时客户端会在 `PlayerInteractEntityEvent` 发生以后，错误地发送一个数据包，触发本事件。因此如非必要，建议用户监听 `PlayerInteractEntityEvent` 。
 > 
-> <p>
+> <br>
 > 
 > 译注：正常情况下，当玩家右键点击一次实体时，会先后触发 `PlayerInteractAtEntityEvent` 和 `PlayerInteractEntityEvent` 。异常情况下，客户端会错误地额外发送一个数据包，令 `PlayerInteractAtEntityEvent` 多触发一次。因此推荐监听 `PlayerInteractEntityEvent` 。
 > 

@@ -18,11 +18,11 @@ description: ServiceEvent
 > 
 > org.bukkit.plugin.ServicesManager}
 > 
-> <p>
+> <br>
 > 
 > 代表与 `Service` 有关的事件。本事件的子类一般在 `org.bukkit.plugin.ServicesManager` 类内被触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 > 

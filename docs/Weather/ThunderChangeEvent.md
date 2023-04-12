@@ -16,11 +16,11 @@ description: ThunderChangeEvent
 
 > Stores data for thunder state changing in a world
 > 
-> <p>
+> <br>
 > 
 > 本事件存储了世界中雷暴状态改换的有关数据。
 > 
-> <p>
+> <br>
 > 
 > 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与事件中闪电有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
 > 
@@ -50,7 +50,7 @@ description: ThunderChangeEvent
 > 
 > @return true if the weather is being set to thundering, false otherwise
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取世界将要切换为何种状态。
 > 

@@ -22,7 +22,7 @@ description: EntityPortalExitEvent
 > 
 > successfully exited the portal.
 > 
-> <p>
+> <br>
 > 
 > 当实体自传送门中走出时触发。
 > 
@@ -42,7 +42,7 @@ description: EntityPortalExitEvent
 > 
 > @return velocity of entity before entering the portal
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取实体进入传送门前的速度向量的副本。
 > 
@@ -60,7 +60,7 @@ description: EntityPortalExitEvent
 > 
 > @return velocity of entity after exiting the portal
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取实体进入传送门后的速度向量的副本。
 > 
@@ -76,7 +76,7 @@ description: EntityPortalExitEvent
 > 
 > @param after the velocity after exiting the portal
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置实体进入传送门后的速度向量。
 > 

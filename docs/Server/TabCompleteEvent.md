@@ -26,7 +26,7 @@ description: TabCompleteEvent
 > 
 > commands, or use {@link PlayerCommandSendEvent}.
 > 
-> <p>
+> <br>
 > 
 > 当一个任意种类的 `CommandSender` （如玩家、后台等）尝试按下 `Tab` 键补全指令时触发。
 > 
@@ -34,7 +34,7 @@ description: TabCompleteEvent
 > 
 > 如果插件想要把指令本身从客户端 `Tab` 补全列表里移除，应该剥夺客户端执行对应指令的权限，或者监听 `PlayerCommandSendEvent` 。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“指令本身”，指的是斜杠后面紧跟的那一个单词，比如“gamemode”，而参数则是“指令本身”以后的那些以空格分割的单词，比如“creative”等。
 
@@ -50,7 +50,7 @@ description: TabCompleteEvent
 > 
 > @return the {@link CommandSender} instance
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取补全指令者。
 > 
@@ -66,7 +66,7 @@ description: TabCompleteEvent
 > 
 > @return command buffer, as entered
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取补全以前的指令字符串。补全列表的计算是基于该字符串进行的。
 > 
@@ -84,7 +84,7 @@ description: TabCompleteEvent
 > 
 > @return a list of offered completions
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要提供给发送者的补全建议列表。这一列表的顺序是有意义的。
 > 
@@ -92,7 +92,7 @@ description: TabCompleteEvent
 > 
 > @return 将要提供给发送者的补全建议列表。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“这一列表的顺序是有意义的”，意指客户端会忠实反映服务端发来的列表的顺序。比如补全列表是 [a, b, c]，那么客户端也显示 [a, b, c]，当顺序改成 [a, c, b] 时，客户端会相应显示 [a, c, b]，而不是按照字母顺序重排。
 
@@ -106,7 +106,7 @@ description: TabCompleteEvent
 > 
 > @param completions the new completions
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要提供给发送者的补全建议列表，覆盖已有的列表。
 > 

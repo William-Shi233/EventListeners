@@ -24,7 +24,7 @@ description: TradeSelectEvent
 > 
 > the MerchantRecipe via the Merchant.
 > 
-> <p>
+> <br>
 > 
 > 当玩家在交易界面侧栏选中某项交易时触发。
 > 
@@ -42,7 +42,7 @@ description: TradeSelectEvent
 > 
 > @return The index of the trade clicked by the player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家所点击的交易项的序号。
 > 
@@ -66,13 +66,13 @@ description: TradeSelectEvent
 > 
 > @return the Merchant
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中的商人对象。
 > 
 > @return 商人对象。
 > 
-> <p>
+> <br>
 > 
 > 译注：尽管此处的 `Merchant` 类型位于 `org.bukkit.inventory` 包下，但它代表的是商人实体（如村民、流浪商人等），而不是一种物品栏。
 

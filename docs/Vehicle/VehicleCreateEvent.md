@@ -16,7 +16,7 @@ description: VehicleCreateEvent
 
 > Raised when a vehicle is created.
 > 
-> <p>
+> <br>
 > 
 > 当载具被创建时触发。
 

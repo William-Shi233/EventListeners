@@ -18,7 +18,7 @@ description: BrewEvent
 > 
 > complete.
 > 
-> <p>
+> <br>
 > 
 > 当酿造台内的药水炼制完成时触发。
 
@@ -38,7 +38,7 @@ description: BrewEvent
 > 
 > @return the contents
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取酿造台物品栏内的物品。
 > 
@@ -46,7 +46,7 @@ description: BrewEvent
 > 
 > @return 酿造台物品栏内的物品。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“酿造台物品栏”，指通过本事件的 `getBlock()` 方法获得酿造台方块对象，再通过其 `BlockState` 得到的酿造台物品栏。该物品栏内存放的是酿造前的物品，如水瓶等。通过本方法可以获得酿造后的结果，如药水等。
 
@@ -60,7 +60,7 @@ description: BrewEvent
 > 
 > @return the remaining fuel
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取剩余的燃料值。
 > 
@@ -84,7 +84,7 @@ description: BrewEvent
 > 
 > @return List of {@link ItemStack} resulting for this operation
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取酿造台酿造的产物。
 > 

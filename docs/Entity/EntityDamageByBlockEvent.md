@@ -18,7 +18,7 @@ description: EntityDamageByBlockEvent
 
 > Called when an entity is damaged by a block
 > 
-> <p>
+> <br>
 > 
 > 当实体由于方块而受到伤害时触发。
 
@@ -34,12 +34,12 @@ description: EntityDamageByBlockEvent
 > 
 > @return Block that damaged the player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取伤害了玩家的方块。
 > 
 > @return 伤害了玩家的方块。
 > 
-> <p>
+> <br>
 > 
 > 译注：文档有误。当玩家以外的实体受到来自方块的伤害时（比如当一只动物落入岩浆时），也会触发本事件。故此，所谓“伤害了玩家的方块”应改为“伤害了涉事实体的方块”。

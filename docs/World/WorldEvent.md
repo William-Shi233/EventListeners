@@ -14,11 +14,11 @@ description: WorldEvent
 
 > Represents events within a world
 > 
-> <p>
+> <br>
 > 
 > 代表与世界有关的事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -34,8 +34,8 @@ description: WorldEvent
 > 
 > @return World which caused this event
 > 
-> <p>
+> <br>
 > 
 > 获取事件中所涉的世界。
 > 
-> @return 触发事件的世界。�
+> @return 触发事件的世界。�

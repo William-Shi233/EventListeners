@@ -16,7 +16,7 @@ description: FoodLevelChangeEvent
 
 > Called when a human entity's food level changes
 > 
-> <p>
+> <br>
 > 
 > 当玩家饱食度变化时触发。
 
@@ -40,7 +40,7 @@ description: FoodLevelChangeEvent
 > 
 > @return an ItemStack for the item being consumed
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取引起了饱食度变化的物品堆（如存在）。
 > 
@@ -60,7 +60,7 @@ description: FoodLevelChangeEvent
 > 
 > @return The resultant food level
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家饱食度的新值。
 > 
@@ -82,7 +82,7 @@ description: FoodLevelChangeEvent
 > 
 > event should be set to
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家饱食度的新值。
 > 

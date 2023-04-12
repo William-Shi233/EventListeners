@@ -18,7 +18,7 @@ description: BlockPistonRetractEvent
 
 > Called when a piston retracts
 > 
-> <p>
+> <br>
 > 
 > 当活塞臂收回时触发。
 
@@ -36,7 +36,7 @@ description: BlockPistonRetractEvent
 > 
 > @return The possible location of the possibly moving block.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取涉事活塞系粘性活塞时，被移动的方块可能会处在的位置。
 > 
@@ -54,13 +54,13 @@ description: BlockPistonRetractEvent
 > 
 > @return Immutable list of the moved blocks.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取一个不可修改的列表，其间存储有全部因活塞臂收回而将发生移动的方块。
 > 
 > @return 将要发生移动的方块列表。
 > 
-> <p>
+> <br>
 > 
 > 译注：本事件文档与 `BlockPistonExtendEvent#getBlocks()` 方法一致，必是舛错。所谓“extending”，应当改为“retracting”，即“活塞臂收回”，而非“活塞臂伸出”。译文中已纠正。
 

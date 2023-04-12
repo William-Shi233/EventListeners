@@ -16,11 +16,11 @@ description: EntitySpellCastEvent
 
 > Called when a {@link Spellcaster} casts a spell.
 > 
-> <p>
+> <br>
 > 
 > 当某一具有施咒能力的生物释放咒语时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“具有施咒能力的生物”，目前仅有幻术师和唤魔者两种。
 
@@ -48,7 +48,7 @@ description: EntitySpellCastEvent
 > 
 > @return the spell to cast
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中释放了何种类型的咒语。
 > 

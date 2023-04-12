@@ -22,13 +22,13 @@ description: PlayerLoginEvent
 > 
 > <i>entity</i> be postponed to the {@link PlayerJoinEvent} instead.
 > 
-> <p>
+> <br>
 > 
 > 本事件存储了试图登录服务器的玩家的有关数据。
 > 
 > 本事件是在玩家初始化过程的**较早**阶段触发的。如果需要操作玩家实体，建议推迟到 `PlayerJoinEvent` 监听器内执行。
 > 
-> <p>
+> <br>
 > 
 > 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与事件中玩家有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
 > 
@@ -46,7 +46,7 @@ description: PlayerLoginEvent
 > 
 > @return the player's connection address
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取试图登录的玩家的真实 `IP` 地址，返回一个 `InetAddress` 类型的对象。无论玩家有没有对 `IP` 地址作掩盖，都会返回真实 `IP` 地址。
 > 
@@ -62,7 +62,7 @@ description: PlayerLoginEvent
 > 
 > @return Current Result of the login
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取目前的登录结果，返回一个 `PlayerLoginEvent.Result` 枚举值。
 > 
@@ -78,7 +78,7 @@ description: PlayerLoginEvent
 > 
 > @param result New result to set
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置登录结果，接收一个 `PlayerLoginEvent.Result` 枚举值作为参数。
 > 
@@ -96,7 +96,7 @@ description: PlayerLoginEvent
 > 
 > @return Current kick message
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将展示给玩家的拒绝登录原因字符串。如果 `getResult() != Result.ALLOWED` 则将会把该字符串显示给玩家。
 > 
@@ -112,7 +112,7 @@ description: PlayerLoginEvent
 > 
 > @param message New kick message
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将展示给玩家的拒绝登录原因字符串。如果 `getResult() != Result.ALLOWED` 则将会把该字符串显示给玩家。
 > 
@@ -130,13 +130,13 @@ description: PlayerLoginEvent
 > 
 > @return The hostname
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家连接服务器时所填写的主机名，如果未知则返回空字符串。
 > 
 > @return 主机名。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“主机名”，指客户端在连接服务器时所填写的“服务器地址”，比如 `mc.hypixel.net` 等。
 
@@ -148,7 +148,7 @@ description: PlayerLoginEvent
 
 > Allows the player to log in
 > 
-> <p>
+> <br>
 > 
 > 该方法用于允许玩家登录。
 
@@ -164,7 +164,7 @@ description: PlayerLoginEvent
 > 
 > @param message Kick message to display to the user
 > 
-> <p>
+> <br>
 > 
 > 该方法用于以给定原因拒绝玩家登录。
 > 
@@ -188,7 +188,7 @@ description: PlayerLoginEvent
 > 
 > be null.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取试图登录的玩家的 `IP` 地址，返回一个 `InetAddress` 类型的对象。
 > 
@@ -212,11 +212,11 @@ description: PlayerLoginEvent
 
 > Basic kick reasons for communicating to plugins
 > 
-> <p>
+> <br>
 > 
 > 用于帮助插件确定玩家被踢出原因的枚举。
 > 
-> <p>
+> <br>
 > 
 > 译注：玩家被允许登录也是该枚举的一个枚举项，本枚举并不只适用于玩家被踢出时。
 
@@ -224,7 +224,7 @@ description: PlayerLoginEvent
 
 > The player is allowed to log in
 > 
-> <p>
+> <br>
 > 
 > 玩家被允许登录。
 
@@ -232,7 +232,7 @@ description: PlayerLoginEvent
 
 > The player is not allowed to log in, due to the server being full
 > 
-> <p>
+> <br>
 > 
 > 由于服务器人数已满，因而不允许登录。
 
@@ -240,7 +240,7 @@ description: PlayerLoginEvent
 
 > The player is not allowed to log in, due to them being banned
 > 
-> <p>
+> <br>
 > 
 > 由于玩家被服务器封禁，因而不允许登录。
 
@@ -250,7 +250,7 @@ description: PlayerLoginEvent
 > 
 > white list
 > 
-> <p>
+> <br>
 > 
 > 由于玩家不在服务器白名单内，因而不允许登录。
 
@@ -258,6 +258,6 @@ description: PlayerLoginEvent
 
 > The player is not allowed to log in, for reasons undefined
 > 
-> <p>
+> <br>
 > 
 > 由于未知原因，玩家不被允许登录。

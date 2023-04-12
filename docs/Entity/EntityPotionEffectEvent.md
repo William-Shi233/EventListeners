@@ -18,7 +18,7 @@ description: EntityPotionEffectEvent
 > 
 > If the event is cancelled, no change will be made on the entity.
 > 
-> <p>
+> <br>
 > 
 > 当实体所携带的药水效果变化时触发。
 > 
@@ -38,7 +38,7 @@ description: EntityPotionEffectEvent
 > 
 > changed effect type.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将被覆盖的旧药水效果对象。
 > 
@@ -56,7 +56,7 @@ description: EntityPotionEffectEvent
 > 
 > will be removed.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取实体将得到的新药水效果对象。
 > 
@@ -72,7 +72,7 @@ description: EntityPotionEffectEvent
 > 
 > @return A Cause value why the effect has changed.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取实体所携带的药水效果变化的原因。
 > 
@@ -88,7 +88,7 @@ description: EntityPotionEffectEvent
 > 
 > @return An action to be performed on the potion effect type.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取对涉事药水效果对象将采取的操作。
 > 
@@ -104,7 +104,7 @@ description: EntityPotionEffectEvent
 > 
 > @return The effect type which will be modified on the entity.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取实体将得到的新药水效果类型。
 > 
@@ -122,7 +122,7 @@ description: EntityPotionEffectEvent
 > 
 > @return If the new effect will override the old one.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取新药水效果是否会覆盖旧药水效果。
 > 
@@ -142,7 +142,7 @@ description: EntityPotionEffectEvent
 > 
 > @param override If the new effect will override the old one.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置新药水效果是否会覆盖旧药水效果。
 > 
@@ -178,7 +178,7 @@ description: EntityPotionEffectEvent
 
 > An enum to specify the action to be performed.
 > 
-> <p>
+> <br>
 > 
 > 用于确定将对原有药水效果对象采取何种操作的枚举。
 
@@ -188,7 +188,7 @@ description: EntityPotionEffectEvent
 > 
 > type.
 > 
-> <p>
+> <br>
 > 
 > 原先没有这种类型的药水效果对象，直接添加药水效果。
 
@@ -198,11 +198,11 @@ description: EntityPotionEffectEvent
 > 
 > changed.
 > 
-> <p>
+> <br>
 > 
 > 原先已有这种类型的药水效果对象，改变原有药水效果。
 > 
-> <p>
+> <br>
 > 
 > 译注：比如改变时长等。
 
@@ -210,7 +210,7 @@ description: EntityPotionEffectEvent
 
 > When the effect is removed due to all effects being removed.
 > 
-> <p>
+> <br>
 > 
 > 原先的全部药水效果都被清除。
 
@@ -218,7 +218,7 @@ description: EntityPotionEffectEvent
 
 > When the potion effect type is completely removed.
 > 
-> <p>
+> <br>
 > 
 > 原先已有这种类型的药水效果对象，将其清除。
 
@@ -226,7 +226,7 @@ description: EntityPotionEffectEvent
 
 > An enum to specify the cause why an effect was changed.
 > 
-> <p>
+> <br>
 > 
 > 用于确定药水效果改变原因的枚举。
 
@@ -234,7 +234,7 @@ description: EntityPotionEffectEvent
 
 > When the entity stands inside an area effect cloud.
 > 
-> <p>
+> <br>
 > 
 > 实体步入某一药水云中，获得药水效果。
 
@@ -242,7 +242,7 @@ description: EntityPotionEffectEvent
 
 > When the entity is hit by an spectral or tipped arrow.
 > 
-> <p>
+> <br>
 > 
 > 实体被一支光灵箭或药水箭射中，获得药水效果。
 
@@ -252,7 +252,7 @@ description: EntityPotionEffectEvent
 > 
 > attack (e.g. a cave spider or a shulker bullet).
 > 
-> <p>
+> <br>
 > 
 > 由于承受了攻击（如洞穴蜘蛛的攻击、如潜影贝导弹等），受伤害的实体被施加了药水效果。
 
@@ -260,7 +260,7 @@ description: EntityPotionEffectEvent
 
 > When beacon effects get applied due to the entity being nearby.
 > 
-> <p>
+> <br>
 > 
 > 激活的信标给周遭实体施加药水效果。
 
@@ -268,7 +268,7 @@ description: EntityPotionEffectEvent
 
 > When a potion effect is changed due to the /effect command.
 > 
-> <p>
+> <br>
 > 
 > 由于原版指令 `/effect` ，实体身上的药水效果发生改变。
 
@@ -276,7 +276,7 @@ description: EntityPotionEffectEvent
 
 > When the entity gets the effect from a conduit.
 > 
-> <p>
+> <br>
 > 
 > 激活的潮涌核心给周遭实体施加药水效果。
 
@@ -286,7 +286,7 @@ description: EntityPotionEffectEvent
 > 
 > finished.
 > 
-> <p>
+> <br>
 > 
 > 在僵尸村民被治愈过程的始末，僵尸村民获得力量效果。
 
@@ -296,7 +296,7 @@ description: EntityPotionEffectEvent
 > 
 > respawn, so it's player only!)
 > 
-> <p>
+> <br>
 > 
 > 由于实体死亡，其所携带的全部药水效果被清空（清空药水效果这一过程是重生时发生的，所以本字段专指玩家复活的情况）。
 
@@ -304,7 +304,7 @@ description: EntityPotionEffectEvent
 
 > When the entity gets the effect from a dolphin.
 > 
-> <p>
+> <br>
 > 
 > 海豚给周遭实体施加海豚的恩惠药水效果。
 
@@ -312,7 +312,7 @@ description: EntityPotionEffectEvent
 
 > When the effect was removed due to expiration.
 > 
-> <p>
+> <br>
 > 
 > 药水效果持续时长减为零，自然失效。
 
@@ -322,7 +322,7 @@ description: EntityPotionEffectEvent
 > 
 > cookie is given to a parrot).
 > 
-> <p>
+> <br>
 > 
 > 服用食物带来药水效果（如玩家吃下食物，或给鹦鹉喂食曲奇饼干等）。
 
@@ -330,7 +330,7 @@ description: EntityPotionEffectEvent
 
 > When an illusion illager makes himself disappear.
 > 
-> <p>
+> <br>
 > 
 > 幻术师释放咒语，令自己隐身。
 
@@ -338,7 +338,7 @@ description: EntityPotionEffectEvent
 
 > When all effects are removed due to a bucket of milk.
 > 
-> <p>
+> <br>
 > 
 > 玩家饮用牛奶，清空全部药水效果。
 
@@ -346,7 +346,7 @@ description: EntityPotionEffectEvent
 
 > When a player gets bad omen after killing a patrol captain.
 > 
-> <p>
+> <br>
 > 
 > 玩家杀死袭击队长，获得不祥之兆效果。
 
@@ -354,7 +354,7 @@ description: EntityPotionEffectEvent
 
 > When a potion effect is modified through the plugin methods.
 > 
-> <p>
+> <br>
 > 
 > 插件改变实体所携带的药水效果。
 
@@ -362,7 +362,7 @@ description: EntityPotionEffectEvent
 
 > When the entity drinks a potion.
 > 
-> <p>
+> <br>
 > 
 > 实体喝下药水，获得药水效果。
 
@@ -370,7 +370,7 @@ description: EntityPotionEffectEvent
 
 > When the entity is inflicted with an effect due to a splash potion.
 > 
-> <p>
+> <br>
 > 
 > 实体被掷出的喷溅型药水击中，获得药水效果。
 
@@ -378,7 +378,7 @@ description: EntityPotionEffectEvent
 
 > When a spider gets effects when spawning on hard difficulty.
 > 
-> <p>
+> <br>
 > 
 > 困难难度下，蜘蛛生成时即携带药水效果。
 
@@ -386,7 +386,7 @@ description: EntityPotionEffectEvent
 
 > When the entity gets effects from a totem item saving it's life.
 > 
-> <p>
+> <br>
 > 
 > 实体在濒死时消耗不死图腾，获得抗火、生命恢复和伤害吸收效果。
 
@@ -394,7 +394,7 @@ description: EntityPotionEffectEvent
 
 > When the entity gets water breathing by wearing a turtle helmet.
 > 
-> <p>
+> <br>
 > 
 > 实体在头盔槽位装备海龟壳，获得水下呼吸效果。
 
@@ -402,7 +402,7 @@ description: EntityPotionEffectEvent
 
 > When the Cause is missing.
 > 
-> <p>
+> <br>
 > 
 > 未知原因。
 
@@ -410,7 +410,7 @@ description: EntityPotionEffectEvent
 
 > When a villager gets regeneration after a trade.
 > 
-> <p>
+> <br>
 > 
 > 村民在完成交易后获得生命恢复效果。
 
@@ -418,6 +418,6 @@ description: EntityPotionEffectEvent
 
 > When an entity comes in contact with a wither rose.
 > 
-> <p>
+> <br>
 > 
 > 实体接触凋零玫瑰，获得凋零效果。

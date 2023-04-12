@@ -16,7 +16,7 @@ description: HorseJumpEvent
 
 > Called when a horse jumps.
 > 
-> <p>
+> <br>
 > 
 > 当一匹马跳跃时触发。
 
@@ -36,7 +36,7 @@ description: HorseJumpEvent
 
 > @deprecated horse jumping was moved client side.
 > 
-> <p>
+> <br>
 > 
 > @deprecated 该方法已过时。马的跳跃动作已经是客户端行为了。
 
@@ -78,7 +78,7 @@ description: HorseJumpEvent
 > 
 > @return jump strength
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取跳跃的能量。
 > 
@@ -110,7 +110,7 @@ description: HorseJumpEvent
 > 
 > @deprecated horse jumping was moved client side.
 > 
-> <p>
+> <br>
 > 
 > 该方法设置获取跳跃的能量。
 > 

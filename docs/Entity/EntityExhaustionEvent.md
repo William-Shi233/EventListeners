@@ -18,13 +18,13 @@ description: EntityExhaustionEvent
 > 
 > An exhaustion level greater than 4.0 causes a decrease in saturation by 1.
 > 
-> <p>
+> <br>
 > 
 > 当玩家的饥饿等级增加时触发。
 > 
 > 如果饥饿等级累积至四或以上，则饱和度会减少一。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Hunger#Exhaustion_level_increase](https://minecraft.fandom.com/wiki/Hunger#Exhaustion_level_increase) 可知，玩家在完成特定操作（如疾跑、如挖掘方块等）时，会累积饥饿等级（Hunger），该值一旦大于等于四，则自减四，并扣除一点饱和度（Saturation）。如果饱和度为零则扣除一点饥饿值（Food Level）。
 
@@ -40,7 +40,7 @@ description: EntityExhaustionEvent
 > 
 > @return the exhaustion reason
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取饥饿等级增加的原因。
 
@@ -54,7 +54,7 @@ description: EntityExhaustionEvent
 > 
 > @return amount of exhaustion
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取饥饿等级的增加量。
 > 
@@ -76,7 +76,7 @@ description: EntityExhaustionEvent
 > 
 > @param exhaustion new exhaustion to add
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置饥饿等级的增加量。
 > 
@@ -120,7 +120,7 @@ description: EntityExhaustionEvent
 
 > The reason for why a PlayerExhaustionEvent takes place
 > 
-> <p>
+> <br>
 > 
 > 用于确定玩家饥饿等级增加的枚举。
 
@@ -128,7 +128,7 @@ description: EntityExhaustionEvent
 
 > Player mines a block
 > 
-> <p>
+> <br>
 > 
 > 玩家挖掘了方块。
 
@@ -136,7 +136,7 @@ description: EntityExhaustionEvent
 
 > Player has the hunger potion effect
 > 
-> <p>
+> <br>
 > 
 > 玩家拥有饥饿药水效果。
 
@@ -144,7 +144,7 @@ description: EntityExhaustionEvent
 
 > Player takes damage
 > 
-> <p>
+> <br>
 > 
 > 玩家受到伤害。
 
@@ -152,7 +152,7 @@ description: EntityExhaustionEvent
 
 > Player attacks another entity
 > 
-> <p>
+> <br>
 > 
 > 玩家攻击其他实体。
 
@@ -160,7 +160,7 @@ description: EntityExhaustionEvent
 
 > Player is sprint jumping
 > 
-> <p>
+> <br>
 > 
 > 玩家在疾跑状态下跳跃。
 
@@ -168,7 +168,7 @@ description: EntityExhaustionEvent
 
 > Player jumps
 > 
-> <p>
+> <br>
 > 
 > 玩家跳跃。
 
@@ -176,7 +176,7 @@ description: EntityExhaustionEvent
 
 > Player swims one centimeter
 > 
-> <p>
+> <br>
 > 
 > 玩家游泳。
 
@@ -184,7 +184,7 @@ description: EntityExhaustionEvent
 
 > Player walks underwater one centimeter
 > 
-> <p>
+> <br>
 > 
 > 玩家在水下行走。
 
@@ -192,7 +192,7 @@ description: EntityExhaustionEvent
 
 > Player moves on the surface of water one centimeter
 > 
-> <p>
+> <br>
 > 
 > 玩家漂浮在水面附近移动。
 
@@ -200,7 +200,7 @@ description: EntityExhaustionEvent
 
 > Player sprints one centimeter
 > 
-> <p>
+> <br>
 > 
 > 玩家疾跑。
 
@@ -210,7 +210,7 @@ description: EntityExhaustionEvent
 > 
 > nonetheless)
 > 
-> <p>
+> <br>
 > 
 > 玩家潜行（潜行不会影响饥饿等级，但仍然致使本事件被触发）。
 
@@ -220,7 +220,7 @@ description: EntityExhaustionEvent
 > 
 > nonetheless)
 > 
-> <p>
+> <br>
 > 
 > 玩家行走（行走不会影响饥饿等级，但仍然致使本事件被触发）。
 
@@ -228,7 +228,7 @@ description: EntityExhaustionEvent
 
 > Player regenerated health
 > 
-> <p>
+> <br>
 > 
 > 玩家回复血量。
 
@@ -236,6 +236,6 @@ description: EntityExhaustionEvent
 
 > Unknown exhaustion reason
 > 
-> <p>
+> <br>
 > 
 > 未知原因。

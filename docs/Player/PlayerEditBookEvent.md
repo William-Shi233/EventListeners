@@ -18,7 +18,7 @@ description: PlayerEditBookEvent
 > 
 > cancelled, no changes are made to the BookMeta
 > 
-> <p>
+> <br>
 > 
 > 当玩家编辑一份书与笔物品堆的内容或在一份书与笔物品堆上签名时触发。
 > 
@@ -40,7 +40,7 @@ description: PlayerEditBookEvent
 > 
 > @return the book meta currently on the book
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取书与笔物品堆的原有 `BookMeta` 。
 > 
@@ -64,7 +64,7 @@ description: PlayerEditBookEvent
 > 
 > @return the book meta that the player is attempting to add
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取书与笔物品堆修改后的新 `BookMeta` 。
 > 
@@ -90,7 +90,7 @@ description: PlayerEditBookEvent
 > 
 > @deprecated books may be signed from off hand
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中的书本物品堆所在的槽位序号。
 > 
@@ -100,7 +100,7 @@ description: PlayerEditBookEvent
 > 
 > @deprecated 书本物品堆可能位于副手（参见译注）。
 > 
-> <p>
+> <br>
 > 
 > 译注：最初并没有“签名副手所持的书与笔”这一操作，因此该方法一开始只返回 `0-8` 的槽位序号，后来副手书与笔也可以被签名了，但该方法没有及时更新，仍然只能返回主手的快捷物品栏的槽位序号，因此被标记为过时（不支持副手）。再后来该方法得到了更新，当书与笔位于副手时返回 `-1` ，因此它已经不再处于过时状态了。该方法的文档却未能与时俱进地修改。
 
@@ -116,7 +116,7 @@ description: PlayerEditBookEvent
 > 
 > @throws IllegalArgumentException if the new book meta is null
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置书与笔物品堆的新 `BookMeta` 。此方法参数中的 `BookMeta` 将会在游戏内被实际体现。
 > 
@@ -136,7 +136,7 @@ description: PlayerEditBookEvent
 > 
 > @return true if the book is being signed
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取该书本是否要被签名。如果一本书被签名了，那么其材质将由 `BOOK_AND_QUILL` 变为 `WRITTEN_BOOK` 。
 > 
@@ -154,7 +154,7 @@ description: PlayerEditBookEvent
 > 
 > @param signing whether or not the book is being signed.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置该书本是否要被签名。如果一本书被签名了，那么其材质将由 `BOOK_AND_QUILL` 变为 `WRITTEN_BOOK` 。
 > 

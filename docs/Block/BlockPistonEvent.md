@@ -16,11 +16,11 @@ description: BlockPistonEvent
 
 > Called when a piston block is triggered
 > 
-> <p>
+> <br>
 > 
 > 代表与活塞伸缩有关的事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -48,7 +48,7 @@ description: BlockPistonEvent
 > 
 > @return stickiness of the piston
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取涉事活塞是否为粘性活塞。如为粘性活塞则返回 `true` 。
 > 
@@ -64,7 +64,7 @@ description: BlockPistonEvent
 > 
 > @return direction of the piston
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取活塞伸缩时的朝向。
 > 

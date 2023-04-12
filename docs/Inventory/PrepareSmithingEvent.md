@@ -16,7 +16,7 @@ description: PrepareSmithingEvent
 
 > Called when an item is put in a slot for upgrade by a Smithing Table.
 > 
-> <p>
+> <br>
 > 
 > 当某个物品堆被置于锻造台上，即将被玩家使用下界合金升级时触发。
 
@@ -40,7 +40,7 @@ description: PrepareSmithingEvent
 > 
 > @return result item
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取锻造的结果物品堆。本方法的返回值可能为 `null` 。
 > 

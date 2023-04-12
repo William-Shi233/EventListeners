@@ -16,11 +16,11 @@ description: EntityChangeBlockEvent
 
 > Called when any Entity changes a block and a more specific event is not available.
 > 
-> <p>
+> <br>
 > 
 > 当实体改变某个方块时触发。没有比本事件更为具体的事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“非具体事件”与“具体事件”，类似于 `PlayerEvent` 与 `AsyncPlayerChatEvent` 之间的关系。“非具体事件”一般是对某一大类事件的抽象描述，是不可监听的。比如无法通过一个监听 `PlayerEvent` 的监听器来监听几十种“具体事件”。相对地，“具体事件”描述某种具体的现象，往往能直接监听。
 > 
@@ -38,7 +38,7 @@ description: EntityChangeBlockEvent
 > 
 > @return the block that is changing
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取被实体所改变的方块对象。
 > 
@@ -66,7 +66,7 @@ description: EntityChangeBlockEvent
 > 
 > @return the material that the block is changing into
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中的方块将会拥有的新材质。
 > 
@@ -82,7 +82,7 @@ description: EntityChangeBlockEvent
 > 
 > @return the data for the block that would be changed into
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中的方块将会拥有的新 `BlockData` 。
 > 

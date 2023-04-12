@@ -18,7 +18,7 @@ description: PlayerPickupItemEvent
 > 
 > @deprecated {@link EntityPickupItemEvent}
 > 
-> <p>
+> <br>
 > 
 > 当玩家自地上捡起一件物品时触发。
 > 
@@ -36,7 +36,7 @@ description: PlayerPickupItemEvent
 > 
 > @return Item
 > 
-> <p>
+> <br>
 > 
 > 译注：请不要使用本事件。本事件已经过时。
 
@@ -50,7 +50,7 @@ description: PlayerPickupItemEvent
 > 
 > @return amount remaining on the ground
 > 
-> <p>
+> <br>
 > 
 > 译注：请不要使用本事件。本事件已经过时。
 

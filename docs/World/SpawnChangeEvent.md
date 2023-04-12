@@ -18,11 +18,11 @@ description: SpawnChangeEvent
 > 
 > spawn location is included.
 > 
-> <p>
+> <br>
 > 
 > 当世界出生点被更改时触发。世界原出生点位置会被包括在事件的字段中。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“包括”，指本事件记录了原出生点位置，用户可以调用 `getPreviousLocation` 方法获取。
 
@@ -38,7 +38,7 @@ description: SpawnChangeEvent
 > 
 > @return Location that used to be spawn
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取世界原出生点的位置。
 > 

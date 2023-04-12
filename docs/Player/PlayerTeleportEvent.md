@@ -18,11 +18,11 @@ description: PlayerTeleportEvent
 
 > Holds information for player teleport events
 > 
-> <p>
+> <br>
 > 
 > 本事件存储了玩家传送的有关数据。
 > 
-> <p>
+> <br>
 > 
 > 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与事件中玩家有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
 
@@ -38,7 +38,7 @@ description: PlayerTeleportEvent
 > 
 > @return Cause of the event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家传送的原因。
 > 
@@ -66,7 +66,7 @@ description: PlayerTeleportEvent
 > 
 > Pearl
 > 
-> <p>
+> <br>
 > 
 > 玩家掷出末影珍珠，因而发生传送。
 
@@ -76,11 +76,11 @@ description: PlayerTeleportEvent
 > 
 > command
 > 
-> <p>
+> <br>
 > 
 > 玩家执行指令，因而发生传送。
 > 
-> <p>
+> <br>
 > 
 > 译注：如 `/tp` 指令。
 
@@ -88,11 +88,11 @@ description: PlayerTeleportEvent
 
 > Indicates the teleportation was caused by a plugin
 > 
-> <p>
+> <br>
 > 
 > 插件调用某些方法，因而发生传送。
 > 
-> <p>
+> <br>
 > 
 > 译注：如插件调用 `Player#teleport(Location location)` 方法。
 
@@ -102,7 +102,7 @@ description: PlayerTeleportEvent
 > 
 > Nether portal
 > 
-> <p>
+> <br>
 > 
 > 玩家步入下界传送门，因而发生传送。
 
@@ -112,7 +112,7 @@ description: PlayerTeleportEvent
 > 
 > portal
 > 
-> <p>
+> <br>
 > 
 > 玩家步入末地传送门，因而发生传送。
 
@@ -122,7 +122,7 @@ description: PlayerTeleportEvent
 > 
 > Entity/Player via the spectator menu
 > 
-> <p>
+> <br>
 > 
 > 玩家在旁观模式界面中进行了选择，传送到某位玩家或某个实体身边。
 
@@ -132,7 +132,7 @@ description: PlayerTeleportEvent
 > 
 > gateway
 > 
-> <p>
+> <br>
 > 
 > 玩家步入末地折跃门，因而发生传送。
 
@@ -142,7 +142,7 @@ description: PlayerTeleportEvent
 > 
 > fruit
 > 
-> <p>
+> <br>
 > 
 > 玩家服用紫颂果，因而发生传送。
 
@@ -152,6 +152,6 @@ description: PlayerTeleportEvent
 > 
 > this enum
 > 
-> <p>
+> <br>
 > 
 > 未知传送原因。玩家传送的原因不属于上述任何一种，本枚举暂时未能列出。

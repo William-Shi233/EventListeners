@@ -20,11 +20,11 @@ description: RemoteServerCommandEvent
 > 
 > of {@link ServerCommandEvent} for more information.
 > 
-> <p>
+> <br>
 > 
 > 当服务器接收到由 `RCON` 控制台发送的指令时触发。详情参见 `ServerCommandEvent` 文档。
 > 
-> <p>
+> <br>
 > 
 > 译注：`RCON` 控制台指的是使用 `RCON` 协议，在服务端后台以外的地方，远程执行指令。
 

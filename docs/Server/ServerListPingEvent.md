@@ -22,13 +22,13 @@ description: ServerListPingEvent
 > 
 > server info if {@link Bukkit#getHideOnlinePlayers()} is true.
 > 
-> <p>
+> <br>
 > 
 > 当服务端接收到 `ServerListPing` 数据包时触发本事件。服务端发回的 `Status Response` 数据包中的玩家列表，可以被插件在本事件中通过 `iterator()` 方法遍历，也可以被删除。
 > 
 > 注意，如果 `Bukkit#getHideOnlinePlayers()` 方法返回 `true` ，则本事件中 `iterator()` 方法返回值里的玩家不会在服务器信息中被显示。
 > 
-> <p>
+> <br>
 > 
 > 译注：`ServerListPing` 是客户端发送给服务端的一种数据包，用于获取服务器的一系列信息，即客户端“多人游戏”页面所展示的服务器列表中各个服务器的信息，包括服务器现有在线人数、最大在线人数、服务器图标等。服务端在收到这个 `ServerListPing` 数据包以后，会给客户端发还 `Status Response` 数据包，告知客户端相关信息。通过本事件可以修改服务端发回给客户端的服务器信息，如将服务器最大在线人数改为 `-1` 人，如修改服务器图标等。客户端会显示修改之后的信息。
 > 
@@ -48,7 +48,7 @@ description: ServerListPingEvent
 > 
 > @return the address
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取 `ping` 数据包的来源地址。
 > 
@@ -64,7 +64,7 @@ description: ServerListPingEvent
 > 
 > @return the message of the day
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要发送的 `MOTD` 消息字符串。
 > 
@@ -80,7 +80,7 @@ description: ServerListPingEvent
 > 
 > @param motd the message of the day
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要发送的 `MOTD` 消息字符串。
 > 
@@ -96,13 +96,13 @@ description: ServerListPingEvent
 > 
 > @return the number of players
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取服务器内在线玩家人数。
 > 
 > @return 在线玩家人数。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `iterator()` 方法。
 > 
@@ -118,7 +118,7 @@ description: ServerListPingEvent
 > 
 > @return the maximum number of players
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取服务器在线玩家人数上限。
 > 
@@ -134,7 +134,7 @@ description: ServerListPingEvent
 > 
 > @param maxPlayers the maximum number of player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置服务器在线玩家人数上限。
 > 
@@ -160,7 +160,7 @@ description: ServerListPingEvent
 > 
 > not support setting the server icon
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要发送给客户端的服务器图标。
 > 
@@ -170,7 +170,7 @@ description: ServerListPingEvent
 > 
 > @throws 如果触发本事件的开发者不允许设置服务器图标，则抛出 `UnsupportedOperationException` 。
 > 
-> <p>
+> <br>
 > 
 > 译注：此方法的文档强调了本事件不一定由服务端触发，也可能是由其他插件触发，实现的方式可能不同。
 > 
@@ -212,7 +212,7 @@ description: ServerListPingEvent
 > 
 > not support removing players
 > 
-> <p>
+> <br>
 > 
 > 如果调用 `Iterator#remove()` 方法，会让被删除的那个玩家不再在客户端的玩家列表预览里显示。同时也会让 `getNumPlayers()` 方法的返回值减小。如果在删除玩家以后再次调用本方法，被删除的玩家不会出现在第二次遍历中。
 > 
@@ -220,7 +220,7 @@ description: ServerListPingEvent
 > 
 > @throws 如果触发本事件的开发者不允许其他人删除在线玩家，会抛出 `UnsupportedOperationException` 。
 > 
-> <p>
+> <br>
 > 
 > 译注：本方法返回的 `Iterator` 中的项被删除以后，直接影响在线玩家人数。这样在客户端展示的在线玩家列表的长度才能与在线玩家人数相一致。因此没有 `setNumPlayers()` 这样的方法。
 > 

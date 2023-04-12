@@ -14,11 +14,11 @@ description: EntityEvent
 
 > Represents an Entity-related event
 > 
-> <p>
+> <br>
 > 
 > 代表与实体有关的事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -34,7 +34,7 @@ description: EntityEvent
 > 
 > @return Entity who is involved in this event
 > 
-> <p>
+> <br>
 > 
 > 获取事件中的实体。
 > 
@@ -50,7 +50,7 @@ description: EntityEvent
 > 
 > @return EntityType of the Entity involved in this event
 > 
-> <p>
+> <br>
 > 
 > 获取事件中实体的类型。
 > 

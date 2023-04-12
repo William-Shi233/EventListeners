@@ -20,7 +20,7 @@ description: EntityTeleportEvent
 > 
 > (Wolf), or commands (/teleport).
 > 
-> <p>
+> <br>
 > 
 > 当某个非玩家实体自一个位置传送到另一个位置时触发。
 > 
@@ -50,7 +50,7 @@ description: EntityTeleportEvent
 > 
 > @return Location this entity moved from
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取传送前实体所处的位置。
 > 
@@ -66,7 +66,7 @@ description: EntityTeleportEvent
 > 
 > @param from New location this entity moved from
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置传送前实体所处的位置。
 > 
@@ -82,7 +82,7 @@ description: EntityTeleportEvent
 > 
 > @return Location the entity moved to
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取传送后实体将到达的位置。
 > 
@@ -98,7 +98,7 @@ description: EntityTeleportEvent
 > 
 > @param to New Location this entity moved to
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置传送后实体将到达的位置。
 > 

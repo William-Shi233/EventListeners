@@ -14,7 +14,7 @@ description: InventoryPickupItemEvent
 
 > Called when a hopper or hopper minecart picks up a dropped item.
 > 
-> <p>
+> <br>
 > 
 > 当一个漏斗或漏斗矿车吸取掉落的物品堆实体时触发。
 
@@ -30,7 +30,7 @@ description: InventoryPickupItemEvent
 > 
 > @return Inventory
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取吸取了物品堆的物品栏。
 > 
@@ -46,7 +46,7 @@ description: InventoryPickupItemEvent
 > 
 > @return Item
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取被吸取的物品堆实体。
 > 

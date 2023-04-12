@@ -36,7 +36,7 @@ description: AsyncPlayerChatEvent
 > 
 > appropriately.
 > 
-> <p>
+> <br>
 > 
 > 当玩家发送聊天消息时触发。本事件虽然名为 `AsyncPlayerChatEvent` （异步玩家聊天事件），但也有可能同步触发，主要视触发原因而定。
 > 
@@ -46,7 +46,7 @@ description: AsyncPlayerChatEvent
 > 
 > 应当注意通过 `isAsynchronous` 方法检查本事件是否为异步触发，并视情况以妥善方法处理本事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：`Mojang` 在设计 `MineCraft` 时，几乎没有考虑线程安全问题。整个 `MineCraft` 服务端中的大部分集合、大部分方法，都没有考虑异步操作。在 `MineCraft` 内部，如生成生物、如破坏方块等方法，都运行在主线程上，虽然效率低，但是这样一来也没有线程安全问题。一旦让插件在异步线程中操作 `MineCraft` 中的实体、方块、物品栏等对象，就可能出现并发修改等错误。整个 `MineCraft` 里几乎没有什么方法是线程安全的。除非某方法仅涉及到数据包的发送，否则它就不能运行在异步线程里。比如发送消息给玩家，这个方法仅仅涉及到玩家聊天消息相关数据包的发送，因此它可以异步运行。本事件的文档一再警告用户检查事件是否异步触发，就是为了防止用户在异步线程中调用 `Bukkit API` 里那些线程不安全的方法。
 > 
@@ -68,7 +68,7 @@ description: AsyncPlayerChatEvent
 > 
 > @return Message the player is attempting to send
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家尝试发送的消息字符串。这一字符串将会在 `getFormat()` 方法中被用到。
 > 
@@ -86,7 +86,7 @@ description: AsyncPlayerChatEvent
 > 
 > @param message New message that the player will send
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家尝试发送的消息字符串。这一字符串将会在 `getFormat()` 方法中被用到。
 > 
@@ -110,7 +110,7 @@ description: AsyncPlayerChatEvent
 > 
 > string
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取聊天消息格式。
 > 
@@ -118,7 +118,7 @@ description: AsyncPlayerChatEvent
 > 
 > @return 兼容 `String#format(String, Object...)` 方法的格式字符串。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“格式字符串”，指服务端将会以类似如下的方式处理消息：`String message = String.format(event.getFormat(), new Object[] { event.getPlayer().getDisplayName(), event.getMessage() });` ，因此这个方法的返回值要能作为 `JDK` 标准里的 `String.format` 方法的第一个参数来使用。
 > 
@@ -152,7 +152,7 @@ description: AsyncPlayerChatEvent
 > 
 > @see String#format(String, Object...)
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置聊天消息格式。
 > 
@@ -166,7 +166,7 @@ description: AsyncPlayerChatEvent
 > 
 > @see 参见 `String#format(String, Object...)` 方法文档。
 > 
-> <p>
+> <br>
 > 
 > 译注：关于格式字符串的相关说明见上。
 > 
@@ -194,7 +194,7 @@ description: AsyncPlayerChatEvent
 > 
 > @return All Players who will see this chat message
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取一个 `Set` ，其间存储有全部将要接收该条聊天消息的对象。
 > 
@@ -206,7 +206,7 @@ description: AsyncPlayerChatEvent
 > 
 > @return 全部将要接收该条聊天消息的玩家对象。
 > 
-> <p>
+> <br>
 > 
 > 译注：其他插件提供的集合，`Bukkit API` 只能保证其实现类是 `java.util.Set` 的子类，但不能保证它可否修改，也不能保证它是不是 `Lazy Set` 。
 > 

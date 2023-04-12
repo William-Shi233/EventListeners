@@ -16,11 +16,11 @@ description: PlayerSpawnLocationEvent
 
 > Called when player is about to spawn in a world after joining the server.
 > 
-> <p>
+> <br>
 > 
 > 当玩家成功登录服务器后，服务器即将生成玩家实体时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：在 `AsyncPlayerPreLoginEvent` 、`PlayerPreLoginEvent` 、`PlayerLoginEvent` 事件触发时，服务器里还不存在玩家实体。这几个事件是在客户端尝试与服务端建立联系时触发的，插件可以通过事件所提供的 `disallow()` 等方法拒绝客户端登录。这样拒绝时，服务端内不会出现玩家实体。玩家登录过程将会尽早被切断。而 `PlayerSpawnLocationEvent` 触发时玩家已经成功加入了服务器，即将生成玩家实体。该事件不可取消，也无法将玩家踢出服务器。`PlayerJoinEvent` 事件触发时，服务器内已经生成了玩家实体。可通过 `Player#kickPlayer(String)` 方法将玩家踢出服务器。
 
@@ -40,7 +40,7 @@ description: PlayerSpawnLocationEvent
 > 
 > @return the spawn location
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要生成玩家实体的位置。
 > 
@@ -60,7 +60,7 @@ description: PlayerSpawnLocationEvent
 > 
 > @param location the spawn location
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要生成玩家实体的位置。
 > 

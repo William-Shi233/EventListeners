@@ -18,7 +18,7 @@ description: EntityDamageByEntityEvent
 
 > Called when an entity is damaged by an entity
 > 
-> <p>
+> <br>
 > 
 > 当某实体被另一实体所伤害时触发。
 
@@ -34,7 +34,7 @@ description: EntityDamageByEntityEvent
 > 
 > @return Entity that damaged the defender.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取对处于防守地位者造成了伤害的实体。
 > 

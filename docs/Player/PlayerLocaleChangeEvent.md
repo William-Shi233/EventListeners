@@ -16,11 +16,11 @@ description: PlayerLocaleChangeEvent
 
 > Called when a player changes their locale in the client settings.
 > 
-> <p>
+> <br>
 > 
 > 当玩家在客户端设置中切换语言时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“客户端设置”，指在暂停时点击“选项”，再点击“语言”后所出现的界面。
 
@@ -36,13 +36,13 @@ description: PlayerLocaleChangeEvent
 > 
 > @see Player#getLocale()
 > 
-> <p>
+> <br>
 > 
 > @return 玩家的新语言。
 > 
 > @see 参见 `Player#getLocale()` 方法。
 > 
-> <p>
+> <br>
 > 
 > 译注：该方法用于获取玩家将使用的新语言。
 > 

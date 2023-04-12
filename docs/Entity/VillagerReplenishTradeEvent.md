@@ -22,13 +22,13 @@ description: VillagerReplenishTradeEvent
 > 
 > MerchantRecipe} to <code>0</code>.
 > 
-> <p>
+> <br>
 > 
 > 当村民将要为自己的某个交易项补货时触发。
 > 
 > 如果本事件没有被取消，则该 `MerchantRecipe` 的 `MerchantRecipe#getUses()` 将会被重置为零。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `MineCraft Wiki` 中关于村民及流浪商人交易机制的相关页面 [https://minecraft.fandom.com/wiki/Trading#Mechanics](https://minecraft.fandom.com/wiki/Trading#Mechanics) 可知，村民的交易项不能无限制地交易。在交易一定次数后，该交易项会进入缺货状态，直至村民前往工作方块补货。
 > 
@@ -46,7 +46,7 @@ description: VillagerReplenishTradeEvent
 > 
 > @return the replenished recipe
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要补货的交易项。
 > 
@@ -62,7 +62,7 @@ description: VillagerReplenishTradeEvent
 > 
 > @param recipe the replenished recipe
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要补货的交易项。
 > 
@@ -82,7 +82,7 @@ description: VillagerReplenishTradeEvent
 > 
 > {@link MerchantRecipe#getUses()}.
 > 
-> <p>
+> <br>
 > 
 > @deprecated 该方法已过时。自 `1.14` 起，`MineCraft` 修改了村民为交易项补货的机制。请使用 `MerchantRecipe#getUses()` 方法。
 
@@ -100,7 +100,7 @@ description: VillagerReplenishTradeEvent
 > 
 > has no effect anymore.
 > 
-> <p>
+> <br>
 > 
 > @deprecated 该方法已过时。自 `1.14` 起，`MineCraft` 修改了村民为交易项补货的机制。本方法已经不会生效。
 

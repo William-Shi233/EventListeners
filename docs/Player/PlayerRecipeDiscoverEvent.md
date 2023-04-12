@@ -16,11 +16,11 @@ description: PlayerRecipeDiscoverEvent
 
 > Called when a player discovers a new recipe in the recipe book.
 > 
-> <p>
+> <br>
 > 
 > 当玩家在配方书中解锁新配方时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：配方书即显示在工作台、熔炉等界面上的绿色封面书本。有关配方与配方书的信息可参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Recipe](https://minecraft.fandom.com/wiki/Recipe) 。
 > 
@@ -38,13 +38,13 @@ description: PlayerRecipeDiscoverEvent
 > 
 > @return the discovered recipe
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中被解锁配方的 `NamespacedKey` 对象。
 > 
 > @return 事件中被解锁配方的 `NamespacedKey` 对象。
 > 
-> <p>
+> <br>
 > 
 > 译注：`NamespacedKey` 对象提供了配方的命名空间信息（原版配方以 `minecraft:` 起首，插件配方以插件名起首）和配方的内部名。
 

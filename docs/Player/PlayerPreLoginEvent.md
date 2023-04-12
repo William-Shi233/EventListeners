@@ -20,13 +20,13 @@ description: PlayerPreLoginEvent
 > 
 > asynchronous.
 > 
-> <p>
+> <br>
 > 
 > 本事件存储了试图登录服务器的玩家的有关数据。
 > 
 > 本事件已经过时。因为触发本事件时需要在登录线程里进行同步操作切回主线程再调用监听器。`AsyncPlayerPreLoginEvent` 是异步的，不会在主线程内触发，能让服务器主线程以外的其他线程保持异步状态，因而建议监听 `AsyncPlayerPreLoginEvent` 。
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -42,7 +42,7 @@ description: PlayerPreLoginEvent
 > 
 > @return Current Result of the login
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -56,7 +56,7 @@ description: PlayerPreLoginEvent
 > 
 > @param result New result to set
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -72,7 +72,7 @@ description: PlayerPreLoginEvent
 > 
 > @return Current kick message
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -86,7 +86,7 @@ description: PlayerPreLoginEvent
 > 
 > @param message New kick message
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -98,7 +98,7 @@ description: PlayerPreLoginEvent
 
 > Allows the player to log in
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -114,7 +114,7 @@ description: PlayerPreLoginEvent
 > 
 > @param message Kick message to display to the user
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -128,7 +128,7 @@ description: PlayerPreLoginEvent
 > 
 > @return the player's name
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -142,7 +142,7 @@ description: PlayerPreLoginEvent
 > 
 > @return The IP address
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -162,7 +162,7 @@ description: PlayerPreLoginEvent
 > 
 > @return The unique ID
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -176,7 +176,7 @@ description: PlayerPreLoginEvent
 
 > Basic kick reasons for communicating to plugins
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -184,7 +184,7 @@ description: PlayerPreLoginEvent
 
 > The player is allowed to log in
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -192,7 +192,7 @@ description: PlayerPreLoginEvent
 
 > The player is not allowed to log in, due to the server being full
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -200,7 +200,7 @@ description: PlayerPreLoginEvent
 
 > The player is not allowed to log in, due to them being banned
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -210,7 +210,7 @@ description: PlayerPreLoginEvent
 > 
 > white list
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。
 
@@ -218,6 +218,6 @@ description: PlayerPreLoginEvent
 
 > The player is not allowed to log in, for reasons undefined
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerPreLoginEvent` 。本事件已经过时。

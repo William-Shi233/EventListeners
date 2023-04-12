@@ -16,7 +16,7 @@ description: EntityExplodeEvent
 
 > Called when an entity explodes
 > 
-> <p>
+> <br>
 > 
 > 当实体爆炸时触发。
 
@@ -46,7 +46,7 @@ description: EntityExplodeEvent
 > 
 > @return All blown-up blocks
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取一个列表，其间存储有全部受爆炸破坏的方块。
 > 
@@ -66,7 +66,7 @@ description: EntityExplodeEvent
 > 
 > @return The location of the explosion
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取爆炸发生的位置。
 > 
@@ -84,7 +84,7 @@ description: EntityExplodeEvent
 > 
 > @return The yield.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取爆炸中被炸毁方块的掉落概率。
 > 
@@ -100,7 +100,7 @@ description: EntityExplodeEvent
 > 
 > @param yield The new yield percentage
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置爆炸中被炸毁方块的掉落概率。
 > 

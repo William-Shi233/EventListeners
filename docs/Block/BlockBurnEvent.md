@@ -20,13 +20,13 @@ description: BlockBurnEvent
 > 
 > result of being burnt by fire.
 > 
-> <p>
+> <br>
 > 
 > 当某方块被火焰所烧毁时触发。
 > 
 > 如果本事件被取消，则方块不会被火焰所烧毁。
 > 
-> <p>
+> <br>
 > 
 > 译注：有时，火焰在燃烧一段时间后自然熄灭，不会烧毁被点燃的方块。此时可以监听 `BlockFadeEvent` 。
 
@@ -44,7 +44,7 @@ description: BlockBurnEvent
 > 
 > source block exists
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取点燃涉事方块的火源方块。
 > 

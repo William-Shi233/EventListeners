@@ -16,7 +16,7 @@ description: VehicleMoveEvent
 
 > Raised when a vehicle moves.
 > 
-> <p>
+> <br>
 > 
 > 当载具移动时触发。
 
@@ -32,7 +32,7 @@ description: VehicleMoveEvent
 > 
 > @return Old position.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取载具移动前的位置。
 > 
@@ -48,7 +48,7 @@ description: VehicleMoveEvent
 > 
 > @return New position.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取载具移动后的位置。
 > 

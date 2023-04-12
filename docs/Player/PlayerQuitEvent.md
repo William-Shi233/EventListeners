@@ -16,7 +16,7 @@ description: PlayerQuitEvent
 
 > Called when a player leaves a server
 > 
-> <p>
+> <br>
 > 
 > 当玩家退出服务器时触发。
 
@@ -32,13 +32,13 @@ description: PlayerQuitEvent
 > 
 > @return string quit message
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要广播给全体玩家的退出消息。
 > 
 > @return 将要广播给全体玩家的退出消息。
 > 
-> <p>
+> <br>
 > 
 > 译注：比如“William_Shi left the game”。
 
@@ -52,7 +52,7 @@ description: PlayerQuitEvent
 > 
 > @param quitMessage quit message
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要广播给全体玩家的退出消息。
 > 

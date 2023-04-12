@@ -18,7 +18,7 @@ description: PotionSplashEvent
 
 > Called when a splash potion hits an area
 > 
-> <p>
+> <br>
 > 
 > 当喷溅型药水被泼洒于一片区域之上时触发。
 
@@ -44,13 +44,13 @@ description: PotionSplashEvent
 > 
 > @return The thrown potion entity
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取被掷出的药水瓶实体。
 > 
 > @return 被掷出的药水瓶实体。
 > 
-> <p>
+> <br>
 > 
 > 译注：本方法完全等同于 `getEntity()` 方法。
 
@@ -64,13 +64,13 @@ description: PotionSplashEvent
 > 
 > @return A fresh copy of the affected entity list
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取一个列表，其间存储有全部将会受到药水效果影响的实体。
 > 
 > @return 将会受到药水效果影响的实体列表的一份副本。
 > 
-> <p>
+> <br>
 > 
 > 译注：文档中称本方法的返回值类型为“列表”，但方法签名中返回值为 `Collection` 类型。
 > 
@@ -92,7 +92,7 @@ description: PotionSplashEvent
 > 
 > fully hit by potion effects
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取某个给定实体受药水影响的程度。此程度由实体位置与药水落地位置之间的距离决定。
 > 
@@ -100,7 +100,7 @@ description: PotionSplashEvent
 > 
 > @return 给定实体受药水影响的程度。如果为零，则说明该实体没有受药水影响。如果为一，则说明该实体受到了药水最大程度的影响。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Splash_Potion#Using](https://minecraft.fandom.com/wiki/Splash_Potion#Using) 可知，实体离喷溅型药水落地的位置越近，受到药水效果的影响越深。对于瞬间治疗、瞬间伤害等瞬间效果而言，离药水落地的位置越近则药效越强（回复或失去的生命值越多）。对于其他非瞬间生效的药水效果而言，离药水落地的位置越近则药效持续的时间越长，但不论距离落地位置多远，药水效果的等级都是一致的。
 
@@ -116,7 +116,7 @@ description: PotionSplashEvent
 > 
 > @param intensity relative to maximum effect
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置某个给定实体受药水影响的程度。
 > 

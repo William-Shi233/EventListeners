@@ -20,11 +20,11 @@ description: CraftItemEvent
 
 > Called when the recipe of an Item is completed inside a crafting matrix.
 > 
-> <p>
+> <br>
 > 
 > 当玩家在合成矩阵中合成物品时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“合成矩阵”，指工作台物品栏、玩家背包等界面上由 `9` 个或 `4` 个格子组成的正方形区域。在玩家背包界面合成物品或在工作台上合成物品都会触发本事件。
 
@@ -38,7 +38,7 @@ description: CraftItemEvent
 
 > @return A copy of the current recipe on the crafting matrix.
 > 
-> <p>
+> <br>
 > 
 > @return 合成所使用的配方对象的副本。
 

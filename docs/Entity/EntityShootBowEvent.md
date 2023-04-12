@@ -16,7 +16,7 @@ description: EntityShootBowEvent
 
 > Called when a LivingEntity shoots a bow firing an arrow
 > 
-> <p>
+> <br>
 > 
 > 当某生物弯弓射箭时触发。
 
@@ -40,7 +40,7 @@ description: EntityShootBowEvent
 > 
 > @return the bow involved in this event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取射箭所依凭的弓物品堆。
 > 
@@ -60,7 +60,7 @@ description: EntityShootBowEvent
 > 
 > @return the consumable item
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中被消耗的物品堆（如存在）。
 > 
@@ -78,7 +78,7 @@ description: EntityShootBowEvent
 > 
 > @return the launched projectile
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要被射出的抛射物实体。
 > 
@@ -94,7 +94,7 @@ description: EntityShootBowEvent
 > 
 > @param projectile the new projectile
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要被射出的抛射物实体。
 > 
@@ -110,13 +110,13 @@ description: EntityShootBowEvent
 > 
 > @return the hand
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取射箭所用的是哪一侧手。
 > 
 > @return 射箭所用的是哪一侧手。
 > 
-> <p>
+> <br>
 > 
 > 译注：指主副手，而非左右手。
 
@@ -130,7 +130,7 @@ description: EntityShootBowEvent
 > 
 > @return bow shooting force, up to 1.0
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取射箭时所用的力量大小。
 > 
@@ -158,7 +158,7 @@ description: EntityShootBowEvent
 > 
 > @param consumeItem whether or not to consume the item
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置事件中是否要消耗物品堆。
 > 
@@ -178,7 +178,7 @@ description: EntityShootBowEvent
 > 
 > @return true if consumed, false otherwise
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中是否要消耗物品堆。
 > 

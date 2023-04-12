@@ -14,11 +14,11 @@ description: VehicleEvent
 
 > Represents a vehicle-related event.
 > 
-> <p>
+> <br>
 > 
 > 代表与载具有关的事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -34,7 +34,7 @@ description: VehicleEvent
 > 
 > @return the vehicle
 > 
-> <p>
+> <br>
 > 
 > 获取事件中的载具。
 > 

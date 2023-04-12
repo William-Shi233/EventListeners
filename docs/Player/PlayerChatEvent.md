@@ -26,7 +26,7 @@ description: PlayerChatEvent
 > 
 > alternative for thread safe implementations.
 > 
-> <p>
+> <br>
 > 
 > 本事件存储了玩家所发送的聊天消息和指令的有关信息。
 > 
@@ -34,7 +34,7 @@ description: PlayerChatEvent
 > 
 > 监听本事件会使聊天用的异步线程不得不等待主线程上各监听器的处理结果，使聊天出现延迟。如果该事件的监听器所需要用到的方法是线程安全的，则建议使用 `AsyncPlayerChatEvent` 替代本事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerChatEvent` 。本事件已经过时。
 
@@ -62,7 +62,7 @@ description: PlayerChatEvent
 > 
 > @return Message the player is attempting to send
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerChatEvent` 。本事件已经过时。
 
@@ -76,7 +76,7 @@ description: PlayerChatEvent
 > 
 > @param message New message that the player will send
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerChatEvent` 。本事件已经过时。
 
@@ -92,7 +92,7 @@ description: PlayerChatEvent
 > 
 > @param player New player which this event will execute as
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerChatEvent` 。本事件已经过时。
 
@@ -106,7 +106,7 @@ description: PlayerChatEvent
 > 
 > @return String.Format compatible format string
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerChatEvent` 。本事件已经过时。
 
@@ -120,7 +120,7 @@ description: PlayerChatEvent
 > 
 > @param format String.Format compatible format string
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerChatEvent` 。本事件已经过时。
 
@@ -134,7 +134,7 @@ description: PlayerChatEvent
 > 
 > @return All Players who will see this chat message
 > 
-> <p>
+> <br>
 > 
 > 译注：请使用 `AsyncPlayerChatEvent` 。本事件已经过时。
 

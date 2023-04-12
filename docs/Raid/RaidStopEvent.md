@@ -18,11 +18,11 @@ description: RaidStopEvent
 
 > Called when a {@link Raid} is stopped.
 > 
-> <p>
+> <br>
 > 
 > 当一次袭击终止时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：当一次袭击终止（比如游戏难度切换为和平）时，会触发 `RaidStopEvent` ，然后结束袭击，不会触发 `RaidFinishEvent` 。触发情况详列于下方。
 > 
@@ -54,7 +54,7 @@ description: RaidStopEvent
 > 
 > @return Reason
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取袭击中止的原因。
 > 
@@ -80,11 +80,11 @@ description: RaidStopEvent
 
 > Because the difficulty has been changed to peaceful.
 > 
-> <p>
+> <br>
 > 
 > 游戏难度被设置为和平。
 > 
-> <p>
+> <br>
 > 
 > 译注：见上。
 
@@ -92,11 +92,11 @@ description: RaidStopEvent
 
 > The raid took a long time without a final result.
 > 
-> <p>
+> <br>
 > 
 > 袭击旷日持久，并且没有最终结果。
 > 
-> <p>
+> <br>
 > 
 > 译注：见上。
 
@@ -104,11 +104,11 @@ description: RaidStopEvent
 
 > Finished the raid.
 > 
-> <p>
+> <br>
 > 
 > 袭击结束。
 > 
-> <p>
+> <br>
 > 
 > 译注：见上。
 
@@ -116,11 +116,11 @@ description: RaidStopEvent
 
 > Couldn't find a suitable place to spawn raiders.
 > 
-> <p>
+> <br>
 > 
 > 无法找到合适位置生成袭击者。
 > 
-> <p>
+> <br>
 > 
 > 译注：见上。
 
@@ -128,10 +128,10 @@ description: RaidStopEvent
 
 > The place where the raid occurs no longer be a village.
 > 
-> <p>
+> <br>
 > 
 > 袭击发生处已经不再位于村庄范围内。
 > 
-> <p>
+> <br>
 > 
 > 译注：见上。

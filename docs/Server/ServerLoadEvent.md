@@ -16,11 +16,11 @@ description: ServerLoadEvent
 
 > This event is called when either the server startup or reload has completed.
 > 
-> <p>
+> <br>
 > 
 > 当服务器开启或重载完毕时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“重载”指 `/reload` 指令，该指令常用于在不关闭服务器的前提下重启插件。
 > 
@@ -38,13 +38,13 @@ description: ServerLoadEvent
 > 
 > @return the context in which the server was loaded
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取服务器加载的上下文。
 > 
 > @return 服务器加载的上下文。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“上下文”，在程序设计中指的是开发者完成一项任务所需要的全部信息，或者程序运行所需要的一些基本信息的集合。此处文档里的 `Context` 一词失之宽泛，方法名中的 `Type` 更合适。本方法只是用来确定本事件是因为服务器开启而触发还是因为 `/reload` 指令被触发。
 
@@ -64,11 +64,11 @@ description: ServerLoadEvent
 
 > Represents the context in which the enclosing event has been completed.
 > 
-> <p>
+> <br>
 > 
 > 用于确定外部事件触发所在上下文的枚举。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“上下文”一词较宽泛，此枚举只是用来确定本事件是因为服务器开启而触发还是因为 `/reload` 指令被触发。
 

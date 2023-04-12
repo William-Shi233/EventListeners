@@ -18,11 +18,11 @@ description: PigZapEvent
 
 > Stores data for pigs being zapped
 > 
-> <p>
+> <br>
 > 
 > 本事件存储了被闪电击中的猪的有关数据。
 > 
-> <p>
+> <br>
 > 
 > 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与事件中被击中的猪有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
 > 
@@ -60,7 +60,7 @@ description: PigZapEvent
 > 
 > @return lightning entity
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取击中了猪的闪电实体。
 > 
@@ -80,7 +80,7 @@ description: PigZapEvent
 > 
 > @deprecated use {@link EntityTransformEvent#getTransformedEntity()}
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件未被取消时将会生成的僵尸猪灵。
 > 

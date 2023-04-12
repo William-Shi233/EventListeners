@@ -16,11 +16,11 @@ description: PlayerAdvancementDoneEvent
 
 > Called when a player has completed all criteria in an advancement.
 > 
-> <p>
+> <br>
 > 
 > 当玩家符合一个进度下的所有准则时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：文档中所谓“所有准则”一语，有误。
 > 
@@ -44,7 +44,7 @@ description: PlayerAdvancementDoneEvent
 > 
 > @return completed advancement
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取被达成的进度。
 > 

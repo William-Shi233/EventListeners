@@ -18,7 +18,7 @@ description: BlockPlaceEvent
 > 
 > If a Block Place event is cancelled, the block will not be placed.
 > 
-> <p>
+> <br>
 > 
 > 当玩家放置方块时触发。
 > 
@@ -48,7 +48,7 @@ description: BlockPlaceEvent
 > 
 > @return The Player who placed the block involved in this event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中放下方块的玩家。
 > 
@@ -66,13 +66,13 @@ description: BlockPlaceEvent
 > 
 > @return The Block that was placed
 > 
-> <p>
+> <br>
 > 
 > 这是一个用于消除歧义的方法。该方法用于获取事件中被放置的方块。除了消除歧义以外，本方法没有什么作用。
 > 
 > @return 事件中被放置的方块。
 > 
-> <p>
+> <br>
 > 
 > 译注：本事件是 `BlockEvent` 的子类，因而继承有 `getBlock()` 方法。但 `getBlock()` 方法的字面意思是“事件中的方块”，存在歧义。“事件中的方块”，既可以指玩家在事件中新放下的那个方块，也可以指玩家放置方块时所点击的那个旧有方块（玩家依凭某一个已有的方块才能放下另一个方块，不能直接在虚空中右键空气然后放置方块）。为了消除歧义，特意用 `getBlockPlaced()` 方法指代玩家在事件中新放下的那个方块，用 `getBlockAgainst()` 方法指代旧有的方块。而 `getBlock()` 方法实际上和本方法是等同的，都指向新放下的那个方块。
 
@@ -88,13 +88,13 @@ description: BlockPlaceEvent
 > 
 > @return The BlockState for the block which was replaced.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取被替代的方块的块状态。多数情况下其材质是空气。
 > 
 > @return 被替代的方块的块状态。
 > 
-> <p>
+> <br>
 > 
 > 译注：放置方块的过程实际上是摧毁该位置上原有的方块，然后放下新的方块。多数情况下，放置方块的过程是将空气取代为新的方块。但也有例外存在，比如在水底放置方块，会取代原有的水方块。本方法所返回的就是原先方块的块状态副本。
 
@@ -108,13 +108,13 @@ description: BlockPlaceEvent
 > 
 > @return Block the block that the new block was placed against
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家放置方块时所依凭的那个旧有方块。
 > 
 > @return 玩家放置方块时所依凭的那个旧有方块。
 > 
-> <p>
+> <br>
 > 
 > 译注：玩家不能在虚空里直接右键空气放置方块，必须要对准一个已有的方块，依凭它放置新的方块。
 
@@ -130,7 +130,7 @@ description: BlockPlaceEvent
 > 
 > placed the block
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家放置方块时手持的物品堆。
 > 
@@ -146,7 +146,7 @@ description: BlockPlaceEvent
 > 
 > @return Main or off-hand, depending on which hand was used to place the block
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家放置方块时所用的手。
 > 
@@ -170,13 +170,13 @@ description: BlockPlaceEvent
 > 
 > @return boolean whether the server would allow a player to build here
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家是否有权在此放置方块。例如，玩家位于出生点附近时（或译作“主城当中”），服务器将会禁止该玩家放置方块。注意该方法与 `BLOCK_CANBUILD` 检查是截然不同的。本方法代表的是某一个特定玩家是否有权在特定的位置放下方块，而 `BLOCK_CANBUILD` 则是全游戏通用的物理规则，例如不能在泥土上放置仙人掌（译注：仙人掌只能种植在沙子上）。
 > 
 > @return 服务器是否允许玩家在此放置方块。
 > 
-> <p>
+> <br>
 > 
 > 译注：通过本事件，插件可以设定一个规则，比如不能在出生点附近放置方块。一旦玩家尝试在出生点附近放置方块，则调用 `setBuild(false)` 来禁止。这种规则是因服务器而异的，是某个插件设置的特殊的规则，检查某一个特定服务器内某一个特定玩家是否有权在某一个特定的位置放下方块。
 > 
@@ -196,7 +196,7 @@ description: BlockPlaceEvent
 > 
 > @param canBuild true if you want the player to be able to build
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置是否允许玩家放置方块。如欲令玩家有权放置方块，则传入 `true` 。
 > 

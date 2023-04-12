@@ -16,11 +16,11 @@ description: PlayerBucketEntityEvent
 
 > This event is called whenever a player captures an entity in a bucket.
 > 
-> <p>
+> <br>
 > 
 > 当玩家用桶捕捉生物时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Bucket_of_aquatic_mob#History](https://minecraft.fandom.com/wiki/Bucket_of_aquatic_mob#History) 可知，自 `1.13` 起，玩家可以使用桶来捕鱼，于是 `Bukkit API` 中出现了 `PlayerBucketFishEvent` 。然而随着版本更迭，桶可用于抓捕美西螈、蝌蚪等生物，不再局限于鱼类。因此出现了本事件。出于版本向下兼容性（高版本服务端兼容基于低版本 `Bukkit API` 所编写的插件）考虑，`PlayerBucketFishEvent` 仍予以保留，但高版本插件应当尽可能使用本事件替代 `PlayerBucketFishEvent` 。
 
@@ -36,7 +36,7 @@ description: PlayerBucketEntityEvent
 > 
 > @return The {@link Entity} being put into the bucket
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将被装入桶里的实体。
 > 
@@ -54,7 +54,7 @@ description: PlayerBucketEntityEvent
 > 
 > @return The used bucket
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取捕捉实体时所持的桶。
 > 
@@ -76,7 +76,7 @@ description: PlayerBucketEntityEvent
 > 
 > @return The bucket that the {@link Entity} will be put into
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取捕捉实体后所得的桶。
 > 

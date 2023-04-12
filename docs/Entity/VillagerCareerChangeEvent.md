@@ -36,7 +36,7 @@ description: VillagerCareerChangeEvent
 > 
 > @return The profession the villager will change to
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取村民将要从事的职业。
 > 
@@ -52,7 +52,7 @@ description: VillagerCareerChangeEvent
 > 
 > @param profession new profession
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置村民将要从事的职业。
 > 
@@ -68,7 +68,7 @@ description: VillagerCareerChangeEvent
 > 
 > @return Reason for villager's profession changing
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取村民职业变化的原因。
 > 
@@ -102,11 +102,11 @@ description: VillagerCareerChangeEvent
 
 > Reasons for the villager's profession changing.
 > 
-> <p>
+> <br>
 > 
 > 用于确定村民职业变化原因的枚举。
 > 
-> <p>
+> <br>
 > 
 > 译注：本枚举仅有两项，分别是“村民获取职业”和“村民失业”。因此本枚举称作“村民职业变化原因”不恰当，应当改为“村民将会获得职业还是失业”。实际上，采用布尔值就可以简明地传递该信息，比如可以将 `getReason()` 方法改为 `isLosingJob()` 方法，返回 `true` 则代表村民即将失业，否则代表村民将会获得新职业。
 
@@ -114,11 +114,11 @@ description: VillagerCareerChangeEvent
 
 > Villager lost their job due to too little experience.
 > 
-> <p>
+> <br>
 > 
 > 村民由于缺乏经验而失业。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Villager#Professions](https://minecraft.fandom.com/wiki/Villager#Professions) 可知，本枚举字段指村民的工作方块被破坏，且此时村民还没有与玩家进行过交易，经验值为零，因而失业。经验值为零的新手级村民不会无缘无故失业，失业是由工作方块被破坏而导致的。
 
@@ -126,6 +126,6 @@ description: VillagerCareerChangeEvent
 
 > Villager gained employment.ofession changing.
 > 
-> <p>
+> <br>
 > 
 > 村民绑定工作方块，获取职业。

@@ -16,7 +16,7 @@ description: PrepareAnvilEvent
 
 > Called when an item is put in a slot for repair by an anvil.
 > 
-> <p>
+> <br>
 > 
 > 当有物品堆被放入铁砧，即将被修复耐久时触发。
 
@@ -40,7 +40,7 @@ description: PrepareAnvilEvent
 > 
 > @return result item
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取铁砧操作后的结果物品堆。返回值可能为 `null` 。
 > 

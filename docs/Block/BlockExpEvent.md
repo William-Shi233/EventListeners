@@ -16,7 +16,7 @@ description: BlockExpEvent
 
 > An event that's called when a block yields experience.
 > 
-> <p>
+> <br>
 > 
 > 当方块产出经验时触发。
 
@@ -32,7 +32,7 @@ description: BlockExpEvent
 > 
 > @return The experience to drop
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中的方块将会掉落的经验数量。
 > 
@@ -50,7 +50,7 @@ description: BlockExpEvent
 > 
 > @param exp 1 or higher to drop experience, else nothing will drop
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置事件中的方块将会掉落的经验数量。
 > 

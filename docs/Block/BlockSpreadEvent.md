@@ -38,7 +38,7 @@ description: BlockSpreadEvent
 > 
 > @see BlockFormEvent
 > 
-> <p>
+> <br>
 > 
 > 当一应条件合适，某方块开始向四周蔓延时触发。
 > 
@@ -70,7 +70,7 @@ description: BlockSpreadEvent
 > 
 > @return the Block for the source block involved in this event.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取向外蔓延的源头方块。
 > 

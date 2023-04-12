@@ -16,11 +16,11 @@ description: PlayerAnimationEvent
 
 > Represents a player animation event
 > 
-> <p>
+> <br>
 > 
 > 当玩家播放动画时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“动画”，指的是手臂挥动动画。
 > 
@@ -40,13 +40,13 @@ description: PlayerAnimationEvent
 > 
 > @return the animation type
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中挥动的手臂类型。
 > 
 > @return 事件中挥动的手臂类型。
 > 
-> <p>
+> <br>
 > 
 > 译注：该枚举仅有两个字段，即主手和副手。
 > 

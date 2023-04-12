@@ -18,7 +18,7 @@ description: VehicleBlockCollisionEvent
 
 > Raised when a vehicle collides with a block.
 > 
-> <p>
+> <br>
 > 
 > 当载具与方块相撞时触发。
 
@@ -34,7 +34,7 @@ description: VehicleBlockCollisionEvent
 > 
 > @return the block the vehicle collided with
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中的载具撞上的方块。
 > 

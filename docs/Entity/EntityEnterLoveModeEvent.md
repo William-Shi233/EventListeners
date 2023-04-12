@@ -20,7 +20,7 @@ description: EntityEnterLoveModeEvent
 > 
 > make the entity enter into love mode.
 > 
-> <p>
+> <br>
 > 
 > 当实体进入繁衍状态时触发。
 > 
@@ -38,7 +38,7 @@ description: EntityEnterLoveModeEvent
 > 
 > @return The animal that is entering love mode
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取进入繁衍状态的动物。
 > 
@@ -56,7 +56,7 @@ description: EntityEnterLoveModeEvent
 > 
 > null if there wasn't one.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取让动物进入繁衍状态的玩家。
 > 
@@ -72,7 +72,7 @@ description: EntityEnterLoveModeEvent
 > 
 > @return The amount of ticks that the animal will fall in love for
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取动物发情的时长。
 > 
@@ -90,7 +90,7 @@ description: EntityEnterLoveModeEvent
 > 
 > for
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置动物发情的时长。
 > 

@@ -22,7 +22,7 @@ description: EntityPortalEvent
 > 
 > For players see {@link org.bukkit.event.player.PlayerPortalEvent}
 > 
-> <p>
+> <br>
 > 
 > 当某个非玩家实体步入传送门准备传送时触发。
 > 
@@ -42,13 +42,13 @@ description: EntityPortalEvent
 > 
 > location
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置搜寻可用传送门时扫描的半径。
 > 
 > @param searchRadius 搜寻可用传送门时扫描的半径。
 > 
-> <p>
+> <br>
 > 
 > 译注：对末地传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要对传送门坐标进行“搜寻”。
 > 
@@ -64,13 +64,13 @@ description: EntityPortalEvent
 > 
 > @return the currently set search radius
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取搜寻可用传送门时扫描的半径。
 > 
 > @return 搜寻可用传送门时扫描的半径。
 > 
-> <p>
+> <br>
 > 
 > 译注：对末地传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要对传送门坐标进行“搜寻”。
 > 

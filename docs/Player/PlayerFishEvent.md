@@ -16,11 +16,11 @@ description: PlayerFishEvent
 
 > Thrown when a player is fishing
 > 
-> <p>
+> <br>
 > 
 > 当玩家钓鱼时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：不同于 `PlayerBucketEntityEvent` ，本事件在玩家使用钓鱼竿钓鱼时触发，而非用桶装入鱼时触发。而且在钓鱼过程中，本事件可能会触发很多次。
 > 
@@ -64,7 +64,7 @@ description: PlayerFishEvent
 > 
 > bobber has gotten stuck in the ground or nothing has been caught
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家抓住的实体。
 > 
@@ -82,7 +82,7 @@ description: PlayerFishEvent
 > 
 > @return the entity representing the fishing hook/bobber.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取鱼漂实体。
 > 
@@ -114,7 +114,7 @@ description: PlayerFishEvent
 > 
 > @return the amount of experience to drop
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取钓上鱼所奖励的经验值。
 > 
@@ -136,7 +136,7 @@ description: PlayerFishEvent
 > 
 > @param amount the amount of experience to drop
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置钓上鱼所奖励的经验值。
 > 
@@ -154,13 +154,13 @@ description: PlayerFishEvent
 > 
 > @return A State detailing the state of the fishing
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取钓鱼过程处于何阶段。
 > 
 > @return 钓鱼过程所处的阶段。
 > 
-> <p>
+> <br>
 > 
 > 译注：见上。
 
@@ -180,7 +180,7 @@ description: PlayerFishEvent
 
 > An enum to specify the state of the fishing
 > 
-> <p>
+> <br>
 > 
 > 用于确定钓鱼过程所处阶段的枚举。
 
@@ -188,7 +188,7 @@ description: PlayerFishEvent
 
 > When a player is fishing, ie casting the line out.
 > 
-> <p>
+> <br>
 > 
 > 玩家开始钓鱼，把鱼线抛出。
 
@@ -200,7 +200,7 @@ description: PlayerFishEvent
 > 
 > of fishing, ie an item, but not necessarily a fish.
 > 
-> <p>
+> <br>
 > 
 > 玩家成功钓上了鱼并收竿。所谓钓上了“鱼”，其实也包括玩家钓上了某个物品的情形，比如钓上宝藏，不一定是钓上了鱼。
 
@@ -212,7 +212,7 @@ description: PlayerFishEvent
 > 
 > the rod.
 > 
-> <p>
+> <br>
 > 
 > 玩家用鱼漂钩住了实体并收竿。所谓“实体”，必须比鱼漂更早生成（玩家抛竿的瞬间生成鱼漂实体），并被鱼漂直接钩住。
 
@@ -220,7 +220,7 @@ description: PlayerFishEvent
 
 > When a bobber is stuck in the ground.
 > 
-> <p>
+> <br>
 > 
 > 鱼漂卡在了地面上。
 
@@ -230,7 +230,7 @@ description: PlayerFishEvent
 > 
 > poor timing.
 > 
-> <p>
+> <br>
 > 
 > 玩家没能在鱼咬钩时尽早收竿，让鱼游走了。通常是由于玩家的时间判断能力差。
 
@@ -238,7 +238,7 @@ description: PlayerFishEvent
 
 > When a player reels in their hook without receiving any bites.
 > 
-> <p>
+> <br>
 > 
 > 在没有鱼咬钩的情况下，玩家收回了鱼钩。
 
@@ -248,6 +248,6 @@ description: PlayerFishEvent
 > 
 > in.
 > 
-> <p>
+> <br>
 > 
 > 有鱼咬钩，可以收竿。

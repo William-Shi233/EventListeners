@@ -18,7 +18,7 @@ description: EntityCombustByEntityEvent
 
 > Called when an entity causes another entity to combust.
 > 
-> <p>
+> <br>
 > 
 > 当实体引燃另一个实体时触发。
 
@@ -34,12 +34,12 @@ description: EntityCombustByEntityEvent
 > 
 > @return the Entity that set the combustee alight.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取造成另一个实体被引燃的实体。
 > 
 > @return 造成另一个实体被引燃的实体。
 > 
-> <p>
+> <br>
 > 
 > 译注：本方法用于获取纵火者，而 `getEntity()` 方法用于获取被点燃的实体。

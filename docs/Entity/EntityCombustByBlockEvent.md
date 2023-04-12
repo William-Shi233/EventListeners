@@ -18,7 +18,7 @@ description: EntityCombustByBlockEvent
 
 > Called when a block causes an entity to combust.
 > 
-> <p>
+> <br>
 > 
 > 当方块引燃实体时触发。
 
@@ -36,11 +36,11 @@ description: EntityCombustByBlockEvent
 > 
 > @return the Block that set the combustee alight.
 > 
-> <p>
+> <br>
 > 
 > （译注：该方法用于获取引起实体燃烧的方块。此句缺漏。）
 > 
-> <p>
+> <br>
 > 
 > 引起实体燃烧的方块可能是岩浆，也有可能是某个着火的方块。
 > 

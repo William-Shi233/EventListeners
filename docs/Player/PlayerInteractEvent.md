@@ -32,7 +32,7 @@ description: PlayerInteractEvent
 > 
 > an illegal position ({@link BlockCanBuildEvent}) will fail.
 > 
-> <p>
+> <br>
 > 
 > 当玩家与某物品或空气交互时触发。如果玩家的主副手都发生了交互，则本事件可能触发两次。通过 `getHand()` 方法可确定玩家正使用哪只手进行交互。
 > 
@@ -50,7 +50,7 @@ description: PlayerInteractEvent
 > 
 > @return Action returns the type of interaction
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取交互时的动作种类。
 > 
@@ -78,11 +78,11 @@ description: PlayerInteractEvent
 > 
 > relevant methods individually.
 > 
-> <p>
+> <br>
 > 
 > @deprecated 该方法已过时。本事件有两个层面，各自之取消与否可用两个方法确定，分别为 `useInteractedBlock()` 方法和 `useItemInHand()` 方法。前者返回 `false` 时，后者也可能返回 `true` ，比如玩家在使用鞘翅滑翔时右键使用烟花火箭。用户应当分别使用这两个方法来确定本事件是否取消。
 > 
-> <p>
+> <br>
 > 
 > 译注：原文第一段为所有 `isCancelled` 方法共用的文档，不赘。
 > 
@@ -106,11 +106,11 @@ description: PlayerInteractEvent
 > 
 > @param cancel true if you wish to cancel this event
 > 
-> <p>
+> <br>
 > 
 > 如果取消本事件，则玩家将无法食用任何物品（食物不会被消耗）、无法射箭、抛掷雪球、鸡蛋（抛射物不会被消耗）。
 > 
-> <p>
+> <br>
 > 
 > 译注：原文第一段为所有 `isCancelled` 方法共用的文档，不赘。
 > 
@@ -126,7 +126,7 @@ description: PlayerInteractEvent
 > 
 > @return ItemStack the item used
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家触发事件的那一侧手所持的物品堆。
 > 
@@ -144,7 +144,7 @@ description: PlayerInteractEvent
 > 
 > @return Material the material of the item used
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家触发事件的那一侧手所持的物品堆的材质。该方法相当于 `getItem().getType()` ，不过更简便。
 > 
@@ -160,7 +160,7 @@ description: PlayerInteractEvent
 > 
 > @return boolean true if it did
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件是否与方块有关。
 > 
@@ -176,7 +176,7 @@ description: PlayerInteractEvent
 > 
 > @return boolean true if it did
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件是否与物品有关。
 > 
@@ -194,7 +194,7 @@ description: PlayerInteractEvent
 > 
 > @return boolean true if the item in hand was a block
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件是否因玩家放置方块而触发。
 > 
@@ -210,7 +210,7 @@ description: PlayerInteractEvent
 > 
 > @return Block returns the block clicked with this item.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家点击的方块。
 > 
@@ -226,7 +226,7 @@ description: PlayerInteractEvent
 > 
 > @return BlockFace returns the face of the block that was clicked
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家点击的方块面。
 > 
@@ -246,7 +246,7 @@ description: PlayerInteractEvent
 > 
 > @return the action to take with the interacted block
 > 
-> <p>
+> <br>
 > 
 > 在事件中有方块被点击时，该方法用于确定要采取何种行为。尽管点击任何方块都会触发本事件，但大部分方块都没有点击后的默认行为。
 > 
@@ -262,7 +262,7 @@ description: PlayerInteractEvent
 > 
 > @param useInteractedBlock 要对方块采取的行为。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `useInteractedBlock()` 方法。
 
@@ -282,7 +282,7 @@ description: PlayerInteractEvent
 > 
 > @return the action to take with the item in hand
 > 
-> <p>
+> <br>
 > 
 > 在玩家手持物品不为空时，该方法用于确定要采取何种行为。玩家手持方块或非方块的物品时，物品都有可能被使用、被消耗（对于方块而言，是放置方块，而对于非方块的物品而言，可能是打火石点火，抑或是唱片被播放）。如果本方法返回值为 `Result.DEFAULT` ，则也有可能不采取任何行为。
 > 
@@ -298,7 +298,7 @@ description: PlayerInteractEvent
 > 
 > @param useItemInHand 要对手持物品采取的行为。
 > 
-> <p>
+> <br>
 > 
 > 译注：参见 `useItemInHand()` 方法。
 
@@ -314,7 +314,7 @@ description: PlayerInteractEvent
 > 
 > @return the hand used to interact. May be null.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取交互时所使用的那一侧手。如果 `getAction()` 方法返回 `Action#PHYSICAL` 则本方法返回 `null` 。
 > 

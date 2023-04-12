@@ -40,7 +40,7 @@ description: BlockFormEvent
 > 
 > @see BlockSpreadEvent
 > 
-> <p>
+> <br>
 > 
 > 当一应条件合适，某方块随机生成或开始向四周蔓延时触发。
 > 

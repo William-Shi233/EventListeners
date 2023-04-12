@@ -20,11 +20,11 @@ description: VehicleDestroyEvent
 > 
 > 'removed' due to other means.
 > 
-> <p>
+> <br>
 > 
 > 当载具被摧毁时触发。载具可能由于玩家攻击或环境中其他因素的影响而被摧毁。如果船被其他方式所“移除”，本事件不会触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：如插件调用 `Entity#remove` 移除一艘船，则不会触发本事件。
 
@@ -40,7 +40,7 @@ description: VehicleDestroyEvent
 > 
 > @return the Entity that has destroyed the vehicle, potentially null
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取摧毁载具的实体，可能为 `null` 。
 > 

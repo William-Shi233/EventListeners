@@ -16,7 +16,7 @@ description: PlayerKickEvent
 
 > Called when a player gets kicked from the server
 > 
-> <p>
+> <br>
 > 
 > 当玩家从服务器中被踢出时触发。
 
@@ -32,7 +32,7 @@ description: PlayerKickEvent
 > 
 > @return string kick reason
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家被踢出的理由，理由以字符串形式表示。
 > 
@@ -48,13 +48,13 @@ description: PlayerKickEvent
 > 
 > @return string kick reason
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要广播给全体玩家的退出消息。
 > 
 > @return 将要广播给全体玩家的退出消息。
 > 
-> <p>
+> <br>
 > 
 > 译注：比如“William_Shi left the game”。
 
@@ -80,7 +80,7 @@ description: PlayerKickEvent
 > 
 > @param kickReason kick reason
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置玩家被踢出的理由，理由以字符串形式表示。
 > 
@@ -96,7 +96,7 @@ description: PlayerKickEvent
 > 
 > @param leaveMessage leave message
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要广播给全体玩家的退出消息。
 > 

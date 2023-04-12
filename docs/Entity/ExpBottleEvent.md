@@ -18,7 +18,7 @@ description: ExpBottleEvent
 
 > Called when a ThrownExpBottle hits and releases experience.
 > 
-> <p>
+> <br>
 > 
 > 当一个掷出的经验瓶击中某物，生成经验球时触发。
 
@@ -42,7 +42,7 @@ description: ExpBottleEvent
 > 
 > @return true if the effect will be shown, false otherwise
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取是否要显示相应粒子效果。
 > 
@@ -62,7 +62,7 @@ description: ExpBottleEvent
 > 
 > indicates no effect will be shown
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置是否要显示相应粒子效果。
 > 
@@ -82,7 +82,7 @@ description: ExpBottleEvent
 > 
 > @return the total amount of experience to be created
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要释放出的经验值总量。
 > 
@@ -102,7 +102,7 @@ description: ExpBottleEvent
 > 
 > @param exp the total amount of experience to be created
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要释放出的经验值总量。
 > 

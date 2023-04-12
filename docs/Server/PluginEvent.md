@@ -16,11 +16,11 @@ description: PluginEvent
 
 > Used for plugin enable and disable events
 > 
-> <p>
+> <br>
 > 
 > 代表与插件加载、卸载有关的事件。
 > 
-> <p>
+> <br>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -36,7 +36,7 @@ description: PluginEvent
 > 
 > @return Plugin for this event
 > 
-> <p>
+> <br>
 > 
 > 获取事件中被加载/卸载的插件。
 > 

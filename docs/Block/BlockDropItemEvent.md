@@ -32,7 +32,7 @@ description: BlockDropItemEvent
 > 
 > block.
 > 
-> <p>
+> <br>
 > 
 > 当玩家破坏了某个方块，使得该方块产生掉落物时触发。
 > 
@@ -56,7 +56,7 @@ description: BlockDropItemEvent
 > 
 > @return The Player that is breaking the block involved in this event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取破坏涉事方块的玩家。
 > 
@@ -74,7 +74,7 @@ description: BlockDropItemEvent
 > 
 > @return The BlockState of the block involved in this event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中被摧毁的方块在毁损以前的块状态。
 > 
@@ -94,7 +94,7 @@ description: BlockDropItemEvent
 > 
 > @return The Item the block caused to drop
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取一个列表，其间存储有被破坏的方块所产生的掉落物实体。
 > 

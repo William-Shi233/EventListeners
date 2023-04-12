@@ -18,7 +18,7 @@ description: EntityCreatePortalEvent
 > 
 > @deprecated Use {@link PortalCreateEvent}
 > 
-> <p>
+> <br>
 > 
 > 当某生物创建传送门时触发。
 > 
@@ -44,7 +44,7 @@ description: EntityCreatePortalEvent
 > 
 > @return List of blocks that will be changed.
 > 
-> <p>
+> <br>
 > 
 > 译注：请不要使用本事件。本事件已经过时。
 
@@ -70,7 +70,7 @@ description: EntityCreatePortalEvent
 > 
 > @return Type of portal.
 > 
-> <p>
+> <br>
 > 
 > 译注：请不要使用本事件。本事件已经过时。
 

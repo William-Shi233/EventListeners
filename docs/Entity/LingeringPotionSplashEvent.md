@@ -18,11 +18,11 @@ description: LingeringPotionSplashEvent
 
 > Called when a splash potion hits an area
 > 
-> <p>
+> <br>
 > 
 > 当喷溅型药水被泼洒于一片区域之上时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：本事件文档与 `PotionSplashEvent` 一致，不够准确。本事件在滞留型药水被泼洒在一片区域之上时触发。
 > 
@@ -48,7 +48,7 @@ description: LingeringPotionSplashEvent
 > 
 > @return The spawned AreaEffectCloud
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要生成的药水云实体。
 > 

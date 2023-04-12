@@ -16,11 +16,11 @@ description: PlayerItemHeldEvent
 
 > Fired when a player changes their currently held item
 > 
-> <p>
+> <br>
 > 
 > 当玩家切换手持物品堆时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：玩家滑动鼠标滚轮时或按下 `1-9` 数字键时，都可能会切换选中的槽位，从而切换手持物品堆。
 
@@ -36,7 +36,7 @@ description: PlayerItemHeldEvent
 > 
 > @return Previous slot index
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取原先选中的槽位序号。
 > 
@@ -52,7 +52,7 @@ description: PlayerItemHeldEvent
 > 
 > @return New slot index
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取新选中的槽位序号。
 > 

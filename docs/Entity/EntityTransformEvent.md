@@ -16,11 +16,11 @@ description: EntityTransformEvent
 
 > Called when an entity is about to be replaced by another entity.
 > 
-> <p>
+> <br>
 > 
 > 当某实体将要被另一实体取代时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：本事件在实体发生转变时触发，比如猪被闪电击中变为僵尸猪灵时、村民被闪电击中变为女巫时等等。在这些情况下，原有的实体会被移除，另外生成一个新实体。并不是保留原有实体并变换其种类。
 
@@ -40,7 +40,7 @@ description: EntityTransformEvent
 > 
 > @see #getTransformedEntities()
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取原先转变前的实体。
 > 
@@ -48,7 +48,7 @@ description: EntityTransformEvent
 > 
 > @see 参见 `getTransformedEntities()` 方法。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“This returns the first entity in the transformed entity list.”，该句不知所云。`getTransformedEntities()` 方法返回的是新生的实体，旧有的实体将会死亡，并不会被列入新生实体列表中。
 
@@ -62,13 +62,13 @@ description: EntityTransformEvent
 > 
 > @return The transformed entities.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取转变后将要生成的实体列表。
 > 
 > @return 转变后将要生成的实体列表。
 > 
-> <p>
+> <br>
 > 
 > 译注：多数情况下，本列表只有一项。一位村民被雷击会生成一位女巫，一只猪被雷击会生成一只僵尸猪灵。二者往往是一一对应的。但在史莱姆死亡等情况下，会生成多个新实体。为应对上述情况，本方法返回值不是单个实体，而是列表。
 
@@ -82,7 +82,7 @@ description: EntityTransformEvent
 > 
 > @return The reason for conversion that has occurred.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取实体发生转变的原因。
 > 
@@ -120,7 +120,7 @@ description: EntityTransformEvent
 
 > When a zombie gets cured and a villager is spawned.
 > 
-> <p>
+> <br>
 > 
 > 僵尸被治愈，生成村民。
 
@@ -128,7 +128,7 @@ description: EntityTransformEvent
 
 > When a villager gets infected and a zombie villager spawns.
 > 
-> <p>
+> <br>
 > 
 > 村民被僵尸感染，生成僵尸村民。
 
@@ -136,7 +136,7 @@ description: EntityTransformEvent
 
 > When an entity drowns in water and a new entity spawns.
 > 
-> <p>
+> <br>
 > 
 > 实体在水中淹死，生成新实体。
 
@@ -144,7 +144,7 @@ description: EntityTransformEvent
 
 > When a mooshroom (or MUSHROOM_COW) is sheared and a cow spawns.
 > 
-> <p>
+> <br>
 > 
 > 哞菇（或称蘑菇牛）身上的蘑菇被剪下，生成普通的牛。
 
@@ -152,7 +152,7 @@ description: EntityTransformEvent
 
 > When lightning strikes a entity.
 > 
-> <p>
+> <br>
 > 
 > 闪电击中实体。
 
@@ -160,7 +160,7 @@ description: EntityTransformEvent
 
 > When a slime splits into multiple smaller slimes.
 > 
-> <p>
+> <br>
 > 
 > 史莱姆分裂为多个体型较小的史莱姆。
 
@@ -168,7 +168,7 @@ description: EntityTransformEvent
 
 > When a piglin converts to a zombified piglin.
 > 
-> <p>
+> <br>
 > 
 > 猪灵在主世界停留时间过长，转变为僵尸猪灵。
 
@@ -176,6 +176,6 @@ description: EntityTransformEvent
 
 > When reason is unknown.
 > 
-> <p>
+> <br>
 > 
 > 未知原因。

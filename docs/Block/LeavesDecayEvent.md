@@ -18,13 +18,13 @@ description: LeavesDecayEvent
 > 
 > If a Leaves Decay event is cancelled, the leaves will not decay.
 > 
-> <p>
+> <br>
 > 
 > 当树叶自然枯萎时触发。
 > 
 > 如果本事件被取消，则树叶不会枯萎。
 > 
-> <p>
+> <br>
 > 
 > 译注：本事件触发时，尚未进入掉落物生成阶段。因而通过本事件是无法获取到掉落的苹果、树苗等物品堆的。
 

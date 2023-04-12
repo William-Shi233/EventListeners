@@ -68,7 +68,7 @@ description: InventoryClickEvent
 > 
 > work as well.
 > 
-> <p>
+> <br>
 > 
 > 当玩家在打开着物品栏的情况下点击鼠标时触发。
 > 
@@ -108,7 +108,7 @@ description: InventoryClickEvent
 > 
 > @return the slot type
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家所点击的槽位的类型。
 > 
@@ -124,7 +124,7 @@ description: InventoryClickEvent
 > 
 > @return the cursor ItemStack
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家光标上现有的物品堆。
 > 
@@ -140,7 +140,7 @@ description: InventoryClickEvent
 > 
 > @return the item in the clicked
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取被点击的槽位中现有的物品堆。
 > 
@@ -160,7 +160,7 @@ description: InventoryClickEvent
 > 
 > @see ClickType#isRightClick()
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家在点击时是否按下了鼠标右键。本方法的返回值是根据 `getClick()` 方法的返回值所确定的。
 > 
@@ -182,7 +182,7 @@ description: InventoryClickEvent
 > 
 > @see ClickType#isLeftClick()
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家在点击时是否按下了鼠标左键。本方法的返回值是根据 `getClick()` 方法的返回值所确定的。
 > 
@@ -204,7 +204,7 @@ description: InventoryClickEvent
 > 
 > @see ClickType#isShiftClick()
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家在点击时是否按下了 `Shift` 键。本方法的返回值是根据 `getClick()` 方法的返回值所确定的。
 > 
@@ -230,7 +230,7 @@ description: InventoryClickEvent
 > 
 > make unexpected changes in the behavior of the clicked Inventory.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置光标上的物品堆。
 > 
@@ -246,7 +246,7 @@ description: InventoryClickEvent
 > 
 > @param stack the item to be placed in the current slot
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置被点击的槽位内的物品堆。
 > 
@@ -264,7 +264,7 @@ description: InventoryClickEvent
 > 
 > @see InventoryView#getInventory(int)
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取点击的物品栏。
 > 
@@ -286,7 +286,7 @@ description: InventoryClickEvent
 > 
 > @return The slot number.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取点击的槽位序号（ `slot` ），该序号可以作为 `Inventory#getItem(int)` 方法的参数，用于获取某个槽位上的物品堆。这个槽位序号在单个物品栏中是唯一的，但对于一个物品栏视图中的上下两个物品栏而言不是。两个物品栏中的不同格子可能对应相同的槽位序号。
 > 
@@ -304,7 +304,7 @@ description: InventoryClickEvent
 > 
 > @return the slot number
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取点击的槽位序号（ `raw slot` ），该序号可以作为 `InventoryView#getItem(int)` 方法的参数，用于获取某个槽位上的物品堆。这个槽位序号在整个物品栏视图（即上下两个物品栏）中是唯一的。
 > 
@@ -324,13 +324,13 @@ description: InventoryClickEvent
 > 
 > a NUMBER_KEY action
 > 
-> <p>
+> <br>
 > 
 > 如果 `getClick()` 方法返回 `NUMBER_KEY` ，则本方法会返回按下的数字键的序号（ `0-8` ）。
 > 
 > @return 如果 `getClick()` 方法返回值不是 `NUMBER_KEY` 则返回 `-1` ，否则返回数字键上的数字减去一所得的值（ `0-8` ）。
 > 
-> <p>
+> <br>
 > 
 > 译注：在物品栏中可以通过按下 `1-9` 数字键来将物品快速移动到玩家背包的快捷栏。本方法的返回值是将 `1-9` 数字键上的数字减去一而得，范围即为 `0-8` 。
 
@@ -350,7 +350,7 @@ description: InventoryClickEvent
 > 
 > @return the InventoryAction that triggered this event.
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取触发事件的点击动作。
 > 
@@ -370,7 +370,7 @@ description: InventoryClickEvent
 > 
 > @return the type of inventory click
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取点击的类型。
 > 

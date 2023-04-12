@@ -16,7 +16,7 @@ description: ProjectileHitEvent
 
 > Called when a projectile hits an object
 > 
-> <p>
+> <br>
 > 
 > 当抛射物击中某物时触发。
 
@@ -40,7 +40,7 @@ description: ProjectileHitEvent
 > 
 > @return hit block or else null
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取抛射物击中的方块（前提是抛射物击中的是方块）。
 > 
@@ -58,7 +58,7 @@ description: ProjectileHitEvent
 > 
 > @return hit face or else null
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取抛射物击中的方块面（前提是抛射物击中的是方块，且事件中记录了被击中的方块面信息）。
 > 
@@ -74,7 +74,7 @@ description: ProjectileHitEvent
 > 
 > @return hit entity or else null
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取抛射物击中的实体（前提是抛射物击中的是实体）。
 > 
@@ -108,7 +108,7 @@ description: ProjectileHitEvent
 > 
 > @param cancel true if you wish to cancel this event
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置是否要取消抛射物击中事件，取消本事件会导致抛射物击中时的一系列现象不再发生。
 > 

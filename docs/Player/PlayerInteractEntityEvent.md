@@ -16,11 +16,11 @@ description: PlayerInteractEntityEvent
 
 > Represents an event that is called when a player right clicks an entity.
 > 
-> <p>
+> <br>
 > 
 > 当玩家右键实体时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：见 `PlayerInteractAtEntityEvent` 。在一般情况下，建议监听本事件而非 `PlayerInteractAtEntityEvent` 。
 
@@ -48,7 +48,7 @@ description: PlayerInteractEntityEvent
 > 
 > @return entity right clicked by player
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取事件中被玩家右键点击的实体。
 > 
@@ -64,7 +64,7 @@ description: PlayerInteractEntityEvent
 > 
 > @return the hand used to interact
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取玩家点击时所使用的手（主手或副手）。
 > 

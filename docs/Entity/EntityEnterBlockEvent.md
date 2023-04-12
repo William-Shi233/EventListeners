@@ -22,7 +22,7 @@ description: EntityEnterBlockEvent
 > 
 > the {@link EntityChangeBlockEvent}.
 > 
-> <p>
+> <br>
 > 
 > 当实体进入某个方块，且其数据被该方块储存时触发。
 > 
@@ -42,7 +42,7 @@ description: EntityEnterBlockEvent
 > 
 > @return the block
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取实体将进入的方块。
 > 

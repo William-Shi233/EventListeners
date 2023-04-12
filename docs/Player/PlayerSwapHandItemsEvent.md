@@ -18,11 +18,11 @@ description: PlayerSwapHandItemsEvent
 > 
 > hotkey.
 > 
-> <p>
+> <br>
 > 
 > 当玩家按下热键交换主副手中物品时触发。
 > 
-> <p>
+> <br>
 > 
 > 译注：所谓“热键”，默认为 `F` 键。玩家按下 `F` 键交换左右手中物品时触发本事件。
 
@@ -38,7 +38,7 @@ description: PlayerSwapHandItemsEvent
 > 
 > @return item in the main hand
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要被换至主手中的物品堆。
 > 
@@ -54,7 +54,7 @@ description: PlayerSwapHandItemsEvent
 > 
 > @param mainHandItem new item in the main hand
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要被换至主手中的物品堆。
 > 
@@ -70,7 +70,7 @@ description: PlayerSwapHandItemsEvent
 > 
 > @return item in the off hand
 > 
-> <p>
+> <br>
 > 
 > 该方法用于获取将要被换至副手中的物品堆。
 > 
@@ -86,7 +86,7 @@ description: PlayerSwapHandItemsEvent
 > 
 > @param offHandItem new item in the off hand
 > 
-> <p>
+> <br>
 > 
 > 该方法用于设置将要被换至副手中的物品堆。
 > 
