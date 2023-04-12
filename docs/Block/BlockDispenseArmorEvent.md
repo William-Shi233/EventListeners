@@ -24,6 +24,8 @@ description: BlockDispenseArmorEvent
 >
 > equipped on the target entity.
 >
+>
+> 
 > 当某件可以被穿戴的物品堆自发射器中被发射，且自动穿戴到周围的某个实体身上时触发。
 >
 > 如果本事件被取消，则该物品堆将不会被自动穿戴到涉事实体身上。
@@ -40,6 +42,8 @@ description: BlockDispenseArmorEvent
 >
 > @return the target entity
 >
+>
+> 
 > 该方法用于获取将要穿上被发射的盔甲物品堆的实体。
 >
 > @return 将要穿上被发射的盔甲物品堆的实体。

@@ -16,6 +16,8 @@ description: EntityPickupItemEvent
 
 > Thrown when a entity picks an item up from the ground
 >
+>
+> 
 > 当实体自地上捡起一件物品时触发。
 
 ### 方法列表
@@ -38,6 +40,8 @@ description: EntityPickupItemEvent
 >
 > @return Item
 >
+>
+> 
 > 该方法用于获取被捡起的物品堆实体。
 >
 > @return 被捡起的物品堆实体。
@@ -52,6 +56,8 @@ description: EntityPickupItemEvent
 >
 > @return amount remaining on the ground
 >
+>
+> 
 > 该方法用于获取地上剩余的物品堆数量（如存在）。
 >
 > @return 地上剩余的物品堆数量

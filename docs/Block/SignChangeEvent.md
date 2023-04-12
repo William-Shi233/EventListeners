@@ -18,6 +18,8 @@ description: SignChangeEvent
 >
 > If a Sign Change event is cancelled, the sign will not be changed.
 >
+>
+> 
 > 当玩家修改告示牌上的文字时触发。
 >
 > 如果本事件被取消，则告示牌上的内容将不会发生变化。
@@ -34,6 +36,8 @@ description: SignChangeEvent
 >
 > @return the Player involved in this event
 >
+>
+> 
 > 该方法用于获取事件中修改告示牌内容的玩家。
 >
 > @return 事件中修改告示牌内容的玩家。
@@ -48,10 +52,14 @@ description: SignChangeEvent
 >
 > @return the String array for the sign's lines new text
 >
+>
+> 
 > 该方法用于获取涉事告示牌的全部文本行。
 >
 > @return 涉事告示牌的全部文本行，以字符串数组表示。文本为修改后的结果。
 >
+>
+> 
 > 译注：所谓“文本行”，指将告示牌的全部内容以行为单位进行分割，数组中的元素依次为第一至四行内容字符串。
 
 #### getLine
@@ -71,6 +79,8 @@ description: SignChangeEvent
 > @throws IndexOutOfBoundsException thrown when the provided index is {@literal > 3
 >
 > or < 0}
+>
+> 
 >
 > 该方法用于获取涉事告示牌上某一行的内容字符串。
 >
@@ -95,6 +105,8 @@ description: SignChangeEvent
 > @throws IndexOutOfBoundsException thrown when the provided index is {@literal > 3
 >
 > or < 0}
+>
+> 
 >
 > 该方法用于设置涉事告示牌上某一行的内容字符串。
 >

@@ -24,10 +24,14 @@ description: BroadcastMessageEvent
 >
 > further information.</b>
 >
+>
+> 
 > 当服务器内有广播消息时触发，如调用 `org.bukkit.Server#broadcast(String, String)` 方法时。
 >
 > **本事件与 `AsyncPlayerChatEvent` 类似。当本事件在异步线程内被触发时，监听器就在异步线程中被调用。详情请参见  `AsyncPlayerChatEvent` 文档。**
 >
+>
+> 
 > 译注：参见 `AsyncPlayerChatEvent` 。
 
 ### 方法列表
@@ -42,6 +46,8 @@ description: BroadcastMessageEvent
 >
 > @return Message to broadcast
 >
+>
+> 
 > 该方法用于获取将要被广播的消息。
 >
 > @return 将要被广播的消息。
@@ -56,6 +62,8 @@ description: BroadcastMessageEvent
 >
 > @param message New message to broadcast
 >
+>
+> 
 > 该方法用于设置将要被广播的消息。
 >
 > @param message 将要被广播的消息。
@@ -82,6 +90,8 @@ description: BroadcastMessageEvent
 >
 > @return All CommandSenders who will see this chat message
 >
+>
+> 
 > 该方法用于获取一个 `Set` ，其间存储有全部将要接收该条广播消息的对象。
 >
 > 本方法返回的 `Set` 不一定是可以修改的，而且有可能在用户从其间取出值时进行自动填充。
@@ -92,6 +102,8 @@ description: BroadcastMessageEvent
 >
 > @return 全部将要接收该条广播消息的 `CommandSender` 对象。
 >
+>
+> 
 > 译注：文档字里行间强调的核心内容只有一点，即本事件很有可能不是由服务端所触发，而是被其他插件所触发。
 > 
 > 其他插件提供的集合，`Bukkit API` 只能保证其实现类是 `java.util.Set` 的子类，但不能保证它可否修改，也不能保证它是不是 `Lazy Set` 。

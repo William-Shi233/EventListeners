@@ -20,6 +20,8 @@ description: EntityEnterLoveModeEvent
 >
 > make the entity enter into love mode.
 >
+>
+> 
 > 当实体进入繁衍状态时触发。
 >
 > 如果本事件被取消，被喂给实体用于使其进入繁衍状态的物品堆不会返还。
@@ -36,6 +38,8 @@ description: EntityEnterLoveModeEvent
 >
 > @return The animal that is entering love mode
 >
+>
+> 
 > 该方法用于获取进入繁衍状态的动物。
 >
 > @return 进入繁衍状态的动物。
@@ -52,6 +56,8 @@ description: EntityEnterLoveModeEvent
 >
 > null if there wasn't one.
 >
+>
+> 
 > 该方法用于获取让动物进入繁衍状态的玩家。
 >
 > @return 让动物进入繁衍状态的玩家。如果不存在则返回 `null` 。
@@ -66,6 +72,8 @@ description: EntityEnterLoveModeEvent
 >
 > @return The amount of ticks that the animal will fall in love for
 >
+>
+> 
 > 该方法用于获取动物发情的时长。
 >
 > @return 动物发情的时长。
@@ -81,6 +89,8 @@ description: EntityEnterLoveModeEvent
 > @param ticksInLove The amount of ticks that the animal will fall in love
 >
 > for
+>
+> 
 >
 > 该方法用于设置动物发情的时长。
 >

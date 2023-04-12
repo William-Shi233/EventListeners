@@ -36,6 +36,8 @@ description: AsyncPlayerChatEvent
 >
 > appropriately.
 >
+>
+> 
 > 当玩家发送聊天消息时触发。本事件虽然名为 `AsyncPlayerChatEvent` （异步玩家聊天事件），但也有可能同步触发，主要视触发原因而定。
 >
 > 本事件构造器提供了一个布尔值，用于确定本事件是异步还是同步触发的。如果本事件是异步触发的，那么它可能运行在任何一个异步线程上，主线程除外。在异步线程中，对 `Bukkit API` 的访问是有所限制的。
@@ -44,6 +46,8 @@ description: AsyncPlayerChatEvent
 >
 > 应当注意通过 `isAsynchronous` 方法检查本事件是否为异步触发，并视情况以妥善方法处理本事件。
 >
+>
+> 
 > 译注：`Mojang` 在设计 `MineCraft` 时，几乎没有考虑线程安全问题。整个 `MineCraft` 服务端中的大部分集合、大部分方法，都没有考虑异步操作。在 `MineCraft` 内部，如生成生物、如破坏方块等方法，都运行在主线程上，虽然效率低，但是这样一来也没有线程安全问题。一旦让插件在异步线程中操作 `MineCraft` 中的实体、方块、物品栏等对象，就可能出现并发修改等错误。整个 `MineCraft` 里几乎没有什么方法是线程安全的。除非某方法仅涉及到数据包的发送，否则它就不能运行在异步线程里。比如发送消息给玩家，这个方法仅仅涉及到玩家聊天消息相关数据包的发送，因此它可以异步运行。本事件的文档一再警告用户检查事件是否异步触发，就是为了防止用户在异步线程中调用 `Bukkit API` 里那些线程不安全的方法。
 > 
 > 如果本事件是在主线程里被触发的（同步触发），那么本事件的所有监听器也都运行在主线程里，访问 `Bukkit API` 里的方法就没有线程安全问题。当插件强迫玩家发送聊天消息（比如通过 `Player#chat` 方法）时，本事件是同步触发的。在 `org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer#chat` 方法中，调用了 `net.minecraft.server.v1_16_R3.PlayerConnection#chat` 方法，其中 `boolean async` 参数的值为 `false` 。在 `PlayerConnection` 类第 `1709` 行触发本事件时，向本事件构造器内传入了 `false` ，因此可见本事件是同步的。这种情况下访问 `Bukkit API` 里的方法安全无虞。
@@ -64,6 +68,8 @@ description: AsyncPlayerChatEvent
 >
 > @return Message the player is attempting to send
 >
+>
+> 
 > 该方法用于获取玩家尝试发送的消息字符串。这一字符串将会在 `getFormat()` 方法中被用到。
 >
 > @return 玩家尝试发送的消息字符串。
@@ -80,6 +86,8 @@ description: AsyncPlayerChatEvent
 >
 > @param message New message that the player will send
 >
+>
+> 
 > 该方法用于设置玩家尝试发送的消息字符串。这一字符串将会在 `getFormat()` 方法中被用到。
 >
 > @param message 玩家尝试发送的消息字符串。
@@ -102,12 +110,16 @@ description: AsyncPlayerChatEvent
 >
 > string
 >
+>
+> 
 > 该方法用于获取聊天消息格式。
 >
 > 当本事件触发以后，格式中的第一个参数将会被替换为 `Player#getDisplayName()` ，第二个参数则替换为本事件 `getMessage()` 方法的返回值。
 >
 > @return 兼容 `String#format(String, Object...)` 方法的格式字符串。
 >
+>
+> 
 > 译注：所谓“格式字符串”，指服务端将会以类似如下的方式处理消息：`String message = String.format(event.getFormat(), new Object[] { event.getPlayer().getDisplayName(), event.getMessage() });` ，因此这个方法的返回值要能作为 `JDK` 标准里的 `String.format` 方法的第一个参数来使用。
 >
 > 这个格式字符串的写法应当参阅 `Java` 官方文档中的说明 [https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Formatter.html#syntax](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Formatter.html#syntax) 。
@@ -140,6 +152,8 @@ description: AsyncPlayerChatEvent
 >
 > @see String#format(String, Object...)
 >
+>
+> 
 > 该方法用于设置聊天消息格式。
 >
 > 当本事件触发以后，格式中的第一个参数将会被替换为 `Player#getDisplayName()` ，第二个参数则替换为本事件 `getMessage()` 方法的返回值。
@@ -151,6 +165,8 @@ description: AsyncPlayerChatEvent
 > @throws 如果传入参数为 `null` 则抛出 `NullPointerException` 。
 >
 > @see 参见 `String#format(String, Object...)` 方法文档。
+> 
+>
 > 
 > 译注：关于格式字符串的相关说明见上。
 > 
@@ -178,6 +194,8 @@ description: AsyncPlayerChatEvent
 >
 > @return All Players who will see this chat message
 >
+>
+> 
 > 该方法用于获取一个 `Set` ，其间存储有全部将要接收该条聊天消息的对象。
 >
 > 本方法返回的 `Set` 不一定是可以修改的，而且有可能在用户从其间取出值时进行自动填充。
@@ -188,6 +206,8 @@ description: AsyncPlayerChatEvent
 >
 > @return 全部将要接收该条聊天消息的玩家对象。
 >
+>
+> 
 > 译注：其他插件提供的集合，`Bukkit API` 只能保证其实现类是 `java.util.Set` 的子类，但不能保证它可否修改，也不能保证它是不是 `Lazy Set` 。
 >
 > 所谓不可修改集合，即不能向其中添加删除元素。监听器只能遍历其中元素，不能通过修改 `Set` 的方式添加或删除一个接收聊天消息的对象，否则会抛出 `UnsupportedOperationException` 。

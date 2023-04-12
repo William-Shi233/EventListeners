@@ -16,6 +16,8 @@ description: FurnaceBurnEvent
 
 > Called when an ItemStack is successfully burned as fuel in a furnace.
 >
+>
+> 
 > 当熔炉消耗某燃料物品堆时触发。
 
 ### 方法列表
@@ -30,6 +32,8 @@ description: FurnaceBurnEvent
 >
 > @return the fuel ItemStack
 >
+>
+> 
 > 该方法用于获取事件中的燃料物品堆。
 >
 > @return 燃料物品堆。
@@ -44,6 +48,8 @@ description: FurnaceBurnEvent
 >
 > @return the burn time for this fuel
 >
+>
+> 
 > 该方法用于获取该燃料物品堆可以维持燃烧的时间。
 >
 > @return 该燃料物品堆可以维持燃烧的时间。
@@ -58,6 +64,8 @@ description: FurnaceBurnEvent
 >
 > @param burnTime the burn time for this fuel
 >
+>
+> 
 > 该方法用于设置该燃料物品堆可以维持燃烧的时间。
 >
 > @param burnTime 该燃料物品堆可以维持燃烧的时间。
@@ -72,6 +80,8 @@ description: FurnaceBurnEvent
 >
 > @return whether the furnace's fuel is burning or not.
 >
+>
+> 
 > 该方法用于获取熔炉是否会消耗燃料以保持燃烧。
 >
 > @return 熔炉是否会消耗燃料以保持燃烧。
@@ -86,6 +96,8 @@ description: FurnaceBurnEvent
 >
 > @param burning true if the furnace's fuel is burning
 >
+>
+> 
 > 该方法用于获取熔炉是否会消耗燃料以保持燃烧。
 >
 > @param burning 熔炉是否会消耗燃料以保持燃烧。

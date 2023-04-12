@@ -48,6 +48,8 @@ description: BlockBreakEvent
 >
 > experience will not drop.
 >
+>
+> 
 > 当玩家破坏方块时触发。
 >
 > 如欲令涉事方块掉落经验，必须将掉落经验额设为零以上的值。默认情况下，如果符合以下条件，则涉事方块会掉落经验：
@@ -68,6 +70,8 @@ description: BlockBreakEvent
 >
 > 如果本事件被取消，则方块将不会被破坏，也不会掉落经验。
 >
+>
+> 
 > 译注：`BlockDamageEvent` 是在玩家开始挖掘时触发，只要左键点击了一瞬，就可以触发此事件。而 `BlockBreakEvent` 是在方块被完全破坏以后触发的。如果对该 `BlockBreakEvent` 对象调用 `isDropItems()` 方法，返回值不为 `false` ，且该 `BlockBreakEvent` 未被取消，则会在 `BlockBreakEvent` 触发后再触发 `BlockDropItemEvent` 。
 
 ### 方法列表
@@ -82,6 +86,8 @@ description: BlockBreakEvent
 >
 > @return The Player that is breaking the block involved in this event
 >
+>
+> 
 > 该方法用于获取破坏方块的涉事玩家。
 >
 > @return 破坏方块的涉事玩家。
@@ -102,6 +108,8 @@ description: BlockBreakEvent
 >
 > @param dropItems Whether or not the block will attempt to drop items
 >
+>
+> 
 > 该方法用于设置涉事方块是否会产生掉落物。
 >
 > 当且仅当 `isDropItems()` 方法返回 `false` 时，`BlockDropItemEvent` 不会在此事件之后触发。
@@ -122,6 +130,8 @@ description: BlockBreakEvent
 >
 > @return Whether or not the block will attempt to drop items
 >
+>
+> 
 > 该方法用于获取涉事方块是否会产生掉落物。
 >
 > 当且仅当本方法返回 `false` 时，`BlockDropItemEvent` 不会在此事件之后触发。

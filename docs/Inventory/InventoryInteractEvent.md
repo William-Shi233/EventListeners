@@ -18,6 +18,8 @@ description: InventoryInteractEvent
 >
 > HumanEntity and the contents of an Inventory.
 >
+>
+> 
 > 本类是一个抽象类，作为一些具体事件的基类使用。本类的子事件用于描述 `HumanEntity` 对象和物品栏之间的交互行为。
 
 ### 方法列表
@@ -32,6 +34,8 @@ description: InventoryInteractEvent
 >
 > @return The clicking player.
 >
+>
+> 
 > 该方法用于获取点击物品栏的玩家。
 >
 > @return 点击物品栏的玩家。
@@ -50,6 +54,8 @@ description: InventoryInteractEvent
 >
 > @see #isCancelled()
 >
+>
+> 
 > 该方法用于设置事件的结果。本方法会影响事件取消与否。
 >
 > @param newResult 事件的新结果。
@@ -70,6 +76,8 @@ description: InventoryInteractEvent
 >
 > @return the Result of this event.
 >
+>
+> 
 > 该方法用于获取事件的结果。通过本方法的返回值，可以预估涉事物品栏将会发生的变化。
 >
 > @return 事件的结果。
@@ -92,6 +100,8 @@ description: InventoryInteractEvent
 >
 > @return whether the event is cancelled
 >
+>
+> 
 > 该方法用于获取事件取消与否。本方法的返回值是基于本事件的 `getResult()` 方法而计算的。如果 `getResult()` 方法返回 `Result.ALLOW` 或 `Result.DEFAULT` 则本方法返回 `false` ，而若 `getResult()` 方法返回 `Result.DENY` 则本方法返回 `true` 。 
 
 #### setCancelled
@@ -110,8 +120,12 @@ description: InventoryInteractEvent
 >
 > @param toCancel result becomes DENY if true, ALLOW if false
 >
+>
+> 
 > 本方法是 `Cancellable` 接口 `setResult(org.bukkit.event.Event.Result)` 方法的代理。推荐使用 `setResult(org.bukkit.event.Event.Result)` 替代本方法，因为前者可以用于指定 `Result.DENY` 和 `Result.ALLOW` 以外的结果。
 >
 > @param toCancel 如果传入 `true` 则事件结果变为 `Result.DENY` ，传入 `false` 则事件结果变为 `Result.ALLOW` 。
 >
+>
+> 
 > 译注：如果使用 `setResult(org.bukkit.event.Event.Result)` 方法，可以指定 `Result.DEFAULT` 为事件结果，而本方法不能。

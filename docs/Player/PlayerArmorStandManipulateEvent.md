@@ -18,6 +18,8 @@ description: PlayerArmorStandManipulateEvent
 
 > Called when a player interacts with an armor stand and will either swap, retrieve or place an item.
 >
+>
+> 
 > 当玩家与盔甲架交互时触发。玩家可能正尝试与盔甲架交换物品、从盔甲架取回物品或将物品堆放置到盔甲架上。
 
 ### 方法列表
@@ -42,6 +44,8 @@ description: PlayerArmorStandManipulateEvent
 >
 > @return the item held by the player.
 >
+>
+> 
 > 该方法用于获取玩家曾经持有的物品堆。
 >
 > 如果本方法返回值为 `null` 且盔甲架持有的物品堆也是 `null` ，则盔甲架与玩家之间不会发生物品堆转移。
@@ -56,6 +60,8 @@ description: PlayerArmorStandManipulateEvent
 >
 > @return 玩家曾经持有的物品堆。
 >
+>
+> 
 > 译注：所谓“曾经持有”，指在发生物品堆转移以前，玩家手中的物品堆。
 
 #### getArmorStandItem
@@ -78,6 +84,8 @@ description: PlayerArmorStandManipulateEvent
 >
 > @return the item held by the armor stand.
 >
+>
+> 
 > 该方法用于获取盔甲架曾经持有的物品堆。
 >
 > 如果本方法返回值为 `null` 且玩家持有的物品堆也是 `null` ，则盔甲架与玩家之间不会发生物品堆转移。
@@ -92,6 +100,8 @@ description: PlayerArmorStandManipulateEvent
 >
 > @return 盔甲架曾经持有的物品堆。
 >
+>
+> 
 > 译注：所谓“曾经持有”，指在发生物品堆转移以前，盔甲架涉事槽位中的物品堆。
 
 #### getSlot
@@ -104,10 +114,14 @@ description: PlayerArmorStandManipulateEvent
 >
 > @return the index of the item obtained or placed of the armor stand.
 >
+>
+> 
 > 该方法用于获取事件中内容有所改变的物品槽位。
 >
 > @return 自盔甲架获取或放置到盔甲架上的物品堆所占的槽位。
 >
+>
+> 
 > 译注：所谓“index”和“raw item slot”，可能有歧义。此处指的是盔甲架上的槽位，用 `EquipmentSlot` 枚举表示。在物品栏相关事件中，这两种表述多用于数字槽位序号。
 
 #### getRightClicked

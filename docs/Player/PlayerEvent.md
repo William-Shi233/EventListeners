@@ -14,8 +14,12 @@ description: PlayerEvent
 
 > Represents a player related event
 >
+>
+> 
 > 代表与玩家有关的事件。
 >
+>
+> 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
 ### 方法列表
@@ -30,6 +34,8 @@ description: PlayerEvent
 >
 > @return Player who is involved in this event
 >
+>
+> 
 > 获取事件中的玩家。
 >
 > @return 触发事件的玩家。

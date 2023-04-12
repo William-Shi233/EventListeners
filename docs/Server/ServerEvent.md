@@ -14,6 +14,10 @@ description: ServerEvent
 
 > Miscellaneous server events
 >
+>
+> 
 > 代表与服务器有关的杂项事件。
 >
+>
+> 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。

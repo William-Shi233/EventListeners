@@ -16,6 +16,8 @@ description: BlockCookEvent
 
 > Called when an ItemStack is successfully cooked in a block.
 >
+>
+> 
 > 当某物品堆在方块中被烹饪完毕时触发。
 
 ### 方法列表
@@ -30,6 +32,8 @@ description: BlockCookEvent
 >
 > @return smelting source ItemStack
 >
+>
+> 
 > 该方法用于获取烹饪前的物品堆。
 >
 > @return 烹饪前的物品堆。
@@ -44,6 +48,8 @@ description: BlockCookEvent
 >
 > @return smelting result ItemStack
 >
+>
+> 
 > 该方法用于获取烹饪后的物品堆。
 >
 > @return 烹饪后的物品堆。
@@ -58,6 +64,8 @@ description: BlockCookEvent
 >
 > @param result new result ItemStack
 >
+>
+> 
 > 该方法用于设置烹饪后的物品堆。
 >
 > @param result 烹饪后的物品堆。

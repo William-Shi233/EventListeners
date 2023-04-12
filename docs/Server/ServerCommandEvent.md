@@ -68,6 +68,8 @@ description: ServerCommandEvent
 >
 > removed, unexpected behavior may result.
 >
+>
+> 
 > 当某一事物执行指令时触发，玩家除外。本事件在指令处理的过程中靠前运行，对本事件中字段的修改（比如 `setCommand(String)` ）可以在指令运行结果中体现。（译注：比如对于某个插件提供的指令而言，首先触发本事件，然后再运行 `CommandExecutor` 的相关方法。所以 `CommandExecutor` 中得到的参数 `String[] args` 可能是被监听器修改过的。原版指令大同小异。）
 >
 > 很多插件无视此事件。如无必要，请避免使用本事件。
@@ -112,6 +114,8 @@ description: ServerCommandEvent
 >
 > @return Command the user is attempting to execute
 >
+>
+> 
 > 该方法用于获取用户通过后台运行的指令字符串。
 >
 > @return 用户通过后台运行的指令字符串。
@@ -126,6 +130,8 @@ description: ServerCommandEvent
 >
 > @param message New message that the server will execute
 >
+>
+> 
 > 该方法用于设置后台将要运行的指令字符串。
 >
 > @param message 用户将要通过后台运行的新指令。
@@ -140,6 +146,8 @@ description: ServerCommandEvent
 >
 > @return The sender
 >
+>
+> 
 > 该方法用于获取指令发送者。
 >
 > @return 指令发送者。

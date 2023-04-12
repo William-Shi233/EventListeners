@@ -20,6 +20,8 @@ description: SpawnerSpawnEvent
 >
 > If a Spawner Spawn event is cancelled, the entity will not spawn.
 >
+>
+> 
 > 当刷怪笼生成实体时触发。
 >
 > 如果本事件被取消，则实体将不会生成。

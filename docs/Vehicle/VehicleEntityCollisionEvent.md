@@ -18,6 +18,8 @@ description: VehicleEntityCollisionEvent
 
 > Raised when a vehicle collides with an entity.
 >
+>
+> 
 > 当载具与实体相撞时触发。
 
 ### 方法列表

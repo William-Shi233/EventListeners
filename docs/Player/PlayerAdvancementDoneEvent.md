@@ -16,8 +16,12 @@ description: PlayerAdvancementDoneEvent
 
 > Called when a player has completed all criteria in an advancement.
 >
+>
+> 
 > 当玩家符合一个进度下的所有准则时触发。
 >
+>
+> 
 > 译注：文档中所谓“所有准则”一语，有误。
 > 
 > 与进度有关的信息可参见 [https://minecraft.fandom.com/wiki/Advancement](https://minecraft.fandom.com/wiki/Advancement) 页面。进度由 `JSON` 格式的文件所定义，具体格式参见 [https://minecraft.fandom.com/wiki/Advancement/JSON_format](https://minecraft.fandom.com/wiki/Advancement/JSON_format)] 页面。
@@ -40,6 +44,8 @@ description: PlayerAdvancementDoneEvent
 >
 > @return completed advancement
 >
+>
+> 
 > 该方法用于获取被达成的进度。
 >
 > @return 被达成的进度。

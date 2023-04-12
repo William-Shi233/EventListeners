@@ -16,6 +16,8 @@ description: EntityBreedEvent
 
 > Called when one Entity breeds with another Entity.
 >
+>
+> 
 > 当某一实体与另一实体繁衍后代时触发。
 
 ### 方法列表
@@ -38,10 +40,14 @@ description: EntityBreedEvent
 >
 > @return The "birth" parent
 >
+>
+> 
 > 该方法用于获取实体的双亲之一。
 >
 > @return 实体的双亲之一。
 >
+>
+> 
 > 译注：`MineCraft` 中的生物并没有性别之分，任意两只同类生物即能繁衍，这一过程是性别无涉的。本方法名字中的所谓“Mother”毫无意义。给性别无涉的体系强加“父母”一词，受到了顺性别异性恋的话语体系影响。故翻译时修改为“双亲之一”，以示笔者对于异性恋以外的各种性取向的尊重。另外，笔者并非不尊重多角恋关系，只不过在 `MineCraft` 游戏机制中，繁衍由两只生物参与，因此称“双亲”。
 
 #### getFather
@@ -54,10 +60,14 @@ description: EntityBreedEvent
 >
 > @return the other parent
 >
+>
+> 
 > 该方法用于获取实体的双亲之一。
 >
 > @return 实体的双亲之一。
 >
+>
+> 
 > 译注：`MineCraft` 中的生物并没有性别之分，任意两只同类生物即能繁衍，这一过程是性别无涉的。本方法名字中的所谓“Father”毫无意义。给性别无涉的体系强加“父母”一词，受到了顺性别异性恋的话语体系影响。故翻译时修改为“双亲之一”，以示笔者对于异性恋以外的各种性取向的尊重。另外，笔者并非不尊重多角恋关系，只不过在 `MineCraft` 游戏机制中，繁衍由两只生物参与，因此称“双亲”。
 
 #### getBreeder
@@ -72,6 +82,8 @@ description: EntityBreedEvent
 >
 > @return The Entity who initiated breeding.
 >
+>
+> 
 > 该方法用于获取引起繁衍的玩家。如果是自然状态下的繁衍，则本方法返回 `null` 。
 >
 > @return 引起繁衍的玩家。
@@ -86,6 +98,8 @@ description: EntityBreedEvent
 >
 > @return ItemStack used to initiate breeding.
 >
+>
+> 
 > 该方法用于获取引起繁衍的物品堆（如存在）。
 >
 > @return 引起繁衍的物品堆。
@@ -102,6 +116,8 @@ description: EntityBreedEvent
 >
 > @return experience amount
 >
+>
+> 
 > 该方法用于获取繁衍所产生的经验值。
 >
 > @return 繁衍所产生的经验值。
@@ -116,6 +132,8 @@ description: EntityBreedEvent
 >
 > @param experience experience amount
 >
+>
+> 
 > 该方法用于设置繁衍所产生的经验值。
 >
 > @param experience 繁衍所产生的经验值。

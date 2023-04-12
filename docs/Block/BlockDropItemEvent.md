@@ -32,6 +32,8 @@ description: BlockDropItemEvent
 >
 > block.
 >
+>
+> 
 > 当玩家破坏了某个方块，使得该方块产生掉落物时触发。
 >
 > 如果“涉事方块被破坏”这一行为所对应的 `BlockBreakEvent` 被取消了，则本事件不会触发。
@@ -54,6 +56,8 @@ description: BlockDropItemEvent
 >
 > @return The Player that is breaking the block involved in this event
 >
+>
+> 
 > 该方法用于获取破坏涉事方块的玩家。
 >
 > @return 破坏涉事方块的玩家。
@@ -70,6 +74,8 @@ description: BlockDropItemEvent
 >
 > @return The BlockState of the block involved in this event
 >
+>
+> 
 > 该方法用于获取事件中被摧毁的方块在毁损以前的块状态。
 >
 > @return 事件中被摧毁的方块在毁损以前的块状态。
@@ -88,6 +94,8 @@ description: BlockDropItemEvent
 >
 > @return The Item the block caused to drop
 >
+>
+> 
 > 该方法用于获取一个列表，其间存储有被破坏的方块所产生的掉落物实体。
 >
 > 本方法所返回的列表是可以修改的。如果从中删除某个元素，则该物品堆将不会掉落。但是不可以向列表中添加元素。

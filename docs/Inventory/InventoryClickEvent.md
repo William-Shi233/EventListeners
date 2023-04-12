@@ -68,6 +68,8 @@ description: InventoryClickEvent
 >
 > work as well.
 >
+>
+> 
 > 当玩家在打开着物品栏的情况下点击鼠标时触发。
 >
 > 由于本事件涉及到对物品栏内容的修改，在本事件的监听器中运行与物品栏有关的一些方法可能是不安全的。
@@ -106,6 +108,8 @@ description: InventoryClickEvent
 >
 > @return the slot type
 >
+>
+> 
 > 该方法用于获取玩家所点击的槽位的类型。
 >
 > @return 槽位的类型。
@@ -120,6 +124,8 @@ description: InventoryClickEvent
 >
 > @return the cursor ItemStack
 >
+>
+> 
 > 该方法用于获取玩家光标上现有的物品堆。
 >
 > @return 玩家光标上现有的物品堆。
@@ -134,6 +140,8 @@ description: InventoryClickEvent
 >
 > @return the item in the clicked
 >
+>
+> 
 > 该方法用于获取被点击的槽位中现有的物品堆。
 >
 > @return 被点击的槽位中现有的物品堆。
@@ -152,6 +160,8 @@ description: InventoryClickEvent
 >
 > @see ClickType#isRightClick()
 >
+>
+> 
 > 该方法用于获取玩家在点击时是否按下了鼠标右键。本方法的返回值是根据 `getClick()` 方法的返回值所确定的。
 >
 > @return 如果玩家在点击时按下了鼠标右键则返回 `true` 。
@@ -172,6 +182,8 @@ description: InventoryClickEvent
 >
 > @see ClickType#isLeftClick()
 >
+>
+> 
 > 该方法用于获取玩家在点击时是否按下了鼠标左键。本方法的返回值是根据 `getClick()` 方法的返回值所确定的。
 >
 > @return 如果玩家在点击时按下了鼠标左键则返回 `true` 。
@@ -192,6 +204,8 @@ description: InventoryClickEvent
 >
 > @see ClickType#isShiftClick()
 >
+>
+> 
 > 该方法用于获取玩家在点击时是否按下了 `Shift` 键。本方法的返回值是根据 `getClick()` 方法的返回值所确定的。
 >
 > @return 如果玩家在点击时按下了 `Shift` 键或 `Ctrl` 键则返回 `true` 。
@@ -216,6 +230,8 @@ description: InventoryClickEvent
 >
 > make unexpected changes in the behavior of the clicked Inventory.
 >
+>
+> 
 > 该方法用于设置光标上的物品堆。
 >
 > @deprecated 该方法已过时。本方法会在物品栏其他内容修改以前强行改变光标上的物品堆，有可能导致客户端和服务端之间数据不同步，让被点击的物品栏出现不符合预期的变化。
@@ -230,6 +246,8 @@ description: InventoryClickEvent
 >
 > @param stack the item to be placed in the current slot
 >
+>
+> 
 > 该方法用于设置被点击的槽位内的物品堆。
 >
 > @param stack 将要置于被点击的槽位内的物品堆。
@@ -246,6 +264,8 @@ description: InventoryClickEvent
 >
 > @see InventoryView#getInventory(int)
 >
+>
+> 
 > 该方法用于获取点击的物品栏。
 >
 > @return 点击的物品栏。如果点击了物品栏以外的区域，则返回 `null` 。
@@ -266,6 +286,8 @@ description: InventoryClickEvent
 >
 > @return The slot number.
 >
+>
+> 
 > 该方法用于获取点击的槽位序号（ `slot` ），该序号可以作为 `Inventory#getItem(int)` 方法的参数，用于获取某个槽位上的物品堆。这个槽位序号在单个物品栏中是唯一的，但对于一个物品栏视图中的上下两个物品栏而言不是。两个物品栏中的不同格子可能对应相同的槽位序号。
 >
 > @return 点击的槽位序号（ `slot` ）。
@@ -282,6 +304,8 @@ description: InventoryClickEvent
 >
 > @return the slot number
 >
+>
+> 
 > 该方法用于获取点击的槽位序号（ `raw slot` ），该序号可以作为 `InventoryView#getItem(int)` 方法的参数，用于获取某个槽位上的物品堆。这个槽位序号在整个物品栏视图（即上下两个物品栏）中是唯一的。
 >
 > @return 点击的槽位序号（ `raw slot` ）。
@@ -300,6 +324,8 @@ description: InventoryClickEvent
 >
 > a NUMBER_KEY action
 >
+>
+> 
 > 如果 `getClick()` 方法返回 `NUMBER_KEY` ，则本方法会返回按下的数字键的序号（ `0-8` ）。
 >
 > @return 如果 `getClick()` 方法返回值不是 `NUMBER_KEY` 则返回 `-1` ，否则返回数字键上的数字减去一所得的值（ `0-8` ）。
@@ -322,6 +348,8 @@ description: InventoryClickEvent
 >
 > @return the InventoryAction that triggered this event.
 >
+>
+> 
 > 该方法用于获取触发事件的点击动作。
 >
 > 本方法的返回值不会被插件所修改。它代表了事件在自然状态下的结果。如果要改变点击后所发生的结果，必须手动对物品栏做修改。
@@ -340,6 +368,8 @@ description: InventoryClickEvent
 >
 > @return the type of inventory click
 >
+>
+> 
 > 该方法用于获取点击的类型。
 >
 > 本方法的返回值不会被插件所修改。

@@ -16,6 +16,8 @@ description: EntityUnleashEvent
 
 > Called immediately prior to an entity being unleashed.
 >
+>
+> 
 > 当某个实体身上的拴绳被解开前触发。
 
 ### 方法列表
@@ -30,6 +32,8 @@ description: EntityUnleashEvent
 >
 > @return The reason
 >
+>
+> 
 > 该方法用于获取拴绳解开的原因。
 >
 > @return 拴绳解开的原因。
@@ -56,20 +60,28 @@ description: EntityUnleashEvent
 >
 > unleashed
 >
+> 
+>
 > 持有拴绳者死亡或退出服务器。
 >
+>
+> 
 > 译注：本字段文档用语易引起歧义。由于只有玩家可以“退出服务器”，所以“持有拴绳者死亡或退出服务器”，容易令人误以为持有拴绳者一定是玩家。非然。比如流浪商人身上拴有两只行商羊驼，当流浪商人死亡时拴绳自然解开。玩家死亡只是“持有拴绳者死亡”的一种特殊情况。本字段文档实际包括了“玩家死亡”、“非玩家的实体死亡”、“玩家退出服务器”这三种情况。
 
 #### PLAYER_UNLEASH
 
 > When the entity's leashholder attempts to unleash it
 >
+>
+> 
 > 持有拴绳的玩家主动解开拴绳。
 
 #### DISTANCE
 
 > When the entity's leashholder is more than 10 blocks away
 >
+>
+> 
 > 持有拴绳者距离被拴的实体超过十格远，拴绳断裂。
 
 #### UNKNOWN

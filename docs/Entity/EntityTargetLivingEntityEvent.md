@@ -20,8 +20,12 @@ description: EntityTargetLivingEntityEvent
 >
 > LivingEntity's.
 >
+>
+> 
 > 当实体将某个生物作为其目标时触发。只有目标是生物（有生命实体）时才会触发本事件。
 >
+>
+> 
 > 译注：本文档后半句不知所云。其意当为“如果目标是无生命实体，则不会触发本事件”。
 
 ### 方法列表
@@ -50,6 +54,8 @@ description: EntityTargetLivingEntityEvent
 >
 > @param target The entity to target
 >
+>
+> 
 > 该方法用于设置涉事实体的新目标。
 >
 > 本方法可以传入 `null` 作为参数，此时涉事实体将会失去目标。

@@ -16,6 +16,8 @@ description: ExplosionPrimeEvent
 
 > Called when an entity has made a decision to explode.
 >
+>
+> 
 > 当某实体将要爆炸时触发。
 
 ### 方法列表
@@ -42,6 +44,8 @@ description: ExplosionPrimeEvent
 >
 > @return returns the radius of the explosion
 >
+>
+> 
 > 该方法用于获取爆炸波及的半径。
 >
 > @return 爆炸波及的半径。
@@ -56,6 +60,8 @@ description: ExplosionPrimeEvent
 >
 > @param radius the radius of the explosion
 >
+>
+> 
 > 该方法用于设置爆炸波及的半径。
 >
 > @param radius 爆炸波及的半径。
@@ -70,6 +76,8 @@ description: ExplosionPrimeEvent
 >
 > @return true if this explosion will create fire
 >
+>
+> 
 > 该方法用于获取爆炸是否会引起火焰燃烧。
 >
 > @return 如返回 `true` 则本次爆炸会引起火焰燃烧。
@@ -84,6 +92,8 @@ description: ExplosionPrimeEvent
 >
 > @param fire true if you want this explosion to create fire
 >
+>
+> 
 > 该方法用于设置爆炸是否会引起火焰燃烧。
 >
 > @param fire 如传入 `true` 则本次爆炸会引起火焰燃烧。

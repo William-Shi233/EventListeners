@@ -24,6 +24,8 @@ description: InventoryCreativeEvent
 >
 > Inventory while in creative mode.
 >
+>
+> 
 > 当一个处于创造模式下的玩家从创造模式物品栏中拿取物品放入背包，或从背包中拿出物品丢入创造模式物品栏时触发。
 
 ### 方法列表

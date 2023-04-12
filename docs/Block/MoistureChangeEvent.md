@@ -16,8 +16,12 @@ description: MoistureChangeEvent
 
 > Called when the moisture level of a soil block changes.
 >
+>
+> 
 > 当耕地的湿度发生变化时触发。
 >
+>
+> 
 > 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Farmland#Hydration](https://minecraft.fandom.com/wiki/Farmland#Hydration) 可知，耕地被开垦时处于干燥状态。处于雨中或周遭有水方块时，会在某个随机刻变得湿润。如果既不处于雨中又不毗邻水方块，且其上没有种植作物，则会退化为未开垦的泥土。
 
 ### 方法列表
@@ -32,6 +36,8 @@ description: MoistureChangeEvent
 >
 > @return new block state
 >
+>
+> 
 > 该方法用于获取涉事方块的新块状态。
 >
 > @return 新的块状态。

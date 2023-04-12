@@ -38,6 +38,8 @@ description: BlockSpreadEvent
 >
 > @see BlockFormEvent
 >
+>
+> 
 > 当一应条件合适，某方块开始向四周蔓延时触发。
 >
 > 如欲监听某些方块“随机”生成的事件，请参见 `BlockFormEvent` 。本事件在方块蔓延时触发。
@@ -68,6 +70,8 @@ description: BlockSpreadEvent
 >
 > @return the Block for the source block involved in this event.
 >
+>
+> 
 > 该方法用于获取向外蔓延的源头方块。
 >
 > @return 事件中向外蔓延的源头方块。

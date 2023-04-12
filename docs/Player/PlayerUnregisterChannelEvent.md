@@ -18,6 +18,10 @@ description: PlayerUnregisterChannelEvent
 
 > This is called immediately after a player unregisters for a plugin channel.
 >
+>
+> 
 > 当玩家注销 `PluginChannel` 时触发。
 >
+>
+> 
 > 译注：见 `PlayerChannelEvent` 。

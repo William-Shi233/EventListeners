@@ -16,6 +16,8 @@ description: EntityTameEvent
 
 > Thrown when a LivingEntity is tamed
 >
+>
+> 
 > 当某生物被驯服时触发。
 
 ### 方法列表
@@ -50,6 +52,8 @@ description: EntityTameEvent
 >
 > @return the owning AnimalTamer
 >
+>
+> 
 > 该方法用于获取驯服生物的玩家。
 >
 > @return 驯服生物的玩家。

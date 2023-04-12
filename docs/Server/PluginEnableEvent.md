@@ -18,8 +18,12 @@ description: PluginEnableEvent
 
 > Called when a plugin is enabled.
 >
+>
+> 
 > 当一个插件被启用时触发。
 >
+>
+> 
 > 译注：由 `org.bukkit.plugin.java.JavaPluginLoader#enablePlugin` 方法（参见该类第 `358` 行）可知，本事件在插件的 `onEnable` 方法调用完毕以后被触发。
 
 ### 方法列表

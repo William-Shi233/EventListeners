@@ -16,8 +16,12 @@ description: PlayerBedEnterEvent
 
 > This event is fired when the player is almost about to enter the bed.
 >
+>
+> 
 > 当玩家将要在床上就寝时触发。
 >
+>
+> 
 > 译注：所谓“将要”，指本事件在玩家躺下以前触发。如果取消本事件，玩家就无法上床就寝。
 >
 > 这个事件类所包含的方法，在不同版本间屡经更迭。
@@ -42,10 +46,14 @@ description: PlayerBedEnterEvent
 >
 > @return the bed enter result representing the default outcome of this event
 >
+>
+> 
 > 该方法用于获取本事件的默认结果。
 >
 > @return 本事件的默认结果。
 >
+>
+> 
 > 译注：见上。
 
 #### useBed

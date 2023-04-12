@@ -30,9 +30,13 @@ description: BlockCanBuildEvent
 >
 > </ul>
 >
+>
+> 
 > 当玩家放置方块时触发。本事件用于检查玩家是否能放置方块。
 >
 > 注意：`getBlock()` 方法所返回的方块，是玩家放置方块时所依凭的方块（译注：玩家对准这个方块点击右键），而不是玩家将要放下的那个方块。如果需要获取玩家将要放下何种方块，可以调用 `getMaterial()` 方法。
+> 
+>
 > 
 > 译注：可参见 `BlockPlaceEvent#canBuild()` 方法文档。`BlockPlaceEvent` 与本事件都会在玩家放置方块时触发。但是二者的功用理应有所分别。
 > 
@@ -56,6 +60,8 @@ description: BlockCanBuildEvent
 >
 > @return boolean whether or not the block can be built
 >
+>
+> 
 > 该方法用于获取玩家是否有权放置方块。
 >
 > 默认情况下，本方法会依据原版游戏规则判定此处是否可以放置涉事方块。
@@ -74,6 +80,8 @@ description: BlockCanBuildEvent
 >
 > despite Minecraft's default behaviour
 >
+>
+> 
 > 该方法用于设置玩家是否有权放置方块。
 >
 > @param cancel 如果依据原版游戏规则判定此处不得放置涉事方块，但插件欲强制允许方块被放置，可传入 `true` 以越过原版游戏规则。
@@ -88,6 +96,8 @@ description: BlockCanBuildEvent
 >
 > @return The Material that we are trying to place
 >
+>
+> 
 > 该方法用于获取被放置的方块的材质。
 >
 > @return 被放置的方块的材质。
@@ -102,6 +112,8 @@ description: BlockCanBuildEvent
 >
 > @return The BlockData that we are trying to place
 >
+>
+> 
 > 该方法用于获取被放置的方块的块数据。
 >
 > @return 被放置的方块的块数据。
@@ -118,6 +130,8 @@ description: BlockCanBuildEvent
 >
 > @return The Player who placed the block involved in this event
 >
+>
+> 
 > 该方法用于获取放置涉事方块的玩家。
 >
 > 当一些较为过时的代码触发本事件时，本方法可能返回 `null` 。

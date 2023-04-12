@@ -16,6 +16,8 @@ description: EntityTargetEvent
 
 > Called when a creature targets or untargets another entity
 >
+>
+> 
 > 当实体将某个生物作为其目标，或失去目标时触发。
 
 ### 方法列表
@@ -42,10 +44,14 @@ description: EntityTargetEvent
 >
 > @return The reason
 >
+>
+> 
 > 该方法用于获取实体切换其目标的原因。
 >
 > @return 实体切换其目标的原因。
 >
+>
+> 
 > 译注：该原因不仅包括实体盯上新目标的情况，也包括实体失去旧有目标，茫然逡巡的情况。原句应当改为“Returns the reason for the targeting or untargeting”。为求简洁，译作“切换目标”。
 
 #### getTarget
@@ -62,6 +68,8 @@ description: EntityTargetEvent
 >
 > @return The entity
 >
+>
+> 
 > 该方法用于获取被设为目标的实体。
 >
 > 如果本事件是由于实体失去目标而触发，则该方法返回 `null` 。
@@ -88,6 +96,8 @@ description: EntityTargetEvent
 >
 > @param target The entity to target
 >
+>
+> 
 > 该方法用于设置涉事实体的新目标。
 >
 > 如果传入 `null` ，则实体将会失去目标。
@@ -96,6 +106,8 @@ description: EntityTargetEvent
 >
 > @param target 涉事实体的新目标。
 >
+>
+> 
 > 译注：比如某实体原先以玩家甲为目标，现在其目标即将切换为玩家乙，并触发了本事件。如果取消事件，则其目标仍然为甲。如果调用本方法并传入 `null` ，则实体将没有目标，停止攻击任何一位玩家。
 
 #### getHandlers
@@ -114,14 +126,20 @@ description: EntityTargetEvent
 
 > An enum to specify the reason for the targeting
 >
+>
+> 
 > 用于确定实体切换目标原因的枚举。
 >
+>
+> 
 > 译注：该枚举不仅包括实体盯上新目标的情况，也包括实体失去旧有目标，茫然逡巡的情况。原句应当改为“An enum to specify the reason for the targeting or untargeting”。为求简洁，译作“切换目标”。
 
 #### TARGET_DIED
 
 > When the entity's target has died, and so it no longer targets it
 >
+>
+> 
 > 实体原有的目标死亡，因而失去目标。
 
 #### CLOSEST_PLAYER
@@ -130,12 +148,16 @@ description: EntityTargetEvent
 >
 > player
 >
+> 
+>
 > 实体原先没有目标，转而攻击最近的玩家。
 
 #### TARGET_ATTACKED_ENTITY
 
 > When the target attacks the entity, so entity targets it
 >
+>
+> 
 > 实体受到攻击，因此将攻击者设为目标。
 
 #### PIG_ZOMBIE_TARGET
@@ -146,6 +168,8 @@ description: EntityTargetEvent
 >
 > @deprecated obsoleted by {@link #TARGET_ATTACKED_NEARBY_ENTITY}
 >
+>
+> 
 > 某僵尸猪灵附近的其他僵尸猪灵受到攻击，因此一整群僵尸猪灵将攻击者设为目标。
 >
 > @deprecated 本字段已过时，其所描述的情况并入 `TARGET_ATTACKED_NEARBY_ENTITY` 字段。
@@ -154,6 +178,8 @@ description: EntityTargetEvent
 
 > When the target is forgotten for whatever reason.
 >
+>
+> 
 > 因各种原因，实体忘却了自己的目标。
 
 #### TARGET_ATTACKED_OWNER
@@ -162,8 +188,12 @@ description: EntityTargetEvent
 >
 > targets it.
 >
+>
+> 
 > 实体的主人受到攻击，因此实体将攻击者设为目标。
 >
+>
+> 
 > 译注：即被驯服的生物护主。
 
 #### OWNER_ATTACKED_TARGET
@@ -172,48 +202,68 @@ description: EntityTargetEvent
 >
 > entity targets it.
 >
+>
+> 
 > 实体的主人攻击了某个生物，因此涉事实体也将该生物作为目标。
 >
+>
+> 
 > 译注：即被驯服的生物攻击主人所攻击的目标。
 
 #### RANDOM_TARGET
 
 > When the entity has no target, so the entity randomly chooses one.
 >
+>
+> 
 > 实体原先没有目标，转而随机选取周遭实体作为目标。
 
 #### DEFEND_VILLAGE
 
 > When an entity selects a target while defending a village.
 >
+>
+> 
 > 实体在保卫村庄的过程中选取目标。
 
 #### TARGET_ATTACKED_NEARBY_ENTITY
 
 > When the target attacks a nearby entity of the same type, so the entity targets it
 >
+>
+> 
 > 实体发现附近的同类实体遭到攻击，因此将攻击者设为目标。
 >
+>
+> 
 > 译注：如某一僵尸猪灵遭到攻击后，周遭的一群僵尸猪灵都会愤怒。
 
 #### REINFORCEMENT_TARGET
 
 > When a zombie targeting an entity summons reinforcements, so the reinforcements target the same entity
 >
+>
+> 
 > 某一僵尸召唤增援，被召唤出的僵尸使自身的目标与之相同。
 >
+>
+> 
 > 译注：参见 `MineCraft Wiki` 中有关僵尸的相关页面 [https://minecraft.fandom.com/wiki/Zombie#Reinforcements](https://minecraft.fandom.com/wiki/Zombie#Reinforcements) 可知，在困难难度下，当僵尸受到伤害时，其有一定概率召唤增援，在其四周生成新的僵尸。
 
 #### COLLISION
 
 > When an entity targets another entity after colliding with it.
 >
+>
+> 
 > 涉事实体与另一实体相撞，因而以之作为目标。
 
 #### CUSTOM
 
 > For custom calls to the event.
 >
+>
+> 
 > 事件并非由服务端触发，而是插件触发。插件自定义某种不属于原版游戏内容的原因。
 
 #### CLOSEST_ENTITY
@@ -222,12 +272,16 @@ description: EntityTargetEvent
 >
 > entity
 >
+> 
+>
 > 实体原先没有目标，转而攻击最近的实体。
 
 #### FOLLOW_LEADER
 
 > When a raiding entity selects the same target as one of its compatriots.
 >
+>
+> 
 > 某一掠夺者将同伴的目标设为自己的目标。
 
 #### TEMPT
@@ -236,12 +290,18 @@ description: EntityTargetEvent
 >
 > as wheat in it's hand.
 >
+>
+> 
 > 某一实体手持小麦等物品引诱涉事实体。
 >
+>
+> 
 > 译注：小麦用于吸引羊、牛等实体。
 
 #### UNKNOWN
 
 > A currently unknown reason for the entity changing target.
 >
+>
+> 
 > 未知原因。

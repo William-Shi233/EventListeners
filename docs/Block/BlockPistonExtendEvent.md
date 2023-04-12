@@ -18,6 +18,8 @@ description: BlockPistonExtendEvent
 
 > Called when a piston extends
 >
+>
+> 
 > 当活塞臂伸出时触发。
 
 ### 方法列表
@@ -36,6 +38,8 @@ description: BlockPistonExtendEvent
 >
 > inaccurate due to blocks being pushed at the side
 >
+>
+> 
 > 该方法用于获取活塞伸出时将会推动的方块数量。
 >
 > @return 活塞伸出时将会推动的方块数量。
@@ -54,6 +58,8 @@ description: BlockPistonExtendEvent
 >
 > @return Immutable list of the moved blocks.
 >
+>
+> 
 > 该方法用于获取一个不可修改的列表，其间存储有全部因活塞臂伸出而将发生移动的方块。
 >
 > @return 将要发生移动的方块列表。

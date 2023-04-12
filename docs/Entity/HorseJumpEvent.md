@@ -16,6 +16,8 @@ description: HorseJumpEvent
 
 > Called when a horse jumps.
 >
+>
+> 
 > 当一匹马跳跃时触发。
 
 ### 方法列表
@@ -34,6 +36,8 @@ description: HorseJumpEvent
 
 > @deprecated horse jumping was moved client side.
 >
+>
+> 
 > @deprecated 该方法已过时。马的跳跃动作已经是客户端行为了。
 
 #### getEntity
@@ -74,6 +78,8 @@ description: HorseJumpEvent
 >
 > @return jump strength
 >
+>
+> 
 > 该方法用于获取跳跃的能量。
 >
 > 跳跃的能量决定了马所具备的跳跃能力有几分将要发挥到此次跳跃中去。能量与马的跳跃力量相乘，就决定了此次跳跃所能达到的高度。如果能量为零，则马将无法发挥任何力量。如果能量为一，则马将发挥全部力量。如果有插件将马的能量设为大于一的值，则马将会发挥超乎常规的力量。
@@ -104,6 +110,8 @@ description: HorseJumpEvent
 >
 > @deprecated horse jumping was moved client side.
 >
+>
+> 
 > 该方法设置获取跳跃的能量。
 >
 > 如果将马的能量设为大于一的值，则马将会发挥超乎常规的力量。

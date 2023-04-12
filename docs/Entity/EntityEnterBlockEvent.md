@@ -22,6 +22,8 @@ description: EntityEnterBlockEvent
 >
 > the {@link EntityChangeBlockEvent}.
 >
+>
+> 
 > 当实体进入某个方块，且其数据被该方块储存时触发。
 >
 > 只有蜜蜂进入蜂巢时才会触发本事件。
@@ -40,6 +42,8 @@ description: EntityEnterBlockEvent
 >
 > @return the block
 >
+>
+> 
 > 该方法用于获取实体将进入的方块。
 >
 > @return 实体将进入的方块。

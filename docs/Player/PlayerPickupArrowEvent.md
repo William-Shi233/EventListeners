@@ -18,6 +18,8 @@ description: PlayerPickupArrowEvent
 
 > Thrown when a player picks up an arrow from the ground.
 >
+>
+> 
 > 当玩家自地上捡起一支箭矢时触发。
 
 ### 方法列表
@@ -32,6 +34,8 @@ description: PlayerPickupArrowEvent
 >
 > @return The arrow being picked up
 >
+>
+> 
 > 该方法用于获取玩家捡起的箭矢实体。
 >
 > @return 玩家捡起的箭矢实体。

@@ -16,6 +16,8 @@ description: HangingBreakEvent
 
 > Triggered when a hanging entity is removed
 >
+>
+> 
 > 当某个悬挂物实体被移除时触发。
 
 ### 方法列表
@@ -30,6 +32,8 @@ description: HangingBreakEvent
 >
 > @return the RemoveCause for the hanging entity's removal
 >
+>
+> 
 > 该方法用于获取悬挂物被移除的原因。
 >
 > @return 悬挂物被移除的原因。
@@ -62,36 +66,50 @@ description: HangingBreakEvent
 
 > An enum to specify the cause of the removal
 >
+>
+> 
 > 用于确定悬挂物移除原因的枚举。
 
 #### ENTITY
 
 > Removed by an entity
 >
+>
+> 
 > 被实体移除。
 
 #### EXPLOSION
 
 > Removed by an explosion
 >
+>
+> 
 > 被爆炸移除。
 
 #### OBSTRUCTION
 
 > Removed by placing a block on it
 >
+>
+> 
 > 由于在悬挂物所处的位置上有方块被放置而被移除。
 
 #### PHYSICS
 
 > Removed by destroying the block behind it, etc
 >
+>
+> 
 > 包括悬挂物背后的方块被摧毁在内的多种情况。
 >
+>
+> 
 > 译注：`Physics` 一词与方块状态的更新有关。悬挂物背后的方块被摧毁使得周遭环境发生更新。
 
 #### DEFAULT
 
 > Removed by an uncategorised cause removal
 >
+>
+> 
 > 由于某种未能归入其他类别的原因，悬挂物被移除。

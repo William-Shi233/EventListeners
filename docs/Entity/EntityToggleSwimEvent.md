@@ -16,6 +16,8 @@ description: EntityToggleSwimEvent
 
 > Sent when an entity's swimming status is toggled.
 >
+>
+> 
 > 当实体游泳状态切换时触发。
 
 ### 方法列表

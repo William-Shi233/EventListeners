@@ -16,8 +16,12 @@ description: PlayerFishEvent
 
 > Thrown when a player is fishing
 >
+>
+> 
 > 当玩家钓鱼时触发。
 >
+>
+> 
 > 译注：不同于 `PlayerBucketEntityEvent` ，本事件在玩家使用钓鱼竿钓鱼时触发，而非用桶装入鱼时触发。而且在钓鱼过程中，本事件可能会触发很多次。
 >
 > 当玩家手持钓鱼竿甩出鱼漂时，无论鱼漂是否进入水中、是否钩住实体、是否接触到固体方块，都会立即触发一次本事件，`PlayerFishEvent.STATE` 为 `FISHING` 。
@@ -60,6 +64,8 @@ description: PlayerFishEvent
 >
 > bobber has gotten stuck in the ground or nothing has been caught
 >
+>
+> 
 > 该方法用于获取玩家抓住的实体。
 >
 > 如果玩家并不是用鱼漂钩住实体，而是在水中钓鱼得到收获，那么会把钓上的物品堆转为物品实体，作为返回值。
@@ -76,6 +82,8 @@ description: PlayerFishEvent
 >
 > @return the entity representing the fishing hook/bobber.
 >
+>
+> 
 > 该方法用于获取鱼漂实体。
 >
 > @return 鱼漂实体。
@@ -106,6 +114,8 @@ description: PlayerFishEvent
 >
 > @return the amount of experience to drop
 >
+>
+> 
 > 该方法用于获取钓上鱼所奖励的经验值。
 >
 > 除非本事件的 `getState` 方法返回 `State#CAUGHT_FISH` ，否则这个值没有意义。
@@ -126,6 +136,8 @@ description: PlayerFishEvent
 >
 > @param amount the amount of experience to drop
 >
+>
+> 
 > 该方法用于设置钓上鱼所奖励的经验值。
 >
 > 除非本事件的 `getState` 方法返回 `State#CAUGHT_FISH` ，否则这个值没有意义。
@@ -142,10 +154,14 @@ description: PlayerFishEvent
 >
 > @return A State detailing the state of the fishing
 >
+>
+> 
 > 该方法用于获取钓鱼过程处于何阶段。
 >
 > @return 钓鱼过程所处的阶段。
 >
+>
+> 
 > 译注：见上。
 
 #### getHandlers
@@ -164,12 +180,16 @@ description: PlayerFishEvent
 
 > An enum to specify the state of the fishing
 > 
+>
+> 
 > 用于确定钓鱼过程所处阶段的枚举。
 
 #### FISHING
 
 > When a player is fishing, ie casting the line out.
 >
+>
+> 
 > 玩家开始钓鱼，把鱼线抛出。
 
 #### CAUGHT_FISH
@@ -180,6 +200,8 @@ description: PlayerFishEvent
 >
 > of fishing, ie an item, but not necessarily a fish.
 >
+>
+> 
 > 玩家成功钓上了鱼并收竿。所谓钓上了“鱼”，其实也包括玩家钓上了某个物品的情形，比如钓上宝藏，不一定是钓上了鱼。
 
 #### CAUGHT_ENTITY
@@ -190,12 +212,16 @@ description: PlayerFishEvent
 >
 > the rod.
 >
+>
+> 
 > 玩家用鱼漂钩住了实体并收竿。所谓“实体”，必须比鱼漂更早生成（玩家抛竿的瞬间生成鱼漂实体），并被鱼漂直接钩住。
 
 #### IN_GROUND
 
 > When a bobber is stuck in the ground.
 >
+>
+> 
 > 鱼漂卡在了地面上。
 
 #### FAILED_ATTEMPT
@@ -204,12 +230,16 @@ description: PlayerFishEvent
 >
 > poor timing.
 >
+> 
+>
 > 玩家没能在鱼咬钩时尽早收竿，让鱼游走了。通常是由于玩家的时间判断能力差。
 
 #### REEL_IN
 
 > When a player reels in their hook without receiving any bites.
 >
+>
+> 
 > 在没有鱼咬钩的情况下，玩家收回了鱼钩。
 
 #### BITE
@@ -217,5 +247,7 @@ description: PlayerFishEvent
 > Called when there is a bite on the hook and it is ready to be reeled
 >
 > in.
+>
+> 
 >
 > 有鱼咬钩，可以收竿。

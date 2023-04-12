@@ -48,6 +48,8 @@ description: ItemMergeEvent
 >
 > @return The Item being merged with
 >
+>
+> 
 > 该方法用于获取合并过程中数量将会增加的物品堆实体。
 >
 > @return 合并过程中数量将会增加的物品堆实体。

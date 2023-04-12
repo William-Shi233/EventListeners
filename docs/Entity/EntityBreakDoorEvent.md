@@ -20,6 +20,8 @@ description: EntityBreakDoorEvent
 >
 > Cancelling the event will cause the event to be delayed
 >
+>
+> 
 > 当实体击破一扇门时触发。
 >
 > 如果本事件被取消，实体破门而入的进程将会被延缓。

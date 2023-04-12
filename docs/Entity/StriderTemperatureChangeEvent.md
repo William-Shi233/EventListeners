@@ -18,8 +18,12 @@ description: StriderTemperatureChangeEvent
 >
 > entering or exiting blocks it considers warm.
 >
+>
+> 
 > 当一只炽足兽的体温发生变化时触发。炽足兽踏足或离开被其判定为温暖的方块时，提问会发生变化。
 >
+>
+> 
 > 译注：参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Strider#Behavior](https://minecraft.fandom.com/wiki/Strider#Behavior) 可知，炽足兽如果离开了岩浆则会失温，致使其身体发紫、移动速度降低。回到岩浆上则恢复。
 
 ### 方法列表
@@ -42,10 +46,14 @@ description: StriderTemperatureChangeEvent
 >
 > @return the new shivering state
 >
+>
+> 
 > 该方法用于获取炽足兽是否将会颤抖。
 >
 > @return 炽足兽是否将会颤抖。
 >
+>
+> 
 > 译注：当炽足兽失温时，将会颤抖。本方法返回 `true` 说明炽足兽将要离开其判定为温暖的方块，将会失温。本方法返回 `false` 说明炽足兽将要重新踏上温暖的方块。
 
 #### isCancelled

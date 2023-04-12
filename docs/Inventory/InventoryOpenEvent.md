@@ -16,7 +16,11 @@ description: InventoryOpenEvent
 
 > Represents a player related inventory event
 >
+>
+> 
 > 代表与玩家有关的物品栏事件。
+>
+> 
 >
 > 译注：本事件文档与 `InventoryEvent` 一致，必是舛错。本事件在玩家打开物品栏时触发。
 >
@@ -33,6 +37,8 @@ description: InventoryOpenEvent
 > Returns the player involved in this event
 >
 > @return Player who is involved in this event
+>
+> 
 >
 > 该方法用于获取事件中打开物品栏的玩家。
 >
@@ -54,9 +60,13 @@ description: InventoryOpenEvent
 >
 > @return true if this event is cancelled
 >
+> 
+>
 > 如果本事件被取消，则玩家客户端将不会显示物品栏界面。
 >
 > @return 如事件被取消，则返回 `true` 。
+>
+> 
 >
 > 译注：原文第一段为所有 `isCancelled` 方法共用的文档，不赘。
 
@@ -76,9 +86,13 @@ description: InventoryOpenEvent
 >
 > @param cancel true if you wish to cancel this event
 >
+> 
+>
 > 如果本事件被取消，则玩家客户端将不会显示物品栏界面。
 >
 > @param cancel 如欲取消此事件，则传入 `true` 。
+>
+> 
 >
 > 译注：原文第一段为所有 `setCancelled` 方法共用的文档，不赘。
 

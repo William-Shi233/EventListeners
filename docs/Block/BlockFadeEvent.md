@@ -36,6 +36,8 @@ description: BlockFadeEvent
 >
 > disappear.
 >
+>
+> 
 > 当一应条件合适，某方块枯萎、融化或消失时触发。
 >
 > 本事件触发的情景包括：
@@ -72,6 +74,8 @@ description: BlockFadeEvent
 >
 > disappearing
 >
+>
+> 
 > 该方法用于获取即将枯萎、融化或消失的方块的新块状态。
 >
 > @return 即将枯萎、融化或消失的方块的新块状态。

@@ -18,6 +18,8 @@ description: EntitySpawnEvent
 >
 > If an Entity Spawn event is cancelled, the entity will not spawn.
 >
+>
+> 
 > 当某个实体生成时触发。
 >
 > 如果本事件被取消，涉事实体将不会生成。
@@ -46,6 +48,8 @@ description: EntitySpawnEvent
 >
 > @return The location at which the entity is spawning
 >
+>
+> 
 > 该方法用于获取实体生成的位置。
 >
 > @return 实体生成的位置。

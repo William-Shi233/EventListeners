@@ -16,8 +16,12 @@ description: EntityDamageEvent
 
 > Stores data for damage events
 >
+>
+> 
 > 本事件存储了实体伤害的有关数据。
 >
+>
+> 
 > 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与事件中所造成的伤害有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
 
 ### 方法列表
@@ -50,6 +54,8 @@ description: EntityDamageEvent
 >
 > @throws IllegalArgumentException if type is null
 >
+>
+> 
 > 该方法已过时。请勿使用 `DamageModifier` 枚举。
 
 #### setDamage
@@ -74,6 +80,8 @@ description: EntityDamageEvent
 >
 > @see #getFinalDamage()
 >
+>
+> 
 > 该方法已过时。请勿使用 `DamageModifier` 枚举。
 
 #### getDamage
@@ -92,6 +100,8 @@ description: EntityDamageEvent
 >
 > @see DamageModifier#BASE
 >
+>
+> 
 > 该方法已过时。请勿使用 `DamageModifier` 枚举。
 
 #### isApplicable
@@ -114,6 +124,8 @@ description: EntityDamageEvent
 >
 > @throws IllegalArgumentException if type is null
 >
+>
+> 
 > 该方法已过时。请勿使用 `DamageModifier` 枚举。
 
 #### getDamage
@@ -128,6 +140,8 @@ description: EntityDamageEvent
 >
 > @see DamageModifier#BASE
 >
+>
+> 
 > 该方法用于获取事件中攻击者造成的原始伤害。
 >
 > @return 攻击者造成的原始伤害。
@@ -146,6 +160,8 @@ description: EntityDamageEvent
 >
 > @return the amount of damage caused by the event
 >
+>
+> 
 > 该方法用于获取事件中受伤的实体将要承受的最终伤害。最终伤害是经过各种减伤机制计算而得的。
 >
 > @return 受伤的实体将要承受的最终伤害。
@@ -166,6 +182,8 @@ description: EntityDamageEvent
 >
 > @param damage The raw amount of damage caused by the event
 >
+>
+> 
 > 该方法用于设置事件中攻击者造成的原始伤害。
 >
 > （译注：与 `DamageModifier` 相关的过时内容不译）。
@@ -182,6 +200,8 @@ description: EntityDamageEvent
 >
 > @return A DamageCause value detailing the cause of the damage.
 >
+>
+> 
 > 该方法用于获取实体受伤的原因。
 >
 > @return 实体受伤的原因。
@@ -207,6 +227,8 @@ description: EntityDamageEvent
 > removed very soon in a subsequent release. Please see
 > https://www.spigotmc.org/threads/194446/ for more information.
 >
+>
+> 
 > 用于确定伤害修改操作的枚举。
 >
 > @deprecated 本 `API` 在实现上出现了大量问题，已经无法维护。在随后的版本中它将会被尽快移除。如欲获知更多信息，请参见 [https://www.spigotmc.org/threads/194446/](https://www.spigotmc.org/threads/194446/) 页面。
@@ -217,6 +239,8 @@ description: EntityDamageEvent
 >
 > raw {@link EntityDamageEvent#getDamage()}.
 >
+>
+> 
 > 本字段已过时。
 
 #### HARD_HAT
@@ -225,6 +249,8 @@ description: EntityDamageEvent
 >
 > by a falling block.
 >
+>
+> 
 > 本字段已过时。
 
 #### BLOCKING
@@ -233,18 +259,24 @@ description: EntityDamageEvent
 >
 > {@link Player Players}.
 >
+>
+> 
 > 本字段已过时。
 
 #### ARMOR
 
 > This represents the damage reduction caused by wearing armor.
 >
+>
+> 
 > 本字段已过时。
 
 #### RESISTANCE
 
 > This represents the damage reduction caused by the Resistance potion effect.
 >
+>
+> 
 > 本字段已过时。
 
 #### MAGIC
@@ -265,6 +297,8 @@ description: EntityDamageEvent
 >
 > </ul>
 >
+>
+> 
 > 本字段已过时。
 
 #### ABSORPTION
@@ -273,12 +307,16 @@ description: EntityDamageEvent
 >
 > effect.
 >
+>
+> 
 > 本字段已过时。
 
 ### 枚举: DamageCause
 
 > An enum to specify the cause of the damage
 >
+>
+> 
 > 用于确定伤害原因的枚举。
 
 #### CONTACT
@@ -289,6 +327,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 由于实体接触了方块（如仙人掌、浆果丛等）而受伤。
 >
 > 伤害值：因方块而异。
@@ -299,6 +339,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 由于实体遭到攻击而受伤。
 >
 > 伤害值：因攻击情况而异。
@@ -309,6 +351,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 由于实体遭到横扫攻击而受伤。
 >
 > 伤害值：因攻击情况而异。
@@ -319,6 +363,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 由于实体被抛射物击中而受伤。
 >
 > 伤害值：因抛射物而异。
@@ -329,6 +375,8 @@ description: EntityDamageEvent
 >
 > Damage: 1
 >
+>
+> 
 > 由于实体卡在方块内部，窒息而受伤。
 >
 > 伤害值：一。
@@ -339,6 +387,8 @@ description: EntityDamageEvent
 >
 > Damage: fall height - 3.0
 >
+>
+> 
 > 由于实体自三格以上高度坠落而受伤。
 >
 > 伤害值：坠落高度减三。
@@ -349,6 +399,8 @@ description: EntityDamageEvent
 >
 > Damage: 1
 >
+>
+> 
 > 由于实体处于火焰方块中而受伤。
 >
 > 伤害值：一。
@@ -359,6 +411,8 @@ description: EntityDamageEvent
 >
 > Damage: 1
 >
+>
+> 
 > 由于实体正在燃烧而受伤。
 >
 > 伤害值：一。
@@ -369,6 +423,8 @@ description: EntityDamageEvent
 >
 > Damage: 1
 >
+>
+> 
 > 雪傀儡由于正在融化而受伤。
 >
 > 伤害值：一。
@@ -379,6 +435,8 @@ description: EntityDamageEvent
 >
 > Damage: 4
 >
+>
+> 
 > 由于实体处于岩浆中而受伤。
 >
 > 伤害值：四。
@@ -389,6 +447,8 @@ description: EntityDamageEvent
 >
 > Damage: 2
 >
+>
+> 
 > 由于实体处于水中且没有氧气值而受伤。
 >
 > 伤害值：二。
@@ -399,6 +459,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 由于实体被方块爆炸波及而受伤。
 >
 > 伤害值：因爆炸情况而异。
@@ -411,6 +473,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 由于实体被另一实体爆炸波及而受伤（如苦力怕爆炸）。
 >
 > 伤害值：因爆炸情况而异。
@@ -421,6 +485,8 @@ description: EntityDamageEvent
 >
 > Damage: 4 for players
 >
+>
+> 
 > 由于实体坠入虚空而受伤。
 >
 > 伤害值：对玩家而言为四。
@@ -445,6 +511,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 由于实体自杀而受伤。
 >
 > 目前而言仅有插件会采用本字段所描述的情况造成伤害。原版指令如 `/minecraft:kill` 所造成的伤害系落入虚空的伤害，归入 `VOID` 字段。
@@ -457,6 +525,8 @@ description: EntityDamageEvent
 >
 > Damage: 1
 >
+>
+> 
 > 由于实体饥饿值为零，过度饥饿而受伤。
 >
 > 伤害值：一。
@@ -467,6 +537,8 @@ description: EntityDamageEvent
 >
 > Damage: 1
 >
+>
+> 
 > 由于实体携带中毒药水效果而受伤。
 >
 > 伤害值：一。
@@ -477,6 +549,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 由于实体被伤害药水或咒语所波及而受伤。
 >
 > 伤害值：因情况而异。
@@ -485,6 +559,8 @@ description: EntityDamageEvent
 
 > Damage caused by Wither potion effect
 >
+>
+> 
 > 由于实体携带凋零药水效果而受伤。
 
 #### FALLING_BLOCK
@@ -495,6 +571,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 由于实体被下落的方块砸中而受伤。
 >
 > 不是每种坠落的方块都会对玩家造成伤害。
@@ -509,6 +587,8 @@ description: EntityDamageEvent
 >
 > Damage: 1-4 (Thorns)
 >
+>
+> 
 > 由于实体攻击了某个盔甲含有荆棘附魔的实体，被荆棘附魔造成反伤。
 >
 > 伤害值：一至四。
@@ -519,6 +599,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 由于实体被龙息波及而受伤。
 >
 > 伤害值：因情况而异。
@@ -529,6 +611,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 插件造成的自定义伤害。
 >
 > 伤害值：自定义。
@@ -539,6 +623,8 @@ description: EntityDamageEvent
 >
 > Damage: variable
 >
+>
+> 
 > 由于实体在使用鞘翅滑翔时撞上墙壁而受伤。
 >
 > 伤害值：视飞行速度而定。
@@ -549,6 +635,8 @@ description: EntityDamageEvent
 >
 > Damage: 1
 >
+>
+> 
 > 由于实体踩在岩浆块上而受伤。
 >
 > 伤害值：一。
@@ -561,6 +649,8 @@ description: EntityDamageEvent
 >
 > Damage: 6
 >
+>
+> 
 > 由于实体与过多其他实体相碰撞而挤压受伤，该情况与 `maxEntityCramming` 游戏规则有关。
 >
 > 伤害值：六。
@@ -571,6 +661,8 @@ description: EntityDamageEvent
 >
 > Damage: 1
 >
+>
+> 
 > 水生生物由于离开水体而受伤。
 >
 > 伤害值：一。

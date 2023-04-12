@@ -74,6 +74,8 @@ description: PlayerCommandPreprocessEvent
 >
 > removed, unexpected behavior may result.
 >
+>
+> 
 > 当玩家执行指令前触发。只要消息以斜杠 `/` 起首即视为指令。本事件在指令处理的过程中靠前运行，对本事件中字段的修改（比如 `setMessage(String)` ）可以在指令运行结果中体现。（译注：比如对于某个插件提供的指令而言，首先触发本事件，然后再运行 `CommandExecutor` 的相关方法。所以 `CommandExecutor` 中得到的参数 `String[] args` 可能是被监听器修改过的。原版指令大同小异。）
 >
 > 很多插件无视此事件。如无必要，请避免使用本事件。
@@ -132,6 +134,8 @@ description: PlayerCommandPreprocessEvent
 >
 > @return Message the player is attempting to send
 >
+>
+> 
 > 该方法用于获取玩家将要发送的指令字符串。
 >
 > 所有指令都以一个特别的字符串（斜杠 `/` ）起首。当执行指令时，第一个字符是不纳入考量的。
@@ -154,6 +158,8 @@ description: PlayerCommandPreprocessEvent
 >
 > @throws IllegalArgumentException if command is null or empty
 >
+>
+> 
 > 该方法用于设置玩家将要发送的指令字符串。
 >
 > 所有指令都以一个特别的字符串（斜杠 `/` ）起首。当执行指令时，第一个字符是不纳入考量的。
@@ -174,6 +180,8 @@ description: PlayerCommandPreprocessEvent
 >
 > @throws IllegalArgumentException if the player provided is null
 >
+>
+> 
 > 该方法用于设置指令将以何玩家的身份执行。
 >
 > @param player 将执行指令的玩家。
@@ -206,6 +214,8 @@ description: PlayerCommandPreprocessEvent
 >
 > guarantee to the effect of viewing or modifying the set.
 >
+>
+> 
 > 该方法用于获取一个 `Set` ，其间存储有全部将要接收该条聊天消息的对象。
 >
 > 本方法返回的 `Set` 不一定是可以修改的，而且有可能在用户从其间取出值时进行自动填充。
@@ -218,6 +228,8 @@ description: PlayerCommandPreprocessEvent
 > 
 > @deprecated 该方法已过时。出于版本向下兼容性（高版本服务端兼容基于低版本 `Bukkit API` 所编写的插件）考虑，仍予以保留，但无法保证修改集合或遍历集合时会发生什么。
 >
+>
+> 
 > 译注：其他插件提供的集合，`Bukkit API` 只能保证其实现类是 `java.util.Set` 的子类，但不能保证它可否修改，也不能保证它是不是 `Lazy Set` 。
 >
 > 所谓不可修改集合，即不能向其中添加删除元素。监听器只能遍历其中元素，不能通过修改 `Set` 的方式添加或删除一个接收聊天消息的对象，否则会抛出 `UnsupportedOperationException` 。

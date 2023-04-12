@@ -16,6 +16,8 @@ description: PlayerDropItemEvent
 
 > Thrown when a player drops an item from their inventory
 >
+>
+> 
 > 当玩家从自己的物品栏内丢弃物品时触发。
 
 ### 方法列表
@@ -30,10 +32,14 @@ description: PlayerDropItemEvent
 >
 > @return ItemDrop created by the player
 >
+>
+> 
 > 该方法用于获取生成的物品实体。
 >
 > @return 生成的物品实体。
 >
+>
+> 
 > 译注：该方法返回的是地面上的物品实体，而不是可以被装进物品栏里的物品堆。使用 `Item#getItemStack()` 方法获取被丢弃的物品堆。
 
 #### isCancelled

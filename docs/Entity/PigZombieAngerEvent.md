@@ -18,6 +18,8 @@ description: PigZombieAngerEvent
 >
 > If the event is cancelled, the pig zombie will not be angered.
 >
+>
+> 
 > 当某只僵尸猪灵被其他实体激怒时触发。
 >
 > 如果本事件被取消，则该僵尸猪灵将不会被激怒。
@@ -34,6 +36,8 @@ description: PigZombieAngerEvent
 >
 > @return triggering entity, or null
 >
+>
+> 
 > 该方法用于获取导致猪灵愤怒程度变化的实体（如存在）。
 >
 > @return 导致猪灵愤怒程度变化的实体，如没有则返回 `null` 。
@@ -50,6 +54,8 @@ description: PigZombieAngerEvent
 >
 > @see PigZombie#getAnger()
 >
+>
+> 
 > 该方法用于获取僵尸猪灵将要拥有的愤怒等级。
 >
 > @return 僵尸猪灵将要拥有的愤怒等级。
@@ -68,6 +74,8 @@ description: PigZombieAngerEvent
 >
 > @see PigZombie#setAnger(int)
 >
+>
+> 
 > 该方法用于设置僵尸猪灵将要拥有的愤怒等级。
 >
 > @param newAnger 僵尸猪灵将要拥有的愤怒等级。

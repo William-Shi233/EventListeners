@@ -16,8 +16,12 @@ description: PlayerShearEntityEvent
 
 > Called when a player shears an entity
 >
+>
+> 
 > 当玩家给实体剪毛时触发。
 >
+>
+> 
 > 译注：当玩家给羊剪毛时，固然会触发本事件。除此以外，当玩家用剪刀剪去哞菇身上的蘑菇、移除雪傀儡头顶的南瓜时，也会触发本事件。
 
 ### 方法列表
@@ -44,6 +48,8 @@ description: PlayerShearEntityEvent
 >
 > @return the entity the player is shearing
 >
+>
+> 
 > 该方法用于获取被剪毛的实体。
 >
 > @return 被剪毛的实体。
@@ -58,6 +64,8 @@ description: PlayerShearEntityEvent
 >
 > @return the shears
 >
+>
+> 
 > 该方法用于获取剪毛时所使用的工具。
 >
 > @return 剪毛时所使用的工具。
@@ -72,6 +80,8 @@ description: PlayerShearEntityEvent
 >
 > @return the hand
 >
+>
+> 
 > 该方法用于获取剪毛时所使用的手，即主手或副手。
 >
 > @return 剪毛时所使用的手。

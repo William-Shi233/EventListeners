@@ -20,6 +20,8 @@ description: PlayerBucketFishEvent
 >
 > @deprecated Use the more generic {@link PlayerBucketEntityEvent}
 > 
+>
+> 
 > 当玩家用桶捕捉鱼时触发。
 >
 > @deprecated 本事件已过时。请使用 `PlayerBucketEntityEvent` 。
@@ -36,6 +38,8 @@ description: PlayerBucketFishEvent
 >
 > @return The fish involved with this event
 > 
+>
+> 
 > 译注：请使用 `PlayerBucketEntityEvent` 。本事件已经过时。
 
 #### getWaterBucket
@@ -51,6 +55,8 @@ description: PlayerBucketFishEvent
 > @return The used bucket
 >
 > @deprecated Use {@link #getOriginalBucket()}
+> 
+>
 > 
 > 译注：请使用 `PlayerBucketEntityEvent` 。本事件已经过时。
 
@@ -69,5 +75,7 @@ description: PlayerBucketFishEvent
 > @return The bucket that the fish will be put into
 >
 > @deprecated Use {@link #getEntityBucket()}
+> 
+>
 > 
 > 译注：请使用 `PlayerBucketEntityEvent` 。本事件已经过时。

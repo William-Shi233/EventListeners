@@ -36,12 +36,12 @@ description: BlockFormEvent
 >
 > </ul>
 >
-> 
->
 > If a Block Form event is cancelled, the block will not be formed.
 >
 > @see BlockSpreadEvent
 >
+>
+> 
 > 当一应条件合适，某方块随机生成或开始向四周蔓延时触发。
 >
 > 如欲监听某些方块蔓延的事件，请参见 `BlockSpreadEvent` 。本事件在方块“随机”生成时触发。

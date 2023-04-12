@@ -18,8 +18,12 @@ description: ServiceEvent
 >
 > org.bukkit.plugin.ServicesManager}
 >
+>
+> 
 > 代表与 `Service` 有关的事件。本事件的子类一般在 `org.bukkit.plugin.ServicesManager` 类内被触发。
 >
+>
+> 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 >
 > 所谓 `Service` ，其实是模仿 `JDK` 中的 `ServiceLoader` 设计的。它是用来管理接口与实现类的一套工具。可以参考 [https://javaguide.cn/java/basis/spi.html#spi-%E5%92%8C-api-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB](https://javaguide.cn/java/basis/spi.html#spi-%E5%92%8C-api-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB) 了解详情。

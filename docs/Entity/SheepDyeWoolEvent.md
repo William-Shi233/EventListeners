@@ -16,6 +16,8 @@ description: SheepDyeWoolEvent
 
 > Called when a sheep's wool is dyed
 >
+>
+> 
 > 当羊身上的羊毛被染色时触发。
 
 ### 方法列表
@@ -50,6 +52,8 @@ description: SheepDyeWoolEvent
 >
 > @return player or null
 >
+>
+> 
 > 该方法用于获取给羊染色的玩家（如果能获取到）。
 >
 > @return 可能返回给羊染色的玩家对象，也可能返回 `null` 。
@@ -64,6 +68,8 @@ description: SheepDyeWoolEvent
 >
 > @return the DyeColor the sheep is being dyed
 >
+>
+> 
 > 该方法用于获取羊将要被染上的颜色。
 >
 > @return 羊将要被染上的颜色。
@@ -78,6 +84,8 @@ description: SheepDyeWoolEvent
 >
 > @param color the DyeColor the sheep will be dyed
 >
+>
+> 
 > 该方法用于设置羊将要被染上的颜色。
 >
 > @param color 羊将要被染上的颜色。

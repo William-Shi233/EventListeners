@@ -16,6 +16,8 @@ description: ProjectileHitEvent
 
 > Called when a projectile hits an object
 >
+>
+> 
 > 当抛射物击中某物时触发。
 
 ### 方法列表
@@ -38,6 +40,8 @@ description: ProjectileHitEvent
 >
 > @return hit block or else null
 >
+>
+> 
 > 该方法用于获取抛射物击中的方块（前提是抛射物击中的是方块）。
 >
 > @return 抛射物击中的方块，如击中的不是方块则返回 `null` 。
@@ -54,6 +58,8 @@ description: ProjectileHitEvent
 >
 > @return hit face or else null
 >
+>
+> 
 > 该方法用于获取抛射物击中的方块面（前提是抛射物击中的是方块，且事件中记录了被击中的方块面信息）。
 >
 > @return 抛射物击中的方块，如击中的不是方块则返回 `null` 。
@@ -68,6 +74,8 @@ description: ProjectileHitEvent
 >
 > @return hit entity or else null
 >
+>
+> 
 > 该方法用于获取抛射物击中的实体（前提是抛射物击中的是实体）。
 >
 > @return 抛射物击中的实体，如击中的不是实体则返回 `null` 。
@@ -100,6 +108,8 @@ description: ProjectileHitEvent
 >
 > @param cancel true if you wish to cancel this event
 >
+>
+> 
 > 该方法用于设置是否要取消抛射物击中事件，取消本事件会导致抛射物击中时的一系列现象不再发生。
 >
 > 如果抛射物击中的是实体，则抛射物将不会与实体相接触（除非抛射物是烟花火箭，此时需要进一步监听 `FireworkExplodeEvent` ）。

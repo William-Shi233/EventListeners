@@ -20,6 +20,8 @@ description: EntityResurrectEvent
 >
 > equipped.
 >
+>
+> 
 > 当某实体死亡且有机会复活时触发。如果实体没有手持不死图腾，则本事件在触发时就已然处于被取消状态。
 
 ### 方法列表

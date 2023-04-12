@@ -18,8 +18,12 @@ description: PlayerChannelEvent
 >
 > channel.
 >
+>
+> 
 > 当玩家注册或注销 `PluginChannel` 时触发。
 >
+>
+> 
 > 译注：`PluginChannel` 是 `Bukkit` 插件与客户端模组之间通信的工具。Izzel_Aliz 在其教程[《1.13+ 中 Forge 与 Bukkit 的通信》](https://www.mcbbs.net/thread-873219-1-1.html)及[《Forge | LiteLoader 与 Bukkit / Sponge 之间的通信 —— PluginMessengeChannel 与 FMLNetworkEvent》](https://www.mcbbs.net/thread-725571-1-1.html)中对此工具作了详尽阐述。
 >
 > 在 `Bukkit API` 中，与 `PluginChannel` 相关的事件共有三个，分别是 `PlayerRegisterChannelEvent` 、`PlayerUnregisterChannelEvent` 和本事件。前两个事件是本事件的子类，似乎是在具体的情景下触发的（注册或注销 `PluginChannel` ），但都没有实现 `getHandlers` 和 `getHandlerList` 方法。本事件似乎是抽象的（字面上是与 `PluginChannel` 有关的事件），但反而实现了 `getHandlers` 和 `getHandlerList` 方法。

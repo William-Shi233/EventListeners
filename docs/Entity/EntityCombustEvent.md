@@ -18,6 +18,8 @@ description: EntityCombustEvent
 >
 > If an Entity Combust event is cancelled, the entity will not combust.
 >
+>
+> 
 > 当实体燃烧时触发。
 >
 > 如果本事件被取消，则实体不会燃烧。
@@ -46,8 +48,12 @@ description: EntityCombustEvent
 >
 > for
 >
+> 
+>
 > （译注：该方法用于获取实体将持续燃烧的时长（以秒为单位）。此句缺漏。）
 >
+>
+> 
 > @return 实体将持续燃烧的时长（以秒为单位）。
 
 #### setDuration
@@ -64,6 +70,8 @@ description: EntityCombustEvent
 >
 > @param duration the time in seconds to be alight for.
 >
+>
+> 
 > 该方法用于设置实体将持续燃烧的时长，以秒为单位。
 >
 > 只能通过本方法来增加实体燃烧的时间，无法使燃烧时间减少。

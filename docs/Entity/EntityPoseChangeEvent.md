@@ -18,6 +18,8 @@ description: EntityPoseChangeEvent
 >
 > @see Entity#getPose()
 >
+>
+> 
 > 当实体改变自身的姿势时触发。
 >
 > @see 参见 `Entity#getPose()` 方法。
@@ -34,10 +36,14 @@ description: EntityPoseChangeEvent
 >
 > @return the new pose
 >
+>
+> 
 > 该方法用于获取实体的新姿势。
 >
 > @return 实体的新姿势。
 >
+>
+> 
 > 译注：调用 `Entity#getPose()` 方法可以获取实体原有的姿势。
 
 #### getHandlers

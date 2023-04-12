@@ -16,6 +16,8 @@ description: EntityDeathEvent
 
 > Thrown whenever a LivingEntity dies
 >
+>
+> 
 > 当生物死亡时触发。
 
 ### 方法列表
@@ -42,6 +44,8 @@ description: EntityDeathEvent
 >
 > @return Amount of EXP to drop.
 >
+>
+> 
 > 该方法用于获取实体死亡时所掉落的经验值。
 >
 > 本方法的返回值与实体死亡时失去的经验值无关，仅仅是指以经验球形态掉落的经验值总量。
@@ -62,6 +66,8 @@ description: EntityDeathEvent
 >
 > @param exp Amount of EXP to drop.
 >
+>
+> 
 > 该方法用于设置实体死亡时所掉落的经验值。
 >
 > 本方法不会影响实体死亡时失去的经验值，仅仅改变以经验球形态掉落的经验值总量。
@@ -78,6 +84,8 @@ description: EntityDeathEvent
 >
 > @return Items to drop when the entity dies
 >
+>
+> 
 > 该方法用于获取一个列表，其间存储有实体死亡时产生的全部掉落物。
 >
 > @return 实体死亡时产生的全部掉落物列表。

@@ -16,8 +16,12 @@ description: PlayerExpChangeEvent
 
 > Called when a players experience changes naturally
 >
+>
+> 
 > 当玩家经验值自然变化时触发。
 >
+>
+> 
 > 译注：当玩家死亡掉落经验时或使用指令改变经验时都不会触发此事件。只有玩家捡起经验球时才会触发。
 
 ### 方法列表
@@ -32,6 +36,8 @@ description: PlayerExpChangeEvent
 >
 > @return The amount of experience
 >
+>
+> 
 > 该方法用于获取玩家经验值的增量。
 >
 > @return 经验值的增量。
@@ -46,6 +52,8 @@ description: PlayerExpChangeEvent
 >
 > @param amount The amount of experience to set
 >
+>
+> 
 > 该方法用于设置玩家经验值的增量。
 >
 > @param amount 经验值的增量。

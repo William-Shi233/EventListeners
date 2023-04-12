@@ -16,6 +16,8 @@ description: SlimeSplitEvent
 
 > Called when a Slime splits into smaller Slimes upon death
 >
+>
+> 
 > 当史莱姆死亡，分裂出体型较小的史莱姆时触发。
 
 ### 方法列表
@@ -50,6 +52,8 @@ description: SlimeSplitEvent
 >
 > @return the amount of slimes to spawn
 >
+>
+> 
 > 该方法用于获取将要生成的体型较小的史莱姆的数量。
 >
 > @return 将要生成的体型较小的史莱姆的数量。
@@ -64,6 +68,8 @@ description: SlimeSplitEvent
 >
 > @param count the amount of slimes to spawn
 >
+>
+> 
 > 该方法用于设置将要生成的体型较小的史莱姆的数量。
 >
 > @param count 将要生成的体型较小的史莱姆的数量。

@@ -16,6 +16,8 @@ description: EntityPortalEnterEvent
 
 > Called when an entity comes into contact with a portal
 >
+>
+> 
 > 当某实体步入传送门时触发。
 
 ### 方法列表
@@ -30,6 +32,8 @@ description: EntityPortalEnterEvent
 >
 > @return The portal block the entity is touching
 >
+>
+> 
 > 该方法用于获取实体触及的传送门方块。
 >
 > @return 实体触及的传送门方块。

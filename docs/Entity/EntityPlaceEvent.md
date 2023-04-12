@@ -22,6 +22,8 @@ description: EntityPlaceEvent
 >
 > armor stands, boats, minecarts, and end crystals.
 >
+>
+> 
 > 当玩家对准方块“放置”物品堆，生成实体时触发。
 >
 > 目前本事件仅在玩家放置如下四种特定实体时触发：盔甲架、船、矿车和末影水晶。
@@ -38,6 +40,8 @@ description: EntityPlaceEvent
 >
 > @return the player placing the entity
 >
+>
+> 
 > 该方法用于获取放置实体的玩家。
 >
 > @return 放置实体的玩家。
@@ -52,6 +56,8 @@ description: EntityPlaceEvent
 >
 > @return the block that the entity was placed on
 >
+>
+> 
 > 该方法用于获取放置实体时所依凭的方块。
 >
 > @return 放置实体时所依凭的方块。
@@ -66,6 +72,8 @@ description: EntityPlaceEvent
 >
 > @return the face of the block that the entity was placed on
 >
+>
+> 
 > 该方法用于获取放置实体时所依凭的方块面。
 >
 > @return 放置实体时所依凭的方块面。

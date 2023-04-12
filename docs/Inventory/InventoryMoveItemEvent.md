@@ -34,6 +34,8 @@ description: InventoryMoveItemEvent
 >
 > former state. Otherwise any additional items will be discarded.
 >
+> 
+>
 > 当某个实体或方块（如漏斗）尝试将物品在两个物品栏之间移动时触发。
 >
 > 本事件被触发时，物品堆可能已经被玩家从原物品栏取出，并且将要被放到另一个物品栏里。
@@ -54,6 +56,8 @@ description: InventoryMoveItemEvent
 >
 > @return Inventory that the ItemStack is being taken from
 >
+> 
+>
 > 该方法用于获取物品堆原先所在的物品栏。
 >
 > @return 物品堆原先所在的物品栏。
@@ -69,6 +73,8 @@ description: InventoryMoveItemEvent
 > be removed from the source inventory.
 >
 > @return ItemStack
+>
+> 
 >
 > 该方法用于获取被移动的物品堆。如果插件使用 `setItem(ItemStack)` 方法修改了物品堆对象，则物品堆不会被从源物品栏中移除。
 >
@@ -88,9 +94,13 @@ description: InventoryMoveItemEvent
 >
 > @param itemStack The ItemStack
 >
+> 
+>
 > 该方法用于设置被移动的物品堆。如果本方法传入的参数与原先的物品堆对象不同，则原先的物品堆不会被从源物品栏中移除。
 >
 > @param itemStack 被移动的物品堆。
+>
+> 
 >
 > 译注：所谓“原先的物品堆对象”，指在第一个事件监听器被调用以前，服务端原本将要移动的物品堆。
 
@@ -104,6 +114,8 @@ description: InventoryMoveItemEvent
 >
 > @return Inventory that the ItemStack is being put into
 >
+>
+> 
 > 该方法用于获取物品堆将要被放入的物品栏。
 >
 > @return 物品堆将要被放入的物品栏。
@@ -120,6 +132,8 @@ description: InventoryMoveItemEvent
 >
 > @return Inventory that initiated the transfer
 >
+>
+> 
 > 该方法用于获取导致物品移动的物品栏。本方法的返回值是 `getSource()` 方法和 `getDestination()` 方法的返回值中的某一个。
 >
 > @return 导致物品移动的物品栏。
