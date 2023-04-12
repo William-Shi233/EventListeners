@@ -17,14 +17,14 @@ description: RaidTriggerEvent
 ### 类描述
 
 > Called when a {@link Raid} is triggered (e.g: a player with Bad Omen effect
->
+> 
 > enters a village).
->
->
+> 
+> <p>
 > 
 > 当一场袭击被引动时触发。比如有一个携带不祥之兆效果的玩家进入村庄时，其人会引发一场袭击。
->
->
+> 
+> <p>
 > 
 > 译注：目前仅有身怀不祥之兆的玩家进入村庄这一种引动袭击的途径。
 
@@ -37,13 +37,13 @@ description: RaidTriggerEvent
 方法签名: ()Lorg/bukkit/entity/Player;
 
 > Returns the player who triggered the raid.
->
+> 
 > @return triggering player
->
->
+> 
+> <p>
 > 
 > 该方法用于获取引动袭击的玩家。
->
+> 
 > @return 引动袭击的玩家。
 
 #### isCancelled

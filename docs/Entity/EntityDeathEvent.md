@@ -15,8 +15,8 @@ description: EntityDeathEvent
 ### 类描述
 
 > Thrown whenever a LivingEntity dies
->
->
+> 
+> <p>
 > 
 > 当生物死亡时触发。
 
@@ -37,19 +37,19 @@ description: EntityDeathEvent
 方法签名: ()I
 
 > Gets how much EXP should be dropped from this death.
->
+> 
 > This does not indicate how much EXP should be taken from the entity in
->
+> 
 > question, merely how much should be created after its death.
->
+> 
 > @return Amount of EXP to drop.
->
->
+> 
+> <p>
 > 
 > 该方法用于获取实体死亡时所掉落的经验值。
->
+> 
 > 本方法的返回值与实体死亡时失去的经验值无关，仅仅是指以经验球形态掉落的经验值总量。
->
+> 
 > @return 实体死亡时所掉落的经验值。
 
 #### setDroppedExp
@@ -59,19 +59,19 @@ description: EntityDeathEvent
 方法签名: (I)V
 
 > Sets how much EXP should be dropped from this death.
->
+> 
 > This does not indicate how much EXP should be taken from the entity in
->
+> 
 > question, merely how much should be created after its death.
->
+> 
 > @param exp Amount of EXP to drop.
->
->
+> 
+> <p>
 > 
 > 该方法用于设置实体死亡时所掉落的经验值。
->
+> 
 > 本方法不会影响实体死亡时失去的经验值，仅仅改变以经验球形态掉落的经验值总量。
->
+> 
 > @param exp 实体死亡时所掉落的经验值。
 
 #### getDrops
@@ -81,13 +81,13 @@ description: EntityDeathEvent
 方法签名: ()Ljava/util/List;
 
 > Gets all the items which will drop when the entity dies
->
+> 
 > @return Items to drop when the entity dies
->
->
+> 
+> <p>
 > 
 > 该方法用于获取一个列表，其间存储有实体死亡时产生的全部掉落物。
->
+> 
 > @return 实体死亡时产生的全部掉落物列表。
 
 #### getHandlers

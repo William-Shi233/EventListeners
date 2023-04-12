@@ -17,8 +17,8 @@ description: PlayerPickupArrowEvent
 ### 类描述
 
 > Thrown when a player picks up an arrow from the ground.
->
->
+> 
+> <p>
 > 
 > 当玩家自地上捡起一支箭矢时触发。
 
@@ -31,11 +31,11 @@ description: PlayerPickupArrowEvent
 方法签名: ()Lorg/bukkit/entity/AbstractArrow;
 
 > Get the arrow being picked up by the player
->
+> 
 > @return The arrow being picked up
->
->
+> 
+> <p>
 > 
 > 该方法用于获取玩家捡起的箭矢实体。
->
+> 
 > @return 玩家捡起的箭矢实体。

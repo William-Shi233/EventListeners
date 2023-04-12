@@ -15,23 +15,23 @@ description: VillagerReplenishTradeEvent
 ### 类描述
 
 > Called when a {@link Villager} is about to restock one of its trades.
->
-> If this event passes, the villager will reset the
->
-> {@link MerchantRecipe#getUses() uses} of the affected {@link #getRecipe()
->
-> MerchantRecipe} to <code>0</code>.
->
 > 
->
+> If this event passes, the villager will reset the
+> 
+> {@link MerchantRecipe#getUses() uses} of the affected {@link #getRecipe()
+> 
+> MerchantRecipe} to <code>0</code>.
+> 
+> <p>
+> 
 > 当村民将要为自己的某个交易项补货时触发。
->
+> 
 > 如果本事件没有被取消，则该 `MerchantRecipe` 的 `MerchantRecipe#getUses()` 将会被重置为零。
->
->
+> 
+> <p>
 > 
 > 译注：参见 `MineCraft Wiki` 中关于村民及流浪商人交易机制的相关页面 [https://minecraft.fandom.com/wiki/Trading#Mechanics](https://minecraft.fandom.com/wiki/Trading#Mechanics) 可知，村民的交易项不能无限制地交易。在交易一定次数后，该交易项会进入缺货状态，直至村民前往工作方块补货。
->
+> 
 > 所谓 `MerchantRecipe` ，即“交易项”。所谓 `MerchantRecipe#getUses()` ，即该交易项已经交易过的次数。如果交易次数达到上限则交易项缺货。补货会使得交易项的交易次数变为零。
 
 ### 方法列表
@@ -43,13 +43,13 @@ description: VillagerReplenishTradeEvent
 方法签名: ()Lorg/bukkit/inventory/MerchantRecipe;
 
 > Get the recipe to replenish.
->
+> 
 > @return the replenished recipe
->
->
+> 
+> <p>
 > 
 > 该方法用于获取将要补货的交易项。
->
+> 
 > @return 将要补货的交易项。
 
 #### setRecipe
@@ -59,13 +59,13 @@ description: VillagerReplenishTradeEvent
 方法签名: (Lorg/bukkit/inventory/MerchantRecipe;)V
 
 > Set the recipe to replenish.
->
+> 
 > @param recipe the replenished recipe
->
->
+> 
+> <p>
 > 
 > 该方法用于设置将要补货的交易项。
->
+> 
 > @param recipe 将要补货的交易项。
 
 #### getBonus
@@ -75,14 +75,14 @@ description: VillagerReplenishTradeEvent
 方法签名: ()I
 
 > Get the bonus uses added.
->
+> 
 > @return the extra uses added
->
+> 
 > @deprecated MC 1.14 has changed how villagers restock their trades. Use
->
+> 
 > {@link MerchantRecipe#getUses()}.
->
->
+> 
+> <p>
 > 
 > @deprecated 该方法已过时。自 `1.14` 起，`MineCraft` 修改了村民为交易项补货的机制。请使用 `MerchantRecipe#getUses()` 方法。
 
@@ -93,14 +93,14 @@ description: VillagerReplenishTradeEvent
 方法签名: (I)V
 
 > Set the bonus uses added.
->
+> 
 > @param bonus the extra uses added
->
+> 
 > @deprecated MC 1.14 has changed how villagers restock their trades. This
->
+> 
 > has no effect anymore.
->
->
+> 
+> <p>
 > 
 > @deprecated 该方法已过时。自 `1.14` 起，`MineCraft` 修改了村民为交易项补货的机制。本方法已经不会生效。
 

@@ -25,15 +25,15 @@ description: PrepareItemCraftEvent
 方法签名: ()Lorg/bukkit/inventory/Recipe;
 
 > Get the recipe that has been formed. If this event was triggered by a
->
-> tool repair, this will be a temporary shapeless recipe representing the
->
-> repair.
->
-> @return The recipe being crafted.
->
 > 
->
+> tool repair, this will be a temporary shapeless recipe representing the
+> 
+> repair.
+> 
+> @return The recipe being crafted.
+> 
+> <p>
+> 
 > 该方法用于获取当前的物品堆摆放方式所契合的合成配方。如果本事件是由于玩家尝试将两把工具合二为一，修复耐久度而触发的，则该方法的返回值是一个临时创建的无规则合成配方，用于表示工具修复。
 
 #### getInventory
@@ -43,7 +43,7 @@ description: PrepareItemCraftEvent
 方法签名: ()Lorg/bukkit/inventory/CraftingInventory;
 
 > @return The crafting inventory on which the recipe was formed.
->
+> 
 > @return 合成所使用的物品栏对象。
 
 #### isRepair
@@ -53,15 +53,15 @@ description: PrepareItemCraftEvent
 方法签名: ()Z
 
 > Check if this event was triggered by a tool repair operation rather
->
-> than a crafting recipe.
->
-> @return True if this is a repair.
->
 > 
->
+> than a crafting recipe.
+> 
+> @return True if this is a repair.
+> 
+> <p>
+> 
 > 该方法用于获取本次合成是否是由于玩家尝试将两把工具合二为一，修复耐久度而触发。
->
+> 
 > @return 如果是因为修复耐久度而触发，则返回 `true` 。
 
 #### getHandlers

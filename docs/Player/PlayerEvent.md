@@ -13,12 +13,12 @@ description: PlayerEvent
 ### 类描述
 
 > Represents a player related event
->
->
+> 
+> <p>
 > 
 > 代表与玩家有关的事件。
->
->
+> 
+> <p>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -31,11 +31,11 @@ description: PlayerEvent
 方法签名: ()Lorg/bukkit/entity/Player;
 
 > Returns the player involved in this event
->
+> 
 > @return Player who is involved in this event
->
->
+> 
+> <p>
 > 
 > 获取事件中的玩家。
->
+> 
 > @return 触发事件的玩家。

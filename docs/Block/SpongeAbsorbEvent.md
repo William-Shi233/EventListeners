@@ -15,24 +15,24 @@ description: SpongeAbsorbEvent
 ### 类描述
 
 > Called when a sponge absorbs water from the world.
->
-> The world will be in its previous state, and {@link #getBlocks()} will
->
-> represent the changes to be made to the world, if the event is not cancelled.
->
-> As this is a physics based event it may be called multiple times for "the
->
-> same" changes.
->
 > 
->
+> The world will be in its previous state, and {@link #getBlocks()} will
+> 
+> represent the changes to be made to the world, if the event is not cancelled.
+> 
+> As this is a physics based event it may be called multiple times for "the
+> 
+> same" changes.
+> 
+> <p>
+> 
 > 当海绵方块吸水时触发。
->
+> 
 > 在监听器被触发时，世界中涉事的方块尚且处于未被吸水的状态，通过本事件的 `getBlocks()` 方法可以获取在此次事件未被取消的前提下，世界中将会发生改变的一系列方块的有关信息。
->
+> 
 > 本事件类同于 `BlockPhysicsEvent` ，是方块状态发生更新时触发的事件。对于“同一次”变化，本事件可能多次触发。
->
->
+> 
+> <p>
 > 
 > 译注：参见 `BlockPhysicsEvent` 。
 
@@ -45,23 +45,23 @@ description: SpongeAbsorbEvent
 方法签名: ()Ljava/util/List;
 
 > Get a list of all blocks to be removed by the sponge.
->
+> 
 > This list is mutable and contains the blocks in their removed state, i.e.
->
+> 
 > having a type of {@link Material#AIR}.
->
+> 
 > @return list of the to be removed blocks.
->
 > 
->
+> <p>
+> 
 > 该方法用于获取一个列表，其间存储有全部将会被海绵所吸收的方块的块状态。
->
-> 本方法返回的列表是可修改的，列表中的元素是吸水以后的方块状态。比如说，该状态的材质可能是 `Material#AIR` 。
->
-> @return 将会被海绵所吸收的方块列表。
->
 > 
->
+> 本方法返回的列表是可修改的，列表中的元素是吸水以后的方块状态。比如说，该状态的材质可能是 `Material#AIR` 。
+> 
+> @return 将会被海绵所吸收的方块列表。
+> 
+> <p>
+> 
 > 译注：所谓“状态的材质可能是 `Material#AIR` ”，指水方块被吸收后变为空气，因而可以佐证“列表中的元素是吸水以后的方块状态”这一说法。
 
 #### isCancelled

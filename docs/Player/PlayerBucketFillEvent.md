@@ -17,12 +17,12 @@ description: PlayerBucketFillEvent
 ### 类描述
 
 > Called when a player fills a bucket
->
->
+> 
+> <p>
 > 
 > 当玩家装满桶时触发。
->
->
+> 
+> <p>
 > 
 > 译注：既可以是玩家用桶装水、岩浆等方块，也可以是用桶盛放牛奶。
 

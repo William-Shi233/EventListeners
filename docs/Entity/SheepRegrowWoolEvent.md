@@ -15,8 +15,8 @@ description: SheepRegrowWoolEvent
 ### 类描述
 
 > Called when a sheep regrows its wool
->
->
+> 
+> <p>
 > 
 > 当某只已经被剪去毛的羊重新生长出羊毛时触发。
 

@@ -15,12 +15,12 @@ description: MapInitializeEvent
 ### 类描述
 
 > Called when a map is initialized.
->
->
+> 
+> <p>
 > 
 > 当一份地图被初始化时触发。
->
->
+> 
+> <p>
 > 
 > 译注：此处的 `Map` 不是指保存键值对的集合，而是指由八张纸和一个指南针合成的地图物品堆。
 
@@ -33,13 +33,13 @@ description: MapInitializeEvent
 方法签名: ()Lorg/bukkit/map/MapView;
 
 > Gets the map initialized in this event.
->
+> 
 > @return Map for this event
->
->
+> 
+> <p>
 > 
 > 该方法用于获取事件中初始化的地图。
->
+> 
 > @return 事件中初始化的地图。
 
 #### getHandlers

@@ -17,17 +17,17 @@ description: TradeSelectEvent
 ### 类描述
 
 > This event is called whenever a player clicks a new trade on the trades
->
-> sidebar.
->
-> This event allows the user to get the index of the trade, letting them get
->
-> the MerchantRecipe via the Merchant.
->
 > 
->
+> sidebar.
+> 
+> This event allows the user to get the index of the trade, letting them get
+> 
+> the MerchantRecipe via the Merchant.
+> 
+> <p>
+> 
 > 当玩家在交易界面侧栏选中某项交易时触发。
->
+> 
 > 本事件允许用户获取被选中交易项的序号。对事件中的商人对象调用 `Merchant#getRecipe(int i)` 方法时，可以传入该序号，以获得 `MerchantRecipe` 类型的交易项信息。
 
 ### 方法列表
@@ -39,13 +39,13 @@ description: TradeSelectEvent
 方法签名: ()I
 
 > Used to get the index of the trade the player clicked on.
->
-> @return The index of the trade clicked by the player
->
 > 
->
+> @return The index of the trade clicked by the player
+> 
+> <p>
+> 
 > 该方法用于获取玩家所点击的交易项的序号。
->
+> 
 > @return 玩家所点击的交易项的序号。
 
 #### getInventory
@@ -63,17 +63,17 @@ description: TradeSelectEvent
 方法签名: ()Lorg/bukkit/inventory/Merchant;
 
 > Get the Merchant involved.
->
+> 
 > @return the Merchant
->
 > 
->
+> <p>
+> 
 > 该方法用于获取事件中的商人对象。
->
-> @return 商人对象。
->
 > 
->
+> @return 商人对象。
+> 
+> <p>
+> 
 > 译注：尽管此处的 `Merchant` 类型位于 `org.bukkit.inventory` 包下，但它代表的是商人实体（如村民、流浪商人等），而不是一种物品栏。
 
 #### getHandlers

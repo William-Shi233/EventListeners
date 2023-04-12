@@ -17,11 +17,11 @@ description: PlayerUnregisterChannelEvent
 ### 类描述
 
 > This is called immediately after a player unregisters for a plugin channel.
->
->
+> 
+> <p>
 > 
 > 当玩家注销 `PluginChannel` 时触发。
->
->
+> 
+> <p>
 > 
 > 译注：见 `PlayerChannelEvent` 。

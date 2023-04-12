@@ -15,12 +15,12 @@ description: PlayerShearEntityEvent
 ### 类描述
 
 > Called when a player shears an entity
->
->
+> 
+> <p>
 > 
 > 当玩家给实体剪毛时触发。
->
->
+> 
+> <p>
 > 
 > 译注：当玩家给羊剪毛时，固然会触发本事件。除此以外，当玩家用剪刀剪去哞菇身上的蘑菇、移除雪傀儡头顶的南瓜时，也会触发本事件。
 
@@ -45,13 +45,13 @@ description: PlayerShearEntityEvent
 方法签名: ()Lorg/bukkit/entity/Entity;
 
 > Gets the entity the player is shearing
->
+> 
 > @return the entity the player is shearing
->
->
+> 
+> <p>
 > 
 > 该方法用于获取被剪毛的实体。
->
+> 
 > @return 被剪毛的实体。
 
 #### getItem
@@ -61,13 +61,13 @@ description: PlayerShearEntityEvent
 方法签名: ()Lorg/bukkit/inventory/ItemStack;
 
 > Gets the item used to shear the entity.
->
+> 
 > @return the shears
->
->
+> 
+> <p>
 > 
 > 该方法用于获取剪毛时所使用的工具。
->
+> 
 > @return 剪毛时所使用的工具。
 
 #### getHand
@@ -77,13 +77,13 @@ description: PlayerShearEntityEvent
 方法签名: ()Lorg/bukkit/inventory/EquipmentSlot;
 
 > Gets the hand used to shear the entity.
->
+> 
 > @return the hand
->
->
+> 
+> <p>
 > 
 > 该方法用于获取剪毛时所使用的手，即主手或副手。
->
+> 
 > @return 剪毛时所使用的手。
 
 #### getHandlers

@@ -15,8 +15,8 @@ description: FireworkExplodeEvent
 ### 类描述
 
 > Called when a firework explodes.
->
->
+> 
+> <p>
 > 
 > 当一枚烟花火箭爆炸时触发。
 
@@ -35,17 +35,17 @@ description: FireworkExplodeEvent
 方法签名: (Z)V
 
 > Set the cancelled state of this event. If the firework explosion is
->
-> cancelled, the firework will still be removed, but no particles will be
->
-> displayed.
->
-> @param cancel whether to cancel or not.
->
 > 
->
+> cancelled, the firework will still be removed, but no particles will be
+> 
+> displayed.
+> 
+> @param cancel whether to cancel or not.
+> 
+> <p>
+> 
 > 该方法用于设置本事件取消与否。如果本事件被取消，则烟花火箭实体仍然会消失，但烟花相关的粒子效果将不会出现。
->
+> 
 > @param cancel 是否要取消事件。
 
 #### getEntity

@@ -45,13 +45,13 @@ description: ItemMergeEvent
 方法签名: ()Lorg/bukkit/entity/Item;
 
 > Gets the Item entity the main Item is being merged into.
->
+> 
 > @return The Item being merged with
->
->
+> 
+> <p>
 > 
 > 该方法用于获取合并过程中数量将会增加的物品堆实体。
->
+> 
 > @return 合并过程中数量将会增加的物品堆实体。
 
 #### getHandlers

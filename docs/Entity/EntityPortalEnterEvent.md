@@ -15,8 +15,8 @@ description: EntityPortalEnterEvent
 ### 类描述
 
 > Called when an entity comes into contact with a portal
->
->
+> 
+> <p>
 > 
 > 当某实体步入传送门时触发。
 
@@ -29,13 +29,13 @@ description: EntityPortalEnterEvent
 方法签名: ()Lorg/bukkit/Location;
 
 > Gets the portal block the entity is touching
->
+> 
 > @return The portal block the entity is touching
->
->
+> 
+> <p>
 > 
 > 该方法用于获取实体触及的传送门方块。
->
+> 
 > @return 实体触及的传送门方块。
 
 #### getHandlers

@@ -13,8 +13,8 @@ description: InventoryEvent
 ### 类描述
 
 > Represents a player related inventory event
->
->
+> 
+> <p>
 > 
 > 代表与玩家有关的物品栏事件。
 
@@ -27,13 +27,13 @@ description: InventoryEvent
 方法签名: ()Lorg/bukkit/inventory/Inventory;
 
 > Gets the primary Inventory involved in this transaction
->
+> 
 > @return The upper inventory.
->
->
+> 
+> <p>
 > 
 > 获取事件中的物品栏。
->
+> 
 > @return 触发事件的物品栏。返回值是物品栏视图（即上下两个物品栏）中居于上方的物品栏。
 
 #### getViewers
@@ -43,15 +43,15 @@ description: InventoryEvent
 方法签名: ()Ljava/util/List;
 
 > Gets the list of players viewing the primary (upper) inventory involved
->
+> 
 > in this event
->
+> 
 > @return A list of people viewing.
->
->
+> 
+> <p>
 > 
 > 该方法返回一个列表，其间存储有全部打开着涉事物品栏（居于上方的物品栏）的玩家。
->
+> 
 > @return 打开着涉事物品栏的玩家列表。
 
 #### getView
@@ -61,13 +61,13 @@ description: InventoryEvent
 方法签名: ()Lorg/bukkit/inventory/InventoryView;
 
 > Gets the view object itself
->
+> 
 > @return InventoryView
->
->
+> 
+> <p>
 > 
 > 获取事件中的物品栏视图（由上下两个物品栏组成）。
->
+> 
 > @return 触发事件的物品栏视图。
 
 #### getHandlers

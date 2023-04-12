@@ -17,11 +17,11 @@ description: PlayerRegisterChannelEvent
 ### 类描述
 
 > This is called immediately after a player registers for a plugin channel.
->
->
+> 
+> <p>
 > 
 > 当玩家注册 `PluginChannel` 时触发。
->
->
+> 
+> <p>
 > 
 > 译注：见 `PlayerChannelEvent` 。

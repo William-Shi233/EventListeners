@@ -13,12 +13,12 @@ description: WeatherEvent
 ### 类描述
 
 > Represents a Weather-related event
->
->
+> 
+> <p>
 > 
 > 代表与天气有关的事件。
->
->
+> 
+> <p>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -31,11 +31,11 @@ description: WeatherEvent
 方法签名: ()Lorg/bukkit/World;
 
 > Returns the World where this event is occurring
->
+> 
 > @return World this event is occurring in
->
->
+> 
+> <p>
 > 
 > 获取发生了事件的世界。
->
+> 
 > @return 发生了事件的世界。

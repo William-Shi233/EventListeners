@@ -15,8 +15,8 @@ description: BlockExpEvent
 ### 类描述
 
 > An event that's called when a block yields experience.
->
->
+> 
+> <p>
 > 
 > 当方块产出经验时触发。
 
@@ -29,13 +29,13 @@ description: BlockExpEvent
 方法签名: ()I
 
 > Get the experience dropped by the block after the event has processed
->
+> 
 > @return The experience to drop
->
->
+> 
+> <p>
 > 
 > 该方法用于获取事件中的方块将会掉落的经验数量。
->
+> 
 > @return 方块将会掉落的经验数量。
 
 #### setExpToDrop
@@ -45,15 +45,15 @@ description: BlockExpEvent
 方法签名: (I)V
 
 > Set the amount of experience dropped by the block after the event has
->
+> 
 > processed
->
+> 
 > @param exp 1 or higher to drop experience, else nothing will drop
->
->
+> 
+> <p>
 > 
 > 该方法用于设置事件中的方块将会掉落的经验数量。
->
+> 
 > @param exp 如传入大于等于一的值则会掉落相应数量的经验，否则不会掉落任何经验。
 
 #### getHandlers

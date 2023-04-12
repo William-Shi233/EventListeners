@@ -15,17 +15,17 @@ description: EntityPlaceEvent
 ### 类描述
 
 > Triggered when a entity is created in the world by a player "placing" an item
->
+> 
 > on a block.
->
+> 
 > Note that this event is currently only fired for four specific placements:
->
+> 
 > armor stands, boats, minecarts, and end crystals.
->
->
+> 
+> <p>
 > 
 > 当玩家对准方块“放置”物品堆，生成实体时触发。
->
+> 
 > 目前本事件仅在玩家放置如下四种特定实体时触发：盔甲架、船、矿车和末影水晶。
 
 ### 方法列表
@@ -37,13 +37,13 @@ description: EntityPlaceEvent
 方法签名: ()Lorg/bukkit/entity/Player;
 
 > Returns the player placing the entity
->
+> 
 > @return the player placing the entity
->
->
+> 
+> <p>
 > 
 > 该方法用于获取放置实体的玩家。
->
+> 
 > @return 放置实体的玩家。
 
 #### getBlock
@@ -53,13 +53,13 @@ description: EntityPlaceEvent
 方法签名: ()Lorg/bukkit/block/Block;
 
 > Returns the block that the entity was placed on
->
+> 
 > @return the block that the entity was placed on
->
->
+> 
+> <p>
 > 
 > 该方法用于获取放置实体时所依凭的方块。
->
+> 
 > @return 放置实体时所依凭的方块。
 
 #### getBlockFace
@@ -69,13 +69,13 @@ description: EntityPlaceEvent
 方法签名: ()Lorg/bukkit/block/BlockFace;
 
 > Returns the face of the block that the entity was placed on
->
+> 
 > @return the face of the block that the entity was placed on
->
->
+> 
+> <p>
 > 
 > 该方法用于获取放置实体时所依凭的方块面。
->
+> 
 > @return 放置实体时所依凭的方块面。
 
 #### isCancelled

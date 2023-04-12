@@ -15,8 +15,8 @@ description: VehicleEnterEvent
 ### 类描述
 
 > Raised when an entity enters a vehicle.
->
->
+> 
+> <p>
 > 
 > 当实体乘上载具时触发。
 
@@ -29,13 +29,13 @@ description: VehicleEnterEvent
 方法签名: ()Lorg/bukkit/entity/Entity;
 
 > Gets the Entity that entered the vehicle.
->
+> 
 > @return the Entity that entered the vehicle
->
->
+> 
+> <p>
 > 
 > 该方法用于获取乘上载具的实体。
->
+> 
 > @return 乘上载具的实体。
 
 #### isCancelled

@@ -15,15 +15,15 @@ description: EntityTeleportEvent
 ### 类描述
 
 > Thrown when a non-player entity is teleported from one location to another.
->
-> This may be as a result of natural causes (Enderman, Shulker), pathfinding
->
-> (Wolf), or commands (/teleport).
->
 > 
->
+> This may be as a result of natural causes (Enderman, Shulker), pathfinding
+> 
+> (Wolf), or commands (/teleport).
+> 
+> <p>
+> 
 > 当某个非玩家实体自一个位置传送到另一个位置时触发。
->
+> 
 > 本事件可能因实体固有的技能而触发（如末影人、潜影贝），因寻路系统而触发（如被驯服的狼传送到玩家身边），或由于指令而触发（ `/teleport` 指令）。
 
 ### 方法列表
@@ -47,13 +47,13 @@ description: EntityTeleportEvent
 方法签名: ()Lorg/bukkit/Location;
 
 > Gets the location that this entity moved from
->
-> @return Location this entity moved from
->
 > 
->
+> @return Location this entity moved from
+> 
+> <p>
+> 
 > 该方法用于获取传送前实体所处的位置。
->
+> 
 > @return 传送前实体所处的位置。
 
 #### setFrom
@@ -63,13 +63,13 @@ description: EntityTeleportEvent
 方法签名: (Lorg/bukkit/Location;)V
 
 > Sets the location that this entity moved from
->
-> @param from New location this entity moved from
->
 > 
->
+> @param from New location this entity moved from
+> 
+> <p>
+> 
 > 该方法用于设置传送前实体所处的位置。
->
+> 
 > @param from 传送前实体所处的位置。
 
 #### getTo
@@ -79,13 +79,13 @@ description: EntityTeleportEvent
 方法签名: ()Lorg/bukkit/Location;
 
 > Gets the location that this entity moved to
->
-> @return Location the entity moved to
->
 > 
->
+> @return Location the entity moved to
+> 
+> <p>
+> 
 > 该方法用于获取传送后实体将到达的位置。
->
+> 
 > @return 传送后实体将到达的位置。
 
 #### setTo
@@ -95,13 +95,13 @@ description: EntityTeleportEvent
 方法签名: (Lorg/bukkit/Location;)V
 
 > Sets the location that this entity moved to
->
-> @param to New Location this entity moved to
->
 > 
->
+> @param to New Location this entity moved to
+> 
+> <p>
+> 
 > 该方法用于设置传送后实体将到达的位置。
->
+> 
 > @param to 传送后实体将到达的位置。
 
 #### getHandlers

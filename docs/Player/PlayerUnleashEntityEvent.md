@@ -17,8 +17,8 @@ description: PlayerUnleashEntityEvent
 ### 类描述
 
 > Called prior to an entity being unleashed due to a player's action.
->
->
+> 
+> <p>
 > 
 > 当一个实体身上的拴绳即将因玩家而被解开时触发。本事件在拴绳被解开以前触发。
 
@@ -31,13 +31,13 @@ description: PlayerUnleashEntityEvent
 方法签名: ()Lorg/bukkit/entity/Player;
 
 > Returns the player who is unleashing the entity.
->
+> 
 > @return The player
->
->
+> 
+> <p>
 > 
 > 该方法用于获取解开拴绳的玩家。
->
+> 
 > @return 解开拴绳的玩家。
 
 #### isCancelled

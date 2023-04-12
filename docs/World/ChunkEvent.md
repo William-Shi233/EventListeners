@@ -15,13 +15,13 @@ description: ChunkEvent
 ### 类描述
 
 > Represents a Chunk related event
->
 > 
->
+> <p>
+> 
 > 代表与区块有关的事件。
->
 > 
->
+> <p>
+> 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
 ### 方法列表
@@ -33,15 +33,15 @@ description: ChunkEvent
 方法签名: ()Lorg/bukkit/Chunk;
 
 > Gets the chunk being loaded/unloaded
->
+> 
 > @return Chunk that triggered this event
->
 > 
->
+> <p>
+> 
 > 获取事件中被加载/卸载的区块。
->
-> @return 触发事件的区块。
->
 > 
->
+> @return 触发事件的区块。
+> 
+> <p>
+> 
 > 译注：此处“被加载/卸载的区块”一语不当，因为区块相关事件尚有 `ChunkPopulateEvent` 而不仅仅是区块的加载和卸载，此方法作“事件中的区块”解更适切。

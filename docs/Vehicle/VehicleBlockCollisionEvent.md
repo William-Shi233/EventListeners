@@ -17,8 +17,8 @@ description: VehicleBlockCollisionEvent
 ### 类描述
 
 > Raised when a vehicle collides with a block.
->
->
+> 
+> <p>
 > 
 > 当载具与方块相撞时触发。
 
@@ -31,13 +31,13 @@ description: VehicleBlockCollisionEvent
 方法签名: ()Lorg/bukkit/block/Block;
 
 > Gets the block the vehicle collided with
->
+> 
 > @return the block the vehicle collided with
->
->
+> 
+> <p>
 > 
 > 该方法用于获取事件中的载具撞上的方块。
->
+> 
 > @return 事件中的载具撞上的方块。
 
 #### getHandlers

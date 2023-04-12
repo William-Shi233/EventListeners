@@ -17,13 +17,13 @@ description: EntityBreakDoorEvent
 ### 类描述
 
 > Called when an {@link Entity} breaks a door
->
+> 
 > Cancelling the event will cause the event to be delayed
->
->
+> 
+> <p>
 > 
 > 当实体击破一扇门时触发。
->
+> 
 > 如果本事件被取消，实体破门而入的进程将会被延缓。
 
 ### 方法列表

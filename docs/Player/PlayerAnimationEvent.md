@@ -15,17 +15,17 @@ description: PlayerAnimationEvent
 ### 类描述
 
 > Represents a player animation event
->
->
+> 
+> <p>
 > 
 > 当玩家播放动画时触发。
->
->
+> 
+> <p>
 > 
 > 译注：所谓“动画”，指的是手臂挥动动画。
->
+> 
 > 具体而言，游戏客户端内显示玩家手臂挥动时，即触发该事件。比如玩家按右键放置方块、按左键破坏方块等动作，都会触发该事件。破坏方块时如持续按住左键，则会以较高频率触发该事件。如果客户端没有显示挥手动作，则不触发该事件，比如空手右键空气时，客户端无挥手动画，则不触发该事件。另外，当玩家丢弃物品时，也有挥手动作，因此也会触发该事件。
->
+> 
 > 如果需要获得玩家交互的详细信息，请使用 `PlayerInteractEvent` 。
 
 ### 方法列表
@@ -37,17 +37,17 @@ description: PlayerAnimationEvent
 方法签名: ()Lorg/bukkit/event/player/PlayerAnimationType;
 
 > Get the type of this animation event
->
+> 
 > @return the animation type
->
->
+> 
+> <p>
 > 
 > 该方法用于获取事件中挥动的手臂类型。
->
-> @return 事件中挥动的手臂类型。
->
 > 
->
+> @return 事件中挥动的手臂类型。
+> 
+> <p>
+> 
 > 译注：该枚举仅有两个字段，即主手和副手。
 > 
 > 本事件并不会记录玩家进行的是左键点击还是右键点击，只会区分主手和副手。比如用主手右键放置方块时，可以通过本方法获悉玩家使用的是主手，但不可知左键还是右键。左键单击一下方块和右键放置一个方块，在本事件中没有差别。请使用 `PlayerInteractEvent` 获得玩家交互的详细信息。

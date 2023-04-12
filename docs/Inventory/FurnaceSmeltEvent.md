@@ -17,7 +17,7 @@ description: FurnaceSmeltEvent
 ### 类描述
 
 > Called when an ItemStack is successfully smelted in a furnace.
->
->
+> 
+> <p>
 > 
 > 当熔炉烧炼完毕一件物品时触发。

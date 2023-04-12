@@ -17,8 +17,8 @@ description: VehicleEntityCollisionEvent
 ### 类描述
 
 > Raised when a vehicle collides with an entity.
->
->
+> 
+> <p>
 > 
 > 当载具与实体相撞时触发。
 

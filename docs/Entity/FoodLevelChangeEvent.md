@@ -15,8 +15,8 @@ description: FoodLevelChangeEvent
 ### 类描述
 
 > Called when a human entity's food level changes
->
->
+> 
+> <p>
 > 
 > 当玩家饱食度变化时触发。
 
@@ -37,13 +37,13 @@ description: FoodLevelChangeEvent
 方法签名: ()Lorg/bukkit/inventory/ItemStack;
 
 > Gets the item that triggered this event, if any.
->
+> 
 > @return an ItemStack for the item being consumed
->
->
+> 
+> <p>
 > 
 > 该方法用于获取引起了饱食度变化的物品堆（如存在）。
->
+> 
 > @return 引起了饱食度变化的物品堆。
 
 #### getFoodLevel
@@ -53,19 +53,19 @@ description: FoodLevelChangeEvent
 方法签名: ()I
 
 > Gets the resultant food level that the entity involved in this event
->
+> 
 > should be set to.
->
+> 
 > Where 20 is a full food bar and 0 is an empty one.
->
+> 
 > @return The resultant food level
->
->
+> 
+> <p>
 > 
 > 该方法用于获取玩家饱食度的新值。
->
+> 
 > 如果本方法返回二十，说明玩家饱食度将会填满饱食度栏，如果本方法返回零，说明玩家饱食度栏将会变空。
->
+> 
 > @return 玩家饱食度的新值。
 
 #### setFoodLevel
@@ -75,17 +75,17 @@ description: FoodLevelChangeEvent
 方法签名: (I)V
 
 > Sets the resultant food level that the entity involved in this event
->
+> 
 > should be set to
->
+> 
 > @param level the resultant food level that the entity involved in this
->
+> 
 > event should be set to
->
->
+> 
+> <p>
 > 
 > 该方法用于设置玩家饱食度的新值。
->
+> 
 > @param level 玩家饱食度的新值。
 
 #### isCancelled

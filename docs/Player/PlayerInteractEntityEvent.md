@@ -15,12 +15,12 @@ description: PlayerInteractEntityEvent
 ### 类描述
 
 > Represents an event that is called when a player right clicks an entity.
->
->
+> 
+> <p>
 > 
 > 当玩家右键实体时触发。
->
->
+> 
+> <p>
 > 
 > 译注：见 `PlayerInteractAtEntityEvent` 。在一般情况下，建议监听本事件而非 `PlayerInteractAtEntityEvent` 。
 
@@ -45,13 +45,13 @@ description: PlayerInteractEntityEvent
 方法签名: ()Lorg/bukkit/entity/Entity;
 
 > Gets the entity that was right-clicked by the player.
->
+> 
 > @return entity right clicked by player
->
->
+> 
+> <p>
 > 
 > 该方法用于获取事件中被玩家右键点击的实体。
->
+> 
 > @return 被玩家右键点击的实体。
 
 #### getHand
@@ -61,13 +61,13 @@ description: PlayerInteractEntityEvent
 方法签名: ()Lorg/bukkit/inventory/EquipmentSlot;
 
 > The hand used to perform this interaction.
->
+> 
 > @return the hand used to interact
->
->
+> 
+> <p>
 > 
 > 该方法用于获取玩家点击时所使用的手（主手或副手）。
->
+> 
 > @return 玩家点击时所使用的手（主手或副手）。
 
 #### getHandlers

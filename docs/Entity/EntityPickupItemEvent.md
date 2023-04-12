@@ -15,8 +15,8 @@ description: EntityPickupItemEvent
 ### 类描述
 
 > Thrown when a entity picks an item up from the ground
->
->
+> 
+> <p>
 > 
 > 当实体自地上捡起一件物品时触发。
 
@@ -37,13 +37,13 @@ description: EntityPickupItemEvent
 方法签名: ()Lorg/bukkit/entity/Item;
 
 > Gets the Item picked up by the entity.
->
+> 
 > @return Item
->
->
+> 
+> <p>
 > 
 > 该方法用于获取被捡起的物品堆实体。
->
+> 
 > @return 被捡起的物品堆实体。
 
 #### getRemaining
@@ -53,13 +53,13 @@ description: EntityPickupItemEvent
 方法签名: ()I
 
 > Gets the amount remaining on the ground, if any
->
+> 
 > @return amount remaining on the ground
->
->
+> 
+> <p>
 > 
 > 该方法用于获取地上剩余的物品堆数量（如存在）。
->
+> 
 > @return 地上剩余的物品堆数量
 
 #### isCancelled

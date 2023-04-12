@@ -17,8 +17,8 @@ description: EntityCombustByBlockEvent
 ### 类描述
 
 > Called when a block causes an entity to combust.
->
->
+> 
+> <p>
 > 
 > 当方块引燃实体时触发。
 
@@ -31,19 +31,19 @@ description: EntityCombustByBlockEvent
 方法签名: ()Lorg/bukkit/block/Block;
 
 > The combuster can be lava or a block that is on fire.
->
+> 
 > WARNING: block may be null.
->
+> 
 > @return the Block that set the combustee alight.
->
->
+> 
+> <p>
 > 
 > （译注：该方法用于获取引起实体燃烧的方块。此句缺漏。）
->
->
+> 
+> <p>
 > 
 > 引起实体燃烧的方块可能是岩浆，也有可能是某个着火的方块。
->
+> 
 > 本方法的返回值可能是 `null` 。
->
+> 
 > @return 引起实体燃烧的方块。

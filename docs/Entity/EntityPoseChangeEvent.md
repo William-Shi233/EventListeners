@@ -15,13 +15,13 @@ description: EntityPoseChangeEvent
 ### 类描述
 
 > Called when an entity changes its pose.
->
+> 
 > @see Entity#getPose()
->
->
+> 
+> <p>
 > 
 > 当实体改变自身的姿势时触发。
->
+> 
 > @see 参见 `Entity#getPose()` 方法。
 
 ### 方法列表
@@ -33,16 +33,16 @@ description: EntityPoseChangeEvent
 方法签名: ()Lorg/bukkit/entity/Pose;
 
 > Gets the entity's new pose.
->
+> 
 > @return the new pose
->
->
+> 
+> <p>
 > 
 > 该方法用于获取实体的新姿势。
->
+> 
 > @return 实体的新姿势。
->
->
+> 
+> <p>
 > 
 > 译注：调用 `Entity#getPose()` 方法可以获取实体原有的姿势。
 

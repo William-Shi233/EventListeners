@@ -15,8 +15,8 @@ description: BlockCookEvent
 ### 类描述
 
 > Called when an ItemStack is successfully cooked in a block.
->
->
+> 
+> <p>
 > 
 > 当某物品堆在方块中被烹饪完毕时触发。
 
@@ -29,13 +29,13 @@ description: BlockCookEvent
 方法签名: ()Lorg/bukkit/inventory/ItemStack;
 
 > Gets the smelted ItemStack for this event
->
+> 
 > @return smelting source ItemStack
->
->
+> 
+> <p>
 > 
 > 该方法用于获取烹饪前的物品堆。
->
+> 
 > @return 烹饪前的物品堆。
 
 #### getResult
@@ -45,13 +45,13 @@ description: BlockCookEvent
 方法签名: ()Lorg/bukkit/inventory/ItemStack;
 
 > Gets the resultant ItemStack for this event
->
+> 
 > @return smelting result ItemStack
->
->
+> 
+> <p>
 > 
 > 该方法用于获取烹饪后的物品堆。
->
+> 
 > @return 烹饪后的物品堆。
 
 #### setResult
@@ -61,13 +61,13 @@ description: BlockCookEvent
 方法签名: (Lorg/bukkit/inventory/ItemStack;)V
 
 > Sets the resultant ItemStack for this event
->
+> 
 > @param result new result ItemStack
->
->
+> 
+> <p>
 > 
 > 该方法用于设置烹饪后的物品堆。
->
+> 
 > @param result 烹饪后的物品堆。
 
 #### isCancelled

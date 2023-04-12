@@ -15,16 +15,16 @@ description: VehicleDestroyEvent
 ### 类描述
 
 > Raised when a vehicle is destroyed, which could be caused by either a
->
+> 
 > player or the environment. This is not raised if the boat is simply
->
+> 
 > 'removed' due to other means.
->
->
+> 
+> <p>
 > 
 > 当载具被摧毁时触发。载具可能由于玩家攻击或环境中其他因素的影响而被摧毁。如果船被其他方式所“移除”，本事件不会触发。
->
->
+> 
+> <p>
 > 
 > 译注：如插件调用 `Entity#remove` 移除一艘船，则不会触发本事件。
 
@@ -37,13 +37,13 @@ description: VehicleDestroyEvent
 方法签名: ()Lorg/bukkit/entity/Entity;
 
 > Gets the Entity that has destroyed the vehicle, potentially null
->
+> 
 > @return the Entity that has destroyed the vehicle, potentially null
->
->
+> 
+> <p>
 > 
 > 该方法用于获取摧毁载具的实体，可能为 `null` 。
->
+> 
 > @return 获取摧毁载具的实体，可能为 `null` 。
 
 #### isCancelled

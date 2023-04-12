@@ -15,8 +15,8 @@ description: VehicleDamageEvent
 ### 类描述
 
 > Raised when a vehicle receives damage.
->
->
+> 
+> <p>
 > 
 > 当载具受到伤害时触发。
 
@@ -29,16 +29,16 @@ description: VehicleDamageEvent
 方法签名: ()Lorg/bukkit/entity/Entity;
 
 > Gets the Entity that is attacking the vehicle
->
+> 
 > @return the Entity that is attacking the vehicle
->
->
+> 
+> <p>
 > 
 > 该方法用于获取攻击载具的实体。
->
+> 
 > @return 攻击载具的实体。
->
->
+> 
+> <p>
 > 
 > 译注：可能返回 `null` ，因为载具也可能受到岩浆等形式的伤害。
 
@@ -49,13 +49,13 @@ description: VehicleDamageEvent
 方法签名: ()D
 
 > Gets the damage done to the vehicle
->
+> 
 > @return the damage done to the vehicle
->
->
+> 
+> <p>
 > 
 > 该方法用于获取载具受到的伤害量。
->
+> 
 > @return 载具受到的伤害量。
 
 #### setDamage
@@ -65,13 +65,13 @@ description: VehicleDamageEvent
 方法签名: (D)V
 
 > Sets the damage done to the vehicle
->
+> 
 > @param damage The damage
->
->
+> 
+> <p>
 > 
 > 该方法用于设置载具受到的伤害量。
->
+> 
 > @param damage 载具受到的伤害量。
 
 #### isCancelled

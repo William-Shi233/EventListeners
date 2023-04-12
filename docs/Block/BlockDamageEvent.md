@@ -15,16 +15,16 @@ description: BlockDamageEvent
 ### 类描述
 
 > Called when a block is damaged by a player.
->
+> 
 > If a Block Damage event is cancelled, the block will not be damaged.
->
->
+> 
+> <p>
 > 
 > 当玩家尝试挖掘方块时触发。
->
+> 
 > 如果本事件被取消，则方块将不会再处于被挖掘中的状态。
->
->
+> 
+> <p>
 > 
 > 译注：本事件是在玩家开始挖掘时触发，只要左键点击了一瞬，就可以触发此事件。而 `BlockBreakEvent` 是在方块被完全破坏以后触发的。如果对该 `BlockBreakEvent` 对象调用 `isDropItems()` 方法，返回值不为 `false` ，且该 `BlockBreakEvent` 未被取消，则会在 `BlockBreakEvent` 触发后再触发 `BlockDropItemEvent` 。
 > 
@@ -39,13 +39,13 @@ description: BlockDamageEvent
 方法签名: ()Lorg/bukkit/entity/Player;
 
 > Gets the player damaging the block involved in this event.
->
+> 
 > @return The player damaging the block involved in this event
->
->
+> 
+> <p>
 > 
 > 该方法用于获取挖掘方块的玩家。
->
+> 
 > @return 挖掘方块的玩家。
 
 #### getInstaBreak
@@ -55,15 +55,15 @@ description: BlockDamageEvent
 方法签名: ()Z
 
 > Gets if the block is set to instantly break when damaged by the player.
->
-> @return true if the block should instantly break when damaged by the
->
-> player
->
 > 
->
+> @return true if the block should instantly break when damaged by the
+> 
+> player
+> 
+> <p>
+> 
 > 该方法用于获取玩家是否能瞬间破坏方块。
->
+> 
 > @return 如果玩家可以瞬间破坏方块，则返回 `true` 。
 
 #### setInstaBreak
@@ -73,15 +73,15 @@ description: BlockDamageEvent
 方法签名: (Z)V
 
 > Sets if the block should instantly break when damaged by the player.
->
-> @param bool true if you want the block to instantly break when damaged
->
-> by the player
->
 > 
->
+> @param bool true if you want the block to instantly break when damaged
+> 
+> by the player
+> 
+> <p>
+> 
 > 该方法用于设置玩家是否能瞬间破坏方块。
->
+> 
 > @param bool 如欲令玩家可以瞬间破坏方块，则传入 `true` 。
 
 #### getItemInHand
@@ -91,13 +91,13 @@ description: BlockDamageEvent
 方法签名: ()Lorg/bukkit/inventory/ItemStack;
 
 > Gets the ItemStack for the item currently in the player's hand.
->
+> 
 > @return The ItemStack for the item currently in the player's hand
->
->
+> 
+> <p>
 > 
 > 该方法用于获取玩家手持的物品堆。
->
+> 
 > @return 玩家手持的物品堆。
 
 #### isCancelled

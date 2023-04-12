@@ -15,15 +15,15 @@ description: EntityEnterLoveModeEvent
 ### 类描述
 
 > Called when an entity enters love mode.
->
+> 
 > This can be cancelled but the item will still be consumed that was used to
->
+> 
 > make the entity enter into love mode.
->
->
+> 
+> <p>
 > 
 > 当实体进入繁衍状态时触发。
->
+> 
 > 如果本事件被取消，被喂给实体用于使其进入繁衍状态的物品堆不会返还。
 
 ### 方法列表
@@ -35,13 +35,13 @@ description: EntityEnterLoveModeEvent
 方法签名: ()Lorg/bukkit/entity/Animals;
 
 > Gets the animal that is entering love mode.
->
+> 
 > @return The animal that is entering love mode
->
->
+> 
+> <p>
 > 
 > 该方法用于获取进入繁衍状态的动物。
->
+> 
 > @return 进入繁衍状态的动物。
 
 #### getHumanEntity
@@ -51,15 +51,15 @@ description: EntityEnterLoveModeEvent
 方法签名: ()Lorg/bukkit/entity/HumanEntity;
 
 > Gets the Human Entity that caused the animal to enter love mode.
->
+> 
 > @return The Human entity that caused the animal to enter love mode, or
->
+> 
 > null if there wasn't one.
->
->
+> 
+> <p>
 > 
 > 该方法用于获取让动物进入繁衍状态的玩家。
->
+> 
 > @return 让动物进入繁衍状态的玩家。如果不存在则返回 `null` 。
 
 #### getTicksInLove
@@ -69,13 +69,13 @@ description: EntityEnterLoveModeEvent
 方法签名: ()I
 
 > Gets the amount of ticks that the animal will fall in love for.
->
+> 
 > @return The amount of ticks that the animal will fall in love for
->
->
+> 
+> <p>
 > 
 > 该方法用于获取动物发情的时长。
->
+> 
 > @return 动物发情的时长。
 
 #### setTicksInLove
@@ -85,15 +85,15 @@ description: EntityEnterLoveModeEvent
 方法签名: (I)V
 
 > Sets the amount of ticks that the animal will fall in love for.
->
-> @param ticksInLove The amount of ticks that the animal will fall in love
->
-> for
->
 > 
->
+> @param ticksInLove The amount of ticks that the animal will fall in love
+> 
+> for
+> 
+> <p>
+> 
 > 该方法用于设置动物发情的时长。
->
+> 
 > @param ticksInLove 动物发情的时长。
 
 #### isCancelled

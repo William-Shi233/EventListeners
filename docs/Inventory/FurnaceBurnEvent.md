@@ -15,8 +15,8 @@ description: FurnaceBurnEvent
 ### 类描述
 
 > Called when an ItemStack is successfully burned as fuel in a furnace.
->
->
+> 
+> <p>
 > 
 > 当熔炉消耗某燃料物品堆时触发。
 
@@ -29,13 +29,13 @@ description: FurnaceBurnEvent
 方法签名: ()Lorg/bukkit/inventory/ItemStack;
 
 > Gets the fuel ItemStack for this event
->
+> 
 > @return the fuel ItemStack
->
->
+> 
+> <p>
 > 
 > 该方法用于获取事件中的燃料物品堆。
->
+> 
 > @return 燃料物品堆。
 
 #### getBurnTime
@@ -45,13 +45,13 @@ description: FurnaceBurnEvent
 方法签名: ()I
 
 > Gets the burn time for this fuel
->
+> 
 > @return the burn time for this fuel
->
->
+> 
+> <p>
 > 
 > 该方法用于获取该燃料物品堆可以维持燃烧的时间。
->
+> 
 > @return 该燃料物品堆可以维持燃烧的时间。
 
 #### setBurnTime
@@ -61,13 +61,13 @@ description: FurnaceBurnEvent
 方法签名: (I)V
 
 > Sets the burn time for this fuel
->
+> 
 > @param burnTime the burn time for this fuel
->
->
+> 
+> <p>
 > 
 > 该方法用于设置该燃料物品堆可以维持燃烧的时间。
->
+> 
 > @param burnTime 该燃料物品堆可以维持燃烧的时间。
 
 #### isBurning
@@ -77,13 +77,13 @@ description: FurnaceBurnEvent
 方法签名: ()Z
 
 > Gets whether the furnace's fuel is burning or not.
->
+> 
 > @return whether the furnace's fuel is burning or not.
->
->
+> 
+> <p>
 > 
 > 该方法用于获取熔炉是否会消耗燃料以保持燃烧。
->
+> 
 > @return 熔炉是否会消耗燃料以保持燃烧。
 
 #### setBurning
@@ -93,13 +93,13 @@ description: FurnaceBurnEvent
 方法签名: (Z)V
 
 > Sets whether the furnace's fuel is burning or not.
->
+> 
 > @param burning true if the furnace's fuel is burning
->
->
+> 
+> <p>
 > 
 > 该方法用于获取熔炉是否会消耗燃料以保持燃烧。
->
+> 
 > @param burning 熔炉是否会消耗燃料以保持燃烧。
 
 #### isCancelled

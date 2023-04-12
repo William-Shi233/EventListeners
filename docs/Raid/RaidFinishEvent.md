@@ -17,12 +17,12 @@ description: RaidFinishEvent
 ### 类描述
 
 > This event is called when a {@link Raid} was complete with a clear result.
->
->
+> 
+> <p>
 > 
 > 当一次袭击以明确结果结束时触发。
->
->
+> 
+> <p>
 > 
 > 译注：当一次袭击终止（比如游戏难度切换为和平）时，会触发 `RaidStopEvent` ，然后结束袭击，不会触发 `RaidFinishEvent` 。详见 `RaidStopEvent` 译注。
 > 
@@ -39,19 +39,19 @@ description: RaidFinishEvent
 方法签名: ()Ljava/util/List;
 
 > Returns an immutable list contains all winners.
->
+> 
 > <b>Note: Players who are considered as heroes but were not online at the
->
+> 
 > end would not be included in this list.</b>
->
+> 
 > @return winners
->
->
+> 
+> <p>
 > 
 > 该方法用于获取一个不可修改列表，其间存储所有赢得胜利的玩家。
->
+> 
 > 注意：如果有玩家被视为村庄英雄们的一员，但袭击结束时不在线，那么该名玩家不会出现在此列表中。
->
+> 
 > @return 赢得胜利的玩家。
 
 #### getHandlers

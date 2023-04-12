@@ -15,12 +15,12 @@ description: PlayerToggleSneakEvent
 ### 类描述
 
 > Called when a player toggles their sneaking state
->
->
+> 
+> <p>
 > 
 > 当玩家切换下蹲状态时触发。
->
->
+> 
+> <p>
 > 
 > 译注：所谓“切换下蹲状态”，指玩家按下或松开 `Shift` 键，进入或退出下蹲状态。
 
@@ -33,16 +33,16 @@ description: PlayerToggleSneakEvent
 方法签名: ()Z
 
 > Returns whether the player is now sneaking or not.
->
+> 
 > @return sneaking state
->
->
+> 
+> <p>
 > 
 > 该方法用于获取玩家当前是否正在下蹲。
->
+> 
 > @return 下蹲状态。
->
->
+> 
+> <p>
 > 
 > 译注：文档有误。该方法返回的是玩家是否即将下蹲，不是玩家当前的状态。如果玩家按下 `Shift` 键进入下蹲状态则返回 `true` 。
 > 

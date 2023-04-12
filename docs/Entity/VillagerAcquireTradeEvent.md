@@ -15,12 +15,12 @@ description: VillagerAcquireTradeEvent
 ### 类描述
 
 > Called whenever a villager acquires a new trade.
->
->
+> 
+> <p>
 > 
 > 当村民解锁新交易项时触发。
->
->
+> 
+> <p>
 > 
 > 译注：参见 `MineCraft Wiki` 中关于村民及流浪商人交易机制的相关页面 [https://minecraft.fandom.com/wiki/Trading#Mechanics](https://minecraft.fandom.com/wiki/Trading#Mechanics) 可知，村民每完成一次交易都会获得一定经验，经验值满后将会升级，并解锁新的交易项。
 
@@ -33,13 +33,13 @@ description: VillagerAcquireTradeEvent
 方法签名: ()Lorg/bukkit/inventory/MerchantRecipe;
 
 > Get the recipe to be acquired.
->
+> 
 > @return the new recipe
->
->
+> 
+> <p>
 > 
 > 该方法用于获取新解锁的交易项。
->
+> 
 > @return 新解锁的交易项。
 
 #### setRecipe
@@ -49,13 +49,13 @@ description: VillagerAcquireTradeEvent
 方法签名: (Lorg/bukkit/inventory/MerchantRecipe;)V
 
 > Set the recipe to be acquired.
->
+> 
 > @param recipe the new recipe
->
->
+> 
+> <p>
 > 
 > 该方法用于设置新解锁的交易项。
->
+> 
 > @param recipe 新解锁的交易项。
 
 #### isCancelled

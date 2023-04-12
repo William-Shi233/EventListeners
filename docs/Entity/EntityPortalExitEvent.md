@@ -17,15 +17,15 @@ description: EntityPortalExitEvent
 ### 类描述
 
 > Called before an entity exits a portal.
->
+> 
 > This event allows you to modify the velocity of the entity after they have
->
+> 
 > successfully exited the portal.
->
->
+> 
+> <p>
 > 
 > 当实体自传送门中走出时触发。
->
+> 
 > 通过监听本事件，可以修改实体走出传送门时的速度向量。
 
 ### 方法列表
@@ -37,15 +37,15 @@ description: EntityPortalExitEvent
 方法签名: ()Lorg/bukkit/util/Vector;
 
 > Gets a copy of the velocity that the entity has before entering the
->
+> 
 > portal.
->
+> 
 > @return velocity of entity before entering the portal
->
->
+> 
+> <p>
 > 
 > 该方法用于获取实体进入传送门前的速度向量的副本。
->
+> 
 > @return 实体进入传送门前的速度向量。
 
 #### getAfter
@@ -55,15 +55,15 @@ description: EntityPortalExitEvent
 方法签名: ()Lorg/bukkit/util/Vector;
 
 > Gets a copy of the velocity that the entity will have after exiting the
->
+> 
 > portal.
->
+> 
 > @return velocity of entity after exiting the portal
->
->
+> 
+> <p>
 > 
 > 该方法用于获取实体进入传送门后的速度向量的副本。
->
+> 
 > @return 实体进入传送门后的速度向量。
 
 #### setAfter
@@ -73,13 +73,13 @@ description: EntityPortalExitEvent
 方法签名: (Lorg/bukkit/util/Vector;)V
 
 > Sets the velocity that the entity will have after exiting the portal.
->
+> 
 > @param after the velocity after exiting the portal
->
->
+> 
+> <p>
 > 
 > 该方法用于设置实体进入传送门后的速度向量。
->
+> 
 > @param after 实体进入传送门后的速度向量。
 
 

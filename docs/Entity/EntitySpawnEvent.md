@@ -15,13 +15,13 @@ description: EntitySpawnEvent
 ### 类描述
 
 > Called when an entity is spawned into a world.
->
+> 
 > If an Entity Spawn event is cancelled, the entity will not spawn.
->
->
+> 
+> <p>
 > 
 > 当某个实体生成时触发。
->
+> 
 > 如果本事件被取消，涉事实体将不会生成。
 
 ### 方法列表
@@ -45,13 +45,13 @@ description: EntitySpawnEvent
 方法签名: ()Lorg/bukkit/Location;
 
 > Gets the location at which the entity is spawning.
->
+> 
 > @return The location at which the entity is spawning
->
->
+> 
+> <p>
 > 
 > 该方法用于获取实体生成的位置。
->
+> 
 > @return 实体生成的位置。
 
 #### getHandlers

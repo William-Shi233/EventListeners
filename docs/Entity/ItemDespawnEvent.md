@@ -15,17 +15,17 @@ description: ItemDespawnEvent
 ### 类描述
 
 > This event is called when a {@link org.bukkit.entity.Item} is removed from
->
+> 
 > the world because it has existed for 5 minutes.
->
+> 
 > Cancelling the event results in the item being allowed to exist for 5 more
->
+> 
 > minutes. This behavior is not guaranteed and may change in future versions.
->
->
+> 
+> <p>
 > 
 > 当某个掉落的物品堆实体由于存在时间超过五分钟，因而将要被移除时触发。
->
+> 
 > 目前而言，如果本事件被取消，则该物品堆实体可以在世界上继续存在五分钟。但不能保证未来的新版本中仍然如此。取消本事件所带来的一系列后果可能会在新版本中发生变化。
 
 ### 方法列表
@@ -57,13 +57,13 @@ description: ItemDespawnEvent
 方法签名: ()Lorg/bukkit/Location;
 
 > Gets the location at which the item is despawning.
->
+> 
 > @return The location at which the item is despawning
->
->
+> 
+> <p>
 > 
 > 该方法用于获取即将消失的物品堆实体所在的位置。
->
+> 
 > @return 即将消失的物品堆实体所在的位置。
 
 #### getHandlers

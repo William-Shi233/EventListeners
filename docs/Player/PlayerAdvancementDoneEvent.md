@@ -15,12 +15,12 @@ description: PlayerAdvancementDoneEvent
 ### 类描述
 
 > Called when a player has completed all criteria in an advancement.
->
->
+> 
+> <p>
 > 
 > 当玩家符合一个进度下的所有准则时触发。
->
->
+> 
+> <p>
 > 
 > 译注：文档中所谓“所有准则”一语，有误。
 > 
@@ -41,13 +41,13 @@ description: PlayerAdvancementDoneEvent
 方法签名: ()Lorg/bukkit/advancement/Advancement;
 
 > Get the advancement which has been completed.
->
+> 
 > @return completed advancement
->
->
+> 
+> <p>
 > 
 > 该方法用于获取被达成的进度。
->
+> 
 > @return 被达成的进度。
 
 #### getHandlers

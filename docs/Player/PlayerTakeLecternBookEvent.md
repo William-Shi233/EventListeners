@@ -15,14 +15,14 @@ description: PlayerTakeLecternBookEvent
 ### 类描述
 
 > This event is called when a player clicks the button to take a book of a
->
+> 
 > Lectern. If this event is cancelled the book remains on the lectern.
->
->
+> 
+> <p>
 > 
 > 当玩家按 `Take Book` 按钮，从讲台上取下一本书时触发。如果本事件被取消，则书将留在原处。
->
->
+> 
+> <p>
 > 
 > 译注：参见 `MineCraft Wiki` 的有关页面 [https://minecraft.fandom.com/wiki/Lectern?file=Lectern_GUI.png](https://minecraft.fandom.com/wiki/Lectern?file=Lectern_GUI.png) 可知，讲台界面有一 `Take Book` 按钮，用于将一本书从讲台上取下。
 
@@ -35,13 +35,13 @@ description: PlayerTakeLecternBookEvent
 方法签名: ()Lorg/bukkit/block/Lectern;
 
 > Gets the lectern involved.
->
+> 
 > @return the Lectern
->
->
+> 
+> <p>
 > 
 > 该方法用于获取事件中的讲台方块。
->
+> 
 > @return 事件中的讲台方块。
 
 #### getBook
@@ -51,13 +51,13 @@ description: PlayerTakeLecternBookEvent
 方法签名: ()Lorg/bukkit/inventory/ItemStack;
 
 > Gets the current ItemStack on the lectern.
->
+> 
 > @return the ItemStack on the Lectern
->
->
+> 
+> <p>
 > 
 > 该方法用于获取讲台上的书本物品堆。
->
+> 
 > @return 讲台上的书本物品堆。
 
 #### isCancelled

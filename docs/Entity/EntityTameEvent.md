@@ -15,8 +15,8 @@ description: EntityTameEvent
 ### 类描述
 
 > Thrown when a LivingEntity is tamed
->
->
+> 
+> <p>
 > 
 > 当某生物被驯服时触发。
 
@@ -49,13 +49,13 @@ description: EntityTameEvent
 方法签名: ()Lorg/bukkit/entity/AnimalTamer;
 
 > Gets the owning AnimalTamer
->
+> 
 > @return the owning AnimalTamer
->
->
+> 
+> <p>
 > 
 > 该方法用于获取驯服生物的玩家。
->
+> 
 > @return 驯服生物的玩家。
 
 #### getHandlers

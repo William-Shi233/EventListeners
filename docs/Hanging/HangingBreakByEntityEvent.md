@@ -17,8 +17,8 @@ description: HangingBreakByEntityEvent
 ### 类描述
 
 > Triggered when a hanging entity is removed by an entity
->
->
+> 
+> <p>
 > 
 > 当某个悬挂物实体被其他实体所移除时触发。
 
@@ -31,15 +31,15 @@ description: HangingBreakByEntityEvent
 方法签名: ()Lorg/bukkit/entity/Entity;
 
 > Gets the entity that removed the hanging entity.
->
+> 
 > May be null, for example when broken by an explosion.
->
+> 
 > @return the entity that removed the hanging entity
->
->
+> 
+> <p>
 > 
 > 该方法用于获取将悬挂物移除的实体。
->
+> 
 > 本方法可能返回 `null` ，如悬挂物被爆炸摧毁时。
->
+> 
 > @return 将悬挂物移除的实体。

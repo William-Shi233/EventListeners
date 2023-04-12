@@ -25,13 +25,13 @@ description: CauldronLevelChangeEvent
 方法签名: ()Lorg/bukkit/entity/Entity;
 
 > Get entity which did this. May be null.
->
+> 
 > @return acting entity
->
->
+> 
+> <p>
 > 
 > 该方法用于获取导致液面高度变化的实体。返回值可能为 `null` 。
->
+> 
 > @return 导致液面高度变化的实体。
 
 #### getReason
@@ -49,13 +49,13 @@ description: CauldronLevelChangeEvent
 方法签名: ()Lorg/bukkit/block/BlockState;
 
 > Gets the new state of the cauldron.
->
+> 
 > @return The block state of the block that will be changed
->
->
+> 
+> <p>
 > 
 > 该方法用于获取涉事炼药锅的新块状态。
->
+> 
 > @return 涉事炼药锅的新块状态。
 
 #### getOldLevel
@@ -65,14 +65,14 @@ description: CauldronLevelChangeEvent
 方法签名: ()I
 
 > Gets the old level of the cauldron.
->
+> 
 > @return old level
->
+> 
 > @see #getBlock()
->
+> 
 > @deprecated not all cauldron contents are Levelled
->
->
+> 
+> <p>
 > 
 > @deprecated 炼药锅可以容纳的部分液体的液面高度无法用数字表示。
 
@@ -83,14 +83,14 @@ description: CauldronLevelChangeEvent
 方法签名: ()I
 
 > Gets the new level of the cauldron.
->
+> 
 > @return new level
->
+> 
 > @see #getNewState()
->
+> 
 > @deprecated not all cauldron contents are Levelled
->
->
+> 
+> <p>
 > 
 > @deprecated 炼药锅可以容纳的部分液体的液面高度无法用数字表示。
 
@@ -101,14 +101,14 @@ description: CauldronLevelChangeEvent
 方法签名: (I)V
 
 > Sets the new level of the cauldron.
->
+> 
 > @param newLevel new level
->
+> 
 > @see #getNewState()
->
+> 
 > @deprecated not all cauldron contents are Levelled
->
->
+> 
+> <p>
 > 
 > @deprecated 炼药锅可以容纳的部分液体的液面高度无法用数字表示。
 
@@ -143,87 +143,87 @@ description: CauldronLevelChangeEvent
 #### BUCKET_FILL
 
 > Player emptying the cauldron by filling their bucket.
->
->
+> 
+> <p>
 > 
 > 玩家用炼药锅中已有的液体把手中的空桶装满。
 
 #### BUCKET_EMPTY
 
 > Player filling the cauldron by emptying their bucket.
->
->
+> 
+> <p>
 > 
 > 玩家把手中桶内已有的液体倒入空炼药锅。
 
 #### BOTTLE_FILL
 
 > Player emptying the cauldron by filling their bottle.
->
->
+> 
+> <p>
 > 
 > 玩家用炼药锅中已有的液体把手中的空玻璃瓶装满。
 
 #### BOTTLE_EMPTY
 
 > Player filling the cauldron by emptying their bottle.
->
->
+> 
+> <p>
 > 
 > 玩家把手中玻璃瓶内已有的液体倒入空炼药锅。
 
 #### BANNER_WASH
 
 > Player cleaning their banner.
->
->
+> 
+> <p>
 > 
 > 玩家用炼药锅内的水清洗旗帜。
 
 #### ARMOR_WASH
 
 > Player cleaning their armor.
->
->
+> 
+> <p>
 > 
 > 玩家用炼药锅内的水清洗染色的皮革盔甲。
 
 #### SHULKER_WASH
 
 > Player cleaning a shulker box.
->
->
+> 
+> <p>
 > 
 > 玩家用炼药锅内的水清洗染色的潜影盒。
 
 #### EXTINGUISH
 
 > Entity being extinguished.
->
->
+> 
+> <p>
 > 
 > 身上着火的实体用炼药锅内的水灭火。
 
 #### EVAPORATE
 
 > Evaporating due to biome dryness.
->
->
+> 
+> <p>
 > 
 > 生物群系干燥程度太高，炼药锅内液体蒸发。
 
 #### NATURAL_FILL
 
 > Filling due to natural fluid sources, eg rain or dripstone.
->
->
+> 
+> <p>
 > 
 > 炼药锅被自然产生的液体所填充，比如雨滴或滴水石锥的水滴。
 
 #### UNKNOWN
 
 > Unknown.
->
->
+> 
+> <p>
 > 
 > 未知原因。

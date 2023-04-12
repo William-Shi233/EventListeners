@@ -15,12 +15,12 @@ description: EntityDropItemEvent
 ### 类描述
 
 > Thrown when an entity creates an item drop.
->
->
+> 
+> <p>
 > 
 > 当实体产生掉落物时触发。
->
->
+> 
+> <p>
 > 
 > 译注：所谓“掉落物”，固然可能是实体死亡时所产生，比如生物被凋零击杀，掉落凋零玫瑰。但此处所指的“掉落物”亦涵盖实体丢下物品堆的情况，比如猫给玩家带来礼物。
 
@@ -33,13 +33,13 @@ description: EntityDropItemEvent
 方法签名: ()Lorg/bukkit/entity/Item;
 
 > Gets the Item created by the entity
->
+> 
 > @return Item created by the entity
->
->
+> 
+> <p>
 > 
 > 该方法用于获取实体所生成的物品堆。
->
+> 
 > @return 实体所生成的物品堆。
 
 #### isCancelled

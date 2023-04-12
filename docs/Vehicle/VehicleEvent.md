@@ -13,12 +13,12 @@ description: VehicleEvent
 ### 类描述
 
 > Represents a vehicle-related event.
->
->
+> 
+> <p>
 > 
 > 代表与载具有关的事件。
->
->
+> 
+> <p>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -31,11 +31,11 @@ description: VehicleEvent
 方法签名: ()Lorg/bukkit/entity/Vehicle;
 
 > Get the vehicle.
->
+> 
 > @return the vehicle
->
->
+> 
+> <p>
 > 
 > 获取事件中的载具。
->
+> 
 > @return 触发事件的载具。

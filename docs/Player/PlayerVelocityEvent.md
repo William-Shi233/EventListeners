@@ -15,12 +15,12 @@ description: PlayerVelocityEvent
 ### 类描述
 
 > Called when the velocity of a player changes.
->
->
+> 
+> <p>
 > 
 > 当玩家的加速度向量发生变化时触发。
->
->
+> 
+> <p>
 > 
 > 译注：所谓“加速度向量”，指玩家速度的变化量，而非玩家速度向量本身。如果玩家正在匀速沿一个固定方向行走，则其加速度向量保持不变。
 
@@ -45,13 +45,13 @@ description: PlayerVelocityEvent
 方法签名: ()Lorg/bukkit/util/Vector;
 
 > Gets the velocity vector that will be sent to the player
->
+> 
 > @return Vector the player will get
->
->
+> 
+> <p>
 > 
 > 该方法用于获取玩家即将拥有的加速度向量。
->
+> 
 > @return 玩家即将拥有的加速度向量。
 
 #### setVelocity
@@ -61,13 +61,13 @@ description: PlayerVelocityEvent
 方法签名: (Lorg/bukkit/util/Vector;)V
 
 > Sets the velocity vector in meters per tick that will be sent to the player
->
+> 
 > @param velocity The velocity vector that will be sent to the player
->
->
+> 
+> <p>
 > 
 > 该方法用于设置玩家即将拥有的加速度向量。该向量的单位是“米每刻”。
->
+> 
 > @param velocity 玩家即将拥有的加速度向量。
 
 #### getHandlers

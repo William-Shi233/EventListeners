@@ -17,29 +17,29 @@ description: RaidStopEvent
 ### 类描述
 
 > Called when a {@link Raid} is stopped.
->
->
+> 
+> <p>
 > 
 > 当一次袭击终止时触发。
->
->
+> 
+> <p>
 > 
 > 译注：当一次袭击终止（比如游戏难度切换为和平）时，会触发 `RaidStopEvent` ，然后结束袭击，不会触发 `RaidFinishEvent` 。触发情况详列于下方。
 > 
 > 当一次袭击失败（袭击中心不在村庄范围内且已生成过至少一波袭击者）时，会触发 `RaidFinishEvent` ，此时 `RaidFinishEvent#getWinners()` 方法返回空列表，不会触发 `RaidStopEvent` 。
 > 
 > 当一次袭击胜利时，会先触发 `RaidFinishEvent` ，然后进行庆祝倒计时，庆祝完毕后触发 `RaidStopEvent` 。
->
+> 
 > 就袭击终止原因而言，一共有五种。与 `RaidStopEvent.Reason` 枚举项一一对应。
 > 
 > 其一是游戏难度被设为和平。和平状态下不能生成怪物，遑论产生袭击。
->
+> 
 > 其二是袭击持续时间过久。参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Raid#Expiring](https://minecraft.fandom.com/wiki/Raid#Expiring) 可知，当袭击持续了现实世界中的四十分钟以后，如果还没有胜利或失败，会终止。
->
+> 
 > 其三是袭击结束。袭击胜利时，先触发 `RaidFinishEvent` ，然后进行庆祝倒计时，庆祝完毕后触发 `RaidStopEvent` 。此时 `Reason` 即为 `FINISHED` 。
->
+> 
 > 其四是无法找到合适位置生成袭击者。详见 `RaidSpawnWaveEvent` 译注。如果三次确定袭击者生成位置的尝试均失败，则袭击终止。
->
+> 
 > 其五是袭击中心不在村庄范围内。此时如果生成过至少一波袭击者，则判定为袭击失败，直接触发 `RaidFinishEvent` ，不会触发本事件。如果袭击中心不属于任何村庄范围，且没有生成过袭击者，则触发本事件，袭击终止。
 
 ### 方法列表
@@ -51,13 +51,13 @@ description: RaidStopEvent
 方法签名: ()Lorg/bukkit/event/raid/RaidStopEvent/Reason;
 
 > Returns the stop reason.
->
+> 
 > @return Reason
->
->
+> 
+> <p>
 > 
 > 该方法用于获取袭击中止的原因。
->
+> 
 > @return 袭击中止的原因。
 
 #### getHandlers
@@ -79,59 +79,59 @@ description: RaidStopEvent
 #### PEACE
 
 > Because the difficulty has been changed to peaceful.
->
->
+> 
+> <p>
 > 
 > 游戏难度被设置为和平。
->
->
+> 
+> <p>
 > 
 > 译注：见上。
 
 #### TIMEOUT
 
 > The raid took a long time without a final result.
->
->
+> 
+> <p>
 > 
 > 袭击旷日持久，并且没有最终结果。
->
->
+> 
+> <p>
 > 
 > 译注：见上。
 
 #### FINISHED
 
 > Finished the raid.
->
->
+> 
+> <p>
 > 
 > 袭击结束。
->
->
+> 
+> <p>
 > 
 > 译注：见上。
 
 #### UNSPAWNABLE
 
 > Couldn't find a suitable place to spawn raiders.
->
->
+> 
+> <p>
 > 
 > 无法找到合适位置生成袭击者。
->
->
+> 
+> <p>
 > 
 > 译注：见上。
 
 #### NOT_IN_VILLAGE
 
 > The place where the raid occurs no longer be a village.
->
->
+> 
+> <p>
 > 
 > 袭击发生处已经不再位于村庄范围内。
->
->
+> 
+> <p>
 > 
 > 译注：见上。

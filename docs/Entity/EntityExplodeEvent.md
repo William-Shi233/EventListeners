@@ -15,8 +15,8 @@ description: EntityExplodeEvent
 ### 类描述
 
 > Called when an entity explodes
->
->
+> 
+> <p>
 > 
 > 当实体爆炸时触发。
 
@@ -41,15 +41,15 @@ description: EntityExplodeEvent
 方法签名: ()Ljava/util/List;
 
 > Returns the list of blocks that would have been removed or were removed
->
+> 
 > from the explosion event.
->
+> 
 > @return All blown-up blocks
->
->
+> 
+> <p>
 > 
 > 该方法用于获取一个列表，其间存储有全部受爆炸破坏的方块。
->
+> 
 > @return 全部受爆炸破坏的方块列表。
 
 #### getLocation
@@ -59,19 +59,19 @@ description: EntityExplodeEvent
 方法签名: ()Lorg/bukkit/Location;
 
 > Returns the location where the explosion happened.
->
+> 
 > It is not possible to get this value from the Entity as the Entity no
->
+> 
 > longer exists in the world.
->
+> 
 > @return The location of the explosion
->
->
+> 
+> <p>
 > 
 > 该方法用于获取爆炸发生的位置。
->
+> 
 > 无法通过事件中的实体所在的位置来获得爆炸发生的位置。当本事件发生时，引发爆炸的实体已经不复存在。
->
+> 
 > @return 爆炸发生的位置。
 
 #### getYield
@@ -81,13 +81,13 @@ description: EntityExplodeEvent
 方法签名: ()F
 
 > Returns the percentage of blocks to drop from this explosion
->
+> 
 > @return The yield.
->
->
+> 
+> <p>
 > 
 > 该方法用于获取爆炸中被炸毁方块的掉落概率。
->
+> 
 > @return 被炸毁方块的掉落概率。
 
 #### setYield
@@ -97,13 +97,13 @@ description: EntityExplodeEvent
 方法签名: (F)V
 
 > Sets the percentage of blocks to drop from this explosion
->
+> 
 > @param yield The new yield percentage
->
->
+> 
+> <p>
 > 
 > 该方法用于设置爆炸中被炸毁方块的掉落概率。
->
+> 
 > @param yield 被炸毁方块的掉落概率。
 
 #### getHandlers

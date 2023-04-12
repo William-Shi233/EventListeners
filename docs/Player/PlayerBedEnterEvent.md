@@ -15,15 +15,15 @@ description: PlayerBedEnterEvent
 ### 类描述
 
 > This event is fired when the player is almost about to enter the bed.
->
->
+> 
+> <p>
 > 
 > 当玩家将要在床上就寝时触发。
->
->
+> 
+> <p>
 > 
 > 译注：所谓“将要”，指本事件在玩家躺下以前触发。如果取消本事件，玩家就无法上床就寝。
->
+> 
 > 这个事件类所包含的方法，在不同版本间屡经更迭。
 > 
 > 在高版本 `API` 中，有一个 `getBedEnterResult()` 方法，返回玩家右键床后得到的各种结果，比如床在下界或末地爆炸、比如周围有怪物在游荡所以无法就寝等。由于本事件并没有 `setBedEnterResult(BedEnterResult)` 方法，因此无论插件开发者怎么调用 `setCancelled(true)` 去取消事件，`getBedEnterResult()` 方法的返回值都固定不变，不会被影响。 `getBedEnterResult()` 方法的返回值就是事件的“默认”结果，是没有任何插件修改时，玩家右键床所出现的结果。
@@ -43,16 +43,16 @@ description: PlayerBedEnterEvent
 方法签名: ()Lorg/bukkit/event/player/PlayerBedEnterEvent/BedEnterResult;
 
 > This describes the default outcome of this event.
->
+> 
 > @return the bed enter result representing the default outcome of this event
->
->
+> 
+> <p>
 > 
 > 该方法用于获取本事件的默认结果。
->
+> 
 > @return 本事件的默认结果。
->
->
+> 
+> <p>
 > 
 > 译注：见上。
 
@@ -63,22 +63,26 @@ description: PlayerBedEnterEvent
 方法签名: ()Lorg/bukkit/event/Event/Result;
 
 > This controls the action to take with the bed that was clicked on.
->
+> 
 > In case of {@link org.bukkit.event.Event.Result#DEFAULT}, the default outcome is described by
->
+> 
 > {@link #getBedEnterResult()}.
->
+> 
 > @return the action to take with the interacted bed
->
+> 
 > @see #setUseBed(org.bukkit.event.Event.Result)
->
+> 
+> <p>
+> 
 > 该方法用于获取将要对事件中的床采取何种措施。
->
+> 
 > 如果本方法返回 `Event.Result.DEFAULT` ，则事件结果与 `getBedEnterResult()` 方法返回值等同。
->
+> 
 > @return 将要对事件中的床采取的措施。
->
+> 
 > @see 参见本事件的 `setUseBed(org.bukkit.event.Event.Result)` 方法。
+> 
+> <p>
 > 
 > 译注：见上。
 
@@ -89,35 +93,39 @@ description: PlayerBedEnterEvent
 方法签名: (Lorg/bukkit/event/Event/Result;)V
 
 > Sets the action to take with the interacted bed.
->
+> 
 > {@link org.bukkit.event.Event.Result#ALLOW} will result in the player sleeping, regardless of
->
+> 
 > the default outcome described by {@link #getBedEnterResult()}.
->
+> 
 > {@link org.bukkit.event.Event.Result#DENY} will prevent the player from sleeping. This has the
->
+> 
 > same effect as canceling the event via {@link #setCancelled(boolean)}.
->
+> 
 > {@link org.bukkit.event.Event.Result#DEFAULT} will result in the outcome described by
->
+> 
 > {@link #getBedEnterResult()}.
->
+> 
 > @param useBed the action to take with the interacted bed
->
+> 
 > @see #useBed()
->
+> 
+> <p>
+> 
 > 该方法用于设置将要对事件中的床采取何种措施。
->
+> 
 > 传入 `Event.Result.ALLOW` 会使玩家成功就寝，无论 `getBedEnterResult()` 返回何值。
->
+> 
 > 传入 `Event.Result.DENY` 会使玩家无法就寝，与使用 `setCancelled(boolean)` 方法取消事件等效。
->
+> 
 > 传入 `Event.Result.DEFAULT` 会使玩家采用事件默认结果就寝，即 `getBedEnterResult()` 方法返回值的结果。
->
+> 
 > @param useBed 将要对事件中的床采取何种措施。
->
+> 
 > @see 参见本事件的 `useBed()` 方法。
->
+> 
+> <p>
+> 
 > 译注：见上。
 
 #### isCancelled
@@ -127,29 +135,33 @@ description: PlayerBedEnterEvent
 方法签名: ()Z
 
 > Gets the cancellation state of this event. Set to true if you want to
->
+> 
 > prevent the player from sleeping.
->
+> 
 > Canceling the event has the same effect as setting {@link #useBed()} to
->
+> 
 > {@link org.bukkit.event.Event.Result#DENY}.
->
+> 
 > For backwards compatibility reasons this also returns true if
->
+> 
 > {@link #useBed()} is {@link org.bukkit.event.Event.Result#DEFAULT} and the
->
+> 
 > {@link #getBedEnterResult() default action} is to prevent bed entering.
->
+> 
 > @return boolean cancellation state
->
+> 
+> <p>
+> 
 > 该方法用于获取本事件是否被取消。如欲阻止玩家就寝，请使用 `setCancelled` 方法取消本事件。
->
+> 
 > 使用 `setCancelled` 方法取消本事件，效果与将 `useBed()` 方法返回值设为 `org.bukkit.event.Event.Result#DENY` 相同。
->
+> 
 > 为了兼容基于低版本 `Bukkit API` 所编写的插件，如果 `useBed()` 方法返回值是 `org.bukkit.event.Event.Result#DEFAULT` ，且 `getBedEnterResult()` 返回一个阻止玩家就寝的枚举值，那么本方法会返回 `true` 。
->
+> 
 > @return 事件取消状态。
->
+> 
+> <p>
+> 
 > 译注：见上。
 
 #### setCancelled
@@ -159,17 +171,21 @@ description: PlayerBedEnterEvent
 方法签名: (Z)V
 
 > Sets the cancellation state of this event. A canceled event will not be
->
+> 
 > executed in the server, but will still pass to other plugins.
->
+> 
 > Canceling this event will prevent use of the bed.
->
+> 
 > @param cancel true if you wish to cancel this event
->
+> 
+> <p>
+> 
 > 取消该事件，则玩家将无法上床就寝。
 > 
 > @param cancel 如欲取消该事件，则传入 `true` 作为参数。
->
+> 
+> <p>
+> 
 > 译注：原文第一段为所有 `setCancelled` 方法共用的文档，不赘。
 
 #### getBed
@@ -179,11 +195,13 @@ description: PlayerBedEnterEvent
 方法签名: ()Lorg/bukkit/block/Block;
 
 > Returns the bed block involved in this event.
->
+> 
 > @return the bed block involved in this event
->
+> 
+> <p>
+> 
 > 该方法用于获取事件中的床方块。
->
+> 
 > @return 事件中的床方块。
 
 #### getHandlers
@@ -201,65 +219,81 @@ description: PlayerBedEnterEvent
 ### 枚举: BedEnterResult
 
 > Represents the default possible outcomes of this event.
->
+> 
+> <p>
+> 
 > 用于确定本事件可能结果的枚举。
 
 #### OK
 
 > The player will enter the bed.
->
+> 
+> <p>
+> 
 > 玩家可以上床就寝。
 
 #### NOT_POSSIBLE_HERE
 
 > The world doesn't allow sleeping or saving the spawn point (eg,
->
+> 
 > Nether, The End or Custom Worlds). This is based on
->
+> 
 > {@link World#isBedWorks()} and {@link World#isNatural()}.
->
+> 
 > Entering the bed is prevented and if {@link World#isBedWorks()} is
->
+> 
 > false then the bed explodes.
->
+> 
+> <p>
+> 
 > 玩家所在的世界不允许睡觉或保存出生点，比如下界、末地或某些自定义世界。
->
+> 
 > `World#isBedWorks()` 和 `World#isNatural()` 方法可以用于检测某个世界是否允许睡觉。
->
+> 
 > `World#isBedWorks()` 方法如果返回 `false` ，则玩家无法上床就寝，而且床会爆炸。
 
 #### NOT_POSSIBLE_NOW
 
 > Entering the bed is prevented due to it not being night nor
->
+> 
 > thundering currently.
->
+> 
 > If the event is forcefully allowed during daytime, the player will
->
+> 
 > enter the bed (and set its bed location), but might get immediately
->
+> 
 > thrown out again.
->
+> 
+> <p>
+> 
 > 玩家所在世界的时间并不是夜晚，天气亦非雷暴，因此无法就寝。
->
+> 
 > 如果玩家尝试日间就寝，并且某个插件在本事件的监听器中改变事件结果，强行允许玩家这样做，那么玩家会上床躺下且其出生点位置会被重设，但此后该玩家有可能立刻被床弹出。
->
+> 
+> <p>
+> 
 > 译注：勿效仿宰予昼寝。
 
 #### TOO_FAR_AWAY
 
 > Entering the bed is prevented due to the player being too far away.
->
+> 
+> <p>
+> 
 > 玩家离床太远，无法就寝。
 
 #### NOT_SAFE
 
 > Entering the bed is prevented due to there being monsters nearby.
->
+> 
+> <p>
+> 
 > 周围有怪物在游荡，玩家无法就寝。
 
 #### OTHER_PROBLEM
 
 > Entering the bed is prevented due to there being some other problem.
->
+> 
+> <p>
+> 
 > 存在其他未知问题，玩家无法就寝。

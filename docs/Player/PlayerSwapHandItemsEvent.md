@@ -15,14 +15,14 @@ description: PlayerSwapHandItemsEvent
 ### 类描述
 
 > Called when a player swap items between main hand and off hand using the
->
+> 
 > hotkey.
->
->
+> 
+> <p>
 > 
 > 当玩家按下热键交换主副手中物品时触发。
->
->
+> 
+> <p>
 > 
 > 译注：所谓“热键”，默认为 `F` 键。玩家按下 `F` 键交换左右手中物品时触发本事件。
 
@@ -35,13 +35,13 @@ description: PlayerSwapHandItemsEvent
 方法签名: ()Lorg/bukkit/inventory/ItemStack;
 
 > Gets the item switched to the main hand.
->
+> 
 > @return item in the main hand
->
->
+> 
+> <p>
 > 
 > 该方法用于获取将要被换至主手中的物品堆。
->
+> 
 > @return 将要被换至主手中的物品堆。
 
 #### setMainHandItem
@@ -51,13 +51,13 @@ description: PlayerSwapHandItemsEvent
 方法签名: (Lorg/bukkit/inventory/ItemStack;)V
 
 > Sets the item in the main hand.
->
+> 
 > @param mainHandItem new item in the main hand
->
->
+> 
+> <p>
 > 
 > 该方法用于设置将要被换至主手中的物品堆。
->
+> 
 > @param mainHandItem 将要被换至主手中的物品堆。
 
 #### getOffHandItem
@@ -67,13 +67,13 @@ description: PlayerSwapHandItemsEvent
 方法签名: ()Lorg/bukkit/inventory/ItemStack;
 
 > Gets the item switched to the off hand.
->
+> 
 > @return item in the off hand
->
->
+> 
+> <p>
 > 
 > 该方法用于获取将要被换至副手中的物品堆。
->
+> 
 > @return 将要被换至副手中的物品堆。
 
 #### setOffHandItem
@@ -83,13 +83,13 @@ description: PlayerSwapHandItemsEvent
 方法签名: (Lorg/bukkit/inventory/ItemStack;)V
 
 > Sets the item in the off hand.
->
+> 
 > @param offHandItem new item in the off hand
->
->
+> 
+> <p>
 > 
 > 该方法用于设置将要被换至副手中的物品堆。
->
+> 
 > @param offHandItem 将要被换至副手中的物品堆。
 
 #### isCancelled

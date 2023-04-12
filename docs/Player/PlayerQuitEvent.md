@@ -15,8 +15,8 @@ description: PlayerQuitEvent
 ### 类描述
 
 > Called when a player leaves a server
->
->
+> 
+> <p>
 > 
 > 当玩家退出服务器时触发。
 
@@ -29,16 +29,16 @@ description: PlayerQuitEvent
 方法签名: ()Ljava/lang/String;
 
 > Gets the quit message to send to all online players
->
+> 
 > @return string quit message
->
->
+> 
+> <p>
 > 
 > 该方法用于获取将要广播给全体玩家的退出消息。
->
+> 
 > @return 将要广播给全体玩家的退出消息。
->
->
+> 
+> <p>
 > 
 > 译注：比如“William_Shi left the game”。
 
@@ -49,13 +49,13 @@ description: PlayerQuitEvent
 方法签名: (Ljava/lang/String;)V
 
 > Sets the quit message to send to all online players
->
+> 
 > @param quitMessage quit message
->
->
+> 
+> <p>
 > 
 > 该方法用于设置将要广播给全体玩家的退出消息。
->
+> 
 > @param quitMessage 将要广播给全体玩家的退出消息。
 
 #### getHandlers

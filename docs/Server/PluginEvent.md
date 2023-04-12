@@ -15,12 +15,12 @@ description: PluginEvent
 ### 类描述
 
 > Used for plugin enable and disable events
->
->
+> 
+> <p>
 > 
 > 代表与插件加载、卸载有关的事件。
->
->
+> 
+> <p>
 > 
 > 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
 
@@ -33,11 +33,11 @@ description: PluginEvent
 方法签名: ()Lorg/bukkit/plugin/Plugin;
 
 > Gets the plugin involved in this event
->
+> 
 > @return Plugin for this event
->
->
+> 
+> <p>
 > 
 > 获取事件中被加载/卸载的插件。
->
+> 
 > @return 触发事件的插件。

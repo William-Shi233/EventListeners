@@ -15,8 +15,8 @@ description: BlockRedstoneEvent
 ### 类描述
 
 > Called when a redstone current changes
->
->
+> 
+> <p>
 > 
 > 当红石信号强度发生变化时触发。
 
@@ -29,13 +29,13 @@ description: BlockRedstoneEvent
 方法签名: ()I
 
 > Gets the old current of this block
->
+> 
 > @return The previous current
->
->
+> 
+> <p>
 > 
 > 该方法用于获取传导到该方块上的原有红石信号强度。
->
+> 
 > @return 原有的红石信号强度。
 
 #### getNewCurrent
@@ -45,13 +45,13 @@ description: BlockRedstoneEvent
 方法签名: ()I
 
 > Gets the new current of this block
->
+> 
 > @return The new current
->
->
+> 
+> <p>
 > 
 > 该方法用于获取将要传导到该方块上的新红石信号强度。
->
+> 
 > @return 新的红石信号强度。
 
 #### setNewCurrent
@@ -61,13 +61,13 @@ description: BlockRedstoneEvent
 方法签名: (I)V
 
 > Sets the new current of this block
->
+> 
 > @param newCurrent The new current to set
->
->
+> 
+> <p>
 > 
 > 该方法用于设置将要传导到该方块上的新红石信号强度。
->
+> 
 > @param newCurrent 新的红石信号强度。
 
 #### getHandlers

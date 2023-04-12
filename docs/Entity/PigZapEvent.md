@@ -17,15 +17,15 @@ description: PigZapEvent
 ### 类描述
 
 > Stores data for pigs being zapped
->
->
+> 
+> <p>
 > 
 > 本事件存储了被闪电击中的猪的有关数据。
->
->
+> 
+> <p>
 > 
 > 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与事件中被击中的猪有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
->
+> 
 > 参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Zombified_Piglin#Pigs](https://minecraft.fandom.com/wiki/Zombified_Piglin#Pigs) 可知，猪被闪电劈中以后会转变为僵尸猪灵。
 
 ### 方法列表
@@ -57,13 +57,13 @@ description: PigZapEvent
 方法签名: ()Lorg/bukkit/entity/LightningStrike;
 
 > Gets the bolt which is striking the pig.
->
+> 
 > @return lightning entity
->
->
+> 
+> <p>
 > 
 > 该方法用于获取击中了猪的闪电实体。
->
+> 
 > @return 击中了猪的闪电实体。
 
 #### getPigZombie
@@ -73,19 +73,19 @@ description: PigZapEvent
 方法签名: ()Lorg/bukkit/entity/PigZombie;
 
 > Gets the zombie pig that will replace the pig, provided the event is
->
+> 
 > not cancelled first.
->
+> 
 > @return resulting entity
->
+> 
 > @deprecated use {@link EntityTransformEvent#getTransformedEntity()}
->
->
+> 
+> <p>
 > 
 > 该方法用于获取事件未被取消时将会生成的僵尸猪灵。
->
+> 
 > @return 将会生成的僵尸猪灵。
->
+> 
 > @deprecated 该方法已过时。请使用 `EntityTransformEvent#getTransformedEntity()` 方法。
 
 #### getHandlers

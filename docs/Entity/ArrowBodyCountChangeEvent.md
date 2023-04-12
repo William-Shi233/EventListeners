@@ -15,15 +15,15 @@ description: ArrowBodyCountChangeEvent
 ### 类描述
 
 > Called when an arrow enters or exists an entity's body.
->
->
+> 
+> <p>
 > 
 > 当一根箭矢射入某个实体体内或从体内被拔出时触发。
->
->
+> 
+> <p>
 > 
 > 译注：原文所谓“exists”，不知所云，应当为“exits”之衍文。即“箭矢自体内被拔出”。
->
+> 
 > 本事件可能在两种情况下触发。其一为 `net.minecraft.server.v1_16_R3.EntityPlayer#reset` 方法（参见该类第 `2067` 行）。该方法中会将箭矢数量重设为 `0` 。其二为箭矢击中生物，此时生物体内的箭矢数量会增加一。
 
 ### 方法列表
@@ -35,13 +35,17 @@ description: ArrowBodyCountChangeEvent
 方法签名: ()Z
 
 > Whether the event was called because the entity was reset.
->
+> 
 > @return was reset
->
+> 
+> <p>
+> 
 > 该方法用于获取本事件是否是由于实体被重置而触发。
->
+> 
 > @return 本事件是否是由于实体被重置而触发。
->
+> 
+> <p>
+> 
 > 译注：即 `net.minecraft.server.v1_16_R3.EntityPlayer#reset` 方法的情况（参见该类第 `2067` 行）。
 
 #### getOldAmount
@@ -51,11 +55,13 @@ description: ArrowBodyCountChangeEvent
 方法签名: ()I
 
 > Gets the old amount of arrows in the entity's body.
->
+> 
 > @return amount of arrows
->
+> 
+> <p>
+> 
 > 该方法用于获取事件发生前实体体内原有的箭矢数量。
->
+> 
 > @return 事件发生前实体体内原有的箭矢数量。
 
 #### getNewAmount
@@ -65,11 +71,13 @@ description: ArrowBodyCountChangeEvent
 方法签名: ()I
 
 > Get the new amount of arrows in the entity's body.
->
+> 
 > @return amount of arrows
->
+> 
+> <p>
+> 
 > 该方法用于获取事件发生后实体体内将会存在的箭矢数量。
->
+> 
 > @return 事件发生后实体体内将会存在的箭矢数量。
 
 #### setNewAmount
@@ -79,11 +87,13 @@ description: ArrowBodyCountChangeEvent
 方法签名: (I)V
 
 > Sets the final amount of arrows in the entity's body.
->
+> 
 > @param newAmount amount of arrows
->
+> 
+> <p>
+> 
 > 该方法用于设置事件发生后实体体内将会存在的箭矢数量。
->
+> 
 > @param newAmount 事件发生后实体体内将会存在的箭矢数量。
 
 #### getEntity

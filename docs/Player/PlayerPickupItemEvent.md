@@ -15,13 +15,13 @@ description: PlayerPickupItemEvent
 ### 类描述
 
 > Thrown when a player picks an item up from the ground
->
+> 
 > @deprecated {@link EntityPickupItemEvent}
->
->
+> 
+> <p>
 > 
 > 当玩家自地上捡起一件物品时触发。
->
+> 
 > @deprecated 本事件已过时。请监听 `EntityPickupItemEvent` 。
 
 ### 方法列表
@@ -33,10 +33,10 @@ description: PlayerPickupItemEvent
 方法签名: ()Lorg/bukkit/entity/Item;
 
 > Gets the Item picked up by the player.
->
+> 
 > @return Item
 > 
->
+> <p>
 > 
 > 译注：请不要使用本事件。本事件已经过时。
 
@@ -47,10 +47,10 @@ description: PlayerPickupItemEvent
 方法签名: ()I
 
 > Gets the amount remaining on the ground, if any
->
+> 
 > @return amount remaining on the ground
 > 
->
+> <p>
 > 
 > 译注：请不要使用本事件。本事件已经过时。
 

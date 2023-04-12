@@ -17,8 +17,8 @@ description: ItemSpawnEvent
 ### 类描述
 
 > Called when an item is spawned into a world
->
->
+> 
+> <p>
 > 
 > 当掉落的物品堆实体生成时触发。
 

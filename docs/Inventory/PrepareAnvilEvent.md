@@ -15,9 +15,9 @@ description: PrepareAnvilEvent
 ### 类描述
 
 > Called when an item is put in a slot for repair by an anvil.
->
 > 
->
+> <p>
+> 
 > 当有物品堆被放入铁砧，即将被修复耐久时触发。
 
 ### 方法列表
@@ -37,13 +37,13 @@ description: PrepareAnvilEvent
 方法签名: ()Lorg/bukkit/inventory/ItemStack;
 
 > Get result item, may be null.
->
-> @return result item
->
 > 
->
+> @return result item
+> 
+> <p>
+> 
 > 该方法用于获取铁砧操作后的结果物品堆。返回值可能为 `null` 。
->
+> 
 > @return 铁砧操作后的结果物品堆。
 
 #### setResult
