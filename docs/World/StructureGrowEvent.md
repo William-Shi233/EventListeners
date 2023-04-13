@@ -98,7 +98,7 @@ description: StructureGrowEvent
 > 
 > <br>
 > 
-> 译注：文档有误。所谓“创建”，易被理解为树苗或蘑菇的种植者。但该词所指的是使用骨粉催熟树苗或蘑菇的玩家。参见 `net.minecraft.server.v1_16_R3.BlockSapling#tick(IBlockData iblockdata, WorldServer worldserver, BlockPosition blockposition, Random random)` ，在该类第 `32-52` 行。
+> 译注：文档有误。所谓“创建”，易被理解为树苗或蘑菇的种植者。但该词所指的是使用骨粉催熟树苗或蘑菇的玩家。参见 `net.minecraft.server.v1_16_R3.BlockSapling#tick(IBlockData iblockdata, WorldServer worldserver, BlockPosition blockposition, Random random)` 方法。
 
 #### getBlocks
 
