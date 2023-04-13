@@ -18,8 +18,8 @@ description: VehicleCollisionEvent
 > 
 > <br>
 > 
-> 代表载具与他物相撞时会触发的事件。
+> 代表载具与它物相撞时会触发的事件。
 > 
 > <br>
 > 
-> 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
+> 译注：该事件未实现 `getHandlers()` 和 `getHandlerList()` 方法，无法直接监听。
