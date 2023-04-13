@@ -38,9 +38,9 @@ description: MapInitializeEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中初始化的地图。
+> 该方法用于获取被初始化的涉事地图。
 > 
-> @return 事件中初始化的地图。
+> @return 涉事地图。
 
 #### getHandlers
 
