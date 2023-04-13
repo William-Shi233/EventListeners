@@ -30,9 +30,7 @@ description: LootGenerateEvent
 > 
 > 当一个 `LootTable` 被用于在某个世界中填充一个 `InventoryHolder` 时触发。
 > 
-> 目前，当实体死亡时，虽然也要通过 `LootTable` 生成掉落物，但这个事件不会被触发。实体死亡时的掉落物可以使用 `EntityDeathEvent#getDrops()` 方法获取。
-> 
-> 当其他插件调用了 `LootTable#fillInventory(org.bukkit.inventory.Inventory, java.util.Random, LootContext)` 方法时，本事件会被触发。
+> 目前，当实体死亡时，虽然也要通过 `LootTable` 生成掉落物，但这个事件不会被触发。实体死亡时的掉落物可以使用 `EntityDeathEvent#getDrops()` 方法获取。当有插件调用 `LootTable#fillInventory(org.bukkit.inventory.Inventory, java.util.Random, LootContext)` 方法时，本事件会被触发。
 > 
 > <br>
 > 
