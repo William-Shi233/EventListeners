@@ -36,9 +36,9 @@ description: VehicleBlockCollisionEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的载具撞上的方块。
+> 该方法用于获取涉事载具撞上的方块。
 > 
-> @return 事件中的载具撞上的方块。
+> @return 涉事载具撞上的方块。
 
 #### getHandlers
 
