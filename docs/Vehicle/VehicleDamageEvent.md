@@ -40,7 +40,7 @@ description: VehicleDamageEvent
 > 
 > <br>
 > 
-> 译注：可能返回 `null` ，因为载具也可能受到岩浆等形式的伤害。
+> 译注：可能返回 `null` ，因为载具也可能受到岩浆等形式的伤害。这种情况下不存在攻击载具的实体。
 
 #### getDamage
 
@@ -72,7 +72,7 @@ description: VehicleDamageEvent
 > 
 > 该方法用于设置载具受到的伤害量。
 > 
-> @param damage 载具受到的伤害量。
+> @param damage 伤害量。
 
 #### isCancelled
 
