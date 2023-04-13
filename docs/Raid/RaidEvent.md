@@ -22,7 +22,7 @@ description: RaidEvent
 > 
 > <br>
 > 
-> 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
+> 译注：该事件未实现 `getHandlers()` 和 `getHandlerList()` 方法，无法直接监听。
 
 ### 方法列表
 
@@ -38,6 +38,6 @@ description: RaidEvent
 > 
 > <br>
 > 
-> 获取事件中的袭击。
+> 该方法用于获取涉事袭击。
 > 
-> @return 触发事件的袭击。
+> @return 涉事袭击。
