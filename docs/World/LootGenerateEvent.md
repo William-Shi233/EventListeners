@@ -30,13 +30,13 @@ description: LootGenerateEvent
 > 
 > 当一个 `LootTable` 被用于在某个世界中填充一个 `InventoryHolder` 时触发。
 > 
-> 目前，当实体死亡时，虽然也要通过 `LootTable` 生成掉落物，但这个事件**不会**被触发。实体死亡时的掉落物可以使用 `EntityDeathEvent#getDrops` 方法获取。
+> 目前，当实体死亡时，虽然也要通过 `LootTable` 生成掉落物，但这个事件不会被触发。实体死亡时的掉落物可以使用 `EntityDeathEvent#getDrops()` 方法获取。
 > 
-> 当其他插件调用了 `LootTable#fillInventory(org.bukkit.inventory.Inventory, java.util.Random, LootContext)` 方法时，本事件**会**被触发。
+> 当其他插件调用了 `LootTable#fillInventory(org.bukkit.inventory.Inventory, java.util.Random, LootContext)` 方法时，本事件会被触发。
 > 
 > <br>
 > 
-> 译注：`LootTable` 是战利品表。战利品表用于生成宝箱中的物品、用于生成钓鱼时钓上岸的物品堆、用于确定树叶自然腐烂时掉下苹果的概率……总之，许多与概率相关的地方都有战利品表的身影。所谓“填充一个 `InventoryHolder`”，主要指的是填充宝箱。`InventoryHolder` 不等同于 `Inventory` ，前者是物品栏的拥有者，比如玩家是玩家背包的拥有者，箱子方块是箱子物品栏的拥有者。此事件偏重于宝箱被填充时触发，而树叶腐烂等情况是不会触发本事件的。
+> 译注：`LootTable` 是战利品表。战利品表用于生成宝箱中的物品、用于生成钓鱼时钓上岸的物品堆、用于确定树叶自然腐烂时掉下苹果的概率……总之，许多与概率相关的地方都有战利品表的身影。所谓“填充一个 `InventoryHolder`”，主要指的是填充宝箱。`InventoryHolder` 不等同于 `Inventory` ，前者是物品栏的拥有者，后者是物品栏本身。比如玩家是玩家背包的拥有者，箱子方块是箱子物品栏的拥有者。此事件偏重于宝箱被填充时触发，树叶腐烂等情况是不会触发本事件的。
 
 ### 方法列表
 
@@ -60,7 +60,7 @@ description: LootGenerateEvent
 > 
 > <br>
 > 
-> 该方法用于获取战利品生成上下文中的实体（如有）。
+> 该方法用于获取战利品生成上下文中的实体（如果能获取到）。
 > 
 > 对于那些生成战利品时无需考虑实体因素的物品栏，比如漏斗，该方法会返回 `null` 。
 > 
@@ -88,7 +88,7 @@ description: LootGenerateEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中将要被填充的 `InventoryHolder` 。
+> 该方法用于获取将要被填充的 `InventoryHolder` 。
 > 
 > 如果战利品是因为某个方块被破坏而生成，那么该方法就会返回 `null` ，因为本事件是在方块被破坏以后被触发的。
 > 
@@ -112,7 +112,7 @@ description: LootGenerateEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中所使用的战利品表。
+> 该方法用于获取生成战利品时所使用的战利品表。
 > 
 > @return 战利品表。
 
@@ -154,23 +154,19 @@ description: LootGenerateEvent
 > 
 > <br>
 > 
-> 该方法用于设置将要被填充进宝箱的物品堆列表。
-> 
-> 该列表中所有为 `null` 的项都将按照空气物品堆处理。
-> 
-> 注意：该方法的参数不可以是 `getLoot` 方法的返回值。
+> 该方法用于设置将要被填充进宝箱的物品堆列表。该列表中所有为 `null` 的项都将按照空气物品堆处理。注意，该方法的参数不可以是 `getLoot()` 方法的返回值。
 > 
 > @param loot 将要被填充进宝箱的物品堆列表。如果传入 `null` 将清空所有物品堆，不会有任何战利品生成。
 > 
 > <br>
 > 
-> 译注：`getLoot` 和 `setLoot` 两个方法维护的是同一个集合，名为 `loot` ，类型为 `List<ItemStack>` 。此处的 `loot` 不是方法参数里的 `loot` ，尽管二者名字相同。为了作出区别，按照 `Java` 写法，以下所有 `this.loot` 表示事件类中的集合，而 `loot` 表示用户传入的参数。
+> 译注：`getLoot()` 和 `setLoot(Collection<ItemStack>)` 两个方法维护的是同一个集合，名为 `loot` ，类型为 `List<ItemStack>` 。此处的 `loot` 不是方法参数里的 `loot` ，尽管二者名字相同。为了作出区别，按照 `Java` 写法，以下所有 `this.loot` 表示事件类中的集合，而 `loot` 表示用户传入的参数。
 > 
-> `setLoot` 的实现是将 `this.loot` 集合清空，再调用 `this.loot.addAll` 方法，把用户传入的参数 `loot` 列表中所包含的物品堆全部加入 `this.loot` 列表。
+> `setLoot(Collection<ItemStack>)` 的实现是将 `this.loot` 集合清空，再调用 `this.loot.addAll` 方法，把用户传入的参数 `loot` 列表中所包含的物品堆全部加入 `this.loot` 列表。
 > 
-> `getLoot` 的实现是直接返回 `this.loot` ，没有进行列表的复制，直接提供了引用。用户操作 `getLoot` 方法返回的列表，就相当于直接对 `LootGenerateEvent` 类里的 `this.loot` 作了修改。
+> `getLoot()` 的实现是直接返回 `this.loot` ，没有进行列表的复制，直接提供了引用。用户操作 `getLoot()` 方法返回的列表，就相当于直接对 `LootGenerateEvent` 类里的 `this.loot` 作了修改。
 > 
-> 如果将 `getLoot` 得到的列表作为参数，那么在 `setLoot` 方法中，首先会清空 `this.loot` ，这样，`getLoot` 方法的返回值直接变为空列表。用户传入的参数是 `this.loot` 的引用，就相当于引用了空列表，再之后 `this.loot` 会将自己的全部内容添加到自己的末尾，由于其内容为空，因此最终的结果是 `this.loot` 变为空列表，不会有任何战利品被生成。
+> 如果将 `getLoot()` 得到的列表作为参数，那么在 `setLoot(Collection<ItemStack>)` 方法中，首先会清空 `this.loot` ，这样，`getLoot()` 方法的返回值直接变为空列表。用户传入的参数是 `this.loot` 的引用，就相当于引用了空列表，再之后 `this.loot` 会将自己的全部内容添加到自己的末尾，由于其内容为空，因此最终的结果是 `this.loot` 变为空列表，不会有任何战利品被生成。
 > 
 > 对源代码节选如下：
 > 
@@ -204,17 +200,15 @@ description: LootGenerateEvent
 > 
 > <br>
 > 
-> 该方法用于获取将要被填充进宝箱的物品堆列表。
+> 该方法用于获取将要被填充进宝箱的物品堆列表。该列表是可以被修改的。
 > 
-> 该列表是可以被修改的，向其中添加或删除物品堆以后，操作结果将会直接反映在生成的宝箱中的内容物上。
-> 
-> 该列表中所有为 `null` 的项都将按照空气物品堆处理。
+> 向本方法返回的列表中添加或删除物品堆以后，操作结果将会直接反映在生成的宝箱中的内容物上。该列表中所有为 `null` 的元素都将按空气物品堆处理。
 > 
 > @return 将要被填充进宝箱的物品堆列表。
 > 
 > <br>
 > 
-> 译注：见上 `setLoot` 方法。
+> 译注：见上 `setLoot(Collection<ItemStack>)` 方法。
 
 #### isPlugin
 
