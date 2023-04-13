@@ -19,6 +19,10 @@ description: WorldUnloadEvent
 > <br>
 > 
 > 当世界被卸载时触发。
+> 
+> <br>
+> 
+> 译注：参见 `org.bukkit.craftbukkit.v1_16_R3.CraftServer#unloadWorld(World, boolean)` 方法可知，当世界即将被卸载时，首先触发本事件。如果本事件未被取消，且需要保存世界数据，则触发 `WorldSaveEvent` 。
 
 ### 方法列表
 
