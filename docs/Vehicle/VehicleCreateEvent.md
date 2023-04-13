@@ -19,6 +19,10 @@ description: VehicleCreateEvent
 > <br>
 > 
 > 当载具被创建时触发。
+> 
+> <br>
+> 
+> 译注：本事件在 `net.minecraft.server.v1_16_R3.WorldServer#addEntity0(Entity, CreatureSpawnEvent.SpawnReason)` 方法中触发。任何实体生成，都无法绕过该方法。在上述方法中，经由 `CraftEventFactory#doEntityAddEventCalling(World, Entity, CreatureSpawnEvent.SpawnReason)` 判断，凡生成的实体系载具类型的，即触发本事件。
 
 ### 方法列表
 
