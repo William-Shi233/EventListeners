@@ -36,7 +36,7 @@ description: VehicleExitEvent
 > 
 > 该方法用于获取离开载具的生物。
 > 
-> @return 离开载具的生物。
+> @return 涉事生物。
 
 #### isCancelled
 
