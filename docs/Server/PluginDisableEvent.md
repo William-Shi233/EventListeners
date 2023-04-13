@@ -20,11 +20,11 @@ description: PluginDisableEvent
 > 
 > <br>
 > 
-> 当一个插件被卸载时触发。
+> 当插件被卸载时触发。
 > 
 > <br>
 > 
-> 译注：由 `org.bukkit.plugin.java.JavaPluginLoader#disablePlugin` 方法（参见该类第 `370` 行）可知，本事件在插件的 `onDisable` 方法调用以前被触发。
+> 译注：由 `org.bukkit.plugin.java.JavaPluginLoader#disablePlugin(Plugin)` 方法可知，本事件在插件的 `onDisable()` 方法调用以前被触发。
 
 ### 方法列表
 
