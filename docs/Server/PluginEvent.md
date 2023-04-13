@@ -22,7 +22,7 @@ description: PluginEvent
 > 
 > <br>
 > 
-> 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
+> 译注：该事件未实现 `getHandlers()` 和 `getHandlerList()` 方法，无法直接监听。
 
 ### 方法列表
 
@@ -38,6 +38,6 @@ description: PluginEvent
 > 
 > <br>
 > 
-> 获取事件中被加载/卸载的插件。
+> 该方法用于获取被加载/卸载的涉事插件。
 > 
-> @return 触发事件的插件。
+> @return 涉事插件。
