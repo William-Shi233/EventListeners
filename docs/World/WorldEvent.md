@@ -20,7 +20,7 @@ description: WorldEvent
 > 
 > <br>
 > 
-> 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
+> 译注：该事件未实现 `getHandlers()` 和 `getHandlerList()` 方法，无法直接监听。
 
 ### 方法列表
 
@@ -36,6 +36,6 @@ description: WorldEvent
 > 
 > <br>
 > 
-> 获取事件中所涉的世界。
+> 该方法用于获取涉事世界。
 > 
-> @return 触发事件的世界。�
+> @return 涉事世界。
