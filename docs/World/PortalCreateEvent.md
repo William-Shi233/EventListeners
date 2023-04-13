@@ -142,6 +142,6 @@ description: PortalCreateEvent
 > 
 > <br>
 > 
-> 译注：指末地黑曜石平台因为玩家进入末地而被刷新。参见 `net.minecraft.server.v1_16_R3.WorldServer#a(WorldServer worldserver, Entity entity)` ，在该类第 `1816-1834` 行。
+> 译注：指末地黑曜石平台因为玩家进入末地而被刷新。参见 `net.minecraft.server.v1_16_R3.WorldServer#a(WorldServer worldserver, Entity entity)` 方法。
 > 
 > 没有可以用于监听玩家放置末影之眼导致末地传送门生成的事件。本事件只能监听到末地黑曜石平台被更新。玩家每次进入末地都会刷新黑曜石平台。参见 [https://www.spigotmc.org/threads/end-portal-creation-event.560637/](https://www.spigotmc.org/threads/end-portal-creation-event.560637/) 中的讨论。
