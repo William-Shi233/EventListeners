@@ -22,7 +22,7 @@ description: LightningStrikeEvent
 > 
 > <br>
 > 
-> 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与事件中闪电有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
+> 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与涉事闪电实体有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
 
 ### 方法列表
 
@@ -72,7 +72,7 @@ description: LightningStrikeEvent
 > 
 > <br>
 > 
-> @return 闪电生成的原因。
+> @return 一个 `Cause` 枚举字段，用于确定闪电生成的详细原因。
 
 #### getHandlers
 
@@ -96,7 +96,7 @@ description: LightningStrikeEvent
 > 
 > <br>
 > 
-> 由于原版指令 `/summon` 导致闪电实体被召唤。
+> 由于原版指令 `/summon` 被执行，闪电实体生成。
 
 #### CUSTOM
 
@@ -104,11 +104,11 @@ description: LightningStrikeEvent
 > 
 > <br>
 > 
-> 由于插件生成了闪电实体。
+> 插件生成了闪电实体。
 > 
 > <br>
 > 
-> 译注：如 `World#strikeLightning` 方法等。
+> 译注：如 `World#strikeLightning(Location)` 方法等。
 
 #### SPAWNER
 
@@ -116,7 +116,7 @@ description: LightningStrikeEvent
 > 
 > <br>
 > 
-> 由于刷怪笼生成了闪电实体。
+> 刷怪笼生成了闪电实体。
 
 #### TRIDENT
 
@@ -124,7 +124,7 @@ description: LightningStrikeEvent
 > 
 > <br>
 > 
-> 由于附魔三叉戟生成了闪电实体。
+> 附魔三叉戟生成了闪电实体。
 > 
 > <br>
 > 
@@ -136,7 +136,7 @@ description: LightningStrikeEvent
 > 
 > <br>
 > 
-> 由于骷髅陷阱马导致闪电实体生成。
+> 骷髅陷阱马被触发，生成闪电实体。
 > 
 > <br>
 > 
@@ -148,7 +148,7 @@ description: LightningStrikeEvent
 > 
 > <br>
 > 
-> 由于雷雨天气导致闪电实体生成。
+> 雷雨天气下，自然生成闪电实体。
 
 #### UNKNOWN
 
