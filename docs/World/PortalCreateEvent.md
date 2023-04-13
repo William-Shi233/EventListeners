@@ -18,7 +18,7 @@ description: PortalCreateEvent
 > 
 > <br>
 > 
-> 当一个传送门被创建时触发。
+> 当传送门被创建时触发。
 
 ### 方法列表
 
@@ -50,9 +50,9 @@ description: PortalCreateEvent
 > 
 > <br>
 > 
-> 该方法返回触发了传送门创建的实体（如果能获取到）。
+> 该方法用于获取引动了传送门创建过程的实体（如果能获取到）。
 > 
-> @return 事件中的实体。
+> @return 涉事实体。
 
 #### isCancelled
 
@@ -80,7 +80,7 @@ description: PortalCreateEvent
 > 
 > 该方法用于获取传送门创建的原因。
 > 
-> @return 传送门创建的原因。
+> @return 一个 `CreateReason` 枚举字段，用于确定传送门创建的原因。
 
 #### getHandlers
 
@@ -114,7 +114,7 @@ description: PortalCreateEvent
 > 
 > <br>
 > 
-> 译注：下界传送门（又称地狱门）被点燃。
+> 译注：下界传送门被点燃。
 
 #### NETHER_PAIR
 
@@ -144,4 +144,4 @@ description: PortalCreateEvent
 > 
 > 译注：指末地黑曜石平台因为玩家进入末地而被刷新。参见 `net.minecraft.server.v1_16_R3.WorldServer#a(WorldServer worldserver, Entity entity)` ，在该类第 `1816-1834` 行。
 > 
-> 没有可以用于监听玩家放置末影之眼导致末地传送门生成的事件。本事件只能监听到末地黑曜石平台被更新。参见 [https://www.spigotmc.org/threads/end-portal-creation-event.560637/](https://www.spigotmc.org/threads/end-portal-creation-event.560637/) 中的讨论。
+> 没有可以用于监听玩家放置末影之眼导致末地传送门生成的事件。本事件只能监听到末地黑曜石平台被更新。玩家每次进入末地都会刷新黑曜石平台。参见 [https://www.spigotmc.org/threads/end-portal-creation-event.560637/](https://www.spigotmc.org/threads/end-portal-creation-event.560637/) 中的讨论。
