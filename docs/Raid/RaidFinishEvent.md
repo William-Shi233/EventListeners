@@ -20,11 +20,11 @@ description: RaidFinishEvent
 > 
 > <br>
 > 
-> 当一次袭击以明确结果结束时触发。
+> 当袭击以明确结果结束时触发。
 > 
 > <br>
 > 
-> 译注：当一次袭击终止（比如游戏难度切换为和平）时，会触发 `RaidStopEvent` ，然后结束袭击，不会触发 `RaidFinishEvent` 。详见 `RaidStopEvent` 译注。
+> 译注：当一次袭击中止（比如游戏难度切换为和平）时，会触发 `RaidStopEvent` ，然后结束，不会触发 `RaidFinishEvent` 。详见 `RaidStopEvent` 译注。
 > 
 > 当一次袭击失败（袭击中心不在村庄范围内且已生成过至少一波袭击者）时，会触发 `RaidFinishEvent` ，此时 `getWinners()` 方法返回空列表，不会触发 `RaidStopEvent` 。
 > 
@@ -48,11 +48,11 @@ description: RaidFinishEvent
 > 
 > <br>
 > 
-> 该方法用于获取一个不可修改列表，其间存储所有赢得胜利的玩家。
+> 该方法用于获取一个不可修改列表，其间存储有全部获胜的玩家。
 > 
-> 注意：如果有玩家被视为村庄英雄们的一员，但袭击结束时不在线，那么该名玩家不会出现在此列表中。
+> 注意，如果有玩家被视为村庄英雄们的一员，但袭击结束时不在线，那么该名玩家不会出现在此列表中。
 > 
-> @return 赢得胜利的玩家。
+> @return 获胜玩家列表。
 
 #### getHandlers
 
