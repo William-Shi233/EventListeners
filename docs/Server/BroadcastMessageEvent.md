@@ -26,9 +26,9 @@ description: BroadcastMessageEvent
 > 
 > <br>
 > 
-> 当服务器内有广播消息时触发，如调用 `org.bukkit.Server#broadcast(String, String)` 方法时。
+> 当服务器内有广播消息时触发，如插件调用 `org.bukkit.Server#broadcast(String, String)` 方法时。
 > 
-> **本事件与 `AsyncPlayerChatEvent` 类似。当本事件在异步线程内被触发时，监听器就在异步线程中被调用。详情请参见  `AsyncPlayerChatEvent` 文档。**
+> 本事件与 `AsyncPlayerChatEvent` 类似。当本事件在异步线程内被触发时，监听器就在异步线程中被调用。详情请参见  `AsyncPlayerChatEvent` 文档。
 > 
 > <br>
 > 
@@ -94,19 +94,15 @@ description: BroadcastMessageEvent
 > 
 > 该方法用于获取一个 `Set` ，其间存储有全部将要接收该条广播消息的对象。
 > 
-> 本方法返回的 `Set` 不一定是可以修改的，而且有可能在用户从其间取出值时进行自动填充。
-> 
-> 使用本方法返回的 `Set` 时需要注意，如果该 `Set` 实现类采用某种 `Lazy Set` 实现，则监听器的性能可能会受影响。
-> 
-> 使用时还需要注意，如果触发本事件的开发者提供了一个不可修改集合，则对返回的 `Set` 作修改会抛出 `UnsupportedOperationException` 。
+> 本方法返回的 `Set` 不一定是可以修改的，而且有可能在用户从其间取出值时进行自动填充。使用本方法返回的 `Set` 时需要注意，如果该 `Set` 实现类采用某种 `Lazy Set` 实现，则监听器的性能可能会受影响。使用时还需要注意，如果触发本事件的开发者提供了一个不可修改的集合，则对返回的 `Set` 作修改会抛出 `UnsupportedOperationException` 。
 > 
 > @return 全部将要接收该条广播消息的 `CommandSender` 对象。
 > 
 > <br>
 > 
-> 译注：文档字里行间强调的核心内容只有一点，即本事件很有可能不是由服务端所触发，而是被其他插件所触发。
+> 译注：文档字里行间强调的核心内容只有一点，即本事件很有可能不是由服务端所触发，而是被插件所触发。
 > 
-> 其他插件提供的集合，`Bukkit API` 只能保证其实现类是 `java.util.Set` 的子类，但不能保证它可否修改，也不能保证它是不是 `Lazy Set` 。
+> 如果本事件并非服务端所触发，而是插件所触发，则就本方法返回的集合而言，`Bukkit API` 只能保证其实现类是 `java.util.Set` 的子类，但不能保证它可否修改，也不能保证它是不是 `Lazy Set` 。
 > 
 > 所谓不可修改集合，即不能向其中添加删除元素。监听器只能遍历其中元素，不能通过修改 `Set` 的方式添加或删除一个接收广播消息的对象，否则会抛出 `UnsupportedOperationException` 。
 > 
@@ -114,7 +110,7 @@ description: BroadcastMessageEvent
 > 
 > 因此，文档中说读取集合会影响性能，就是指 `Lazy Set` 把添加元素的方法一直推迟，直到监听器内读取 `Set` 中的元素时才将元素添加进去。那么读取时就产生了比较大的开销。
 > 
-> 可参见 `AsyncPlayerChatEvent#getRecipients()` 方法的译注，其内介绍了 `Bukkit` 中的一种 `LazySet` 实现。
+> 可参见 `AsyncPlayerChatEvent#getRecipients()` 方法的译注，其内介绍了 `Bukkit` 系列服务端中的一种 `LazySet` 实现。
 
 #### isCancelled
 
