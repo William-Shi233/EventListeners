@@ -20,7 +20,7 @@ description: VehicleEvent
 > 
 > <br>
 > 
-> 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
+> 译注：该事件未实现 `getHandlers()` 和 `getHandlerList()` 方法，无法直接监听。
 
 ### 方法列表
 
@@ -36,6 +36,6 @@ description: VehicleEvent
 > 
 > <br>
 > 
-> 获取事件中的载具。
+> 该方法用于获取涉事载具。
 > 
-> @return 触发事件的载具。
+> @return 涉事载具。
