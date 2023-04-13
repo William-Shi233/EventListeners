@@ -19,6 +19,10 @@ description: VehicleMoveEvent
 > <br>
 > 
 > 当载具移动时触发。
+> 
+> <br>
+> 
+> 译注：本事件在 `net.minecraft.server.v1_16_R3.EntityBoat#tick()` 方法和 `net.minecraft.server.v1_16_R3.EntityMinecartAbstract#tick()` 方法中被触发。从逻辑来看，每个载具实体每刻都会触发一次 `VehicleUpdateEvent` 。在该事件触发以后，再判断涉事载具这一刻的位置与上一刻所处位置相比是否有变化，如有，则触发本事件。
 
 ### 方法列表
 
