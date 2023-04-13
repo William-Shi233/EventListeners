@@ -22,7 +22,7 @@ description: VehicleUpdateEvent
 > 
 > <br>
 > 
-> 译注：本事件在 `net.minecraft.server.v1_16_R3.EntityBoat#tick` 方法（参见该类第 `295` 行）和 `net.minecraft.server.v1_16_R3.EntityMinecartAbstract#tick` 方法（参见该类第 `368` 行）中被触发。从逻辑来看，应当是每一 `tick` 都触发一次本事件。在本事件触发以后，判断载具位置与上一刻是否有变化，如有则再触发 `VehicleMoveEvent` 。
+> 译注：本事件在 `net.minecraft.server.v1_16_R3.EntityBoat#tick()` 方法和 `net.minecraft.server.v1_16_R3.EntityMinecartAbstract#tick()` 方法中被触发。从逻辑来看，每个载具实体每刻都会触发一次本事件。在本事件触发以后，再判断涉事载具这一刻的位置与上一刻所处位置相比是否有变化，如有，则再触发 `VehicleMoveEvent` 。
 
 ### 方法列表
 
