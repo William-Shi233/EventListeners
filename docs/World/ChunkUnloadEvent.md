@@ -20,7 +20,7 @@ description: ChunkUnloadEvent
 > 
 > <br>
 > 
-> 当一个区块被卸载时触发。
+> 当区块被卸载时触发。
 
 ### 方法列表
 
@@ -36,13 +36,13 @@ description: ChunkUnloadEvent
 > 
 > <br>
 > 
-> 该方法返回事件中的区块是否会被保存到硬盘中。
+> 该方法返回涉事区块是否会被保存到硬盘中。
 > 
 > @return 区块保存状态。
 > 
 > <br>
 > 
-> 译注：所谓“区块保存状态”，语焉不详。该方法在实际应用中几乎永远返回 `true` 。在 `Spigot` 论坛的一篇讨论帖 [https://www.spigotmc.org/threads/how-to-listen-for-chunk-save-event.428297/](https://www.spigotmc.org/threads/how-to-listen-for-chunk-save-event.428297/) 中，有一位回复者是这样解释该现象的：区块保存着实体数据，而实体数据总是在不断变化，因此一个区块被卸载且其数据无需被写入硬盘的情况是极为少见的。
+> 译注：所谓“区块保存状态”，语焉不详。该方法在实际应用中几乎永远返回 `true` 。参见 [https://www.spigotmc.org/threads/how-to-listen-for-chunk-save-event.428297/](https://www.spigotmc.org/threads/how-to-listen-for-chunk-save-event.428297/) 中的讨论可知，区块保存着实体数据，而实体数据总是在不断变化，只要数据变化了，就理应将新数据写入硬盘保存。因此一个区块被卸载且其数据无需被写入硬盘的情况是极为少见的。
 
 #### setSaveChunk
 
@@ -56,7 +56,7 @@ description: ChunkUnloadEvent
 > 
 > <br>
 > 
-> 该方法用于设置事件中的区块是否会被保存到硬盘中。
+> 该方法用于设置涉事区块是否会被保存到硬盘中。
 > 
 > @param saveChunk 区块保存状态。
 > 
