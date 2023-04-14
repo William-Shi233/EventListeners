@@ -36,7 +36,7 @@ description: PlayerQuitEvent
 > 
 > 该方法用于获取将要广播给全体玩家的退出消息。
 > 
-> @return 将要广播给全体玩家的退出消息。
+> @return 退出消息字符串。
 > 
 > <br>
 > 
@@ -56,7 +56,7 @@ description: PlayerQuitEvent
 > 
 > 该方法用于设置将要广播给全体玩家的退出消息。
 > 
-> @param quitMessage 将要广播给全体玩家的退出消息。
+> @param quitMessage 退出消息字符串。
 
 #### getHandlers
 
