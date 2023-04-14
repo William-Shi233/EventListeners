@@ -20,7 +20,7 @@ description: PlayerTakeLecternBookEvent
 > 
 > <br>
 > 
-> 当玩家按 `Take Book` 按钮，从讲台上取下一本书时触发。如果本事件被取消，则书将留在原处。
+> 当玩家按 `Take Book` 按钮，从讲台上取下一本书时触发。如果本事件被取消，书将留在原处。
 > 
 > <br>
 > 
@@ -40,9 +40,9 @@ description: PlayerTakeLecternBookEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的讲台方块。
+> 该方法用于获取涉事讲台方块。
 > 
-> @return 事件中的讲台方块。
+> @return 涉事讲台方块。
 
 #### getBook
 
@@ -56,7 +56,7 @@ description: PlayerTakeLecternBookEvent
 > 
 > <br>
 > 
-> 该方法用于获取讲台上的书本物品堆。
+> 该方法用于获取讲台上现有的书本物品堆。
 > 
 > @return 讲台上的书本物品堆。
 
