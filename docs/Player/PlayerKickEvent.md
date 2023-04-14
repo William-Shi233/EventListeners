@@ -34,9 +34,9 @@ description: PlayerKickEvent
 > 
 > <br>
 > 
-> 该方法用于获取玩家被踢出的理由，理由以字符串形式表示。
+> 该方法用于获取涉事玩家被踢出的理由。
 > 
-> @return 玩家被踢出的理由。
+> @return 踢出理由字符串。
 
 #### getLeaveMessage
 
@@ -52,7 +52,7 @@ description: PlayerKickEvent
 > 
 > 该方法用于获取将要广播给全体玩家的退出消息。
 > 
-> @return 将要广播给全体玩家的退出消息。
+> @return 退出消息字符串。
 > 
 > <br>
 > 
@@ -82,9 +82,9 @@ description: PlayerKickEvent
 > 
 > <br>
 > 
-> 该方法用于设置玩家被踢出的理由，理由以字符串形式表示。
+> 该方法用于设置玩家被踢出的理由。
 > 
-> @param kickReason 玩家被踢出的理由。
+> @param kickReason 踢出理由。
 
 #### setLeaveMessage
 
@@ -100,7 +100,7 @@ description: PlayerKickEvent
 > 
 > 该方法用于设置将要广播给全体玩家的退出消息。
 > 
-> @param leaveMessage 将要广播给全体玩家的退出消息。
+> @param leaveMessage 退出消息。
 
 #### getHandlers
 
