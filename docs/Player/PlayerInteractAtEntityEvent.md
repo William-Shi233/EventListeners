@@ -44,7 +44,7 @@ description: PlayerInteractAtEntityEvent
 
 方法签名: ()Lorg/bukkit/util/Vector;
 
-> 译注：无文档。玩家点击时所瞄准的坐标。
+> 译注：无文档。该方法用于获取玩家点击时所瞄准的坐标。
 
 #### getHandlers
 
