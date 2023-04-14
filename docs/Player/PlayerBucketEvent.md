@@ -18,11 +18,11 @@ description: PlayerBucketEvent
 > 
 > <br>
 > 
-> 代表玩家手持桶进行交互时触发的事件。
+> 当玩家手持桶进行交互时触发。
 > 
 > <br>
 > 
-> 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
+> 译注：该事件未实现 `getHandlers()` 和 `getHandlerList()` 方法，无法直接监听。
 
 ### 方法列表
 
@@ -38,9 +38,13 @@ description: PlayerBucketEvent
 > 
 > <br>
 > 
-> 该方法用于获取桶的材质。
+> 该方法用于获取涉事的桶。
 > 
-> @return 事件中桶的材质。
+> @return 涉事的桶。
+> 
+> <br>
+> 
+> 译注：所谓“桶”，不准确。本方法返回的是涉事物品堆的材质，至于“桶”字则语焉不详。
 
 #### getItemStack
 
@@ -70,9 +74,9 @@ description: PlayerBucketEvent
 > 
 > <br>
 > 
-> 该方法用于设置事件发生以后所生成的新物品堆，该物品堆将被放入玩家手中。
+> 该方法用于设置事件发生后，玩家手中的新物品堆。
 > 
-> @param itemStack 将要放入玩家手中的物品堆。
+> @param itemStack 事件发生后将要放入玩家手中的物品堆。
 
 #### getBlock
 
@@ -86,9 +90,9 @@ description: PlayerBucketEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的方块。
+> 该方法用于获取涉事方块。
 > 
-> @return 事件中的方块。
+> @return 涉事方块。
 > 
 > <br>
 > 
@@ -106,9 +110,9 @@ description: PlayerBucketEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中被点击的方块。
+> 该方法用于获取被点击的方块。
 > 
-> @return 事件中被点击的方块。
+> @return 被点击的方块。
 > 
 > <br>
 > 
@@ -126,9 +130,9 @@ description: PlayerBucketEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中被点击的方块面。
+> 该方法用于获取被点击的方块面。
 > 
-> @return 事件中被点击的方块面。
+> @return 被点击的方块面。
 > 
 > <br>
 > 
