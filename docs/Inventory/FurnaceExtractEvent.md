@@ -36,9 +36,9 @@ description: FurnaceExtractEvent
 > 
 > <br>
 > 
-> 该方法用于获取触发事件的玩家。
+> 该方法用于获取涉事玩家。
 > 
-> @return 触发事件的玩家。
+> @return 涉事玩家。
 
 #### getItemType
 
