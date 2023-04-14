@@ -20,7 +20,7 @@ description: HangingBreakByEntityEvent
 > 
 > <br>
 > 
-> 当某个悬挂物实体被其他实体所移除时触发。
+> 当某个悬挂物实体被另一实体所移除时触发。
 
 ### 方法列表
 
