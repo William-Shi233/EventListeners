@@ -116,13 +116,13 @@ description: PlayerArmorStandManipulateEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中内容有所改变的物品槽位。
+> 该方法用于获取内容有所改变的涉事物品槽位。
 > 
 > @return 自盔甲架获取或放置到盔甲架上的物品堆所占的槽位。
 > 
 > <br>
 > 
-> 译注：所谓“index”和“raw item slot”，可能有歧义。此处指的是盔甲架上的槽位，用 `EquipmentSlot` 枚举表示。在物品栏相关事件中，这两种表述多用于数字槽位序号。
+> 译注：所谓“index”和“raw item slot”，就物品栏相关事件而言，含义存在差别。但是此处这两个词指的是盔甲架上的槽位，用 `EquipmentSlot` 枚举表示，而不是数字槽位序号，没有歧义。
 
 #### getRightClicked
 
@@ -130,7 +130,7 @@ description: PlayerArmorStandManipulateEvent
 
 方法签名: ()Lorg/bukkit/entity/ArmorStand;
 
-> 译注：无文档。该方法用于获取事件中被右键的盔甲架。
+> 译注：无文档。该方法用于获取被右键点击的涉事盔甲架。
 
 #### getHandlers
 
