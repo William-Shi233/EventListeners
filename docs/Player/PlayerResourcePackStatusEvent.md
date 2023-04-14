@@ -24,7 +24,7 @@ description: PlayerResourcePackStatusEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Resource_pack](https://minecraft.fandom.com/wiki/Resource_pack) 可知，服务端可以设置默认资源包，玩家有权选择是否下载并使用（防止服务端发来恶意内容）。相对应地，服务器方面人员藉由修改配置项，可以将拒绝使用资源包的玩家踢出服务器。
+> 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Resource_pack](https://minecraft.fandom.com/wiki/Resource_pack) 可知，服务端可以设置默认资源包，玩家有权选择是否下载并使用（防止服务端发来恶意内容）。与玩家的拒绝权相对应，服务器方面人员藉由修改配置项也可以将拒绝使用资源包的玩家踢出服务器。
 
 ### 方法列表
 
@@ -42,7 +42,7 @@ description: PlayerResourcePackStatusEvent
 > 
 > 该方法用于获取资源包加载的状态。
 > 
-> @return 资源包加载的状态。
+> @return 一个 `Status` 枚举字段，用于确定资源包加载的状态。
 
 #### getHandlers
 
