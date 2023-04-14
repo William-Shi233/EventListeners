@@ -18,7 +18,7 @@ description: PlayerShearEntityEvent
 > 
 > <br>
 > 
-> 当玩家给实体剪毛时触发。
+> 当玩家修剪实体时触发。
 > 
 > <br>
 > 
@@ -50,9 +50,9 @@ description: PlayerShearEntityEvent
 > 
 > <br>
 > 
-> 该方法用于获取被剪毛的实体。
+> 该方法用于获取被涉事玩家修剪的实体。
 > 
-> @return 被剪毛的实体。
+> @return 被涉事玩家修剪的实体。
 
 #### getItem
 
@@ -66,9 +66,9 @@ description: PlayerShearEntityEvent
 > 
 > <br>
 > 
-> 该方法用于获取剪毛时所使用的工具。
+> 该方法用于获取修剪涉事实体时所使用的工具。
 > 
-> @return 剪毛时所使用的工具。
+> @return 涉事剪刀物品堆。
 
 #### getHand
 
@@ -82,9 +82,13 @@ description: PlayerShearEntityEvent
 > 
 > <br>
 > 
-> 该方法用于获取剪毛时所使用的手，即主手或副手。
+> 该方法用于获取修剪涉事实体时所使用的手。
 > 
-> @return 剪毛时所使用的手。
+> @return 涉事的手。
+> 
+> <br>
+> 
+> 译注：一般而言，涉及玩家交互时，交互行为只与主副手有关，而与左右手无关。玩家以左手为主手，和以右手为主手进行交互时，没有除客户端画面显示以外的区别。如欲监听玩家设定主手，可参见 `PlayerChangedMainHandEvent` 。
 
 #### getHandlers
 
