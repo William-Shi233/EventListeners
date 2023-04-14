@@ -56,11 +56,11 @@ description: PlayerBucketEntityEvent
 > 
 > <br>
 > 
-> 该方法用于获取捕捉实体时所持的桶。
+> 该方法用于获取涉事玩家捕捉实体时所用的桶。
 > 
 > 本方法的返回值是指玩家点击实体时所使用的物品堆，比如材质为 `Material#WATER_BUCKET` 的水桶物品堆。
 > 
-> @return 捕捉实体时所持的桶。
+> @return 捕捉实体时所用的桶。
 
 #### getEntityBucket
 
@@ -78,11 +78,11 @@ description: PlayerBucketEntityEvent
 > 
 > <br>
 > 
-> 该方法用于获取捕捉实体后所得的桶。
+> 该方法用于获取涉事实体将要被装入的桶。
 > 
 > 本方法的返回值是指装有被抓实体的物品堆，比如材质为 `Material#PUFFERFISH_BUCKET` 的河豚桶物品堆。
 > 
-> @return 捕捉实体后所得的桶。
+> @return 涉事实体将要被装入的桶。
 
 #### isCancelled
 
