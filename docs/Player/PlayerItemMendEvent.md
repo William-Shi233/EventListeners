@@ -68,9 +68,9 @@ description: PlayerItemMendEvent
 > 
 > <br>
 > 
-> 该方法用于获取触发事件的经验球实体。
+> 该方法用于获取涉事经验球实体。
 > 
-> @return 触发事件的经验球实体。
+> @return 涉事经验球实体。
 
 #### getRepairAmount
 
@@ -88,7 +88,7 @@ description: PlayerItemMendEvent
 > 
 > <br>
 > 
-> 该方法用于获取耐久度的增加量。
+> 该方法用于获取涉事物品堆耐久度的增加量。
 > 
 > 默认情况下，耐久度的增加量是“经验球所含经验值的两倍”和“物品堆耐久损耗量”二者的较小值。
 > 
@@ -108,7 +108,7 @@ description: PlayerItemMendEvent
 > 
 > <br>
 > 
-> 该方法用于设置耐久度的增加量。
+> 该方法用于设置设施物品堆耐久度的增加量。
 > 
 > 涉事经验球实体所含经验值将会减去耐久度增量的一半。
 > 
