@@ -34,7 +34,7 @@ description: InventoryPickupItemEvent
 > 
 > 该方法用于获取吸取了物品堆的物品栏。
 > 
-> @return 吸取了物品堆的物品栏。
+> @return 涉事物品栏。
 
 #### getItem
 
@@ -50,7 +50,7 @@ description: InventoryPickupItemEvent
 > 
 > 该方法用于获取被吸取的物品堆实体。
 > 
-> @return 被吸取的物品堆实体。
+> @return 涉事物品堆实体。
 
 #### isCancelled
 
