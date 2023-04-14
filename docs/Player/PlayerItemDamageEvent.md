@@ -24,7 +24,7 @@ description: PlayerItemDamageEvent
 > 
 > <br>
 > 
-> 译注：当物品堆有“耐久”附魔，并且发挥作用使耐久度不减少时，本事件仍会触发。代码位于 `net.minecraft.server.v1_16_R3.ItemStack#isDamaged(int i, Random random, @Nullable EntityPlayer entityplayer)` ，参见该类第 `444` 行。对于物品即将受到的每一点耐久损失，都会作一次耐久附魔是否生效的判断，如果恰好生效则减免一点耐久损失。此后只要 `entityplayer != null` 即触发本事件，就算耐久损失被减免到零时亦然。
+> 译注：当物品堆有“耐久”附魔，并且发挥作用使耐久度不减少时，本事件仍会触发。代码位于 `net.minecraft.server.v1_16_R3.ItemStack#isDamaged(int i, Random random, @Nullable EntityPlayer entityplayer)` 方法。对于物品即将受到的每一点耐久损失，都会作一次耐久附魔是否生效的判断，如果恰好生效则减免一点耐久损失。此后只要 `entityplayer != null` 即触发本事件，就算耐久损失被减免到零时亦然。
 
 ### 方法列表
 
@@ -42,7 +42,7 @@ description: PlayerItemDamageEvent
 > 
 > 该方法用于获取耐久度减少的物品堆。
 > 
-> @return 耐久度减少的物品堆。
+> @return 涉事物品堆。
 
 #### getDamage
 
@@ -56,7 +56,7 @@ description: PlayerItemDamageEvent
 > 
 > <br>
 > 
-> 该方法用于获取耐久度的减少量。
+> 该方法用于获取涉事物品堆耐久度的减少量。
 > 
 > @return 耐久度的减少量。
 
@@ -66,7 +66,7 @@ description: PlayerItemDamageEvent
 
 方法签名: (I)V
 
-> 译注：无文档。该方法用于设置耐久度的减少量。
+> 译注：无文档。该方法用于设置涉事物品堆耐久度的减少量。
 
 #### isCancelled
 
