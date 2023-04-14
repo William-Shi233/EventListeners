@@ -22,7 +22,7 @@ description: InventoryOpenEvent
 > 
 > <br>
 > 
-> 译注：本事件文档与 `InventoryEvent` 一致，必是舛错。本事件在玩家打开物品栏时触发。
+> 译注：文档有误。本事件文档与 `InventoryEvent` 一致，有挪用抄袭之嫌。本事件在玩家打开物品栏时触发。
 > 
 > 玩家打开自己的背包时，不会触发本事件。打开自己的物品栏是纯粹的客户端行为。
 
@@ -40,9 +40,9 @@ description: InventoryOpenEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中打开物品栏的玩家。
+> 该方法用于获取涉事玩家。
 > 
-> @return 事件中打开物品栏的玩家。
+> @return 涉事玩家。
 
 #### isCancelled
 
