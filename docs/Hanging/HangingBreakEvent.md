@@ -36,7 +36,7 @@ description: HangingBreakEvent
 > 
 > 该方法用于获取悬挂物被移除的原因。
 > 
-> @return 悬挂物被移除的原因。
+> @return 一个 `RemoveCause` 枚举字段，用于确定悬挂物被移除的原因。
 
 #### isCancelled
 
@@ -104,7 +104,7 @@ description: HangingBreakEvent
 > 
 > <br>
 > 
-> 译注：`Physics` 一词与方块状态的更新有关。悬挂物背后的方块被摧毁使得周遭环境发生更新。
+> 译注：`Physics` 一词与方块状态的更新有关。悬挂物背后的方块被摧毁使得周遭环境发生更新。可参见 `BlockPhysicsEvent` 。
 
 #### DEFAULT
 
@@ -112,4 +112,4 @@ description: HangingBreakEvent
 > 
 > <br>
 > 
-> 由于某种未能归入其他类别的原因，悬挂物被移除。
+> 由于某种未能归入上文类别的原因，悬挂物被移除。
