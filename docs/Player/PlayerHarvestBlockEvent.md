@@ -30,7 +30,7 @@ description: PlayerHarvestBlockEvent
 > 
 > 当玩家从方块中取得收获时触发。
 > 
-> 所谓“收获”，是指玩家俾使方块产生掉落物并改变了块状态，但并没有破坏方块。掉落物常是某种作物物品堆。
+> 所谓“收获”，是指玩家俾使方块产生掉落物（常是某种作物物品堆）并改变了块状态，但并没有破坏方块。
 > 
 > 如果玩家破坏了方块，则不会触发本事件。如欲监听玩家破坏方块，可使用 `BlockBreakEvent` 和 `BlockDropItemEvent` 。
 > 
@@ -70,7 +70,7 @@ description: PlayerHarvestBlockEvent
 > 
 > 该方法用于获取一个列表，其间存储了全部收获所得的物品堆。
 > 
-> @return 一个列表，其间存储了全部收获所得的物品堆。
+> @return 收获所得的物品堆列表。
 
 #### isCancelled
 
