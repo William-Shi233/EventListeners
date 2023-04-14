@@ -24,7 +24,7 @@ description: PrepareItemEnchantEvent
 > 
 > <br>
 > 
-> 译注：`PrepareItemEnchantEvent` 是在附魔备选项生成时触发的。比如玩家向周遭环绕着充足有效书架的附魔台中放入一本书，则会生成三个备选项，触发 `PrepareItemEnchantEvent` ，此时不会消耗经验。玩家可以将很多种不同的物品（如不同材质的剑、镐等）放入附魔台中，查看预期得到的附魔，多次触发 `PrepareItemEnchantEvent` 。而 `EnchantItemEvent` 则是在玩家点击了某个备选项，消耗了经验等级，实际完成附魔时触发的。
+> 译注：`PrepareItemEnchantEvent` 是在附魔备选项生成时触发的。比如玩家向周遭环绕着充足有效书架的附魔台中放入一件物品，则会生成三个备选项，触发 `PrepareItemEnchantEvent` ，此时不会消耗经验。玩家可以将很多种不同的物品（如不同材质的剑、镐等）放入附魔台中，查看预期得到的附魔，多次触发 `PrepareItemEnchantEvent` 。而 `EnchantItemEvent` 则是在玩家点击了某个备选项，消耗了经验等级，实际完成附魔时触发的。
 
 ### 方法列表
 
@@ -56,9 +56,9 @@ description: PrepareItemEnchantEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的附魔台方块。
+> 该方法用于获取附魔所用的附魔台方块。
 > 
-> @return 事件中的附魔台方块。
+> @return 附魔所用的附魔台方块。
 
 #### getItem
 
