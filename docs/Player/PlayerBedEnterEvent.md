@@ -30,7 +30,7 @@ description: PlayerBedEnterEvent
 > 
 > 在旧版本的 `Bukkit API` 中，没有 `getBedEnterResult()` 方法，也没有 `useBed()` 和 `setUseBed(Event.Result)`方法。一般使用 `isCancelled()` 和 `setCancelled(boolean)` 这两个方法来操控本事件的结果。如果调用 `setCancelled(false)` 则玩家可以就寝。否则将阻止玩家就寝。这样写存在一个问题，即插件开发者不知道事件的“默认”结果。比如玩家在主世界右键了一个距离足够近的床，此时周围无怪物游荡，玩家本应该成功入睡，但是第一位开发者调用了 `setCancelled(true)` 让玩家无法就寝。第二位插件开发者调用 `isCancelled()` 方法，发现玩家无法就寝，由于没有 `getBedEnterResult()` 方法，其很可能误以为事件的“默认”结果是玩家无法入睡。同时，假如有开发者想要撤回在其之前所有监听器的修改结果，即让该事件的结果保持“默认”，避免有插件强行允许或禁止玩家就寝，也很难实现其目标，因为无从获取“默认”结果。
 > 
-> 但是高版本则不然。高版本提供了 `useBed()` 和 `setUseBed(Event.Result)` 两个方法来操控事件的结果，并且增加了 `getBedEnterResult()` 方法。`Event.Result` 枚举有三个字段，分别是允许、阻止和默认。前两个字段分别代表允许玩家上床和阻止玩家上床。比如 `setUseBed(Event.Result.ALLOW)` 这一写法即允许玩家上床睡觉。“默认”则是使用事件在自然状态下，不受插件影响时的默认结果，让事件结果与 `getBedEnterResult()` 的返回值一致。`setUseBed(Event.Result.DEFAULT)` 方法会让所有其他插件对事件结果的操纵无效，让玩家右键床的结果回归 `getBedEnterResult()` 的最初状态。
+> 但是高版本则不然。高版本提供了 `useBed()` 和 `setUseBed(Event.Result)` 两个方法来操控事件的结果，并且增加了 `getBedEnterResult()` 方法。`Event.Result` 枚举有三个字段，分别是允许、阻止和默认。前两个字段分别代表允许玩家上床和阻止玩家上床。比如 `setUseBed(Event.Result.ALLOW)` 这一写法即允许玩家上床睡觉。“默认”则是使用事件在自然状态下，不受插件影响时的默认结果，让事件结果与 `getBedEnterResult()` 的返回值一致。`setUseBed(Event.Result.DEFAULT)` 方法会让另外的插件对事件结果的操纵无效，让玩家右键床的结果回归 `getBedEnterResult()` 的最初状态。
 > 
 > 在低版本的 `Bukkit API` 中，没有 `getBedEnterResult()` 方法，也没有 `BedEnterResult` 枚举。所以只能通过 `isCancelled()` 和 `setCancelled(boolean)` 这两个方法来干预事件结果。为了保证向后兼容性（基于低版本 `Bukkit API` 编写的插件也能运行在高版本服务端上），这两个方法并没有删除。在高版本下当某位插件开发者调用了 `isCancelled()` 方法时，如果 `useBed()` 为拒绝则返回 `true` ，如果 `useBed()` 为默认且 `getBedEnterResult()` 为允许就寝则返回 `false` ，如果 `useBed()` 为默认且 `getBedEnterResult()` 为不允许就寝则返回 `true` ，如果 `useBed()` 为允许则返回 `false` 。当某位插件开发者调用 `setCancelled(true)` 时，等效于 `setUseBed(Event.Result.DENY)` 。当某位插件开发者调用 `setCancelled(false)` 时，如果 `useBed()` 为拒绝则等效于 `setUseBed(Event.Result.DEFAULT)` ，如果 `useBed()` 不为拒绝则保持原值不变。
 
@@ -50,7 +50,7 @@ description: PlayerBedEnterEvent
 > 
 > 该方法用于获取本事件的默认结果。
 > 
-> @return 本事件的默认结果。
+> @return 一个 `BedEnterResult` 枚举字段，用于确定本事件的默认结果。
 > 
 > <br>
 > 
@@ -74,11 +74,11 @@ description: PlayerBedEnterEvent
 > 
 > <br>
 > 
-> 该方法用于获取将要对事件中的床采取何种措施。
+> 该方法用于获取将要对被点击的床采取何种措施。
 > 
 > 如果本方法返回 `Event.Result.DEFAULT` ，则事件结果与 `getBedEnterResult()` 方法返回值等同。
 > 
-> @return 将要对事件中的床采取的措施。
+> @return 将要对被点击的床采取的措施。
 > 
 > @see 参见本事件的 `setUseBed(org.bukkit.event.Event.Result)` 方法。
 > 
@@ -112,7 +112,7 @@ description: PlayerBedEnterEvent
 > 
 > <br>
 > 
-> 该方法用于设置将要对事件中的床采取何种措施。
+> 该方法用于设置将要对被点击的床采取何种措施。
 > 
 > 传入 `Event.Result.ALLOW` 会使玩家成功就寝，无论 `getBedEnterResult()` 返回何值。
 > 
@@ -120,7 +120,7 @@ description: PlayerBedEnterEvent
 > 
 > 传入 `Event.Result.DEFAULT` 会使玩家采用事件默认结果就寝，即 `getBedEnterResult()` 方法返回值的结果。
 > 
-> @param useBed 将要对事件中的床采取何种措施。
+> @param useBed 将要对被点击的床采取何种措施。
 > 
 > @see 参见本事件的 `useBed()` 方法。
 > 
@@ -200,9 +200,9 @@ description: PlayerBedEnterEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的床方块。
+> 该方法用于获取涉事床方块。
 > 
-> @return 事件中的床方块。
+> @return 涉事床方块。
 
 #### getHandlers
 
@@ -250,7 +250,7 @@ description: PlayerBedEnterEvent
 > 
 > `World#isBedWorks()` 和 `World#isNatural()` 方法可以用于检测某个世界是否允许睡觉。
 > 
-> `World#isBedWorks()` 方法如果返回 `false` ，则玩家无法上床就寝，而且床会爆炸。
+> 如果 `World#isBedWorks()` 方法返回 `false` ，则玩家无法上床就寝，而且床会爆炸。
 
 #### NOT_POSSIBLE_NOW
 
@@ -296,4 +296,4 @@ description: PlayerBedEnterEvent
 > 
 > <br>
 > 
-> 存在其他未知问题，玩家无法就寝。
+> 存在另外的未知问题，玩家无法就寝。
