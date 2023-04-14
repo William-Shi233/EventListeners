@@ -26,7 +26,7 @@ description: EnchantItemEvent
 > 
 > 译注：所谓“仅会在玩家使用附魔台附魔时触发”，指使用铁砧附魔时不触发本事件。
 > 
-> `PrepareItemEnchantEvent` 是在附魔备选项生成时触发的。比如玩家向周遭环绕着充足有效书架的附魔台中放入一本书，则会生成三个备选项，触发 `PrepareItemEnchantEvent` ，此时不会消耗经验。玩家可以将很多种不同的物品（如不同材质的剑、镐等）放入附魔台中，查看预期得到的附魔，多次触发 `PrepareItemEnchantEvent` 。而 `EnchantItemEvent` 则是在玩家点击了某个备选项，消耗了经验等级，实际完成附魔时触发的。
+> `PrepareItemEnchantEvent` 是在附魔备选项生成时触发的。比如玩家向周遭环绕着充足有效书架的附魔台中放入一件物品，则会生成三个备选项，触发 `PrepareItemEnchantEvent` ，此时不会消耗经验。玩家可以将很多种不同的物品（如不同材质的剑、镐等）放入附魔台中，查看预期得到的附魔，多次触发 `PrepareItemEnchantEvent` 。而 `EnchantItemEvent` 则是在玩家点击了某个备选项，消耗了经验等级，实际完成附魔时触发的。
 
 ### 方法列表
 
@@ -58,9 +58,9 @@ description: EnchantItemEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的附魔台方块。
+> 该方法用于获取附魔所用的附魔台方块。
 > 
-> @return 事件中的附魔台方块。
+> @return 附魔所用的附魔台方块。
 
 #### getItem
 
@@ -121,6 +121,10 @@ description: EnchantItemEvent
 > 该方法用于设置界面右侧所显示的附魔需求的最低经验等级。
 > 
 > @param level 附魔需求的最低经验等级。
+> 
+> <br>
+> 
+> 译注：见上。
 
 #### getEnchantsToAdd
 
@@ -138,7 +142,7 @@ description: EnchantItemEvent
 > 
 > <br>
 > 
-> 该方法用于获取一个 `Map` ，其键为附魔类型，值为附魔等级，用于存储将要添加到物品堆上的全部附魔。可以修改本方法的返回值来修改附魔结果。如果向该 `Map` 中添加某种不可以被附魔到事件中的物品堆上的附魔，则该附魔会被忽略。
+> 该方法用于获取一个 `Map` ，其键为附魔类型，值为附魔等级，用于存储将要添加到物品堆上的全部附魔。可以修改本方法的返回值来修改附魔结果。注意，如果向该 `Map` 中添加某种不可被附魔到涉事物品堆上的附魔，则该附魔会被忽略。
 > 
 > @return 一个 `Map` ，其键为附魔类型，值为附魔等级。
 > 
@@ -160,7 +164,7 @@ description: EnchantItemEvent
 > 
 > 该方法用于获取附魔时所点击的按钮序号。
 > 
-> @return 按钮序号（范围为 `[0, 2]` ）。
+> @return 按钮序号（返回零、一或二）。
 > 
 > <br>
 > 
