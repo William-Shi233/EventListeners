@@ -74,7 +74,7 @@ description: InventoryClickEvent
 > 
 > 由于本事件涉及到对物品栏内容的修改，在本事件的监听器中运行与物品栏有关的一些方法可能是不安全的。
 > 
-> 在本事件的监听器中，绝不能对事件中的玩家或物品栏视图调用下列方法：
+> 在本事件的监听器中，绝不能对涉事玩家或物品栏视图调用下列方法：
 > 
 > <ul>
 > 
@@ -90,11 +90,11 @@ description: InventoryClickEvent
 > 
 > </ul>
 > 
-> 如确有必要调用上述方法，请使用 `BukkitScheduler#runTask(Plugin, Runnable)` 调度一个任务，在下一 `tick` 执行方法。另外，上述列表并不一定完整，可能有其他方法同样不宜在本事件的监听器中使用。
+> 如确有必要调用上述方法，请使用 `BukkitScheduler#runTask(Plugin, Runnable)` 调度一个任务，在下一刻执行方法。另外，上述列表并不一定完整，可能尚存有未列出的方法，同样不宜在本事件的监听器中使用。
 > 
 > 假设触发本事件的 `HumanEntity` 对象是 `Player` 的子类，则如欲修改涉事物品栏所允许的物品堆最大堆叠数量或涉事物品栏的内容物，必须随后调用 `Player#updateInventory()` 以更新物品栏。
 > 
-> 如果在监听器中对某个槽位中的物品堆作了修改，而事件本身的结果也对该槽位中的物品堆存在影响，则监听器中的修改可能会被覆盖。如必欲修改，应当取消本事件，然后在监听器中手动模拟事件结果。当然也可以使用 `BukkitScheduler#runTask(Plugin, Runnable)` 方法，在下一 `tick` 进行修改。
+> 如果在监听器中对某个槽位中的物品堆作了修改，而事件本身的结果也对该槽位中的物品堆存在影响，则监听器中的修改可能会被覆盖。如必欲修改，应当取消本事件，然后在监听器中手动模拟事件结果。当然也可以使用 `BukkitScheduler#runTask(Plugin, Runnable)` 方法，在下一刻进行修改。
 
 ### 方法列表
 
@@ -112,7 +112,7 @@ description: InventoryClickEvent
 > 
 > 该方法用于获取玩家所点击的槽位的类型。
 > 
-> @return 槽位的类型。
+> @return 涉事槽位的类型。
 
 #### getCursor
 
@@ -234,7 +234,7 @@ description: InventoryClickEvent
 > 
 > 该方法用于设置光标上的物品堆。
 > 
-> @deprecated 该方法已过时。本方法会在物品栏其他内容修改以前强行改变光标上的物品堆，有可能导致客户端和服务端之间数据不同步，让被点击的物品栏出现不符合预期的变化。
+> @deprecated 该方法已过时。本方法会在物品栏中另外的内容修改以前强行改变光标上的物品堆，有可能导致客户端和服务端之间数据不同步，让被点击的物品栏出现不符合预期的变化。
 
 #### setCurrentItem
 
@@ -352,11 +352,11 @@ description: InventoryClickEvent
 > 
 > <br>
 > 
-> 该方法用于获取触发事件的点击动作。
+> 该方法用于获取涉事点击动作。
 > 
 > 本方法的返回值不会被插件所修改。它代表了事件在自然状态下的结果。如果要改变点击后所发生的结果，必须手动对物品栏做修改。
 > 
-> @return 触发事件的点击动作。
+> @return 一个 `InventoryAction` 枚举字段，用于确定点击的动作。
 
 #### getClick
 
@@ -376,7 +376,7 @@ description: InventoryClickEvent
 > 
 > 本方法的返回值不会被插件所修改。
 > 
-> @return 点击的类型。
+> @return 一个 `ClickType` 枚举字段，用于确定点击的类型。
 
 #### getHandlers
 
