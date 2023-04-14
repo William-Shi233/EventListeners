@@ -17,6 +17,10 @@ description: InventoryEvent
 > <br>
 > 
 > 代表与玩家有关的物品栏事件。
+> 
+> <br>
+> 
+> 译注：该事件未实现 `getHandlers()` 和 `getHandlerList()` 方法，无法直接监听。
 
 ### 方法列表
 
@@ -32,9 +36,9 @@ description: InventoryEvent
 > 
 > <br>
 > 
-> 获取事件中的物品栏。
+> 该方法用于获取涉事物品栏。
 > 
-> @return 触发事件的物品栏。返回值是物品栏视图（即上下两个物品栏）中居于上方的物品栏。
+> @return 涉事物品栏。返回值是物品栏视图（即上下两个物品栏）中居于上方的物品栏。
 
 #### getViewers
 
@@ -66,9 +70,9 @@ description: InventoryEvent
 > 
 > <br>
 > 
-> 获取事件中的物品栏视图（由上下两个物品栏组成）。
+> 该方法用于获取涉事物品栏视图（由上下两个物品栏组成）。
 > 
-> @return 触发事件的物品栏视图。
+> @return 涉事物品栏视图。
 
 #### getHandlers
 
