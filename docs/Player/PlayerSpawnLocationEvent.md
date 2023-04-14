@@ -46,7 +46,7 @@ description: PlayerSpawnLocationEvent
 > 
 > 如果 `Player#hasPlayedBefore()` 方法返回 `true` ，则可知玩家曾经上线过，此时将返回 `player.dat` 存档文件中记录的玩家上次离线时所在的位置。
 > 
-> 如果玩家从未进入过服务器，则返回 `Bukkit` 服务端主世界的世界重生点位置。
+> 如果玩家从未进入过服务器，则返回服务端主世界的世界重生点位置。
 > 
 > @return 将要生成玩家实体的位置。
 
