@@ -28,7 +28,7 @@ description: PrepareAnvilEvent
 
 方法签名: ()Lorg/bukkit/inventory/AnvilInventory;
 
-> 译注：无文档。该方法用于获取事件中的铁砧物品栏。
+> 译注：无文档。该方法用于获取涉事铁砧物品栏。
 
 #### getResult
 
