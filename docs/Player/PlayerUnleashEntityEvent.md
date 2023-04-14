@@ -20,7 +20,7 @@ description: PlayerUnleashEntityEvent
 > 
 > <br>
 > 
-> 当一个实体身上的拴绳即将因玩家而被解开时触发。本事件在拴绳被解开以前触发。
+> 当实体身上的拴绳即将因玩家而被解开时触发。
 
 ### 方法列表
 
@@ -38,7 +38,7 @@ description: PlayerUnleashEntityEvent
 > 
 > 该方法用于获取解开拴绳的玩家。
 > 
-> @return 解开拴绳的玩家。
+> @return 涉事玩家。
 
 #### isCancelled
 
