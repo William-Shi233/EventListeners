@@ -76,7 +76,7 @@ description: PlayerCommandPreprocessEvent
 > 
 > <br>
 > 
-> 当玩家执行指令前触发。只要消息以斜杠 `/` 起首即视为指令。本事件在指令处理的过程中靠前运行，对本事件中字段的修改（比如 `setMessage(String)` ）可以在指令运行结果中体现。（译注：比如对于某个插件提供的指令而言，首先触发本事件，然后再运行 `CommandExecutor` 的相关方法。所以 `CommandExecutor` 中得到的参数 `String[] args` 可能是被监听器修改过的。原版指令大同小异。）
+> 当玩家执行指令前触发。只要消息以斜杠 `/` 起首即视为指令。在指令处理的过程中，本事件在较先运行的环节内触发，对字段的修改（比如通过调用 `setMessage(String)` 方法）可以在运行结果中体现。（译注：比如对于某个插件提供的指令而言，首先触发本事件，然后再运行 `CommandExecutor` 的相关方法。所以 `CommandExecutor` 中得到的参数 `String[] args` 可能是被监听器修改过的。原版指令大同小异。）
 > 
 > 很多插件无视此事件。如无必要，请避免使用本事件。
 > 
@@ -86,11 +86,11 @@ description: PlayerCommandPreprocessEvent
 > 
 > <li> 把服务器内运行的指令记录到单独的日志文件里。
 > 
-> <li> 替换变量。把 ${nearbyPlayer} 替换成距离最近的玩家的实际玩家名，或者将命令方块中使用的选择器 @a 、@p 等作替换，适配其他插件提供的那些不支持选择器的命令。（译注：前一个用法类似于 Placeholder API 所作的工作，此处是将指令中的变量作替换，比如把 /ban ${nearbyPlayer} 改成 /ban William_Shi 。后一个用法是将指令中的 @a 、@p 等选择器进行替换，比如把 /test @p 换成 /test William_Shi ，只不过这一功能侧重于插件的指令，因为原版指令基本都支持选择器。) 
+> <li> 替换变量。把 ${nearbyPlayer} 替换成距离最近的玩家的实际玩家名，或者将命令方块中使用的选择器 @a 、@p 等作替换，适配某些插件注册的不支持原版选择器的命令。（译注：前一个用法类似于 Placeholder API 所作的工作，此处是将指令中的变量作替换，比如把 `/ban ${nearbyPlayer}` 改成 `/ban William_Shi` 。后一个用法是将指令中的 @a 、@p 等选择器进行替换，比如把 `/test @p` 换成 `/test William_Shi` 。这一功能是侧重于插件的指令而言的，因为原版指令基本都支持选择器。) 
 > 
 > <li> 按照某种条件，阻止运行指令。
 > 
-> <li> 指令别名。比如当后台执行 /calias cr gamemode creative 以后，下次后台执行 /cr 就自动替换为 /gamemode creative 。指令别名应当只是针对某一个发送者作替换的，如果要实现全局指令别名，那应当直接注册别名而不是监听本事件。（译注：所谓“针对某一个发送者”，情况类似对于玩家 A 而言，由于其使用了 /calias cr gamemode creative 指令，所以该玩家以后都可以用 /cr 来简写，而玩家 B 没有执行过  /calias cr gamemode creative 指令，所以不能使用简写。因此这些指令别名是针对部分玩家进行个性化配置的。全局别名则是所有玩家无需运行 /calias 指令也可以使用的别名。)
+> <li> 为发送者提供个性化的指令别名。比如当后台执行 `/calias cr gamemode creative` 以后，下次后台执行 `/cr` 就自动替换为 `/gamemode creative` 。指令别名应当只是针对某一个发送者作替换的，如果要实现全局指令别名，那应当直接注册别名而不是监听本事件。（译注：所谓“个性化”，指的是某个指令别名只对某一个具体发送者生效。比如玩家 A 使用了 `/calias cr gamemode creative` 指令，所以该玩家以后都可以用 `/cr` 来简写 `/gamemode creative`，而玩家 B 没有执行过 `/calias cr gamemode creative` 指令，所以不能使用简写。这些指令别名是针对部分玩家进行个性化配置的。全局别名则是所有玩家无需运行 `/calias` 指令也可以使用的别名。所谓“calias”，是文档捏造的指令，即“command alias”的简写，字面意思是指令别名。第一个参数“cr”是简写，后面所有的参数并为接续，作为未经简化的指令。)
 > 
 > </ul>
 > 
@@ -98,13 +98,13 @@ description: PlayerCommandPreprocessEvent
 > 
 > <ul>
 > 
-> <li>监听这个事件，并在其中写指令运行的逻辑。（译注：指不要在事件监听器里完成指令的执行。比如监听 /gamemode creative 指令以后，在监听器里取消事件，然后调用 setGameMode 方法来完成指令的执行。执行应该留给 CommandExecutor 完成。）
+> <li>监听这个事件，并在其中写指令运行的逻辑。（译注：指不要在事件监听器里完成指令的执行。比如监听 `/gamemode creative` 指令以后，在监听器里取消事件，然后调用 `setGameMode(GameMode)` 方法来完成指令的执行。执行应该留给 `CommandExecutor` 完成。）
 > 
 > </ul>
 > 
 > 如果本事件被取消了，指令将不会被执行。
 > 
-> 本事件的 `getMessage` 方法所返回的字符串，有可能以斜杠 `/` 开头，也有可能不是。无论有没有斜杠，都请不要修改，保留原状。如果在指令字符串开头添加或删除斜杠，后果未知。
+> 本事件的 `getMessage()` 方法所返回的字符串，有可能以斜杠 `/` 开头，也有可能不是。无论有没有斜杠，都请不要修改，保留原状。如果在指令字符串开头添加或删除斜杠，后果未知。
 
 ### 方法列表
 
@@ -138,9 +138,13 @@ description: PlayerCommandPreprocessEvent
 > 
 > 该方法用于获取玩家将要发送的指令字符串。
 > 
-> 所有指令都以一个特别的字符串（斜杠 `/` ）起首。当执行指令时，第一个字符是不纳入考量的。
+> 所有指令都以一个特别的字符串起首。当执行指令时，第一个字符是不纳入考量的。
 > 
 > @return 玩家将要发送的指令字符串。
+> 
+> <br>
+> 
+> 译注：所谓“特别的字符串”，指斜杠 `/` 。
 
 #### setMessage
 
@@ -162,11 +166,15 @@ description: PlayerCommandPreprocessEvent
 > 
 > 该方法用于设置玩家将要发送的指令字符串。
 > 
-> 所有指令都以一个特别的字符串（斜杠 `/` ）起首。当执行指令时，第一个字符是不纳入考量的。
+> 所有指令都以一个特别的字符串起首。当执行指令时，第一个字符是不纳入考量的。
 > 
 > @param command 玩家将要发送的指令字符串。 
 > 
-> @throws 如果参数为 `null` 或为空字符串，则抛出 `IllegalArgumentException` 。
+> @throws 如果传入的参数为 `null` 或为空字符串，则抛出 `IllegalArgumentException` 。
+> 
+> <br>
+> 
+> 译注：所谓“特别的字符串”，指斜杠 `/` 。
 
 #### setPlayer
 
@@ -186,7 +194,7 @@ description: PlayerCommandPreprocessEvent
 > 
 > @param player 将执行指令的玩家。
 > 
-> @throws 如果参数为 `null` ，则抛出 `IllegalArgumentException` 。
+> @throws 如果传入的参数为 `null` ，则抛出 `IllegalArgumentException` 。
 
 #### getRecipients
 
@@ -230,7 +238,7 @@ description: PlayerCommandPreprocessEvent
 > 
 > <br>
 > 
-> 译注：其他插件提供的集合，`Bukkit API` 只能保证其实现类是 `java.util.Set` 的子类，但不能保证它可否修改，也不能保证它是不是 `Lazy Set` 。
+> 译注：如果本事件并非服务端所触发，而是插件所触发，则就本方法返回的集合而言，`Bukkit API` 只能保证其实现类是 `java.util.Set` 的子类，但不能保证它可否修改，也不能保证它是不是 `Lazy Set` 。
 > 
 > 所谓不可修改集合，即不能向其中添加删除元素。监听器只能遍历其中元素，不能通过修改 `Set` 的方式添加或删除一个接收聊天消息的对象，否则会抛出 `UnsupportedOperationException` 。
 > 
