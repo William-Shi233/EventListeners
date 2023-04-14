@@ -50,7 +50,7 @@ description: PlayerInteractEntityEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中被玩家右键点击的实体。
+> 该方法用于获取被玩家右键点击的实体。
 > 
 > @return 被玩家右键点击的实体。
 
@@ -66,9 +66,13 @@ description: PlayerInteractEntityEvent
 > 
 > <br>
 > 
-> 该方法用于获取玩家点击时所使用的手（主手或副手）。
+> 该方法用于获取玩家点击时所使用的手。
 > 
-> @return 玩家点击时所使用的手（主手或副手）。
+> @return 玩家点击时所使用的手。
+> 
+> <br>
+> 
+> 译注：一般而言，涉及玩家交互时，交互行为只与主副手有关，而与左右手无关。玩家以左手为主手，和以右手为主手进行交互时，没有除客户端画面显示以外的区别。如欲监听玩家设定主手，可参见 `PlayerChangedMainHandEvent` 。
 
 #### getHandlers
 
