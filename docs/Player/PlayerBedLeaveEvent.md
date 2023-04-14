@@ -22,7 +22,9 @@ description: PlayerBedLeaveEvent
 > 
 > <br>
 > 
-> 译注：在 `net.minecraft.server.v1_16_R3.EntityPlayer#getBedResult(BlockPosition blockposition, EnumDirection enumdirection)` 方法中，会调用重设玩家出生点的 `setRespawnPosition` 方法。然而，`getBedResult` 方法似乎是在玩家尝试就寝时调用的，并非在玩家从床上离开时调用。从 `getBedResult` 方法的内容来看，只要玩家所在世界允许睡觉（不是下界、末地等）、床没有距离玩家过远、床没有被阻挡，出生点就会被重设。在这之后才会判断时间是否为白天、床附近是否有怪物游荡。本事件的 `shouldSetSpawnLocation` 方法似乎在服务端底层没有调用，`setSpawnLocation` 是否有意义尚存疑。
+> 译注：本事件的 `shouldSetSpawnLocation()` 方法似乎在服务端底层没有调用，`setSpawnLocation(boolean)` 是否有意义尚存疑。
+> 
+> 与“玩家就寝重设重生点”有关的逻辑位于 `net.minecraft.server.v1_16_R3.EntityPlayer#getBedResult(BlockPosition blockposition, EnumDirection enumdirection)` 方法中，该方法会调用重设玩家出生点的 `setRespawnPosition(ResourceKey<World> resourcekey, @Nullable BlockPosition blockposition, float f, boolean flag, boolean flag1)` 方法。然而，`getBedResult(BlockPosition blockposition, EnumDirection enumdirection)` 方法似乎是在玩家尝试就寝时调用的，并非在玩家从床上离开时调用。从 `getBedResult(BlockPosition blockposition, EnumDirection enumdirection)` 方法的内容来看，只要玩家所在世界允许睡觉（不是下界、末地等）、床没有距离玩家过远、床没有被阻挡，玩家右键床的瞬间出生点就会被重设。在这之后才会判断时间是否为白天、床附近是否有怪物游荡。所以在游戏中，即使是白天，右键床也可以重设出生点，只不过不能就寝。
 
 ### 方法列表
 
@@ -38,9 +40,9 @@ description: PlayerBedLeaveEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的床方块。
+> 该方法用于获取涉事床方块。
 > 
-> @return 事件中的床方块。
+> @return 涉事床方块。
 
 #### shouldSetSpawnLocation
 
@@ -75,6 +77,8 @@ description: PlayerBedLeaveEvent
 > <br>
 > 
 > 译注：见上。
+> 
+> 另外，假如本方法返回 `true` ，字面意思似乎是“应当重设出生点”，但文档却言该情况下会防止出生点被重设，不知所云。
 
 #### setSpawnLocation
 
@@ -109,6 +113,8 @@ description: PlayerBedLeaveEvent
 > <br>
 > 
 > 译注：见上。
+> 
+> 另外，假如传入 `true` 作为参数，字面意思似乎是“应当重设出生点”，但文档却言该情况下会防止出生点被重设，不知所云。
 
 #### isCancelled
 
