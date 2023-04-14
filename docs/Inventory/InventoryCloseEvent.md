@@ -22,7 +22,7 @@ description: InventoryCloseEvent
 > 
 > <br>
 > 
-> 译注：本事件文档与 `InventoryEvent` 一致，必是舛错。本事件在玩家关闭物品栏时触发。
+> 译注：文档有误。本事件文档与 `InventoryEvent` 一致，有挪用抄袭之嫌。本事件在玩家关闭物品栏时触发。
 
 ### 方法列表
 
@@ -38,9 +38,9 @@ description: InventoryCloseEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的玩家。
+> 该方法用于获取涉事玩家。
 > 
-> @return 事件中的玩家。
+> @return 涉事玩家。
 
 #### getHandlers
 
