@@ -20,7 +20,7 @@ description: PlayerPickupItemEvent
 > 
 > <br>
 > 
-> 当玩家自地上捡起一件物品时触发。
+> 当玩家自地上捡起物品时触发。
 > 
 > @deprecated 本事件已过时。请监听 `EntityPickupItemEvent` 。
 
@@ -38,7 +38,7 @@ description: PlayerPickupItemEvent
 > 
 > <br>
 > 
-> 译注：请不要使用本事件。本事件已经过时。
+> 译注：请使用 `EntityPickupItemEvent` 。本事件已经过时。
 
 #### getRemaining
 
@@ -52,7 +52,7 @@ description: PlayerPickupItemEvent
 > 
 > <br>
 > 
-> 译注：请不要使用本事件。本事件已经过时。
+> 译注：请使用 `EntityPickupItemEvent` 。本事件已经过时。
 
 #### isCancelled
 
