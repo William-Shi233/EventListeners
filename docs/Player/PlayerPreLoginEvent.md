@@ -24,7 +24,7 @@ description: PlayerPreLoginEvent
 > 
 > 本事件存储了试图登录服务器的玩家的有关数据。
 > 
-> 本事件已经过时。因为触发本事件时需要在登录线程里进行同步操作切回主线程再调用监听器。`AsyncPlayerPreLoginEvent` 是异步的，不会在主线程内触发，能让服务器主线程以外的其他线程保持异步状态，因而建议监听 `AsyncPlayerPreLoginEvent` 。
+> @deprecated 本事件已经过时。本事件在登录线程里触发，但却调度同步任务，在主线程里调用监听器。`AsyncPlayerPreLoginEvent` 是异步的，其监听器不会在主线程内被调用，能让服务器主线程以外的线程保持异步状态，因而建议监听 `AsyncPlayerPreLoginEvent` 。
 > 
 > <br>
 > 
