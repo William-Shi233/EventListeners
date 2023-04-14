@@ -40,9 +40,9 @@ description: PlayerRecipeDiscoverEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中被解锁配方的 `NamespacedKey` 对象。
+> 该方法用于获取被解锁配方的 `NamespacedKey` 对象。
 > 
-> @return 事件中被解锁配方的 `NamespacedKey` 对象。
+> @return 被解锁配方的 `NamespacedKey` 对象。
 > 
 > <br>
 > 
