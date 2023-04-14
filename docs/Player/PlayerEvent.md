@@ -20,7 +20,7 @@ description: PlayerEvent
 > 
 > <br>
 > 
-> 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
+> 译注：该事件未实现 `getHandlers()` 和 `getHandlerList()` 方法，无法直接监听。
 
 ### 方法列表
 
@@ -36,6 +36,6 @@ description: PlayerEvent
 > 
 > <br>
 > 
-> 获取事件中的玩家。
+> 该方法用于获取涉事玩家。
 > 
-> @return 触发事件的玩家。
+> @return 涉事玩家。
