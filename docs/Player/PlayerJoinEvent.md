@@ -40,7 +40,7 @@ description: PlayerJoinEvent
 > 
 > 该方法用于获取将要广播给全体玩家的欢迎消息。
 > 
-> @return 将要广播给全体玩家的欢迎消息。可能为 `null` 。
+> @return 欢迎消息字符串。可能为 `null` 。
 > 
 > <br>
 > 
@@ -60,7 +60,7 @@ description: PlayerJoinEvent
 > 
 > 该方法用于设置将要广播给全体玩家的欢迎消息。
 > 
-> @param joinMessage 将要广播给全体玩家的欢迎消息。如果传入 `null` 则不会发送任何消息。
+> @param joinMessage 欢迎消息。如果传入 `null` 则不会发送任何消息。
 
 #### getHandlers
 
