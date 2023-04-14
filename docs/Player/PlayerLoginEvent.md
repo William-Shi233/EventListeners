@@ -26,11 +26,11 @@ description: PlayerLoginEvent
 > 
 > 本事件存储了试图登录服务器的玩家的有关数据。
 > 
-> 本事件是在玩家初始化过程的**较早**阶段触发的。如果需要操作玩家实体，建议推迟到 `PlayerJoinEvent` 监听器内执行。
+> 在玩家初始化过程中，本事件在较先运行的环节内触发。如果需要操作玩家实体，建议推迟到 `PlayerJoinEvent` 监听器内执行。
 > 
 > <br>
 > 
-> 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与事件中玩家有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
+> 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与涉事玩家有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
 > 
 > 在 `AsyncPlayerPreLoginEvent` 、`PlayerPreLoginEvent` 、`PlayerLoginEvent` 事件触发时，服务器里还不存在玩家实体。这几个事件是在客户端尝试与服务端建立联系时触发的，插件可以通过事件所提供的 `disallow()` 等方法拒绝客户端登录。这样拒绝时，服务端内不会出现玩家实体。玩家登录过程将会尽早被切断。而 `PlayerSpawnLocationEvent` 触发时玩家已经成功加入了服务器，即将生成玩家实体。该事件不可取消，也无法将玩家踢出服务器。`PlayerJoinEvent` 事件触发时，服务器内已经生成了玩家实体。可通过 `Player#kickPlayer(String)` 方法将玩家踢出服务器。
 
@@ -66,7 +66,7 @@ description: PlayerLoginEvent
 > 
 > 该方法用于获取目前的登录结果，返回一个 `PlayerLoginEvent.Result` 枚举值。
 > 
-> @return 目前的登录结果。
+> @return 一个 `Result` 枚举字段，用于确定目前的登录结果。
 
 #### setResult
 
@@ -82,7 +82,7 @@ description: PlayerLoginEvent
 > 
 > 该方法用于设置登录结果，接收一个 `PlayerLoginEvent.Result` 枚举值作为参数。
 > 
-> @param result 新的登录结果。
+> @param result 一个 `Result` 枚举字段，用于确定新的登录结果。
 
 #### getKickMessage
 
@@ -168,7 +168,7 @@ description: PlayerLoginEvent
 > 
 > 该方法用于以给定原因拒绝玩家登录。
 > 
-> @param result 玩家登录结果，用于指明拒绝玩家登录的原因。
+> @param result 一个 `Result` 枚举字段，用于指明拒绝玩家登录的原因。
 > 
 > @param message 将展示给玩家的拒绝登录原因字符串。
 
