@@ -38,9 +38,9 @@ description: PlayerRespawnEvent
 > 
 > <br>
 > 
-> 该方法用于获取当前的玩家重生点。
+> 该方法用于获取当前的玩家重生点位置。
 > 
-> @return 当前的玩家重生点。
+> @return 当前的玩家重生点位置。
 
 #### setRespawnLocation
 
@@ -54,9 +54,9 @@ description: PlayerRespawnEvent
 > 
 > <br>
 > 
-> 该方法用于设置新的玩家重生点。
+> 该方法用于设置新的玩家重生点位置。
 > 
-> @param respawnLocation 新的玩家重生点。
+> @param respawnLocation 新的玩家重生点位置。
 
 #### isBedSpawn
 
@@ -70,9 +70,9 @@ description: PlayerRespawnEvent
 > 
 > <br>
 > 
-> 该方法用于获取重生点位置是否为玩家的床。
+> 该方法用于获取重生点位置是否为玩家的床的位置。
 > 
-> @return 如果重生点位置是玩家的床，则返回 `true` 。
+> @return 如果重生点位置是玩家的床的位置，则返回 `true` 。
 
 #### isAnchorSpawn
 
@@ -86,9 +86,9 @@ description: PlayerRespawnEvent
 > 
 > <br>
 > 
-> 该方法用于获取重生点位置是否为玩家的重生锚。
+> 该方法用于获取重生点位置是否为玩家的重生锚的位置。
 > 
-> @return 如果重生点位置是玩家的重生锚，则返回 `true` 。
+> @return 如果重生点位置是玩家的重生锚的位置，则返回 `true` 。
 
 #### getHandlers
 
