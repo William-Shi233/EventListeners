@@ -18,7 +18,7 @@ description: FurnaceBurnEvent
 > 
 > <br>
 > 
-> 当熔炉消耗某燃料物品堆时触发。
+> 当熔炉消耗燃料物品堆时触发。
 
 ### 方法列表
 
@@ -34,9 +34,9 @@ description: FurnaceBurnEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的燃料物品堆。
+> 该方法用于获取涉事燃料物品堆。
 > 
-> @return 燃料物品堆。
+> @return 涉事燃料物品堆。
 
 #### getBurnTime
 
@@ -50,9 +50,9 @@ description: FurnaceBurnEvent
 > 
 > <br>
 > 
-> 该方法用于获取该燃料物品堆可以维持燃烧的时间。
+> 该方法用于获取涉事燃料物品堆可以维持燃烧的时间。
 > 
-> @return 该燃料物品堆可以维持燃烧的时间。
+> @return 涉事燃料物品堆可以维持燃烧的时间。
 
 #### setBurnTime
 
@@ -66,9 +66,9 @@ description: FurnaceBurnEvent
 > 
 > <br>
 > 
-> 该方法用于设置该燃料物品堆可以维持燃烧的时间。
+> 该方法用于设置涉事燃料物品堆可以维持燃烧的时间。
 > 
-> @param burnTime 该燃料物品堆可以维持燃烧的时间。
+> @param burnTime 涉事燃料物品堆可以维持燃烧的时间。
 
 #### isBurning
 
@@ -100,7 +100,7 @@ description: FurnaceBurnEvent
 > 
 > 该方法用于获取熔炉是否会消耗燃料以保持燃烧。
 > 
-> @param burning 熔炉是否会消耗燃料以保持燃烧。
+> @param burning 如传入 `true` ，则熔炉会消耗燃料以保持燃烧。
 
 #### isCancelled
 
