@@ -28,7 +28,7 @@ description: TradeSelectEvent
 > 
 > 当玩家在交易界面侧栏选中某项交易时触发。
 > 
-> 本事件允许用户获取被选中交易项的序号。对事件中的商人对象调用 `Merchant#getRecipe(int i)` 方法时，可以传入该序号，以获得 `MerchantRecipe` 类型的交易项信息。
+> 用户可以通过本事件获取被选中交易项的序号。对涉事商人对象调用 `Merchant#getRecipe(int i)` 方法时，传入该序号即可得到 `MerchantRecipe` 类型的交易项信息。
 
 ### 方法列表
 
@@ -44,9 +44,9 @@ description: TradeSelectEvent
 > 
 > <br>
 > 
-> 该方法用于获取玩家所点击的交易项的序号。
+> 该方法用于获取涉事玩家所点击的交易项的序号。
 > 
-> @return 玩家所点击的交易项的序号。
+> @return 涉事玩家所点击的交易项的序号。
 
 #### getInventory
 
@@ -68,9 +68,9 @@ description: TradeSelectEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的商人对象。
+> 该方法用于获取涉事商人对象。
 > 
-> @return 商人对象。
+> @return 涉事商人对象。
 > 
 > <br>
 > 
