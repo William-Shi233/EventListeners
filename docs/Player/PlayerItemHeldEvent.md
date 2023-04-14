@@ -38,7 +38,7 @@ description: PlayerItemHeldEvent
 > 
 > <br>
 > 
-> 该方法用于获取原先选中的槽位序号。
+> 该方法用于获取涉事玩家原先选中的槽位序号。
 > 
 > @return 原先选中的槽位序号。
 
@@ -54,7 +54,7 @@ description: PlayerItemHeldEvent
 > 
 > <br>
 > 
-> 该方法用于获取新选中的槽位序号。
+> 该方法用于获取涉事玩家新选中的槽位序号。
 > 
 > @return 新选中的槽位序号。
 
