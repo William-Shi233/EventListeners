@@ -44,15 +44,15 @@ description: AsyncPlayerChatEvent
 > 
 > 如果是玩家客户端发来数据包，触发了本事件，那么本事件是异步的。如果是一个插件强迫玩家发送聊天消息，那么本事件是同步的。
 > 
-> 应当注意通过 `isAsynchronous` 方法检查本事件是否为异步触发，并视情况以妥善方法处理本事件。
+> 应当注意通过 `isAsynchronous()` 方法检查本事件是否为异步触发，并视情况以妥善方法处理本事件。
 > 
 > <br>
 > 
 > 译注：`Mojang` 在设计 `MineCraft` 时，几乎没有考虑线程安全问题。整个 `MineCraft` 服务端中的大部分集合、大部分方法，都没有考虑异步操作。在 `MineCraft` 内部，如生成生物、如破坏方块等方法，都运行在主线程上，虽然效率低，但是这样一来也没有线程安全问题。一旦让插件在异步线程中操作 `MineCraft` 中的实体、方块、物品栏等对象，就可能出现并发修改等错误。整个 `MineCraft` 里几乎没有什么方法是线程安全的。除非某方法仅涉及到数据包的发送，否则它就不能运行在异步线程里。比如发送消息给玩家，这个方法仅仅涉及到玩家聊天消息相关数据包的发送，因此它可以异步运行。本事件的文档一再警告用户检查事件是否异步触发，就是为了防止用户在异步线程中调用 `Bukkit API` 里那些线程不安全的方法。
 > 
-> 如果本事件是在主线程里被触发的（同步触发），那么本事件的所有监听器也都运行在主线程里，访问 `Bukkit API` 里的方法就没有线程安全问题。当插件强迫玩家发送聊天消息（比如通过 `Player#chat` 方法）时，本事件是同步触发的。在 `org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer#chat` 方法中，调用了 `net.minecraft.server.v1_16_R3.PlayerConnection#chat` 方法，其中 `boolean async` 参数的值为 `false` 。在 `PlayerConnection` 类第 `1709` 行触发本事件时，向本事件构造器内传入了 `false` ，因此可见本事件是同步的。这种情况下访问 `Bukkit API` 里的方法安全无虞。
+> 如果本事件是在主线程里被触发的（同步触发），那么本事件的所有监听器也都运行在主线程里，访问 `Bukkit API` 里的方法就没有线程安全问题。当插件强迫玩家发送聊天消息（比如通过 `Player#chat(String)` 方法）时，本事件是同步触发的。在 `org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer#chat(String)` 方法中，调用了 `net.minecraft.server.v1_16_R3.PlayerConnection#chat(String s, boolean async)` 方法，其中 `boolean async` 参数的值为 `false` 。在该方法中触发本事件时，向本事件构造器内传入了 `false` ，因此可见本事件是同步的。这种情况下访问 `Bukkit API` 里的方法安全无虞。
 > 
-> 如果本事件是在异步线程里被触发的（异步触发），那么本事件的所有监听器也都运行在异步线程里。此处所谓“异步线程”可以是任何线程。当玩家客户端通过数据包发来聊天消息时，本事件是异步触发的。因为 `PlayerConnection#a(PacketPlayInChat)` 方法中调用了 `PlayerConnection#c(String s)` 方法，然后在第 `1648` 行调用 `chat` 方法，参数 `boolean async` 为 `true` 。故此，本事件是异步触发的。在这种情况下，`Bukkit API` 中的绝大多数方法都不可以被调用。如必为之，可用 `BukkitScheduler` 调度一个同步任务，使代码在主线程内运行。
+> 如果本事件是在异步线程里被触发的（异步触发），那么本事件的所有监听器也都运行在异步线程里。此处所谓“异步线程”可以是任何线程。当玩家客户端通过数据包发来聊天消息时，本事件是异步触发的。因为 `PlayerConnection#a(PacketPlayInChat)` 方法中调用了 `PlayerConnection#c(String s)` 方法，然后调用 `chat(String s, boolean async)` 方法，参数 `boolean async` 为 `true` 。在该方法中触发本事件时，向本事件构造器内传入了 `true` ，故此，本事件是异步触发的。在这种情况下，`Bukkit API` 中的绝大多数方法都不可以被调用。如必欲为之，可用 `BukkitScheduler` 调度一个同步任务，使代码在主线程内运行。
 
 ### 方法列表
 
@@ -70,9 +70,9 @@ description: AsyncPlayerChatEvent
 > 
 > <br>
 > 
-> 该方法用于获取玩家尝试发送的消息字符串。这一字符串将会在 `getFormat()` 方法中被用到。
+> 该方法用于获取涉事玩家尝试发送的消息字符串。这一字符串将会在 `getFormat()` 方法中被用到。
 > 
-> @return 玩家尝试发送的消息字符串。
+> @return 涉事玩家尝试发送的消息字符串。
 
 #### setMessage
 
@@ -88,9 +88,9 @@ description: AsyncPlayerChatEvent
 > 
 > <br>
 > 
-> 该方法用于设置玩家尝试发送的消息字符串。这一字符串将会在 `getFormat()` 方法中被用到。
+> 该方法用于设置涉事玩家尝试发送的消息字符串。这一字符串将会在 `getFormat()` 方法中被用到。
 > 
-> @param message 玩家尝试发送的消息字符串。
+> @param message 涉事玩家尝试发送的消息字符串。
 
 #### getFormat
 
@@ -120,7 +120,7 @@ description: AsyncPlayerChatEvent
 > 
 > <br>
 > 
-> 译注：所谓“格式字符串”，指服务端将会以类似如下的方式处理消息：`String message = String.format(event.getFormat(), new Object[] { event.getPlayer().getDisplayName(), event.getMessage() });` ，因此这个方法的返回值要能作为 `JDK` 标准里的 `String.format` 方法的第一个参数来使用。
+> 译注：所谓“格式字符串”，指服务端将会以类似如下的方式处理消息：`String message = String.format(event.getFormat(), new Object[] { event.getPlayer().getDisplayName(), event.getMessage() });` ，因此这个方法的返回值要能作为 `JDK` 标准里的 `String.format(String, Object...)` 方法的第一个参数来使用。
 > 
 > 这个格式字符串的写法应当参阅 `Java` 官方文档中的说明 [https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Formatter.html#syntax](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Formatter.html#syntax) 。
 > 
@@ -170,7 +170,7 @@ description: AsyncPlayerChatEvent
 > 
 > 译注：关于格式字符串的相关说明见上。
 > 
-> 本方法会调用一次 `String.format` 方法来测试传入的格式字符串是不是合法，如果传入的格式字符串并不符合 `JDK` 标准的定义，则会抛出 `IllegalFormatException` 异常。
+> 本方法会调用一次 `String.format(String, Object...)` 方法来测试传入的格式字符串是不是合法，如果传入的格式字符串并不符合 `JDK` 标准的定义，则会抛出 `IllegalFormatException` 异常。
 
 #### getRecipients
 
@@ -208,7 +208,7 @@ description: AsyncPlayerChatEvent
 > 
 > <br>
 > 
-> 译注：其他插件提供的集合，`Bukkit API` 只能保证其实现类是 `java.util.Set` 的子类，但不能保证它可否修改，也不能保证它是不是 `Lazy Set` 。
+> 译注：如果本事件并非服务端所触发，而是插件所触发，则就本方法返回的集合而言，`Bukkit API` 只能保证其实现类是 `java.util.Set` 的子类，但不能保证它可否修改，也不能保证它是不是 `Lazy Set` 。
 > 
 > 所谓不可修改集合，即不能向其中添加删除元素。监听器只能遍历其中元素，不能通过修改 `Set` 的方式添加或删除一个接收聊天消息的对象，否则会抛出 `UnsupportedOperationException` 。
 > 
