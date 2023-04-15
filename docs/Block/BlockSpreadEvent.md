@@ -40,7 +40,7 @@ description: BlockSpreadEvent
 > 
 > <br>
 > 
-> 当一应条件合适，某方块开始向四周蔓延时触发。
+> 当一应条件合适，方块开始向四周蔓延时触发。
 > 
 > 如欲监听某些方块“随机”生成的事件，请参见 `BlockFormEvent` 。本事件在方块蔓延时触发。
 > 
@@ -54,7 +54,7 @@ description: BlockSpreadEvent
 > 
 > </ul>
 > 
-> 如果本事件被取消，则方块不会蔓延。
+> 如果本事件被取消，则涉事方块不会蔓延。
 > 
 > @see 参见 `BlockFormEvent` 。
 
@@ -74,7 +74,7 @@ description: BlockSpreadEvent
 > 
 > 该方法用于获取向外蔓延的源头方块。
 > 
-> @return 事件中向外蔓延的源头方块。
+> @return 向外蔓延的源头方块。
 
 #### getHandlers
 
