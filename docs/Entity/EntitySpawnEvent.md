@@ -20,7 +20,7 @@ description: EntitySpawnEvent
 > 
 > <br>
 > 
-> 当某个实体生成时触发。
+> 当实体在世界中生成时触发。
 > 
 > 如果本事件被取消，涉事实体将不会生成。
 
@@ -50,9 +50,9 @@ description: EntitySpawnEvent
 > 
 > <br>
 > 
-> 该方法用于获取实体生成的位置。
+> 该方法用于获取涉事实体生成的位置。
 > 
-> @return 实体生成的位置。
+> @return 涉事实体生成的位置。
 
 #### getHandlers
 
