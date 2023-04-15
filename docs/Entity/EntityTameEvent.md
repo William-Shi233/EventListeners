@@ -18,7 +18,7 @@ description: EntityTameEvent
 > 
 > <br>
 > 
-> 当某生物被驯服时触发。
+> 当生物被驯服时触发。
 
 ### 方法列表
 
