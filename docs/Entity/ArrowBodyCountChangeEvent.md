@@ -24,7 +24,7 @@ description: ArrowBodyCountChangeEvent
 > 
 > 译注：原文所谓“exists”，不知所云，应当为“exits”之衍文。即“箭矢自体内被拔出”。
 > 
-> 本事件可能在两种情况下触发。其一为 `net.minecraft.server.v1_16_R3.EntityPlayer#reset` 方法（参见该类第 `2067` 行）。该方法中会将箭矢数量重设为 `0` 。其二为箭矢击中生物，此时生物体内的箭矢数量会增加一。
+> 本事件可能在两种情况下触发。其一为 `net.minecraft.server.v1_16_R3.EntityPlayer#reset()` 方法。该方法会将玩家体内箭矢数量设为零 。其二为箭矢击中生物，此时生物体内的箭矢数量会增加一。
 
 ### 方法列表
 
@@ -46,7 +46,7 @@ description: ArrowBodyCountChangeEvent
 > 
 > <br>
 > 
-> 译注：即 `net.minecraft.server.v1_16_R3.EntityPlayer#reset` 方法的情况（参见该类第 `2067` 行）。
+> 译注：即 `net.minecraft.server.v1_16_R3.EntityPlayer#reset()` 方法的情况。
 
 #### getOldAmount
 
@@ -62,7 +62,7 @@ description: ArrowBodyCountChangeEvent
 > 
 > 该方法用于获取事件发生前实体体内原有的箭矢数量。
 > 
-> @return 事件发生前实体体内原有的箭矢数量。
+> @return 原有的箭矢数量。
 
 #### getNewAmount
 
@@ -78,7 +78,7 @@ description: ArrowBodyCountChangeEvent
 > 
 > 该方法用于获取事件发生后实体体内将会存在的箭矢数量。
 > 
-> @return 事件发生后实体体内将会存在的箭矢数量。
+> @return 新的箭矢数量。
 
 #### setNewAmount
 
@@ -94,7 +94,7 @@ description: ArrowBodyCountChangeEvent
 > 
 > 该方法用于设置事件发生后实体体内将会存在的箭矢数量。
 > 
-> @param newAmount 事件发生后实体体内将会存在的箭矢数量。
+> @param newAmount 新的箭矢数量。
 
 #### getEntity
 
@@ -102,7 +102,7 @@ description: ArrowBodyCountChangeEvent
 
 方法签名: ()Lorg/bukkit/entity/LivingEntity;
 
-> 译注：无文档。该方法用于获取体内箭矢数量发生变化的生物。
+> 译注：无文档。该方法用于获取涉事生物。
 
 #### isCancelled
 
