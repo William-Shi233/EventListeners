@@ -68,9 +68,9 @@ description: EntityChangeBlockEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的方块将会拥有的新材质。
+> 该方法用于获取涉事方块将会拥有的新材质。
 > 
-> @return 事件中的方块将会拥有的新材质。
+> @return 涉事方块将会拥有的新材质。
 
 #### getBlockData
 
@@ -84,9 +84,9 @@ description: EntityChangeBlockEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的方块将会拥有的新 `BlockData` 。
+> 该方法用于获取涉事方块将会拥有的新块数据。
 > 
-> @return 事件中的方块将会拥有的新 `BlockData` 。
+> @return 涉事方块将会拥有的新块数据。
 
 #### getHandlers
 
