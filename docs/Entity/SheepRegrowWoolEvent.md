@@ -40,7 +40,7 @@ description: SheepRegrowWoolEvent
 
 方法签名: ()Lorg/bukkit/entity/Sheep;
 
-> 译注：无文档。该方法用于获取事件中的羊。
+> 译注：无文档。该方法用于获取涉事羊实体。
 
 #### getHandlers
 
