@@ -24,7 +24,7 @@ description: BlockIgniteEvent
 > 
 > 当方块被点燃时触发。如果需要监听玩家放置一个火焰方块，请参见 `BlockPlaceEvent` 。
 > 
-> 如果本事件被取消，则方块将不会被点燃。
+> 如果本事件被取消，则涉事方块将不会被点燃。
 
 ### 方法列表
 
@@ -54,7 +54,7 @@ description: BlockIgniteEvent
 > 
 > 该方法用于获取方块被点燃的原因。
 > 
-> @return 方块被点燃的原因。
+> @return 一个 `IgniteCause` 枚举字段，用于确定方块被点燃的详细原因。
 
 #### getPlayer
 
@@ -100,9 +100,9 @@ description: BlockIgniteEvent
 > 
 > <br>
 > 
-> 该方法用于获取点燃方块的火源方块。
+> 该方法用于获取点燃涉事方块的火源方块。
 > 
-> @return 点燃方块的火源方块。如果方块不是被其他方块点燃的，则返回 `null` 。
+> @return 点燃涉事方块的火源方块。如果涉事方块不是被方块所点燃的，则返回 `null` 。
 
 #### getHandlers
 
@@ -146,7 +146,7 @@ description: BlockIgniteEvent
 > 
 > <br>
 > 
-> 火焰方块蔓延，点燃了其他方块。
+> 火焰方块蔓延，点燃了周边的方块。
 
 #### LIGHTNING
 
