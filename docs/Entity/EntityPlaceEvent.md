@@ -42,9 +42,9 @@ description: EntityPlaceEvent
 > 
 > <br>
 > 
-> 该方法用于获取放置实体的玩家。
+> 该方法用于获取放置涉事实体的玩家。
 > 
-> @return 放置实体的玩家。
+> @return 放置涉事实体的玩家。
 
 #### getBlock
 
@@ -58,9 +58,9 @@ description: EntityPlaceEvent
 > 
 > <br>
 > 
-> 该方法用于获取放置实体时所依凭的方块。
+> 该方法用于获取放置涉事实体时所依凭的方块。
 > 
-> @return 放置实体时所依凭的方块。
+> @return 放置涉事实体时所依凭的方块。
 
 #### getBlockFace
 
@@ -74,9 +74,9 @@ description: EntityPlaceEvent
 > 
 > <br>
 > 
-> 该方法用于获取放置实体时所依凭的方块面。
+> 该方法用于获取放置涉事实体时所依凭的方块面。
 > 
-> @return 放置实体时所依凭的方块面。
+> @return 放置涉事实体时所依凭的方块面。
 
 #### isCancelled
 
