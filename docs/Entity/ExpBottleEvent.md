@@ -20,7 +20,7 @@ description: ExpBottleEvent
 > 
 > <br>
 > 
-> 当一个掷出的经验瓶击中某物，生成经验球时触发。
+> 当掷出的经验瓶击中某物，生成经验球时触发。
 
 ### 方法列表
 
@@ -30,7 +30,7 @@ description: ExpBottleEvent
 
 方法签名: ()Lorg/bukkit/entity/ThrownExpBottle;
 
-> 译注：无文档。该方法用于获取事件中的经验瓶实体。
+> 译注：无文档。该方法用于获取涉事经验瓶实体。
 
 #### getShowEffect
 
