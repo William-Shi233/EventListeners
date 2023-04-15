@@ -34,7 +34,7 @@ description: BlockRedstoneEvent
 > 
 > <br>
 > 
-> 该方法用于获取传导到该方块上的原有红石信号强度。
+> 该方法用于获取传导到涉事方块上的原有红石信号强度。
 > 
 > @return 原有的红石信号强度。
 
@@ -50,7 +50,7 @@ description: BlockRedstoneEvent
 > 
 > <br>
 > 
-> 该方法用于获取将要传导到该方块上的新红石信号强度。
+> 该方法用于获取将要传导到涉事方块上的新红石信号强度。
 > 
 > @return 新的红石信号强度。
 
@@ -66,7 +66,7 @@ description: BlockRedstoneEvent
 > 
 > <br>
 > 
-> 该方法用于设置将要传导到该方块上的新红石信号强度。
+> 该方法用于设置将要传导到涉事方块上的新红石信号强度。
 > 
 > @param newCurrent 新的红石信号强度。
 
