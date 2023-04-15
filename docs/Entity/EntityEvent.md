@@ -20,7 +20,7 @@ description: EntityEvent
 > 
 > <br>
 > 
-> 译注：该事件未实现 `getHandlers` 和 `getHandlerList` 方法，无法直接监听。
+> 译注：该事件未实现 `getHandlers()` 和 `getHandlerList()` 方法，无法直接监听。
 
 ### 方法列表
 
@@ -36,9 +36,9 @@ description: EntityEvent
 > 
 > <br>
 > 
-> 获取事件中的实体。
+> 该方法用于获取涉事实体。
 > 
-> @return 触发事件的实体。
+> @return 涉事实体。
 
 #### getEntityType
 
@@ -52,6 +52,6 @@ description: EntityEvent
 > 
 > <br>
 > 
-> 获取事件中实体的类型。
+> 该方法用于获取涉事实体的类型。
 > 
-> @return 事件中实体的类型。
+> @return 涉事实体的类型。
