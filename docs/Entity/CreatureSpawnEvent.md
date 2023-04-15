@@ -22,7 +22,7 @@ description: CreatureSpawnEvent
 > 
 > <br>
 > 
-> 当某个生物生成时触发。
+> 当生物在世界中生成时触发。
 > 
 > 如果本事件被取消，涉事生物将不会生成。
 
@@ -34,7 +34,7 @@ description: CreatureSpawnEvent
 
 方法签名: ()Lorg/bukkit/entity/LivingEntity;
 
-> 译注：无文档。该方法用于获取事件中生成的实体。
+> 译注：无文档。该方法用于获取新生成的涉事生物。
 
 #### getSpawnReason
 
@@ -52,7 +52,7 @@ description: CreatureSpawnEvent
 > 
 > 该方法用于获取生物生成的原因。
 > 
-> @return 生物生成的详细原因。以 `SpawnReason` 枚举表示。
+> @return 一个 `SpawnReason` 枚举字段，用于确定生物生成的详细原因。
 
 ### 枚举: SpawnReason
 
@@ -274,7 +274,7 @@ description: CreatureSpawnEvent
 > 
 > <br>
 > 
-> 某个实体作为其他实体的坐骑生成（主要指僵尸与鸡组合而成的鸡骑士）。
+> 某个实体作为另一实体的坐骑生成（主要指僵尸与鸡组合而成的鸡骑士）。
 
 #### TRAP
 
@@ -392,7 +392,7 @@ description: CreatureSpawnEvent
 > 
 > <br>
 > 
-> 译注：指插件调用 `World#spawnEntity` 等方法生成实体。
+> 译注：指插件调用 `World#spawnEntity(Location, EntityType)` 等方法生成实体。
 
 #### DEFAULT
 
