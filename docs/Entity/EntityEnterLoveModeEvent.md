@@ -74,9 +74,9 @@ description: EntityEnterLoveModeEvent
 > 
 > <br>
 > 
-> 该方法用于获取动物发情的时长。
+> 该方法用于获取动物发情的时长，以刻为单位。
 > 
-> @return 动物发情的时长。
+> @return 动物发情的时长，以刻为单位。
 
 #### setTicksInLove
 
@@ -92,9 +92,9 @@ description: EntityEnterLoveModeEvent
 > 
 > <br>
 > 
-> 该方法用于设置动物发情的时长。
+> 该方法用于设置动物发情的时长，以刻为单位。
 > 
-> @param ticksInLove 动物发情的时长。
+> @param ticksInLove 动物发情的时长，以刻为单位。
 
 #### isCancelled
 
