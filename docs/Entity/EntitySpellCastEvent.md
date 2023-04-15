@@ -18,11 +18,11 @@ description: EntitySpellCastEvent
 > 
 > <br>
 > 
-> 当某一具有施咒能力的生物释放咒语时触发。
+> 当类型为 `Spellcaster` 的生物释放咒语时触发。
 > 
 > <br>
 > 
-> 译注：所谓“具有施咒能力的生物”，目前仅有幻术师和唤魔者两种。
+> 译注：所谓“类型为 `Spellcaster` 的生物”，目前仅有幻术师和唤魔者两种。
 
 ### 方法列表
 
@@ -50,11 +50,11 @@ description: EntitySpellCastEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中释放了何种类型的咒语。
+> 该方法用于获取被释放的涉事咒语的类型。
 > 
 > 本方法是 `Spellcaster#getSpell()` 方法的简写。
 > 
-> @return 事件中释放了何种类型的咒语。
+> @return 被释放的涉事咒语的类型。
 
 #### setCancelled
 
