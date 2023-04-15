@@ -43,6 +43,8 @@ description: EntityExhaustionEvent
 > <br>
 > 
 > 该方法用于获取饥饿等级增加的原因。
+> 
+> @return 一个 `ExhaustionReason` 枚举字段，用于确定饥饿等级增加的原因。
 
 #### getExhaustion
 
@@ -90,7 +92,7 @@ description: EntityExhaustionEvent
 
 方法签名: ()Lorg/bukkit/entity/HumanEntity;
 
-> 译注：无文档。该方法用于获取事件中的玩家。
+> 译注：无文档。该方法用于获取涉事玩家。
 
 #### isCancelled
 
@@ -154,7 +156,7 @@ description: EntityExhaustionEvent
 > 
 > <br>
 > 
-> 玩家攻击其他实体。
+> 玩家攻击某个实体。
 
 #### JUMP_SPRINT
 
