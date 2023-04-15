@@ -20,7 +20,7 @@ description: EntityDamageByEntityEvent
 > 
 > <br>
 > 
-> 当某实体被另一实体所伤害时触发。
+> 当实体被另一实体所伤害时触发。
 
 ### 方法列表
 
@@ -36,6 +36,6 @@ description: EntityDamageByEntityEvent
 > 
 > <br>
 > 
-> 该方法用于获取对处于防守地位者造成了伤害的实体。
+> 该方法用于获取对被害者造成了伤害的实体。
 > 
-> @return 对处于防守地位者造成了伤害的实体。
+> @return 对被害者造成了伤害的实体。
