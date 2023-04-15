@@ -50,9 +50,9 @@ description: EntityInteractEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中被点击的方块。
+> 该方法用于获取涉事方块。
 > 
-> @return 事件中被实体用物品点击的方块。
+> @return 被实体用物品点击的方块。
 > 
 > <br>
 > 
