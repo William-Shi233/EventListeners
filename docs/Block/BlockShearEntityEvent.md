@@ -40,13 +40,9 @@ description: BlockShearEntityEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中被剪毛的羊。
+> 该方法用于获取被修剪的实体。
 > 
-> @return 事件中被剪毛的羊。
-> 
-> <br>
-> 
-> 译注：本事件不仅局限于给羊剪毛时触发，应作“事件中被修剪的实体”。
+> @return 被修剪的实体。
 
 #### getTool
 
@@ -66,7 +62,7 @@ description: BlockShearEntityEvent
 > 
 > <br>
 > 
-> 译注：本事件不仅局限于给羊剪毛时触发，应作“修剪时所用的物品堆”。
+> 译注：文档有误。本事件不仅局限于给羊剪毛时触发，应作“修剪时所用的物品堆”。
 
 #### isCancelled
 
