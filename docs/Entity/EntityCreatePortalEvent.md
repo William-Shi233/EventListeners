@@ -32,7 +32,7 @@ description: EntityCreatePortalEvent
 
 方法签名: ()Lorg/bukkit/entity/LivingEntity;
 
-> 译注：请不要使用本事件。本事件已经过时。
+> 译注：请使用 `PortalCreateEvent` 。本事件已经过时。
 
 #### getBlocks
 
@@ -46,7 +46,7 @@ description: EntityCreatePortalEvent
 > 
 > <br>
 > 
-> 译注：请不要使用本事件。本事件已经过时。
+> 译注：请使用 `PortalCreateEvent` 。本事件已经过时。
 
 #### isCancelled
 
@@ -72,7 +72,7 @@ description: EntityCreatePortalEvent
 > 
 > <br>
 > 
-> 译注：请不要使用本事件。本事件已经过时。
+> 译注：请使用 `PortalCreateEvent` 。本事件已经过时。
 
 #### getHandlers
 
