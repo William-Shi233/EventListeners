@@ -14,7 +14,7 @@ description: CauldronLevelChangeEvent
 
 ### 类描述
 
-> 译注：无文档。本事件在炼药锅内液面高度变化时触发。
+> 译注：无文档。当炼药锅内液面高度变化时触发。
 
 ### 方法列表
 
@@ -74,7 +74,7 @@ description: CauldronLevelChangeEvent
 > 
 > <br>
 > 
-> @deprecated 炼药锅可以容纳的部分液体的液面高度无法用数字表示。
+> @deprecated 该方法已过时。炼药锅可以容纳的部分液体的液面高度无法用数字表示。
 
 #### getNewLevel
 
@@ -92,7 +92,7 @@ description: CauldronLevelChangeEvent
 > 
 > <br>
 > 
-> @deprecated 炼药锅可以容纳的部分液体的液面高度无法用数字表示。
+> @deprecated 该方法已过时。炼药锅可以容纳的部分液体的液面高度无法用数字表示。
 
 #### setNewLevel
 
@@ -110,7 +110,7 @@ description: CauldronLevelChangeEvent
 > 
 > <br>
 > 
-> @deprecated 炼药锅可以容纳的部分液体的液面高度无法用数字表示。
+> @deprecated 该方法已过时。炼药锅可以容纳的部分液体的液面高度无法用数字表示。
 
 #### isCancelled
 
@@ -138,7 +138,7 @@ description: CauldronLevelChangeEvent
 
 ### 枚举: ChangeReason
 
-> 译注：无文档。用于确定液面高度变化原因的枚举。
+> 译注：无文档。该类系用于确定液面高度变化原因的枚举。
 
 #### BUCKET_FILL
 
