@@ -40,7 +40,7 @@ description: EntityBlockFormEvent
 > 
 > <li>雪傀儡在方块上行走，足底生成雪方块。
 > 
-> <li>实体穿戴附有冰霜行者附魔的靴子在水面上行走，足底生成冰方块。
+> <li>实体穿戴附有“冰霜行者”附魔的靴子在水面上行走，足底生成冰方块。
 > 
 > </ul>
 
@@ -60,4 +60,4 @@ description: EntityBlockFormEvent
 > 
 > 该方法用于获取导致方块生成的实体。
 > 
-> @return 导致方块生成的实体。
+> @return 涉事实体。
