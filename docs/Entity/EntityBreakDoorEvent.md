@@ -34,4 +34,4 @@ description: EntityBreakDoorEvent
 
 方法签名: ()Lorg/bukkit/entity/LivingEntity;
 
-> 译注：无文档。该方法用于获取事件中破门而入的实体。
+> 译注：无文档。该方法用于获取破门而入的涉事实体。
