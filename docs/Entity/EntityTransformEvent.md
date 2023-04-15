@@ -18,11 +18,11 @@ description: EntityTransformEvent
 > 
 > <br>
 > 
-> 当某实体将要被另一实体取代时触发。
+> 当实体将要被另一实体取代时触发。
 > 
 > <br>
 > 
-> 译注：本事件在实体发生转变时触发，比如猪被闪电击中变为僵尸猪灵时、村民被闪电击中变为女巫时等等。在这些情况下，原有的实体会被移除，另外生成一个新实体。并不是保留原有实体并变换其种类。
+> 译注：本事件在实体发生转变时触发，比如猪被闪电击中变为僵尸猪灵时、村民被闪电击中变为女巫时等等。在这些情况下，原有的实体对象会被移除，另外生成一个新实体对象。并不是保留原有实体对象并变换其种类。
 
 ### 方法列表
 
@@ -42,15 +42,13 @@ description: EntityTransformEvent
 > 
 > <br>
 > 
-> 该方法用于获取原先转变前的实体。
+> 该方法用于获取转变后的实体。
 > 
-> @return 原先转变前的实体。
+> 本方法的返回值是 `getTransformedEntities()` 所返回的列表的第一项。
+> 
+> @return 转变后的实体。
 > 
 > @see 参见 `getTransformedEntities()` 方法。
-> 
-> <br>
-> 
-> 译注：所谓“This returns the first entity in the transformed entity list.”，该句不知所云。`getTransformedEntities()` 方法返回的是新生的实体，旧有的实体将会死亡，并不会被列入新生实体列表中。
 
 #### getTransformedEntities
 
@@ -86,7 +84,7 @@ description: EntityTransformEvent
 > 
 > 该方法用于获取实体发生转变的原因。
 > 
-> @return 实体发生转变的原因。
+> @return 一个 `TransformReason` 枚举字段，用于确定实体发生转变的原因。
 
 #### isCancelled
 
@@ -114,7 +112,7 @@ description: EntityTransformEvent
 
 ### 枚举: TransformReason
 
-> 译注：无文档。用于确定实体转变原因的枚举。
+> 译注：无文档。该类系用于确定实体转变原因的枚举。
 
 #### CURED
 
