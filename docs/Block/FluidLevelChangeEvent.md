@@ -36,7 +36,7 @@ description: FluidLevelChangeEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中发生改变的方块的新方块数据。
+> 该方法用于获取发生改变的方块的新方块数据。
 > 
 > @return 新的方块数据。
 
@@ -54,7 +54,7 @@ description: FluidLevelChangeEvent
 > 
 > <br>
 > 
-> 该方法用于设置事件中发生改变的方块的新方块数据。方块材质必须与原先保持一致。
+> 该方法用于设置发生改变的方块的新方块数据。方块材质必须与原先保持一致。
 > 
 > @param newData 新的方块数据。
 
