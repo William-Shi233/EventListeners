@@ -24,7 +24,7 @@ description: SpawnerSpawnEvent
 > 
 > 当刷怪笼生成实体时触发。
 > 
-> 如果本事件被取消，则实体将不会生成。
+> 如果本事件被取消，则涉事实体将不会生成。
 
 ### 方法列表
 
@@ -34,4 +34,4 @@ description: SpawnerSpawnEvent
 
 方法签名: ()Lorg/bukkit/block/CreatureSpawner;
 
-> 译注：无文档。该方法用于获取事件中的刷怪笼。
+> 译注：无文档。该方法用于获取涉事刷怪笼方块。
