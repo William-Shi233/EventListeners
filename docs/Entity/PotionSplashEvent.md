@@ -102,7 +102,7 @@ description: PotionSplashEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Splash_Potion#Using](https://minecraft.fandom.com/wiki/Splash_Potion#Using) 可知，实体离喷溅型药水落地的位置越近，受到药水效果的影响越深。对于瞬间治疗、瞬间伤害等瞬间效果而言，离药水落地的位置越近则药效越强（回复或失去的生命值越多）。对于其他非瞬间生效的药水效果而言，离药水落地的位置越近则药效持续的时间越长，但不论距离落地位置多远，药水效果的等级都是一致的。
+> 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Splash_Potion#Using](https://minecraft.fandom.com/wiki/Splash_Potion#Using) 可知，实体离喷溅型药水落地的位置越近，受到药水效果的影响越深。对于瞬间治疗、瞬间伤害等瞬间效果而言，离药水落地的位置越近则药效越强（回复或失去的生命值越多）。对于非瞬间生效的药水效果而言，离药水落地的位置越近则药效持续的时间越长，但不论距离落地位置多远，药水效果的等级都是一致的。
 
 #### setIntensity
 
