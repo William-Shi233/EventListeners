@@ -18,7 +18,7 @@ description: EntityUnleashEvent
 > 
 > <br>
 > 
-> 当某个实体身上的拴绳被解开前触发。
+> 当实体身上的拴绳被解开前触发。
 
 ### 方法列表
 
@@ -36,7 +36,7 @@ description: EntityUnleashEvent
 > 
 > 该方法用于获取拴绳解开的原因。
 > 
-> @return 拴绳解开的原因。
+> @return 一个 `UnleashReason` 枚举字段，用于确定拴绳解开的原因。
 
 #### getHandlers
 
@@ -52,7 +52,7 @@ description: EntityUnleashEvent
 
 ### 枚举: UnleashReason
 
-> 译注：无文档。用于确定拴绳解开原因的枚举。
+> 译注：无文档。该类系用于确定拴绳解开原因的枚举。
 
 #### HOLDER_GONE
 
@@ -86,4 +86,4 @@ description: EntityUnleashEvent
 
 #### UNKNOWN
 
-> 译注：无文档。未知原因。
+> 译注：无文档。该字段表示未知原因。
