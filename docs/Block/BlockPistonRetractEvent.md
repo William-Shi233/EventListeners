@@ -62,7 +62,7 @@ description: BlockPistonRetractEvent
 > 
 > <br>
 > 
-> 译注：本事件文档与 `BlockPistonExtendEvent#getBlocks()` 方法一致，必是舛错。所谓“extending”，应当改为“retracting”，即“活塞臂收回”，而非“活塞臂伸出”。译文中已纠正。
+> 译注：文档有误，本事件文档与 `BlockPistonExtendEvent#getBlocks()` 方法一致，有挪用抄袭之嫌。所谓“extending”，应当改为“retracting”，即“活塞臂收回”，而非“活塞臂伸出”。译文中已纠正。
 
 #### getHandlers
 
