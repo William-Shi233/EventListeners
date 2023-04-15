@@ -18,7 +18,7 @@ description: EntityShootBowEvent
 > 
 > <br>
 > 
-> 当某生物弯弓射箭时触发。
+> 当生物弯弓射箭时触发。
 
 ### 方法列表
 
@@ -42,9 +42,9 @@ description: EntityShootBowEvent
 > 
 > <br>
 > 
-> 该方法用于获取射箭所依凭的弓物品堆。
+> 该方法用于获取射箭时所使用的弓物品堆。
 > 
-> @return 事件中的弓物品堆。
+> @return 涉事弓物品堆。
 
 #### getConsumable
 
@@ -62,11 +62,11 @@ description: EntityShootBowEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中被消耗的物品堆（如存在）。
+> 该方法用于获取被消耗的涉事物品堆（如存在）。
 > 
 > 比如一张弓使用一次会消耗玩家背包中的一根箭矢。
 > 
-> @return 事件中被消耗的物品堆。
+> @return 被消耗的涉事物品堆。
 
 #### getProjectile
 
@@ -118,7 +118,7 @@ description: EntityShootBowEvent
 > 
 > <br>
 > 
-> 译注：指主副手，而非左右手。
+> 译注：一般而言，涉及玩家交互时，交互行为只与主副手有关，而与左右手无关。玩家以左手为主手，和以右手为主手进行交互时，没有除客户端画面显示以外的区别。如欲监听玩家设定主手，可参见 `PlayerChangedMainHandEvent` 。
 
 #### getForce
 
@@ -160,13 +160,13 @@ description: EntityShootBowEvent
 > 
 > <br>
 > 
-> 该方法用于设置事件中是否要消耗物品堆。
+> 该方法用于设置是否要消耗涉事物品堆。
 > 
 > 如果传入 `false` ，则建议在调用本方法后随附 `Player#updateInventory()` 语句，否则客户端有可能拒绝服务端发来的“不消耗物品堆”的决定。
 > 
 > 对于一些射箭或装填弩时不消耗箭矢的生物（如骷髅、如掠夺者等），本方法传入的参数会被忽略。
 > 
-> @param consumeItem 事件中是否要消耗物品堆。
+> @param consumeItem 是否要消耗涉事物品堆。
 
 #### shouldConsumeItem
 
@@ -180,7 +180,7 @@ description: EntityShootBowEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中是否要消耗物品堆。
+> 该方法用于获取是否要消耗涉事物品堆。
 > 
 > @return 如果将要消耗物品堆则返回 `true` ，否则返回 `false` 。
 
