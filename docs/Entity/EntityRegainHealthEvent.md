@@ -22,7 +22,7 @@ description: EntityRegainHealthEvent
 > 
 > <br>
 > 
-> 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与事件中回复血量的实体有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
+> 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与涉事实体有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
 
 ### 方法列表
 
@@ -38,9 +38,9 @@ description: EntityRegainHealthEvent
 > 
 > <br>
 > 
-> 该方法用于获取实体回复生命值的量。
+> 该方法用于获取涉事实体生命值的回复量。
 > 
-> @return 实体回复生命值的量。
+> @return 涉事实体生命值的回复量。
 
 #### setAmount
 
@@ -54,9 +54,9 @@ description: EntityRegainHealthEvent
 > 
 > <br>
 > 
-> 该方法用于设置实体回复生命值的量。
+> 该方法用于设置涉事实体生命值的回复量。
 > 
-> @param amount 实体回复生命值的量。
+> @param amount 涉事实体生命值的回复量。
 
 #### isCancelled
 
@@ -85,6 +85,8 @@ description: EntityRegainHealthEvent
 > <br>
 > 
 > 该方法用于获取实体回复血量的原因。
+> 
+> @return 一个 `RegainReason` 枚举字段，用于确定实体回复血量的详细原因。
 
 #### getHandlers
 
@@ -188,4 +190,4 @@ description: EntityRegainHealthEvent
 > 
 > <br>
 > 
-> 未被上述分类囊括的其他原因。
+> 未被上述分类囊括的原因。
