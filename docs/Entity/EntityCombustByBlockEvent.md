@@ -44,6 +44,6 @@ description: EntityCombustByBlockEvent
 > 
 > 引起实体燃烧的方块可能是岩浆，也有可能是某个着火的方块。
 > 
-> 本方法的返回值可能是 `null` 。
+> 警告，本方法的返回值可能是 `null` 。
 > 
 > @return 引起实体燃烧的方块。
