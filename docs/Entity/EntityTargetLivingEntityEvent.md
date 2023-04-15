@@ -26,7 +26,7 @@ description: EntityTargetLivingEntityEvent
 > 
 > <br>
 > 
-> 译注：本文档后半句不知所云。其意当为“如果目标是无生命实体，则不会触发本事件”。
+> 译注：文档有误。所谓“and can only target LivingEntity's”，词不成句。其意当为“如果目标是无生命实体，则不会触发本事件”。
 
 ### 方法列表
 
