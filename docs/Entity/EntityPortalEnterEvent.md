@@ -18,7 +18,7 @@ description: EntityPortalEnterEvent
 > 
 > <br>
 > 
-> 当某实体步入传送门时触发。
+> 当实体步入传送门时触发。
 
 ### 方法列表
 
