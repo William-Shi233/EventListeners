@@ -44,9 +44,9 @@ description: EntityPortalExitEvent
 > 
 > <br>
 > 
-> 该方法用于获取实体进入传送门前的速度向量的副本。
+> 该方法用于获取涉事实体进入传送门前的速度向量的副本。
 > 
-> @return 实体进入传送门前的速度向量。
+> @return 涉事实体进入传送门前的速度向量。
 
 #### getAfter
 
@@ -62,9 +62,9 @@ description: EntityPortalExitEvent
 > 
 > <br>
 > 
-> 该方法用于获取实体进入传送门后的速度向量的副本。
+> 该方法用于获取涉事实体走出传送门后的速度向量的副本。
 > 
-> @return 实体进入传送门后的速度向量。
+> @return 涉事实体走出传送门后的速度向量。
 
 #### setAfter
 
@@ -78,9 +78,9 @@ description: EntityPortalExitEvent
 > 
 > <br>
 > 
-> 该方法用于设置实体进入传送门后的速度向量。
+> 该方法用于设置涉事实体走出传送门后的速度向量。
 > 
-> @param after 实体进入传送门后的速度向量。
+> @param after 涉事实体走出传送门后的速度向量。
 
 
 #### getHandlers
