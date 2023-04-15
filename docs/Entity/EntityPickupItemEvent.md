@@ -60,7 +60,7 @@ description: EntityPickupItemEvent
 > 
 > 该方法用于获取地上剩余的物品堆数量（如存在）。
 > 
-> @return 地上剩余的物品堆数量
+> @return 地上剩余的物品堆数量。
 
 #### isCancelled
 
