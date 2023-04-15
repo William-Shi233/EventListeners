@@ -18,7 +18,7 @@ description: ExplosionPrimeEvent
 > 
 > <br>
 > 
-> 当某实体将要爆炸时触发。
+> 当实体将要爆炸时触发。
 
 ### 方法列表
 
