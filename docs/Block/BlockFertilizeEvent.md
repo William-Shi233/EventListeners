@@ -22,7 +22,7 @@ description: BlockFertilizeEvent
 > 
 > <br>
 > 
-> 当玩家给某方块施加骨粉以期催熟，引起方块变化时触发。本事件会在 `StructureGrowEvent` 之后触发。
+> 当玩家给方块施加骨粉以期催熟，引起方块变化时触发。本事件会在 `StructureGrowEvent` 之后触发。
 
 ### 方法列表
 
@@ -56,7 +56,7 @@ description: BlockFertilizeEvent
 > 
 > 该方法用于获取一个列表，其间存储有全部因催熟行为而受影响的方块。
 > 
-> @return 存储有全部因催熟行为而受影响的方块的列表。
+> @return 因催熟行为而受影响的方块列表。
 
 #### isCancelled
 
