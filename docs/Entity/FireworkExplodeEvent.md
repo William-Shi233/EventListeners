@@ -18,7 +18,7 @@ description: FireworkExplodeEvent
 > 
 > <br>
 > 
-> 当一枚烟花火箭爆炸时触发。
+> 当烟花火箭爆炸时触发。
 
 ### 方法列表
 
