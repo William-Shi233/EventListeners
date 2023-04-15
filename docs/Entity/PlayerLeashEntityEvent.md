@@ -42,7 +42,7 @@ description: PlayerLeashEntityEvent
 > 
 > <br>
 > 
-> 译注：如果是玩家手持拴绳物品堆拴住实体时，本方法返回事件中的玩家。如果是玩家将实体拴在栅栏上，则返回绳结实体。
+> 译注：如果是玩家手持拴绳物品堆拴住实体，则本方法返回涉事玩家。如果是玩家将实体拴在栅栏上，则返回绳结实体。
 
 #### getEntity
 
@@ -72,9 +72,9 @@ description: PlayerLeashEntityEvent
 > 
 > <br>
 > 
-> 该方法用于获取事件中的玩家。
+> 该方法用于获取涉事玩家。
 > 
-> @return 事件中的玩家。
+> @return 涉事玩家。
 
 #### getHandlers
 
