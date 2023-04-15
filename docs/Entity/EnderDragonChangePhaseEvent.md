@@ -32,7 +32,7 @@ description: EnderDragonChangePhaseEvent
 
 方法签名: ()Lorg/bukkit/entity/EnderDragon;
 
-> 译注：无文档。该方法用于获取事件中的末影龙。
+> 译注：无文档。该方法用于获取涉事末影龙。
 
 #### getCurrentPhase
 
@@ -54,7 +54,7 @@ description: EnderDragonChangePhaseEvent
 > 
 > <br>
 > 
-> 译注：当末影龙刚刚生成时，还没有行为状态，即行为状态是 `null` 。此时要给末影龙施加一个悬停在传送门上空的行为状态作为其初始的行为状态，即新的行为状态是 `EnderDragon.Phase#HOVER` 。而赋予第一个行为状态的操作，同样也会触发本事件。
+> 译注：当末影龙刚刚生成时，还没有行为状态，即行为状态是 `null` 。此时要给末影龙施加一个悬停在传送门上空的行为状态作为其初始的行为状态。新的行为状态是 `EnderDragon.Phase#HOVER` ，旧的行为状态是 `null` 。赋予第一个行为状态时，同样也会触发本事件，此时本方法返回 `null` 。
 
 #### getNewPhase
 
