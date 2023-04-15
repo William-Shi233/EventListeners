@@ -20,7 +20,7 @@ description: StriderTemperatureChangeEvent
 > 
 > <br>
 > 
-> 当一只炽足兽的体温发生变化时触发。炽足兽踏足或离开被其判定为温暖的方块时，提问会发生变化。
+> 当一只炽足兽踏足或离开被其判定为温暖的方块，致使其体温发生变化时触发。
 > 
 > <br>
 > 
@@ -34,7 +34,7 @@ description: StriderTemperatureChangeEvent
 
 方法签名: ()Lorg/bukkit/entity/Strider;
 
-> 译注：无文档。该方法用于获取事件中的炽足兽。
+> 译注：无文档。该方法用于获取涉事炽足兽。
 
 #### isShivering
 
@@ -48,9 +48,9 @@ description: StriderTemperatureChangeEvent
 > 
 > <br>
 > 
-> 该方法用于获取炽足兽是否将会颤抖。
+> 该方法用于获取涉事炽足兽是否将会颤抖。
 > 
-> @return 炽足兽是否将会颤抖。
+> @return 涉事炽足兽是否将会颤抖。
 > 
 > <br>
 > 
