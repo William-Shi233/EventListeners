@@ -48,11 +48,11 @@ description: SlimeSplitEvent
 方法签名: ()I
 
 > Gets the amount of smaller slimes to spawn
->
+> 
 > @return the amount of slimes to spawn
 ```
 
-该段为类的方法列表。本列表不会包括该类的每一个方法。比如 `SlimeSplitEvent` 继承自 `EntityEvent` 的 `getEntityType()` 方法就没有列入其中（方法签名：`()Lorg/bukkit/entity/EntityType;` ）。该列表仅包括事件类 `Override` 或 `Overload` 父类的方法，以及事件类所实现的接口的方法。对重写而言，比如 `SlimeSplitEvent` 类重写了父类 `EntityEvent` 中的 `getEntity` 方法（方法签名由原先的 `()Lorg/bukkit/entity/Entity;` 变为 `()Lorg/bukkit/entity/Slime;` ，将返回值类型作了转型，由“实体对象”精确到“类型为史莱姆的实体对象”，其他不变），因此列表囊括之。对实现接口中的方法而言，比如 `SlimeSplitEvent` 类实现了接口 `Cancellable` 所定义的 `isCancelled` 和 `setCancelled` 方法，因此列表囊括之。
+该段为类的方法列表。本列表不会包括该类的每一个方法。比如 `SlimeSplitEvent` 继承自 `EntityEvent` 的 `getEntityType()` 方法就没有列入其中（方法签名：`()Lorg/bukkit/entity/EntityType;` ）。该列表仅包括事件类 `Override` 或 `Overload` 父类的方法，以及事件类所实现的接口的方法。对重写而言，比如 `SlimeSplitEvent` 类重写了父类 `EntityEvent` 中的 `getEntity` 方法（方法签名由原先的 `()Lorg/bukkit/entity/Entity;` 变为 `()Lorg/bukkit/entity/Slime;` ，将返回值类型作了转型，由“实体对象”精确到“类型为史莱姆的实体对象”，其余不变），因此列表囊括之。对实现接口中的方法而言，比如 `SlimeSplitEvent` 类实现了接口 `Cancellable` 所定义的 `isCancelled` 和 `setCancelled` 方法，因此列表囊括之。
 
 每一个方法都自成一小节，标题为方法名，方法声明为 `.java` 文件源代码中声明该方法的语句，方法签名为 `.class` 文件字节码中所使用的表示形式，可用于确定方法的参数和返回值。在这之后是方法的 JavaDoc 文档及翻译。部分方法没有文档，由其太过常见之故，比如 `isCancelled` 和 `setCancelled` 方法用于获取和设置事件是否取消、`getHandlerList` 和 `getHandlers` 方法用于注册和注销监听器。这些方法出现次数极多，没有再作注。
 
