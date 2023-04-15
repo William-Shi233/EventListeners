@@ -72,7 +72,7 @@ description: VillagerCareerChangeEvent
 > 
 > 该方法用于获取村民职业变化的原因。
 > 
-> @return 村民职业变化的原因。
+> @return 一个 `ChangeReason` 枚举字段，用于确定村民职业变化的原因。
 
 #### isCancelled
 
