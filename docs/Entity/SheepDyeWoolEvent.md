@@ -40,7 +40,7 @@ description: SheepDyeWoolEvent
 
 方法签名: ()Lorg/bukkit/entity/Sheep;
 
-> 译注：无文档。该方法用于获取事件中的羊。
+> 译注：无文档。该方法用于获取涉事羊实体。
 
 #### getPlayer
 
@@ -70,9 +70,9 @@ description: SheepDyeWoolEvent
 > 
 > <br>
 > 
-> 该方法用于获取羊将要被染上的颜色。
+> 该方法用于获取涉事的羊将要被染上的颜色。
 > 
-> @return 羊将要被染上的颜色。
+> @return 涉事的羊将要被染上的颜色。
 
 #### setColor
 
@@ -86,9 +86,9 @@ description: SheepDyeWoolEvent
 > 
 > <br>
 > 
-> 该方法用于设置羊将要被染上的颜色。
+> 该方法用于设置涉事的羊将要被染上的颜色。
 > 
-> @param color 羊将要被染上的颜色。
+> @param color 涉事的羊将要被染上的颜色。
 
 #### getHandlers
 
