@@ -48,11 +48,11 @@ description: EntityTargetEvent
 > 
 > 该方法用于获取实体切换其目标的原因。
 > 
-> @return 实体切换其目标的原因。
+> @return 一个 `TargetReason` 枚举字段，用于确定实体切换其目标的原因。
 > 
 > <br>
 > 
-> 译注：该原因不仅包括实体盯上新目标的情况，也包括实体失去旧有目标，茫然逡巡的情况。原句应当改为“Returns the reason for the targeting or untargeting”。为求简洁，译作“切换目标”。
+> 译注：文档失之偏颇。该原因不仅包括实体盯上新目标的情况，也包括实体失去旧有目标，茫然逡巡的情况。原句应当改为“Returns the reason for the targeting or untargeting”。为求简洁，译作“切换目标”。
 
 #### getTarget
 
@@ -132,7 +132,7 @@ description: EntityTargetEvent
 > 
 > <br>
 > 
-> 译注：该枚举不仅包括实体盯上新目标的情况，也包括实体失去旧有目标，茫然逡巡的情况。原句应当改为“An enum to specify the reason for the targeting or untargeting”。为求简洁，译作“切换目标”。
+> 译注：文档失之偏颇。该枚举不仅包括实体盯上新目标的情况，也包括实体失去旧有目标，茫然逡巡的情况。原句应当改为“An enum to specify the reason for the targeting or untargeting”。为求简洁，译作“切换目标”。
 
 #### TARGET_DIED
 
@@ -170,7 +170,7 @@ description: EntityTargetEvent
 > 
 > <br>
 > 
-> 某僵尸猪灵附近的其他僵尸猪灵受到攻击，因此一整群僵尸猪灵将攻击者设为目标。
+> 某僵尸猪灵附近的另一只僵尸猪灵受到攻击，因此一整群僵尸猪灵将攻击者设为目标。
 > 
 > @deprecated 本字段已过时，其所描述的情况并入 `TARGET_ATTACKED_NEARBY_ENTITY` 字段。
 
