@@ -18,7 +18,7 @@ description: EntityMountEvent
 > 
 > <br>
 > 
-> 当某实体尝试骑乘另一实体时触发。
+> 当实体尝试骑乘另一实体时触发。
 
 ### 方法列表
 
