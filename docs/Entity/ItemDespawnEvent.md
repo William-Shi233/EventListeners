@@ -48,7 +48,7 @@ description: ItemDespawnEvent
 
 方法签名: ()Lorg/bukkit/entity/Item;
 
-> 译注：无文档。该方法用于获取事件中将要消失的物品堆。
+> 译注：无文档。该方法用于获取将要消失的物品堆。
 
 #### getLocation
 
