@@ -38,7 +38,7 @@ description: EntityAirChangeEvent
 > 
 > <br>
 > 
-> 该方法用于获取实体剩余的氧气量（以 `tick` 为单位）。
+> 该方法用于获取实体剩余的氧气量（以刻为单位）。
 > 
 > @return 实体剩余的氧气量。
 
@@ -54,7 +54,7 @@ description: EntityAirChangeEvent
 > 
 > <br>
 > 
-> 该方法用于设置实体剩余的氧气量（以 `tick` 为单位）。
+> 该方法用于设置实体剩余的氧气量（以刻为单位）。
 > 
 > @param amount 实体剩余的氧气量。
 
