@@ -86,7 +86,7 @@ description: NotePlayEvent
 > 
 > <br>
 > 
-> @deprecated 该方法已过时。在较新版本的 `MineCraft` 中此方法无效。
+> @deprecated 该方法已过时。在较新版本的游戏中此方法无效。
 
 #### setNote
 
@@ -102,7 +102,7 @@ description: NotePlayEvent
 > 
 > <br>
 > 
-> @deprecated 该方法已过时。在较新版本的 `MineCraft` 中此方法无效。
+> @deprecated 该方法已过时。在较新版本的游戏中此方法无效。
 
 #### getHandlers
 

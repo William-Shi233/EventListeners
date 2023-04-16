@@ -84,7 +84,7 @@ description: VillagerReplenishTradeEvent
 > 
 > <br>
 > 
-> @deprecated 该方法已过时。自 `1.14` 起，`MineCraft` 修改了村民为交易项补货的机制。请使用 `MerchantRecipe#getUses()` 方法。
+> @deprecated 该方法已过时。自 `1.14` 起，村民为交易项补货的机制有所修改。请使用 `MerchantRecipe#getUses()` 方法。
 
 #### setBonus
 
@@ -102,7 +102,7 @@ description: VillagerReplenishTradeEvent
 > 
 > <br>
 > 
-> @deprecated 该方法已过时。自 `1.14` 起，`MineCraft` 修改了村民为交易项补货的机制。本方法已经不会生效。
+> @deprecated 该方法已过时。自 `1.14` 起，村民为交易项补货的机制有所修改。本方法已经不会生效。
 
 #### isCancelled
 
