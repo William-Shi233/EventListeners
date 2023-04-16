@@ -32,12 +32,30 @@ PVPIN Studio 成员 William_Shi
 
 开列在事者职名：
 
-监理：PVPIN Studio 组长 Rain_Effect
+监理：
 
-总裁：银河系气功开发协会 组长 yumc
+PVPIN Studio 组长 Rain_Effect
 
-纂修：
+银河系气功开发协会 组长 yumc
+
+正总裁：
+
+PVPIN Studio 成员 William_Shi
+
+副总裁：
+
+原任 PVPIN 社区成员 椎名淅雨
+
+总纂：
+
+PVPIN Studio 成员 AglaiaLight
+
+协修：
 
 PVPIN Studio 成员 Tao
 
-PVPIN Studio 成员 AglaiaLight
+校对：
+
+PVPIN Studio 成员 Banaira
+
+PVPIN Studio 成员 Eustia_Saint
