@@ -24,7 +24,7 @@ description: EntityPortalEvent
 > 
 > <br>
 > 
-> 当某个非玩家实体步入传送门准备传送时触发。
+> 当某个非玩家实体在传送门内将要传送时触发。
 > 
 > 如欲监听玩家传送，可参见 `PlayerPortalEvent` 事件。
 
