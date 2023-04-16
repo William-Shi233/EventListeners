@@ -6,13 +6,13 @@
 
 虽然如此，仍有许多开发者不懂得如何使用事件系统。也许这些开发者初入 Bukkit 插件开发领域不久，尚未掌握部分词汇术语。加以事件相关的 API 文档本身就质量欠佳，不乏舛错，益加俾人生疑。比如 PlayerToggleSprintEvent，把未来注为旧有，BlockPistonRetractEvent，将收回抄作推出。还有部分文档词不达意、句不成篇。未设计完的草稿，打上 @deprecated 记号就杂厕于过时文档之中（曾经的 EntityPlaceEvent）。过时的方法，经过更新后已经紧跟上最新版本了，却又不去掉过时标签（PlayerEditBookEvent）。如此种种，更让人无法分辨。
 
-在 2017 年的 PVPIN 社区中，我借由 Google Blockly 积木，首次接触到了 Bukkit API 的事件系统。彼时，我只了解一些简单的 JavaScript 语法，仅会堆砌积木，不通程序设计的原理。一次遇到 `event.setCancelled(true);` 语句，自知是取消事件，使之不再发生。想要修改该语句，欲覆盖前人操作之结果，俾已被取消的事件在服务器内发生。怎料积木中惟有“取消事件”，却无“不取消事件”。一时窘然。承蒙 czm 前辈照拂，晓我以 `setCancelled(false);` ，我方知 `Cancellable` 接口之含义，第一次读懂了 JavaDoc 文档。此后我尝试使用 GYHHY 道席所制的自定义监听积木，监听了积木中所未囊括的 `SlimeSplitEvent` 。那时我才知道，PVPIN 自带的积木只囊括了几十个常用事件的监听器，对于全 Spigot API 甚至是全 Paper API 来说，实在是沧海一粟。故此，我不知天高地厚，欲将所有事件、所有方法全部用积木表示出来，以便其余不懂得如何阅读 JavaDoc 的用户使用。
+在 2017 年的 PVPIN 社区中，我借由 Google Blockly 积木，首次接触到了 Bukkit API 的事件系统。彼时，我只了解一些简单的 JavaScript 语法，仅会堆砌积木，不通程序设计的原理。一次遇到 `event.setCancelled(true);` 语句，自知是取消事件，使之不再发生。想要修改该语句，欲覆盖前人操作之结果，俾已被取消的事件在服务器内发生。怎料积木中惟有“取消事件”，却无“不取消事件”。一时窘然。承蒙 czm 前辈照拂，晓我以 `setCancelled(false);` ，我方知 Cancellable 接口之含义，第一次读懂了 JavaDoc 文档。此后我尝试使用 GYHHY 道席所制的自定义监听积木，监听了积木中所未囊括的 SlimeSplitEvent 。那时我才知道，PVPIN 自带的积木只囊括了几十个常用事件的监听器，对于全 Spigot API 甚至是全 Paper API 来说，实在是沧海一粟。故此，我不知天高地厚，欲将所有事件、所有方法全部用积木表示出来，以便其余不懂得如何阅读 JavaDoc 的用户使用。
 
 遂乃有《EventListeners——事件监听大典》，它是不才 2018 年在 PVPIN 社区利用 Google Blockly 编辑器所纂的一个小项目。拙作以事件监听器积木的形式列出了时为最新的 1.12.2 版本中所有事件的全限定名、触发时机，并对事件类所提供的方法作注。随着 PVPIN 的瓦解，该项目已经亡佚不存。现基于 1.16.5 版本的 Spigot API 对原作予以重修增广。
 
-本项目根目录为一个 Maven Project ，用于读取 Spigot API 的 JavaDoc 信息，并转换为可以被 GitBook 读取的 MarkDown 格式，再按照一个标准 `GitBook` 项目的文件结构进行输出。这些 JavaDoc 是 Spigot BuildTools 在构建服务端以后所留下的，为此，用户在运行本项目之前必须首先在本地运行 Spigot BuildTools 构建一个 1.16.5 或以上版本的服务端。此后在 `net.pvpin.eventlisteners.ClazzParser` 源代码中修改 `JAVADOC_DIR` 字段的值为本地 `BuildTools` 运行后得到的 `BuildTools/Spigot/Spigot-API/src/main/java/` 这一文件夹的路径，比如 `C:\\Users/williamshi/Documents/Code/Minecraft/BuildTools/Spigot/Spigot-API/src/main/java/` 即是鄙人本地计算机上的路径。其次，需要在 `net.pvpin.eventlisteners.Main` 中指定将用于存放 MarkDown 文件的目录路径。本项目中，这一文件夹为 `EventListeners/docs` 。同理，再次需要指定 `SUMMARY.md` 的路径以便输出，本项目中为 `EventListeners/SUMMARY.md` 。
+本项目根目录为一个 Maven Project ，用于读取 Spigot API 的 JavaDoc 信息，并转换为可以被 GitBook 读取的 MarkDown 格式，再按照一个标准 GitBook 项目的文件结构进行输出。这些 JavaDoc 是 Spigot BuildTools 在构建服务端以后所留下的，为此，用户在运行本项目之前必须首先在本地运行 Spigot BuildTools 构建一个 1.16.5 或以上版本的服务端。此后在 `net.pvpin.eventlisteners.ClazzParser` 源代码中修改 `JAVADOC_DIR` 字段的值为本地 BuildTools 运行后得到的 `BuildTools/Spigot/Spigot-API/src/main/java/` 这一文件夹的路径，比如 `C:\\Users/williamshi/Documents/Code/Minecraft/BuildTools/Spigot/Spigot-API/src/main/java/` 即是鄙人本地计算机上的路径。其次，需要在 `net.pvpin.eventlisteners.Main` 中指定将用于存放 MarkDown 文件的目录路径。本项目中，这一文件夹为 `EventListeners/docs` 。同理，再次需要指定 SUMMARY.md 的路径以便输出，本项目中为 `EventListeners/SUMMARY.md` 。
 
-在恰当配置了路径并直接在 Java IDE 中运行 `net.pvpin.eventlisteners.Main` 类的 `main` 函数以后，`EventListeners` 文件夹中即有一个完整的 GitBook 项目结构。目前本项目即基于此结构加以修缮而成，并在 `SUMMARY.md` 中将页面重新分组。
+在恰当配置了路径并直接在 Java IDE 中运行 `net.pvpin.eventlisteners.Main` 类的 main 函数以后，`EventListeners/` 文件夹中即有一个完整的 GitBook 项目结构。目前本项目即基于此结构加以修缮而成，并在 SUMMARY.md 中将页面重新分组。
 
 区区窃不自揆，希望昭著文档之本意，刊正谬误，舍短取长。晦涩的言辞，加以注释，抽象的论述，辅以示例。屏退谬论，昌明各个事件的真正功用，是我所愿也！本项目主要以对 JavaDoc 的翻译为主，同时旁缀补缺，添加译注，以便读者查阅。然而事件细节实在非我一人所能穷尽，我自知才疏学浅，见识粗鄙，故而仅能抛砖引玉，尚要仰仗各位道席予以雅正。
 
