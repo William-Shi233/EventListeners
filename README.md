@@ -48,7 +48,7 @@ PVPIN Studio 成员 William_Shi
 
 总纂：
 
-PVPIN Studio 成员 AglaiaLight
+PVPIN Studio 成员 HopeLight
 
 协修：
 
