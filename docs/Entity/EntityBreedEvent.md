@@ -62,9 +62,9 @@ description: EntityBreedEvent
 > 
 > <br>
 > 
-> 该方法用于获取实体的双亲之一。
+> 该方法用于获取实体的另一双亲之一。
 > 
-> @return 实体的双亲之一。
+> @return 实体的另一双亲之一。
 > 
 > <br>
 > 
