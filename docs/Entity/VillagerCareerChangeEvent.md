@@ -120,7 +120,7 @@ description: VillagerCareerChangeEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Villager#Professions](https://minecraft.fandom.com/wiki/Villager#Professions) 可知，本枚举字段指村民的工作方块被破坏，且此时村民还没有与玩家进行过交易，经验值为零，因而失业。经验值为零的新手级村民不会无缘无故失业，失业是由工作方块被破坏而导致的。
+> 译注：参见 `Minecraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Villager#Professions](https://minecraft.fandom.com/wiki/Villager#Professions) 可知，本枚举字段指村民的工作方块被破坏，且此时村民还没有与玩家进行过交易，经验值为零，因而失业。经验值为零的新手级村民不会无缘无故失业，失业是由工作方块被破坏而导致的。
 
 #### EMPLOYED
 

@@ -212,7 +212,7 @@ description: CreatureSpawnEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 中有关僵尸的相关页面 [https://minecraft.fandom.com/wiki/Zombie#Reinforcements](https://minecraft.fandom.com/wiki/Zombie#Reinforcements) 可知，在困难难度下，当僵尸受到伤害时，其有一定概率召唤增援，在其四周生成新的僵尸。
+> 译注：参见 `Minecraft Wiki` 中有关僵尸的相关页面 [https://minecraft.fandom.com/wiki/Zombie#Reinforcements](https://minecraft.fandom.com/wiki/Zombie#Reinforcements) 可知，在困难难度下，当僵尸受到伤害时，其有一定概率召唤增援，在其四周生成新的僵尸。
 
 #### NETHER_PORTAL
 
@@ -224,7 +224,7 @@ description: CreatureSpawnEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 中有关僵尸猪灵的相关页面 [https://minecraft.fandom.com/wiki/Zombified_Piglin#Nether_portals](https://minecraft.fandom.com/wiki/Zombified_Piglin#Nether_portals) 可知，就每一个位于主世界的下界传送门方块而言，每个方块刻，其上都有一定概率生成僵尸猪灵。
+> 译注：参见 `Minecraft Wiki` 中有关僵尸猪灵的相关页面 [https://minecraft.fandom.com/wiki/Zombified_Piglin#Nether_portals](https://minecraft.fandom.com/wiki/Zombified_Piglin#Nether_portals) 可知，就每一个位于主世界的下界传送门方块而言，每个方块刻，其上都有一定概率生成僵尸猪灵。
 
 #### DISPENSE_EGG
 
@@ -286,7 +286,7 @@ description: CreatureSpawnEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 有关骷髅马的页面 [https://minecraft.fandom.com/wiki/Skeleton_Horse#Spawning](https://minecraft.fandom.com/wiki/Skeleton_Horse#Spawning) 可知骷髅陷阱马的行为。
+> 译注：参见 `Minecraft Wiki` 有关骷髅马的页面 [https://minecraft.fandom.com/wiki/Skeleton_Horse#Spawning](https://minecraft.fandom.com/wiki/Skeleton_Horse#Spawning) 可知骷髅陷阱马的行为。
 
 #### ENDER_PEARL
 
@@ -340,7 +340,7 @@ description: CreatureSpawnEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Creeper#Behavior](https://minecraft.fandom.com/wiki/Creeper#Behavior) 可知，当一只携带药水效果的苦力怕自爆时，会生成一片药水云，该药水云所提供的药水效果类型与苦力怕身上的药水效果类型一致。
+> 译注：参见 `Minecraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Creeper#Behavior](https://minecraft.fandom.com/wiki/Creeper#Behavior) 可知，当一只携带药水效果的苦力怕自爆时，会生成一片药水云，该药水云所提供的药水效果类型与苦力怕身上的药水效果类型一致。
 
 #### RAID
 

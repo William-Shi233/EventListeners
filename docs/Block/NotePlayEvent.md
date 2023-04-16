@@ -54,7 +54,7 @@ description: NotePlayEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Note_Block#Instruments](https://minecraft.fandom.com/wiki/Note_Block#Instruments) 可知，音符盒所发出的声音音色随其下方方块的材质而变化，比如当音符盒下方为羊毛时，与之交互会发出吉他声。
+> 译注：参见 `Minecraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Note_Block#Instruments](https://minecraft.fandom.com/wiki/Note_Block#Instruments) 可知，音符盒所发出的声音音色随其下方方块的材质而变化，比如当音符盒下方为羊毛时，与之交互会发出吉他声。
 
 #### getNote
 

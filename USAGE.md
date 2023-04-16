@@ -36,7 +36,7 @@ description: SlimeSplitEvent
 
 该段为类的 JavaDoc 原文、翻译与译注。原文应当与 Spigot 官方文档页面中的相关内容一致。对于 `SlimeSplitEvent` 而言，是 [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/SlimeSplitEvent.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/SlimeSplitEvent.html) 页面。翻译内容力求与原文相贴切。译注内容主要对事件触发时机、监听器可能的用途作出补充。
 
-有时，译注内会对一些游戏机制作出说明。一般随附 `MineCraft Wiki` 相关页面的链接。这些链接统一指向英文版维基，因为英文维基常在更新，而中文版维基无法及时地更新翻译，因而中文页面相比于英文原文往往缺漏一些内容。比如对于“雷暴”游戏机制而言，中文维基几乎没能提供有用的游戏机制信息。阅读英语原文则可以清晰了解雷暴状态的切换机制。本项目中，译注是对英语原文的概括提要，不是中文维基的摘抄。
+有时，译注内会对一些游戏机制作出说明。一般随附 `Minecraft Wiki` 相关页面的链接。这些链接统一指向英文版维基，因为英文维基常在更新，而中文版维基无法及时地更新翻译，因而中文页面相比于英文原文往往缺漏一些内容。比如对于“雷暴”游戏机制而言，中文维基几乎没能提供有用的游戏机制信息。阅读英语原文则可以清晰了解雷暴状态的切换机制。本项目中，译注是对英语原文的概括提要，不是中文维基的摘抄。
 
 ```
 ### 方法列表

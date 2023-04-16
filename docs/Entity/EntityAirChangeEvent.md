@@ -22,7 +22,7 @@ description: EntityAirChangeEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Damage#Drowning](https://minecraft.fandom.com/wiki/Damage#Drowning) 可知，大多数实体处于水中会消耗氧气。如果氧气不足，会缺氧淹死。
+> 译注：参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Damage#Drowning](https://minecraft.fandom.com/wiki/Damage#Drowning) 可知，大多数实体处于水中会消耗氧气。如果氧气不足，会缺氧淹死。
 
 ### 方法列表
 

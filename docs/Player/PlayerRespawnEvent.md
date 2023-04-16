@@ -22,7 +22,7 @@ description: PlayerRespawnEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Spawn](https://minecraft.fandom.com/wiki/Spawn) 可知，玩家的“重生点位置”是一个确定的点，而玩家复活时的位置则是重生点附近的一片区域内的某个随机位置，不在重生点的正上方。下文多次提到“重生点位置”，该位置仅能代表床、重生锚或世界重生点的位置，不能代表玩家实际所处的位置。
+> 译注：参见 `Minecraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Spawn](https://minecraft.fandom.com/wiki/Spawn) 可知，玩家的“重生点位置”是一个确定的点，而玩家复活时的位置则是重生点附近的一片区域内的某个随机位置，不在重生点的正上方。下文多次提到“重生点位置”，该位置仅能代表床、重生锚或世界重生点的位置，不能代表玩家实际所处的位置。
 
 ### 方法列表
 

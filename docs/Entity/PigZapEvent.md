@@ -26,7 +26,7 @@ description: PigZapEvent
 > 
 > 译注：事件不是用来完成数据的持久化存储的。此处所谓“存储”意为事件的字段中含有一些与涉事猪实体有关的信息，该事件从服务端底层得到这些信息，存储于一些字段中，再给插件进行读取。当插件处理完毕以后，事件对象应该被销毁。不能使用事件对象来对数据进行保存。
 > 
-> 参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Zombified_Piglin#Pigs](https://minecraft.fandom.com/wiki/Zombified_Piglin#Pigs) 可知，猪被闪电劈中以后会转变为僵尸猪灵。
+> 参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Zombified_Piglin#Pigs](https://minecraft.fandom.com/wiki/Zombified_Piglin#Pigs) 可知，猪被闪电劈中以后会转变为僵尸猪灵。
 
 ### 方法列表
 

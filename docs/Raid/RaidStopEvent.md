@@ -34,7 +34,7 @@ description: RaidStopEvent
 > 
 > 其一是游戏难度被设为和平。和平状态下不能生成怪物，遑论产生袭击。
 > 
-> 其二是袭击持续时间过久。参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Raid#Expiring](https://minecraft.fandom.com/wiki/Raid#Expiring) 可知，当袭击持续了现实世界中的四十分钟以后，如果还没有胜利或失败，会中止。
+> 其二是袭击持续时间过久。参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Raid#Expiring](https://minecraft.fandom.com/wiki/Raid#Expiring) 可知，当袭击持续了现实世界中的四十分钟以后，如果还没有胜利或失败，会中止。
 > 
 > 其三是袭击结束。袭击胜利时，先触发 `RaidFinishEvent` ，然后进行庆祝倒计时，庆祝完毕后触发 `RaidStopEvent` 。
 > 

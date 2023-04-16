@@ -128,7 +128,7 @@ description: LightningStrikeEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 中的“引雷”页面 [https://minecraft.fandom.com/wiki/Channeling](https://minecraft.fandom.com/wiki/Channeling) 内容可知，此处的附魔当指“引雷”附魔。
+> 译注：参见 `Minecraft Wiki` 中的“引雷”页面 [https://minecraft.fandom.com/wiki/Channeling](https://minecraft.fandom.com/wiki/Channeling) 内容可知，此处的附魔当指“引雷”附魔。
 
 #### TRAP
 
@@ -140,7 +140,7 @@ description: LightningStrikeEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 有关骷髅马的页面 [https://minecraft.fandom.com/wiki/Skeleton_Horse#Spawning](https://minecraft.fandom.com/wiki/Skeleton_Horse#Spawning) 可知骷髅陷阱马的行为。
+> 译注：参见 `Minecraft Wiki` 有关骷髅马的页面 [https://minecraft.fandom.com/wiki/Skeleton_Horse#Spawning](https://minecraft.fandom.com/wiki/Skeleton_Horse#Spawning) 可知骷髅陷阱马的行为。
 
 #### WEATHER
 

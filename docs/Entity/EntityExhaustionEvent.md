@@ -26,7 +26,7 @@ description: EntityExhaustionEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Hunger#Exhaustion_level_increase](https://minecraft.fandom.com/wiki/Hunger#Exhaustion_level_increase) 可知，玩家在完成特定操作（如疾跑、如挖掘方块等）时，会累积饥饿等级（Hunger），该值一旦大于等于四，则自减四，并扣除一点饱和度（Saturation）。如果饱和度为零则扣除一点饥饿值（Food Level）。
+> 译注：参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Hunger#Exhaustion_level_increase](https://minecraft.fandom.com/wiki/Hunger#Exhaustion_level_increase) 可知，玩家在完成特定操作（如疾跑、如挖掘方块等）时，会累积饥饿等级（Hunger），该值一旦大于等于四，则自减四，并扣除一点饱和度（Saturation）。如果饱和度为零则扣除一点饥饿值（Food Level）。
 
 ### 方法列表
 

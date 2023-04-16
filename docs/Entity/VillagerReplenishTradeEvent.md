@@ -30,7 +30,7 @@ description: VillagerReplenishTradeEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 中关于村民及流浪商人交易机制的相关页面 [https://minecraft.fandom.com/wiki/Trading#Mechanics](https://minecraft.fandom.com/wiki/Trading#Mechanics) 可知，村民的交易项不能无限制地交易。在交易一定次数后，该交易项会进入缺货状态，直至村民前往工作方块补货。
+> 译注：参见 `Minecraft Wiki` 中关于村民及流浪商人交易机制的相关页面 [https://minecraft.fandom.com/wiki/Trading#Mechanics](https://minecraft.fandom.com/wiki/Trading#Mechanics) 可知，村民的交易项不能无限制地交易。在交易一定次数后，该交易项会进入缺货状态，直至村民前往工作方块补货。
 > 
 > 所谓 `MerchantRecipe` ，即“交易项”。所谓 `MerchantRecipe#getUses()` ，即该交易项已经交易过的次数。如果交易次数达到上限则交易项缺货。补货会使得交易项的交易次数变为零。
 

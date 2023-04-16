@@ -68,7 +68,7 @@ description: LootGenerateEvent
 > 
 > <br>
 > 
-> 译注：实体是可以影响战利品生成的。在 `MineCraft Wiki` 中的 `Luck` 页面（ [https://minecraft.fandom.com/wiki/Luck](https://minecraft.fandom.com/wiki/Luck) ），存在关于实体幸运属性的论述。实体获取战利品时，其 `generic.luck` 属性也会参与计算，如果实体的 `generic.luck` 属性值更高，则战利品表中 `quality` 值高的结果更可能出现。因此根据战利品表生成战利品时，实体也是参与计算的一环。
+> 译注：实体是可以影响战利品生成的。在 `Minecraft Wiki` 中的 `Luck` 页面（ [https://minecraft.fandom.com/wiki/Luck](https://minecraft.fandom.com/wiki/Luck) ），存在关于实体幸运属性的论述。实体获取战利品时，其 `generic.luck` 属性也会参与计算，如果实体的 `generic.luck` 属性值更高，则战利品表中 `quality` 值高的结果更可能出现。因此根据战利品表生成战利品时，实体也是参与计算的一环。
 
 #### getInventoryHolder
 

@@ -24,7 +24,7 @@ description: StriderTemperatureChangeEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Strider#Behavior](https://minecraft.fandom.com/wiki/Strider#Behavior) 可知，炽足兽如果离开了岩浆则会失温，致使其身体发紫、移动速度降低。回到岩浆上则恢复。
+> 译注：参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Strider#Behavior](https://minecraft.fandom.com/wiki/Strider#Behavior) 可知，炽足兽如果离开了岩浆则会失温，致使其身体发紫、移动速度降低。回到岩浆上则恢复。
 
 ### 方法列表
 

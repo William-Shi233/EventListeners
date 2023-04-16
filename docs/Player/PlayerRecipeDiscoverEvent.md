@@ -22,7 +22,7 @@ description: PlayerRecipeDiscoverEvent
 > 
 > <br>
 > 
-> 译注：配方书即显示在工作台、熔炉等界面上的绿色封面书本。有关配方与配方书的信息可参见 `MineCraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Recipe](https://minecraft.fandom.com/wiki/Recipe) 。
+> 译注：配方书即显示在工作台、熔炉等界面上的绿色封面书本。有关配方与配方书的信息可参见 `Minecraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Recipe](https://minecraft.fandom.com/wiki/Recipe) 。
 > 
 > 除非 `doLimitedCrafting ` 这一 `GameRule` 为 `true` ，玩家可以任意使用未解锁的配方来合成、烧炼物品。 
 

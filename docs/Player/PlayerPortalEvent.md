@@ -56,9 +56,9 @@ description: PlayerPortalEvent
 > 
 > <br>
 > 
-> 译注：对末地传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要对传送门坐标进行“搜寻”。
+> 译注：对末地传送门而言，参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要对传送门坐标进行“搜寻”。
 > 
-> 对下界传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_search](https://minecraft.fandom.com/wiki/Nether_portal#Portal_search) 可知，玩家踏入下界传送门以后，，会将玩家 `x` 和 `z` 轴坐标除以八，然后以此为中心搜寻一定半径内已有的传送门，如有，则将玩家传送到那里。如没有，则另取位置新建传送门。本方法即用于设置搜寻的半径。
+> 对下界传送门而言，参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_search](https://minecraft.fandom.com/wiki/Nether_portal#Portal_search) 可知，玩家踏入下界传送门以后，，会将玩家 `x` 和 `z` 轴坐标除以八，然后以此为中心搜寻一定半径内已有的传送门，如有，则将玩家传送到那里。如没有，则另取位置新建传送门。本方法即用于设置搜寻的半径。
 
 #### getSearchRadius
 
@@ -78,9 +78,9 @@ description: PlayerPortalEvent
 > 
 > <br>
 > 
-> 译注：对末地传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要对传送门坐标进行“搜寻”。
+> 译注：对末地传送门而言，参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要对传送门坐标进行“搜寻”。
 > 
-> 对下界传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_search](https://minecraft.fandom.com/wiki/Nether_portal#Portal_search) 可知，玩家踏入下界传送门以后，会将玩家 `x` 和 `z` 轴坐标除以八，然后以此为中心搜寻一定半径内已有的传送门，如有，则将玩家传送到那里。如没有，则另取位置新建传送门。本方法即用于获取搜寻的半径。
+> 对下界传送门而言，参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_search](https://minecraft.fandom.com/wiki/Nether_portal#Portal_search) 可知，玩家踏入下界传送门以后，会将玩家 `x` 和 `z` 轴坐标除以八，然后以此为中心搜寻一定半径内已有的传送门，如有，则将玩家传送到那里。如没有，则另取位置新建传送门。本方法即用于获取搜寻的半径。
 
 #### getCanCreatePortal
 
@@ -158,9 +158,9 @@ description: PlayerPortalEvent
 > 
 > <br>
 > 
-> 译注：对末地传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要寻找用于创建传送门的空间。
+> 译注：对末地传送门而言，参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要寻找用于创建传送门的空间。
 > 
-> 对下界传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_search](https://minecraft.fandom.com/wiki/Nether_portal#Portal_search) 可知，玩家踏入下界传送门以后，会将玩家 `x` 和 `z` 轴坐标除以八，然后以此为中心搜寻一定半径内已有的传送门，如有，则将玩家传送到那里。如没有，则另取位置新建传送门。新建传送门的位置必须满足一定条件，见于 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_creation](https://minecraft.fandom.com/wiki/Nether_portal#Portal_creation) 页面。本方法即用于设置搜寻“传送门创建空间”（ `3x4x4` 空气和 `3x1x4` 固体方块地面）的半径，默认为 `16` 。在搜寻时，`Y` 轴坐标不论。即只要某片空间与中心点在 `xOz` 平面上投影的距离在半径内，则创建新传送门。
+> 对下界传送门而言，参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_search](https://minecraft.fandom.com/wiki/Nether_portal#Portal_search) 可知，玩家踏入下界传送门以后，会将玩家 `x` 和 `z` 轴坐标除以八，然后以此为中心搜寻一定半径内已有的传送门，如有，则将玩家传送到那里。如没有，则另取位置新建传送门。新建传送门的位置必须满足一定条件，见于 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_creation](https://minecraft.fandom.com/wiki/Nether_portal#Portal_creation) 页面。本方法即用于设置搜寻“传送门创建空间”（ `3x4x4` 空气和 `3x1x4` 固体方块地面）的半径，默认为 `16` 。在搜寻时，`Y` 轴坐标不论。即只要某片空间与中心点在 `xOz` 平面上投影的距离在半径内，则创建新传送门。
 
 #### getCreationRadius
 
@@ -194,9 +194,9 @@ description: PlayerPortalEvent
 > 
 > <br>
 > 
-> 译注：对末地传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要寻找用于创建传送门的空间。
+> 译注：对末地传送门而言，参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/End_portal#Behavior](https://minecraft.fandom.com/wiki/End_portal#Behavior) 可知，末地黑曜石平台位置是固定的，中心点坐标永远是 (100, 48, 0) 。无论从哪个末地传送门进入末地，玩家都会以面朝西方的姿态出现在较此中心点高一格的位置，即 (100,49,0) 。因此不需要寻找用于创建传送门的空间。
 > 
-> 对下界传送门而言，参见 `MineCraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_search](https://minecraft.fandom.com/wiki/Nether_portal#Portal_search) 可知，玩家踏入下界传送门以后，会将玩家 `x` 和 `z` 轴坐标除以八，然后以此为中心搜寻一定半径内已有的传送门，如有，则将玩家传送到那里。如没有，则另取位置新建传送门。新建传送门的位置必须满足一定条件，见于 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_creation](https://minecraft.fandom.com/wiki/Nether_portal#Portal_creation) 页面。本方法即用于获取搜寻“传送门创建空间”（ `3x4x4` 空气和 `3x1x4` 固体方块地面）的半径，默认为 `16` 。在搜寻时，`Y` 轴坐标不论。即只要某片空间与中心点在 `xOz` 平面上投影的距离在半径内，则创建新传送门。
+> 对下界传送门而言，参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_search](https://minecraft.fandom.com/wiki/Nether_portal#Portal_search) 可知，玩家踏入下界传送门以后，会将玩家 `x` 和 `z` 轴坐标除以八，然后以此为中心搜寻一定半径内已有的传送门，如有，则将玩家传送到那里。如没有，则另取位置新建传送门。新建传送门的位置必须满足一定条件，见于 [https://minecraft.fandom.com/wiki/Nether_portal#Portal_creation](https://minecraft.fandom.com/wiki/Nether_portal#Portal_creation) 页面。本方法即用于获取搜寻“传送门创建空间”（ `3x4x4` 空气和 `3x1x4` 固体方块地面）的半径，默认为 `16` 。在搜寻时，`Y` 轴坐标不论。即只要某片空间与中心点在 `xOz` 平面上投影的距离在半径内，则创建新传送门。
 
 #### getHandlers
 

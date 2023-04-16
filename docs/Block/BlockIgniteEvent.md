@@ -174,7 +174,7 @@ description: BlockIgniteEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 上的页面 [https://minecraft.fandom.com/wiki/End_Crystal#Respawning_the_ender_dragon](https://minecraft.fandom.com/wiki/End_Crystal#Respawning_the_ender_dragon) 可知，如果在末地放置末影水晶，则其下方会自动生成一格火焰方块。
+> 译注：参见 `Minecraft Wiki` 上的页面 [https://minecraft.fandom.com/wiki/End_Crystal#Respawning_the_ender_dragon](https://minecraft.fandom.com/wiki/End_Crystal#Respawning_the_ender_dragon) 可知，如果在末地放置末影水晶，则其下方会自动生成一格火焰方块。
 
 #### EXPLOSION
 
@@ -194,4 +194,4 @@ description: BlockIgniteEvent
 > 
 > <br>
 > 
-> 译注：比如参见 `MineCraft Wiki` 上的页面 [https://minecraft.fandom.com/wiki/Campfire#Usage](https://minecraft.fandom.com/wiki/Campfire#Usage) 可知，着火的箭矢能点燃熄灭的营火。
+> 译注：比如参见 `Minecraft Wiki` 上的页面 [https://minecraft.fandom.com/wiki/Campfire#Usage](https://minecraft.fandom.com/wiki/Campfire#Usage) 可知，着火的箭矢能点燃熄灭的营火。

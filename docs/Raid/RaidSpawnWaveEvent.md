@@ -24,7 +24,7 @@ description: RaidSpawnWaveEvent
 > 
 > <br>
 > 
-> 译注：参见 `MineCraft Wiki` 中的有关页面 [https://minecraft.fandom.com/wiki/Raid#Raid_wave_spawning](https://minecraft.fandom.com/wiki/Raid#Raid_wave_spawning) 可知，每一波袭击在生成前先要寻找一个合适的位置来生成袭击者，如果三次尝试均以失败告终，则袭击直接结束，此时会触发 `RaidStopEvent` ，不会触发本事件。只有在寻找到合适的生成位置、袭击者生成完毕以后，才会触发本事件。只要生成了袭击者，就不会再次尝试寻找合适的位置，也就不再触发本事件了。这是由于场上袭击者数量不为零（ `net.minecraft.server.v1_16_R3.Raid#r()` 方法返回值不为零，该方法在 `Mojang Mapping` 中反混淆名为 `getTotalRaidersAlive()` ），因此 `G()` 方法（`Mojang Mapping` 名为 `shouldSpawnGroup()` ）返回 `false` ，跳出循环。
+> 译注：参见 `Minecraft Wiki` 中的有关页面 [https://minecraft.fandom.com/wiki/Raid#Raid_wave_spawning](https://minecraft.fandom.com/wiki/Raid#Raid_wave_spawning) 可知，每一波袭击在生成前先要寻找一个合适的位置来生成袭击者，如果三次尝试均以失败告终，则袭击直接结束，此时会触发 `RaidStopEvent` ，不会触发本事件。只有在寻找到合适的生成位置、袭击者生成完毕以后，才会触发本事件。只要生成了袭击者，就不会再次尝试寻找合适的位置，也就不再触发本事件了。这是由于场上袭击者数量不为零（ `net.minecraft.server.v1_16_R3.Raid#r()` 方法返回值不为零，该方法在 `Mojang Mapping` 中反混淆名为 `getTotalRaidersAlive()` ），因此 `G()` 方法（`Mojang Mapping` 名为 `shouldSpawnGroup()` ）返回 `false` ，跳出循环。
 
 ### 方法列表
 
