@@ -18,7 +18,17 @@ description: FoodLevelChangeEvent
 > 
 > <br>
 > 
-> 当玩家饱食度变化时触发。
+> 当玩家饥饿值（Food Level）变化时触发。
+> 
+> <br>
+> 
+> 译注：本事件在玩家饥饿值（Fool Level，常称作“饱食度”）变化时触发。如欲监听玩家饥饿等级（Exhaustion level）变化，请参见 `EntityExhaustionEvent` 。
+> 
+> 参见 `Minecraft Wiki` 中的相关页面 [https://minecraft.fandom.com/wiki/Hunger#Exhaustion_level_increase](https://minecraft.fandom.com/wiki/Hunger#Exhaustion_level_increase) 可知，玩家在完成特定操作（如疾跑、如挖掘方块等）时，会累积饥饿等级（Exhaustion level），该值一旦大于等于四，则自减四，并扣除一点饱和度（Saturation）。如果饱和度为零则扣除一点饥饿值（Food Level）。饥饿值由显示在玩家物品栏上方的一排鸡腿体现。但客户端不会明确展示玩家饱和度的具体数值。
+> 
+> 参见 `net.minecraft.server.v1_16_R3.FoodMetaData#a(EntityHuman)` 方法可知，如果饥饿等级大于等于四，且饱和度大于零，则扣除一点饱和度。如果饱和度小于一，则将饱和度设为零，既不再扣除饥饿值，也不会令饱和度出现负数。如果饱和度被扣除，不会触发本事件。只有饱和度等于零，扣除了饥饿值时，才会触发本事件。
+> 
+> 另外，本事件不仅仅在饥饿值减少时触发，玩家吃下食物增加饥饿值、由于饱和药水效果回复饥饿值也可以触发本事件。
 
 ### 方法列表
 
@@ -28,7 +38,7 @@ description: FoodLevelChangeEvent
 
 方法签名: ()Lorg/bukkit/entity/HumanEntity;
 
-> 译注：无文档。该方法用于获取饱食度变化的玩家。
+> 译注：无文档。该方法用于获取饥饿值变化的玩家。
 
 #### getItem
 
@@ -42,9 +52,9 @@ description: FoodLevelChangeEvent
 > 
 > <br>
 > 
-> 该方法用于获取引起了饱食度变化的物品堆（如存在）。
+> 该方法用于获取引起了饥饿值变化的物品堆（如存在）。
 > 
-> @return 引起了饱食度变化的物品堆。
+> @return 引起了饥饿值变化的物品堆。
 
 #### getFoodLevel
 
@@ -62,11 +72,11 @@ description: FoodLevelChangeEvent
 > 
 > <br>
 > 
-> 该方法用于获取玩家饱食度的新值。
+> 该方法用于获取玩家的新饥饿值。
 > 
-> 如果本方法返回二十，说明玩家饱食度将会填满饱食度栏，如果本方法返回零，说明玩家饱食度栏将会变空。
+> 如果本方法返回二十，说明玩家饥饿值将会填满饥饿值栏，如果本方法返回零，说明玩家饥饿值栏将会变空。
 > 
-> @return 玩家饱食度的新值。
+> @return 玩家的新饥饿值。
 
 #### setFoodLevel
 
@@ -84,9 +94,9 @@ description: FoodLevelChangeEvent
 > 
 > <br>
 > 
-> 该方法用于设置玩家饱食度的新值。
+> 该方法用于设置玩家的新饥饿值。
 > 
-> @param level 玩家饱食度的新值。
+> @param level 玩家的新饥饿值。
 
 #### isCancelled
 
