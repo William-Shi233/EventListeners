@@ -20,11 +20,11 @@ description: PlayerTakeLecternBookEvent
 > 
 > <br>
 > 
-> 当玩家按 `取书` 按钮，从讲台上取下一本书时触发。如果本事件被取消，书将留在原处。
+> 当玩家点击“取书”按钮，从讲台上取下一本书时触发。如果本事件被取消，书将留在原处。
 > 
 > <br>
 > 
-> 译注：参见 `Minecraft Wiki` 的有关页面 [https://minecraft.fandom.com/wiki/Lectern?file=Lectern_GUI.png](https://minecraft.fandom.com/wiki/Lectern?file=Lectern_GUI.png) 可知，讲台界面有一 `Take Book` 按钮，用于将一本书从讲台上取下。
+> 译注：参见 `Minecraft Wiki` 的有关页面 [https://minecraft.fandom.com/wiki/Lectern?file=Lectern_GUI.png](https://minecraft.fandom.com/wiki/Lectern?file=Lectern_GUI.png) 可知，讲台界面有一“Take Book”按钮，用于将一本书从讲台上取下。该按钮中译名为“取书”。
 
 ### 方法列表
 
