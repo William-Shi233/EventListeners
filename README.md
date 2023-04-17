@@ -56,6 +56,10 @@ PVPIN Studio 成员 Tao
 
 校对：
 
+原任 PVPIN 社区成员，今任 Alicorn Union 组长 青蛙的名单
+
 PVPIN Studio 成员 Banaira
 
 PVPIN Studio 成员 Eustia_Saint
+
+PVPIN Studio 成员 Minamototennsai
