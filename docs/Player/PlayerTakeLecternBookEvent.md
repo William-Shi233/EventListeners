@@ -20,7 +20,7 @@ description: PlayerTakeLecternBookEvent
 > 
 > <br>
 > 
-> 当玩家按 `Take Book` 按钮，从讲台上取下一本书时触发。如果本事件被取消，书将留在原处。
+> 当玩家按 `取书` 按钮，从讲台上取下一本书时触发。如果本事件被取消，书将留在原处。
 > 
 > <br>
 > 
