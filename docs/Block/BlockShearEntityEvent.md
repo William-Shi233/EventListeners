@@ -24,7 +24,7 @@ description: BlockShearEntityEvent
 > 
 > 译注：参见 `Minecraft Wiki` 的相关页面 [https://minecraft.fandom.com/wiki/Dispenser#Usage](https://minecraft.fandom.com/wiki/Dispenser#Usage) 可知，当发射器内装有剪刀时，可以剪下羊的羊毛、哞菇身上的蘑菇。
 > 
-> 在 `net.minecraft.server.v1_16_R3.DispenseBehaviorShears#b(WorldServer worldserver, BlockPosition blockposition, Block bukkitBlock, CraftItemStack craftItem)` 方法中，只要发射器检测到面前一定区域内的某个实体系 `net.minecraft.server.v1_16_R3.IShearable` 的子类，即会调用该接口的 `shear` 方法。而羊和哞菇、雪傀儡等类都实现了 `IShearable` 接口。因此本事件不仅局限于给羊剪毛时触发，当发射器剪下哞菇身上的哞菇、取下雪傀儡头顶的南瓜时都应当触发本事件。 
+> 在 `net.minecraft.server.v1_16_R3.DispenseBehaviorShears#b(WorldServer worldserver, BlockPosition blockposition, Block bukkitBlock, CraftItemStack craftItem)` 方法中，只要发射器检测到面前一定区域内的某个实体系 `net.minecraft.server.v1_16_R3.IShearable` 的下级类，即会调用该接口的 `shear` 方法。而羊和哞菇、雪傀儡等类都实现了 `IShearable` 接口。因此本事件不仅局限于给羊剪毛时触发，当发射器剪下哞菇身上的哞菇、取下雪傀儡头顶的南瓜时都应当触发本事件。 
 
 ### 方法列表
 
