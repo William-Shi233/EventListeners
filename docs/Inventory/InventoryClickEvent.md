@@ -92,7 +92,7 @@ description: InventoryClickEvent
 > 
 > 如确有必要调用上述方法，请使用 `BukkitScheduler#runTask(Plugin, Runnable)` 调度一个任务，在下一刻执行方法。另外，上述列表并不一定完整，可能尚存有未列出的方法，同样不宜在本事件的监听器中使用。
 > 
-> 假设触发本事件的 `HumanEntity` 对象是 `Player` 的子类，则如欲修改涉事物品栏所允许的物品堆最大堆叠数量或涉事物品栏的内容物，必须随后调用 `Player#updateInventory()` 以更新物品栏。
+> 假设触发本事件的 `HumanEntity` 对象是 `Player` 的下级类，则如欲修改涉事物品栏所允许的物品堆最大堆叠数量或涉事物品栏的内容物，必须随后调用 `Player#updateInventory()` 以更新物品栏。
 > 
 > 如果在监听器中对某个槽位中的物品堆作了修改，而事件本身的结果也对该槽位中的物品堆存在影响，则监听器中的修改可能会被覆盖。如必欲修改，应当取消本事件，然后在监听器中手动模拟事件结果。当然也可以使用 `BukkitScheduler#runTask(Plugin, Runnable)` 方法，在下一刻进行修改。
 
