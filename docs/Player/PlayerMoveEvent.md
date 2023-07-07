@@ -46,7 +46,7 @@ description: PlayerMoveEvent
 > 
 > <br>
 > 
-> 如果一次移动事件或传送事件（ `PlayerTeleportEvent` 是本事件的子类）被取消了，那么玩家将会被传送回起点位置。起点位置即 `getFrom()` 方法的返回值。被传送回起点时不会触发移动或传送事件。
+> 如果一次移动事件或传送事件（ `PlayerTeleportEvent` 是本事件的下级类）被取消了，那么玩家将会被传送回起点位置。起点位置即 `getFrom()` 方法的返回值。被传送回起点时不会触发移动或传送事件。
 > 
 > <br>
 > 
@@ -74,7 +74,7 @@ description: PlayerMoveEvent
 > 
 > <br>
 > 
-> 如果一次移动事件或传送事件（ `PlayerTeleportEvent` 是本事件的子类）被取消了，那么玩家将会被传送回起点位置。起点位置即 `getFrom()` 方法的返回值。被传送回起点时不会触发移动或传送事件。
+> 如果一次移动事件或传送事件（ `PlayerTeleportEvent` 是本事件的下级类）被取消了，那么玩家将会被传送回起点位置。起点位置即 `getFrom()` 方法的返回值。被传送回起点时不会触发移动或传送事件。
 > 
 > <br>
 > 
